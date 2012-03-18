@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>action</key>
+	<false/>
+	<key>category</key>
+	<string>SCRIPTS</string>
+	<key>command</key>
+	<string>open -a "/Applications/Google Chrome.app" http://{query}</string>
+	<key>disabled</key>
+	<false/>
+	<key>escapequery</key>
+	<true/>
+	<key>escapequerybackquotes</key>
+	<true/>
+	<key>escapequerybrackets</key>
+	<true/>
+	<key>escapequeryquotes</key>
+	<true/>
+	<key>escapequerysemicolons</key>
+	<true/>
+	<key>growloutput</key>
+	<false/>
+	<key>growloutputsticky</key>
+	<false/>
+	<key>keyword</key>
+	<string>chrome</string>
+	<key>logging</key>
+	<false/>
+	<key>parameter</key>
+	<integer>0</integer>
+	<key>silent</key>
+	<true/>
+	<key>subtitle</key>
+	<string>Open URL in the Google Chrome browser.</string>
+	<key>title</key>
+	<string>Open URL in Chrome</string>
+</dict>
+</plist>

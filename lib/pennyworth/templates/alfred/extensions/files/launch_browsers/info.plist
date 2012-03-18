@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>category</key>
+	<string>FILES</string>
+	<key>files</key>
+	<array>
+		<string>/Applications/Firefox.app</string>
+		<string>/Applications/Google Chrome.app</string>
+		<string>/Applications/Opera.app</string>
+		<string>/Applications/Safari.app</string>
+	</array>
+	<key>keyword</key>
+	<string>browse</string>
+	<key>subtitle</key>
+	<string>Launches all web browsers.</string>
+	<key>title</key>
+	<string>Launch Browsers</string>
+</dict>
+</plist>

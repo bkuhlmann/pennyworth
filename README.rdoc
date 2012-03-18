@@ -1,0 +1,101 @@
+= Overview
+
+{<img src="https://secure.travis-ci.org/bkuhlmann/pennyworth.png" />}[http://travis-ci.org/bkuhlmann/pennyworth]
+
+Enhances and extends Alfred by providing a Ruby command line interface (CLI) via Alfred Extensions. Each Alfred Extension,
+packaged as part of this gem, references back to the Ruby CLI. Output is provided via Growl.
+
+= Features
+
+* Adds Ruby support to Alfred.
+* Adds the launch_browsers file extension.
+* Adds the apple_say script extension.
+* Adds the directory_size script extension.
+* Adds the edit_bash_file script extension.
+* Adds the edit_dotfile script extension.
+* Adds the edit_file script extension.
+* Adds the mac_serial script extension.
+* Adds the mem_purge script extension.
+* Adds the open_url_in_chrome script extension.
+* Adds the open_url_in_opera script extension.
+* Adds the open_url_in_safari script extension.
+* Adds the restart_rails script extension.
+* Adds the string_capitalize script extension.
+* Adds the string_downcase script extension.
+* Adds the string_length script extension.
+* Adds the string_upcase script extension.
+
+= Requirements
+
+1. {Mac OS X}[http://www.apple.com/macosx]
+2. Alfred[http://www.alfredapp.com]
+3. {Alfred Powerpack}[http://www.alfredapp.com/purchase].
+4. Growl[http://growl.info].
+5. rbenv[https://github.com/sstephenson/rbenv].
+6. {Ruby 1.9.x}[http://www.ruby-lang.org].
+
+= Setup
+
+Type the following from the command line to install:
+
+  gem install pennyworth
+
+You can configure common settings for future gem builds by creating the following file:
+
+  ~/.pennyworth/settings.yml
+
+...using the following settings (for example):
+
+  --- 
+	:alfred_settings_root: "/Users/brooke/Dropbox/Cache/Alfred"
+
+= Usage
+
+From the command line, type: pennyworth
+
+  pennyworth -e, [edit]     # Edit gem settings in default editor (assumes $EDITOR environment variable).
+  pennyworth -h, [help]     # Show this message.
+  pennyworth -i, [install]  # Install Alfred Extensions.
+  pennyworth -s, [string]   # Manipulate strings.
+  pennyworth -v, [version]  # Show version.
+
+For string options, type: pennyworth help string
+
+  -d, [--downcase=one two three]    # Downcase a string.
+  -u, [--upcase=one two three]      # Upcase a string.
+  -c, [--capitalize=one two three]  # Capitalize words in a string.
+  -l, [--length=one two three]      # Answer the length of a string.
+
+While the command line options are nice, the real power comes from running the following command:
+
+  pennyworth -i
+
+...which installs the Alfred Extensions packaged as part of this gem. You can then use the Alfred commands
+provided by each extension rather than use the CLI. Check the documentation of each installed extension (as listed
+in the features list above) for further usage.
+
+= Tests
+
+To test, do the following:
+
+1. cd to the gem root.
+2. bundle install
+3. bundle exec rspec spec
+
+= Contributions
+
+Please log all feedback/issues via {GitHub Issues}[https://github.com/bkuhlmann/pennyworth/issues] for the project. Thanks.
+
+= Credits
+
+Developed by {Brooke Kuhlmann}[http://www.redalchemist.com] at {Red Alchemist}[http://www.redalchemist.com]
+
+= License
+
+Copyright (c) 2012 {Red Alchemist}[http://www.redalchemist.com].
+Read the LICENSE for details.
+
+= History
+
+Read the CHANGELOG for details.
+Built with Gemsmith[https://github.com/bkuhlmann/gemsmith].

@@ -1,0 +1,6 @@
+#!/usr/bin/ruby
+# encoding: UTF-8
+
+require "pennyworth"
+require "pennyworth/cli"
+Pennyworth::CLI.start

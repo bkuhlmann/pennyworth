@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>action</key>
+	<false/>
+	<key>category</key>
+	<string>SCRIPTS</string>
+	<key>command</key>
+	<string>purge
+echo "Memory Purged"</string>
+	<key>disabled</key>
+	<false/>
+	<key>escapequery</key>
+	<true/>
+	<key>escapequerybackquotes</key>
+	<true/>
+	<key>escapequerybrackets</key>
+	<true/>
+	<key>escapequeryquotes</key>
+	<true/>
+	<key>escapequerysemicolons</key>
+	<true/>
+	<key>growloutput</key>
+	<true/>
+	<key>growloutputsticky</key>
+	<false/>
+	<key>keyword</key>
+	<string>memp</string>
+	<key>logging</key>
+	<false/>
+	<key>parameter</key>
+	<integer>0</integer>
+	<key>silent</key>
+	<true/>
+	<key>subtitle</key>
+	<string>Cleans up inactive memory, turning it into free memory.</string>
+	<key>title</key>
+	<string>Memory Purge</string>
+</dict>
+</plist>
