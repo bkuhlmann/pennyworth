@@ -47,7 +47,7 @@ You can configure common settings for future gem builds by creating the followin
 ...using the following settings (for example):
 
   --- 
-	:alfred_settings_root: "/Users/brooke/Dropbox/Cache/Alfred"
+  :alfred_settings_root: "/Users/brooke/Dropbox/Cache/Alfred"
 
 = Usage
 
