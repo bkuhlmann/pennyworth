@@ -21,6 +21,7 @@ describe Pennyworth::Kit do
 	
   describe ".clip" do
     it "answers the same text as supplied" do
+      Pennyworth::Kit.should_receive("clip").and_return(@text)
       Pennyworth::Kit.clip(@text).should == @text
     end
 
