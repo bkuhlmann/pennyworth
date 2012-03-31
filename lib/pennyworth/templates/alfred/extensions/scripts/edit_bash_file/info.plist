@@ -7,7 +7,8 @@
 	<key>category</key>
 	<string>SCRIPTS</string>
 	<key>command</key>
-	<string>mate ~/.bashrc</string>
+	<string>source ~/.bashrc
+$EDITOR ~/.bashrc</string>
 	<key>disabled</key>
 	<false/>
 	<key>escapequery</key>
@@ -33,7 +34,7 @@
 	<key>silent</key>
 	<true/>
 	<key>subtitle</key>
-	<string>Edit Bash file in TextMate.</string>
+	<string>Edit a Bash file with default editor.</string>
 	<key>title</key>
 	<string>Edit Bash File</string>
 </dict>

@@ -8,6 +8,8 @@
 	<string>SCRIPTS</string>
 	<key>command</key>
 	<string>ioreg -l | grep IOPlatformSerialNumber</string>
+	<key>disabled</key>
+	<false/>
 	<key>escapequery</key>
 	<true/>
 	<key>escapequerybackquotes</key>
@@ -26,10 +28,12 @@
 	<string>serial</string>
 	<key>logging</key>
 	<false/>
+	<key>parameter</key>
+	<integer>0</integer>
 	<key>silent</key>
 	<true/>
 	<key>subtitle</key>
-	<string>Displays the Mac serial number</string>
+	<string>Displays the Mac serial number.</string>
 	<key>title</key>
 	<string>Mac Serial</string>
 </dict>
