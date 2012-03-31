@@ -9,6 +9,8 @@
 	<key>command</key>
 	<string>du -sm {query}/* | sort -nr
 </string>
+	<key>disabled</key>
+	<false/>
 	<key>escapequery</key>
 	<true/>
 	<key>escapequerybackquotes</key>
@@ -27,6 +29,8 @@
 	<string>dsize</string>
 	<key>logging</key>
 	<false/>
+	<key>parameter</key>
+	<integer>3</integer>
 	<key>silent</key>
 	<true/>
 	<key>subtitle</key>

@@ -30,7 +30,7 @@ $EDITOR ~/.bashrc</string>
 	<key>logging</key>
 	<false/>
 	<key>parameter</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>silent</key>
 	<true/>
 	<key>subtitle</key>

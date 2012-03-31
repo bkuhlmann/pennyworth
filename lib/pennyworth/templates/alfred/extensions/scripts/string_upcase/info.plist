@@ -30,7 +30,7 @@ pennyworth -s -u {query}</string>
 	<key>logging</key>
 	<false/>
 	<key>parameter</key>
-	<integer>0</integer>
+	<integer>3</integer>
 	<key>silent</key>
 	<true/>
 	<key>subtitle</key>
