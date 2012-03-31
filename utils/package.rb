@@ -15,8 +15,8 @@ ALFRED_EXTENSIONS_ROOT = "#{ALFRED_SETTINGS_ROOT}/extensions"
 EXTENSION_SCRIPTS = %w(apple_say
 					   directory_size
 					   edit_bash_file
-					   edit_dotfile
 					   edit_file
+					   edit_home_file
 					   mac_serial
 					   mem_purge
 					   open_url_in_chrome

@@ -8,7 +8,7 @@
 	<string>SCRIPTS</string>
 	<key>command</key>
 	<string>source ~/.bashrc
-$EDITOR ~/.{query}</string>
+$EDITOR ~/{query}</string>
 	<key>disabled</key>
 	<false/>
 	<key>escapequery</key>
@@ -26,7 +26,7 @@ $EDITOR ~/.{query}</string>
 	<key>growloutputsticky</key>
 	<false/>
 	<key>keyword</key>
-	<string>edot</string>
+	<string>ehome</string>
 	<key>logging</key>
 	<false/>
 	<key>parameter</key>
@@ -34,8 +34,8 @@ $EDITOR ~/.{query}</string>
 	<key>silent</key>
 	<true/>
 	<key>subtitle</key>
-	<string>Edit a dotfile with default editor.</string>
+	<string>Edit your home with default editor.</string>
 	<key>title</key>
-	<string>Edit Dotfile</string>
+	<string>Edit Home File</string>
 </dict>
 </plist>
