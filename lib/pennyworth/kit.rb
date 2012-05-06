@@ -9,7 +9,7 @@ module Pennyworth
       array * delimiter
     end
 
-    # Sends text to the Mac OS clipboard.
+    # Sends text to the OSX clipboard.
     # ==== Parameters
     # * +text+ - Required. The text to send to the clipboard.
     def self.clip text

@@ -14,7 +14,7 @@ packaged as part of this gem, references back to the Ruby CLI. Output is provide
 * Adds the edit_bash_file script extension.
 * Adds the edit_dotfile script extension.
 * Adds the edit_file script extension.
-* Adds the mac_serial script extension.
+* Adds the osx_serial script extension.
 * Adds the mem_purge script extension.
 * Adds the open_url_in_chrome script extension.
 * Adds the open_url_in_opera script extension.
@@ -27,7 +27,7 @@ packaged as part of this gem, references back to the Ruby CLI. Output is provide
 
 = Requirements
 
-1. {Mac OS X}[http://www.apple.com/macosx]
+1. OSX[http://www.apple.com/osx]
 2. Alfred[http://www.alfredapp.com]
 3. {Alfred Powerpack}[http://www.alfredapp.com/purchase].
 4. Growl[http://growl.info].

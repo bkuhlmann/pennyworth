@@ -17,7 +17,7 @@ EXTENSION_SCRIPTS = %w(apple_say
 					   edit_bash_file
 					   edit_file
 					   edit_home_file
-					   mac_serial
+					   osx_serial
 					   mem_purge
 					   open_url_in_chrome
 					   open_url_in_opera
