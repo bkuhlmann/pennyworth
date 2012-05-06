@@ -12,21 +12,23 @@ GEM_PACKAGE_ROOT = File.join(File.dirname(__FILE__), "..", "lib", "pennyworth", 
 ALFRED_SETTINGS_ROOT = "/Users/brooke/Dropbox/Cache/Alfred"
 ALFRED_EXTENSIONS_ROOT = "#{ALFRED_SETTINGS_ROOT}/extensions"
 
-EXTENSION_SCRIPTS = %w(apple_say
-					   directory_size
-					   edit_bash_file
-					   edit_file
-					   edit_home_file
-					   osx_serial
-					   mem_purge
-					   open_url_in_chrome
-					   open_url_in_opera
-					   open_url_in_safari
-					   restart_rails
-					   string_capitalize
-					   string_downcase
-					   string_length
-					   string_upcase)
+EXTENSION_SCRIPTS = %w(
+  apple_say
+  cache_flush
+  edit_bash_file
+  edit_file
+  edit_home_file
+  osx_serial
+  mem_purge
+  open_url_in_chrome
+  open_url_in_opera
+  open_url_in_safari
+  restart_rails
+  string_capitalize
+  string_downcase
+  string_length
+  string_upcase
+)
 EXTENSION_FILES = %w(launch_browsers)
 
 # Helper Methods

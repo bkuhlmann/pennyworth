@@ -10,7 +10,7 @@ packaged as part of this gem, references back to the Ruby CLI. Output is provide
 * Adds Ruby support to Alfred.
 * Adds the launch_browsers file extension.
 * Adds the apple_say script extension.
-* Adds the directory_size script extension.
+* Adds the cache_flush script extension.
 * Adds the edit_bash_file script extension.
 * Adds the edit_dotfile script extension.
 * Adds the edit_file script extension.
