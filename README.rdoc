@@ -12,13 +12,13 @@ packaged as part of this gem, references back to the Ruby CLI. Output is provide
 * Adds the apple_say script extension.
 * Adds the cache_flush script extension.
 * Adds the edit_bash_file script extension.
-* Adds the edit_dotfile script extension.
 * Adds the edit_file script extension.
-* Adds the osx_serial script extension.
+* Adds the edit_home_file script extension.
 * Adds the mem_purge script extension.
 * Adds the open_url_in_chrome script extension.
 * Adds the open_url_in_opera script extension.
 * Adds the open_url_in_safari script extension.
+* Adds the osx_serial script extension.
 * Adds the restart_rails script extension.
 * Adds the string_capitalize script extension.
 * Adds the string_downcase script extension.

@@ -18,11 +18,11 @@ EXTENSION_SCRIPTS = %w(
   edit_bash_file
   edit_file
   edit_home_file
-  osx_serial
   mem_purge
   open_url_in_chrome
   open_url_in_opera
   open_url_in_safari
+  osx_serial
   restart_rails
   string_capitalize
   string_downcase
