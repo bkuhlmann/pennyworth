@@ -1,3 +1,14 @@
+= v0.2.0
+
+* Cleaned up doc.
+* Renamed MacOS X to OSX.
+* Added the cache_flush script extension.
+* Removed the directory_size script extension.
+* Added parameter specifications for all extensions.
+* Replaced the edit_dotfile extension with the edit_home_file extension.
+* Switched to default editor for edit extensions so that TextMate isn't explicitly called.
+* Fixed spec with call to pbcopy.
+
 = v0.1.0
 
 * Initial version.
