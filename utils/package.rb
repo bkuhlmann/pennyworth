@@ -14,7 +14,6 @@ ALFRED_EXTENSIONS_ROOT = "#{ALFRED_SETTINGS_ROOT}/extensions"
 
 EXTENSION_SCRIPTS = %w(
   apple_say
-  cache_flush
   edit_bash_file
   edit_file
   edit_home_file
