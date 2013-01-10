@@ -14,9 +14,14 @@ ALFRED_EXTENSIONS_ROOT = "#{ALFRED_SETTINGS_ROOT}/extensions"
 
 EXTENSION_SCRIPTS = %w(
   apple_say
+  battery_life
+  battery_time
+  dns_flush
+  dns_info
   edit_bash_file
   edit_file
   edit_home_file
+  ip
   mem_purge
   open_url_in_chrome
   open_url_in_opera
