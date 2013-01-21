@@ -2,6 +2,7 @@
 
 {<img src="https://badge.fury.io/rb/pennyworth.png" alt="Gem Version" />}[http://badge.fury.io/rb/pennyworth]
 {<img src="https://secure.travis-ci.org/bkuhlmann/pennyworth.png" alt="Travis CI Status" />}[http://travis-ci.org/bkuhlmann/pennyworth]
+{<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/bkuhlmann/pennyworth]
 
 Enhances and extends Alfred by providing a Ruby command line interface (CLI) via Alfred Extensions. Each Alfred Extension,
 packaged as part of this gem, references back to the Ruby CLI. Output is provided via Growl.
