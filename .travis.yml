@@ -6,3 +6,8 @@ gemfile:
   - gemfiles/rails-3.1.x.gemfile
   - gemfiles/rails-3.2.x.gemfile
 script: bundle exec rspec spec
+notifications:
+  email: false
+  campfire:
+    rooms:
+      - secure: "i+qTCXtBVcCHHbhvPy+cF8fWOawI7u1lSwZwvN7oc1rOLtWwb49sgpEn0XaK\nHmClyH4I+s9w0qz371eL0NA9K/8uRxTZnSjXuiXjVokivbOEFWfNLk3PC4zM\nlwyLJuerBdml8L+WAiBQILWXmWudGqEotVcoSvhEjhFmRciJZas="
