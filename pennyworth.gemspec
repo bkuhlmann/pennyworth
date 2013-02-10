@@ -12,7 +12,6 @@ Gem::Specification.new do |s|
   s.summary								= "Enhances and extends Alfred with Ruby support."
   s.description						= "Enhances and extends Alfred with Ruby support. See the README for further details."
 	s.license								= "MIT"
-	s.post_install_message	= "(W): www.redalchemist.com. (T): @ralchemist."
 
 	s.required_ruby_version = "~> 1.9.0"
 	s.add_dependency "thor", "~> 0.14"
