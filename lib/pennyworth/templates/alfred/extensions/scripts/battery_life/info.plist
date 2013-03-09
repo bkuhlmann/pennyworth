@@ -27,7 +27,7 @@
 	<key>growloutputsticky</key>
 	<false/>
 	<key>keyword</key>
-	<string>batteryl</string>
+	<string>batterylife</string>
 	<key>logging</key>
 	<false/>
 	<key>multifileargs</key>

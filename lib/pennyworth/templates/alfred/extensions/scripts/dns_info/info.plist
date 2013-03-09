@@ -11,6 +11,8 @@
 </string>
 	<key>disabled</key>
 	<false/>
+	<key>escapedollar</key>
+	<false/>
 	<key>escapequery</key>
 	<true/>
 	<key>escapequerybackquotes</key>
@@ -26,8 +28,10 @@
 	<key>growloutputsticky</key>
 	<true/>
 	<key>keyword</key>
-	<string>dns_info</string>
+	<string>dnsinfo</string>
 	<key>logging</key>
+	<false/>
+	<key>multifileargs</key>
 	<false/>
 	<key>parameter</key>
 	<integer>1</integer>

@@ -18,16 +18,12 @@ EXTENSION_SCRIPTS = %w(
   battery_time
   dns_flush
   dns_info
-  edit_bash_file
   edit_file
   edit_home_file
-  ip
   mem_purge
   open_url_in_chrome
   open_url_in_opera
   open_url_in_safari
-  osx_serial
-  restart_rails
   string_capitalize
   string_downcase
   string_length
