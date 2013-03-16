@@ -28,20 +28,14 @@ module Pennyworth
     method_option :length, aliases: "-l", desc: "Answer the length of a string.", type: :array
     def string
       case
-      when options[:downcase] then
-        string = Pennyworth::Kit.array_to_string options[:downcase]
-        puts Pennyworth::Kit.clip(string.downcase)
-      when options[:upcase] then
-        string = Pennyworth::Kit.array_to_string options[:upcase]
-        puts Pennyworth::Kit.clip(string.upcase)
-      when options[:capitalize] then
-        words = options[:capitalize].map {|word| word.capitalize}
-        words = Pennyworth::Kit.array_to_string words
-        puts Pennyworth::Kit.clip(words)
-      when options[:length] then
-        string = Pennyworth::Kit.array_to_string options[:length]
-        Pennyworth::Kit.clip(string)
-        puts string.length
+      when options[:downcase]
+        Pennyworth::Kits::String.downcase options[:downcase]
+      when options[:upcase]
+        Pennyworth::Kits::String.upcase options[:upcase]
+      when options[:capitalize]
+        Pennyworth::Kits::String.capitalize options[:capitalize]
+      when options[:length]
+        Pennyworth::Kits::String.length options[:length]
       else say("Type 'pennyworth help string' for usage.")
       end
     end
