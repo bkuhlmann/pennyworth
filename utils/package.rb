@@ -8,31 +8,22 @@
 require "fileutils"
 
 # Settings
-GEM_PACKAGE_ROOT = File.join(File.dirname(__FILE__), "..", "lib", "pennyworth", "templates", "alfred")
-ALFRED_SETTINGS_ROOT = "/Users/brooke/Dropbox/Cache/Alfred"
-ALFRED_EXTENSIONS_ROOT = "#{ALFRED_SETTINGS_ROOT}/extensions"
+GEM_WORKFLOW_ROOT = File.join(File.dirname(__FILE__), "..", "lib", "pennyworth", "templates", "workflows")
+ALFRED_SETTINGS_ROOT = "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
+ALFRED_WORKFLOW_ROOT = "#{ALFRED_SETTINGS_ROOT}/workflows"
 
-EXTENSION_SCRIPTS = %w(
-  apple_say
-  battery_life
-  battery_time
-  dns_flush
-  dns_info
-  edit_file
-  edit_home_file
-  mem_purge
-  open_url_in_chrome
-  open_url_in_opera
-  open_url_in_safari
-  string_capitalize
-  string_downcase
-  string_length
-  string_upcase
-)
-EXTENSION_FILES = %w(launch_browsers)
+WORKFLOWS = []
+WORKFLOWS << "user.workflow.514AB72A-0A69-422D-AA58-52A35800F78E" # String Upcase
+WORKFLOWS << "user.workflow.97DA8B58-F8B9-408F-B212-8F02A31DAE6B" # String Length
+WORKFLOWS << "user.workflow.43F0ADF3-BF5B-4C09-BC20-DF0CA14E58A0" # String Downcase
+WORKFLOWS << "user.workflow.9AFFD627-1541-4369-9034-1E0C6CC2B543" # String Capitalize
 
-# Helper Methods
-def package_folders folders, source, destination
+# Package helper method that packages Alfred source folders for distribution.
+# ==== Parameters
+# * +folders+ - Required. The array of folders to package.
+# * +source+ - Required. The folders source path.
+# * +destination+ - Required. The destination path for packaging.
+def package folders, source, destination
   folders.each do |folder|
     FileUtils.cp_r File.join(source, folder), destination
     puts "  Packaged: #{folder}"
@@ -41,14 +32,10 @@ end
 
 # Execution
 puts "\nCleaning gem package root..."
-FileUtils.rm_r GEM_PACKAGE_ROOT
-FileUtils.mkdir_p File.join(GEM_PACKAGE_ROOT, "extensions", "scripts")
-FileUtils.mkdir_p File.join(GEM_PACKAGE_ROOT, "extensions", "files")
+FileUtils.rm_r GEM_WORKFLOW_ROOT
+FileUtils.mkdir_p File.join(GEM_WORKFLOW_ROOT)
 
-puts "Packaging Alfred extension files..."
-package_folders EXTENSION_FILES, File.join(ALFRED_EXTENSIONS_ROOT, "files"), File.join(GEM_PACKAGE_ROOT, "extensions", "files")
-
-puts "Packaging Alfred extension scripts..."
-package_folders EXTENSION_SCRIPTS, File.join(ALFRED_EXTENSIONS_ROOT, "scripts"), File.join(GEM_PACKAGE_ROOT, "extensions", "scripts")
+puts "Packaging Alfred workflows..."
+package WORKFLOWS, ALFRED_WORKFLOW_ROOT, GEM_WORKFLOW_ROOT
 
 puts "Finished!\n\n"

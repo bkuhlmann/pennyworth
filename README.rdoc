@@ -4,35 +4,17 @@
 {<img src="https://secure.travis-ci.org/bkuhlmann/pennyworth.png" alt="Travis CI Status" />}[http://travis-ci.org/bkuhlmann/pennyworth]
 {<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/bkuhlmann/pennyworth]
 
-Enhances and extends Alfred by providing a Ruby command line interface (CLI) via Alfred Extensions. Each Alfred Extension,
-packaged as part of this gem, references back to the Ruby CLI. Output is provided via Growl.
+Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 
 = Features
 
 * Adds Ruby support to Alfred.
-* Adds the launch_browsers file extension.
-* Adds the apple_say script extension.
-* Adds the cache_flush script extension.
-* Adds the edit_bash_file script extension.
-* Adds the edit_file script extension.
-* Adds the edit_home_file script extension.
-* Adds the mem_purge script extension.
-* Adds the open_url_in_chrome script extension.
-* Adds the open_url_in_opera script extension.
-* Adds the open_url_in_safari script extension.
-* Adds the osx_serial script extension.
-* Adds the restart_rails script extension.
-* Adds the string_capitalize script extension.
-* Adds the string_downcase script extension.
-* Adds the string_length script extension.
-* Adds the string_upcase script extension.
 
 = Requirements
 
-1. OSX[http://www.apple.com/osx]
-2. Alfred[http://www.alfredapp.com]
+1. OSX[http://www.apple.com/osx].
+2. Alfred[http://www.alfredapp.com] (Version 2.x.x or higher).
 3. {Alfred Powerpack}[http://www.alfredapp.com/purchase].
-4. Growl[http://growl.info].
 5. rbenv[https://github.com/sstephenson/rbenv].
 6. {Ruby 1.9.x}[http://www.ruby-lang.org].
 
@@ -49,7 +31,7 @@ You can configure common settings for future gem builds by creating the followin
 ...using the following settings (for example):
 
   --- 
-  :alfred_settings_root: "/Users/brooke/Dropbox/Cache/Alfred"
+  :alfred_settings_root: "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
 
 = Usage
 

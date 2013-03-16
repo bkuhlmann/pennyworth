@@ -5,8 +5,8 @@ require "thor_plus/actions"
 
 module Pennyworth
   class CLI < Thor
-  	include Thor::Actions
-  	include ThorPlus::Actions
+    include Thor::Actions
+    include ThorPlus::Actions
 
     # Overwrites the Thor template source root.
     def self.source_root
@@ -46,24 +46,30 @@ module Pennyworth
       end
     end
 
-    desc "-i, [install]", "Install Alfred Extensions."
+    desc "-i, [install]", "Install Alfred support files."
     map "-i" => :install
     def install
       say
       
       if valid_file?(@settings[:alfred_settings_root], "Invalid directory for Alfred settings root")
-        if yes? "Installing Alfred Extensions will destroy exiting extensions of the same name. Continue (y/n)?"
-          info "Installing Alfred Extensions..."
-          info "Alfred settings root: #{@settings[:alfred_settings_root]}"
-          %w(files scripts).each do |folder|
-            directory File.join("alfred", "extensions", folder), File.join(@settings[:alfred_settings_root], "extensions", folder)
+        if yes? "Installing Alfred Workflows will destroy exiting workflows of the same name. Continue (y/n)?"
+          info "Installing Alfred Workflows..."
+
+          workflows = Dir.glob File.join(self.class.source_root, "workflows", "**")
+          alfred_workflows_root = File.join @settings[:alfred_settings_root], "workflows"
+          workflows.each do |workflow|
+            name = File.basename workflow
+            destination = File.join alfred_workflows_root, name
+            remove_file destination
+            directory File.join("workflows", name), destination
           end
-          info "Alfred Extensions installed."
+
+          info "Alfred Workflows installed."
         else
-          info "Alfred Extenions installation cancelled."
+          info "Alfred Workflows installation cancelled."
         end
       else
-        error "Invalid directory for Alfred settings root: #{@settings[:alfred_settings_root]}"
+        error "Invalid Alfred settings directory: #{@settings[:alfred_settings_root]}"
       end
 
       say
@@ -78,7 +84,7 @@ module Pennyworth
     desc "-v, [version]", "Show version."
     map "-v" => :version
     def version
-    	say "Pennyworth " + VERSION
+      say "Pennyworth " + VERSION
     end
     
     desc "-h, [help]", "Show this message."
