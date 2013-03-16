@@ -1,3 +1,11 @@
+= v1.0.0
+
+* Upgraded to Alfred 2.x.x.
+* Removed Alfred 1.x.x extensions and added Alfred 2.x.x workflows.
+* Added Guard support for testing.
+* Converted/detailed the CONTRIBUTING guidelines per GitHub requirements.
+* Cleaned up the README documentation.
+
 = v0.2.0
 
 * Cleaned up doc.
