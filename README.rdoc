@@ -9,6 +9,11 @@ Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 = Features
 
 * Adds Ruby support to Alfred.
+* Adds the following Alfred Workflows:
+  * Pennyworth String Upcase
+  * Pennyworth String Length
+  * Pennyworth String Downcase
+  * Pennyworth String Capitalize
 
 = Requirements
 
@@ -39,9 +44,9 @@ From the command line, type: pennyworth
 
   pennyworth -e, [edit]     # Edit gem settings in default editor (assumes $EDITOR environment variable).
   pennyworth -h, [help]     # Show this message.
-  pennyworth -i, [install]  # Install Alfred Extensions.
+  pennyworth -i, [install]  # Install Alfred Workflows.
   pennyworth -s, [string]   # Manipulate strings.
-  pennyworth -v, [version]  # Show version.
+  pennyworth -v, [version]  # Show version.  
 
 For string options, type: pennyworth help string
 
@@ -54,9 +59,10 @@ While the command line options are nice, the real power comes from running the f
 
   pennyworth -i
 
-...which installs the Alfred Extensions packaged as part of this gem. You can then use the Alfred commands
-provided by each extension rather than use the CLI. Check the documentation of each installed extension (as listed
-in the features list above) for further usage.
+...which installs the Alfred Workflows to support this gem. You can use the Alfred commands
+provided by each workflow instead of the CLI. Check each workflows documentation for details by
+opening Alfred preferences and clicking on the _Workflows_ tab. Each workflow associated with this
+gem is prefixed with _Pennyworth_.
 
 = Tests
 

@@ -46,7 +46,7 @@ module Pennyworth
       end
     end
 
-    desc "-i, [install]", "Install Alfred support files."
+    desc "-i, [install]", "Install Alfred Workflows."
     map "-i" => :install
     def install
       say
