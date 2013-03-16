@@ -65,6 +65,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>script</key>
+				<string>source ~/.bashrc
+pennyworth -s -c {query}
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6F03BAE2-FF35-45AA-9A12-34556B0748AF</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -80,23 +97,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>F03EB975-27A1-49C1-BB1D-42886955C024</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>script</key>
-				<string>source ~/.bashrc
-pennyworth -s -c {query}
-</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6F03BAE2-FF35-45AA-9A12-34556B0748AF</string>
 		</dict>
 	</array>
 	<key>readme</key>
