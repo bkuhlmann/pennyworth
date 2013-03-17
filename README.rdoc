@@ -2,7 +2,7 @@
 
 {<img src="https://badge.fury.io/rb/pennyworth.png" alt="Gem Version" />}[http://badge.fury.io/rb/pennyworth]
 {<img src="https://secure.travis-ci.org/bkuhlmann/pennyworth.png" alt="Travis CI Status" />}[http://travis-ci.org/bkuhlmann/pennyworth]
-{<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/bkuhlmann/pennyworth]
+{<img src="https://codeclimate.com/github/bkuhlmann/pennyworth.png" />}[https://codeclimate.com/github/bkuhlmann/pennyworth]
 
 Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 
