@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "pennyworth"
+require "pry"
 
 RSpec.configure do |config|
   config.filter_run focus: true
