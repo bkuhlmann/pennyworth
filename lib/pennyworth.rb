@@ -1,4 +1,4 @@
 # Dependencies
-require File.join File.dirname(__FILE__), "pennyworth", "version.rb"
-require File.join File.dirname(__FILE__), "pennyworth", "kits", "clipboard.rb"
-require File.join File.dirname(__FILE__), "pennyworth", "kits", "string.rb"
+require "pennyworth/version"
+require "pennyworth/kits/clipboard"
+require "pennyworth/kits/string"
