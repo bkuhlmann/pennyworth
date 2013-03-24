@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe Pennyworth::Kits::Clipboard do  
-  describe "#clip" do
+  describe ".clip" do
     let(:text) {"Well, hello, I am a test string."}
 
     it "answers the same text as supplied" do

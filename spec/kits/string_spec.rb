@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe Pennyworth::Kits::String do
-  describe "#array_to_string" do
+  describe ".array_to_string" do
     it "answers a string with default settings" do
       Pennyworth::Kits::String.array_to_string([1, 2, 3]).should == "1 2 3"
     end
@@ -15,19 +15,19 @@ describe Pennyworth::Kits::String do
     end
   end
 
-  describe "#downcase" do
+  describe ".downcase" do
     it "answers a downcased string"
   end
 
-  describe "#upcase" do
+  describe ".upcase" do
     it "answers an upcased string"
   end
 
-  describe "#capitalize" do
+  describe ".capitalize" do
     it "answers a capitalized string"
   end
 
-  describe "#length" do
+  describe ".length" do
     it "answers the string length"
   end
 end
