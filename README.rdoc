@@ -35,7 +35,7 @@ You can configure common settings for future gem builds by creating the followin
 
 ...using the following settings (for example):
 
-  --- 
+  ---
   :alfred_settings_root: "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
 
 = Usage
@@ -46,7 +46,7 @@ From the command line, type: pennyworth
   pennyworth -h, [help]     # Show this message.
   pennyworth -i, [install]  # Install Alfred Workflows.
   pennyworth -s, [string]   # Manipulate strings.
-  pennyworth -v, [version]  # Show version.  
+  pennyworth -v, [version]  # Show version.
 
 For string options, type: pennyworth help string
 
@@ -71,6 +71,13 @@ To test, do the following:
 1. cd to the gem root.
 2. bundle install
 3. bundle exec rspec spec
+
+= Versioning
+
+Read {Semantic Versioning}[http://semver.org] for details. Briefly, it means:
+* Patch (x.y.Z) - Incremented for small, backwards compatible bug fixes.
+* Minor (x.Y.z) - Incremented for new, backwards compatible public API enhancements and/or bug fixes.
+* Major (X.y.z) - Incremented for any backwards incompatible public API changes.
 
 = Contributions
 
