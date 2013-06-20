@@ -1,4 +1,4 @@
-= v2.0.0
+# v2.0.0
 
 * Upgraded to Ruby 2.0.0.
 * Applied the Code Climate GPA badge to README.
@@ -7,7 +7,7 @@
 * Cleaned up Guard gem dependency requirements.
 * Added 'tmp' directory to .gitignore.
 
-= v1.0.0
+# v1.0.0
 
 * Upgraded to Alfred 2.x.x.
 * Removed Alfred 1.x.x extensions and added Alfred 2.x.x workflows.
@@ -15,7 +15,7 @@
 * Converted/detailed the CONTRIBUTING guidelines per GitHub requirements.
 * Cleaned up the README documentation.
 
-= v0.2.0
+# v0.2.0
 
 * Cleaned up doc.
 * Renamed MacOS X to OSX.
@@ -26,6 +26,6 @@
 * Switched to default editor for edit extensions so that TextMate isn't explicitly called.
 * Fixed spec with call to pbcopy.
 
-= v0.1.0
+# v0.1.0
 
 * Initial version.
