@@ -25,7 +25,12 @@ Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 
 # Setup
 
-Type the following from the command line to install:
+Type the following from the command line to securely install (recommended):
+
+    gem cert --add <(curl -Ls https://raw.github.com/bkuhlmann/pennyworth/master/gem-public.pem)
+    gem install pennyworth -P HighSecurity
+
+...or type the following to insecurely install (not recommended):
 
     gem install pennyworth
 
