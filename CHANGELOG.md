@@ -1,3 +1,19 @@
+# v2.1.0
+
+* Cleaned up requirement path syntax.
+* Cleaned up RSpec spec definitions so that class and instance methods are described properly using . and # notation.
+* Repackaged all Alfred support workflows into a single workflow.
+* Treat symbols and true values by default when running RSpec specs.
+* Added .ruby-version support.
+* Added pry-rescue support.
+* Removed the CHANGELOG documentation from gem install.
+* Updated gemspec to Thor 0.18 and higher.
+* Added a Versioning section to the README.
+* Converted from RDoc to Markdown documentation.
+* Added public cert for secure install of gem.
+* Switched from the pry-debugger to pry-byebug gem.
+* Ignore the signing of a gem when building in a Travis CI environment.
+
 # v2.0.0
 
 * Upgraded to Ruby 2.0.0.
