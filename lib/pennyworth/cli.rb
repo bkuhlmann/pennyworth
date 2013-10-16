@@ -20,8 +20,8 @@ module Pennyworth
       @settings = load_yaml @settings_file
     end
 
-    desc "-s, [string]", "Manipulate strings."
-    map "-s" => :string
+    desc "-s, [string=STRING]", "Manipulate strings."
+    map %w(-s --string) => :string
     method_option :downcase, aliases: "-d", desc: "Downcase a string.", type: :array
     method_option :upcase, aliases: "-u", desc: "Upcase a string.", type: :array
     method_option :capitalize, aliases: "-c", desc: "Capitalize words in a string.", type: :array
@@ -41,10 +41,10 @@ module Pennyworth
     end
 
     desc "-i, [install]", "Install Alfred Workflows."
-    map "-i" => :install
+    map %w(-i --install) => :install
     def install
       say
-      
+
       if valid_file?(@settings[:alfred_settings_root], "Invalid directory for Alfred settings root")
         if yes? "Installing Alfred Workflows will destroy exiting workflows of the same name. Continue (y/n)?"
           info "Installing Alfred Workflows..."
@@ -70,18 +70,19 @@ module Pennyworth
     end
 
     desc "-e, [edit]", "Edit gem settings in default editor (assumes $EDITOR environment variable)."
-    map "-e" => :edit
+    map %w(-e --edit) => :edit
     def edit
       `$EDITOR #{@settings_file}`
     end
 
-    desc "-v, [version]", "Show version."
-    map "-v" => :version
+    desc "-v, [--version]", "Show version."
+    map %w(-v --version) => :version
     def version
       say "Pennyworth " + VERSION
     end
-    
-    desc "-h, [help]", "Show this message."
+
+    desc "-h, [--help=HELP]", "Show this message or get help for a command."
+    map %w(-h --help) => :help
     def help task = nil
       say and super
     end
