@@ -21,7 +21,7 @@ Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 0. [Alfred](http://www.alfredapp.com) (Version 2.x.x or higher).
 0. [Alfred Powerpack](http://www.alfredapp.com/purchase).
 0. [rbenv](https://github.com/sstephenson/rbenv).
-0. [Ruby 2.0.x](http://www.ruby-lang.org).
+0. [Ruby 2.x.x](http://www.ruby-lang.org).
 
 # Setup
 
