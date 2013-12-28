@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pennyworth (2.1.0)
+    pennyworth (2.2.0)
       thor (~> 0.18)
       thor_plus (~> 1.0)
 
