@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.platform							= Gem::Platform::RUBY
   s.author								= "Brooke Kuhlmann"
   s.email									= "brooke@redalchemist.com"
-  s.homepage							= "http://www.redalchemist.com"
+  s.homepage							= "https://github.com/bkuhlmann/pennyworth"
   s.summary								= "Enhances and extends Alfred with Ruby support."
   s.description						= "Enhances and extends Alfred with Ruby support. See the README for further details."
 	s.license								= "MIT"
