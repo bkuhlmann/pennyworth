@@ -4,6 +4,7 @@
 [![Code Climate GPA](https://codeclimate.com/github/bkuhlmann/pennyworth.png)](https://codeclimate.com/github/bkuhlmann/pennyworth)
 [![Gemnasium Status](https://gemnasium.com/bkuhlmann/pennyworth.png)](https://gemnasium.com/bkuhlmann/pennyworth)
 [![Travis CI Status](https://secure.travis-ci.org/bkuhlmann/pennyworth.png)](http://travis-ci.org/bkuhlmann/pennyworth)
+[![Coverage Status](https://coveralls.io/repos/bkuhlmann/pennyworth/badge.png)](https://coveralls.io/r/bkuhlmann/pennyworth)
 
 Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 
