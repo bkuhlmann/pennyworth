@@ -1,3 +1,8 @@
+# v2.3.0
+
+* Updated gemspec homepage URL to use GitHub project URL.
+* Added JRuby and Rubinius VM support.
+
 # v2.2.0
 
 * Fixed long-form commands to use "--" prefix. Example: --example.
