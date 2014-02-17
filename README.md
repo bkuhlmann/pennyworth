@@ -33,7 +33,7 @@ Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 For a secure install, type the following from the command line (recommended):
 
     gem cert --add <(curl -Ls http://www.redalchemist.com/gem-public.pem)
-    gem install pennyworth -P HighSecurity
+    gem install pennyworth --trust-policy HighSecurity
 
 ...or, for an insecure install, type the following (not recommended):
 
