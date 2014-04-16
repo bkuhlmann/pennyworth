@@ -1,3 +1,14 @@
+# v2.4.0
+
+* Updated to MRI 2.1.1.
+* Updated to Rubinius 2.x.x.
+* Updated README with --trust-policy for secure install of gem.
+* Updated RSpec helper to disable GC for all specs in order to improve performance.
+* Added Rails 4.1.x support.
+* Added Thor+ editor support.
+* Added Gemnasium support.
+* Added Coveralls support.
+
 # v2.3.0
 
 * Updated gemspec homepage URL to use GitHub project URL.
