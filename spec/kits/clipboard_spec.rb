@@ -5,8 +5,8 @@ describe Pennyworth::Kits::Clipboard do
     let(:text) {"Well, hello, I am a test string."}
 
     it "answers the same text as supplied" do
-      Pennyworth::Kits::Clipboard.should_receive("copy").and_return(@text)
-      Pennyworth::Kits::Clipboard.copy(@text).should == @text
+      expect(Pennyworth::Kits::Clipboard).to receive("copy").and_return(@text)
+      expect(Pennyworth::Kits::Clipboard.copy(@text)).to eq(@text)
     end
 
     it "raises an ArgumentError when parameter is missing" do
