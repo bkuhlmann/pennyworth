@@ -5,6 +5,7 @@
 [![Gemnasium Status](https://gemnasium.com/bkuhlmann/pennyworth.png)](https://gemnasium.com/bkuhlmann/pennyworth)
 [![Travis CI Status](https://secure.travis-ci.org/bkuhlmann/pennyworth.png)](http://travis-ci.org/bkuhlmann/pennyworth)
 [![Coverage Status](https://coveralls.io/repos/bkuhlmann/pennyworth/badge.png)](https://coveralls.io/r/bkuhlmann/pennyworth)
+[![Gittip](http://img.shields.io/gittip/bkuhlmann.svg)](https://www.gittip.com/bkuhlmann)
 
 Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 
