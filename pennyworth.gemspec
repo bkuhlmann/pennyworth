@@ -11,15 +11,15 @@ def add_security_key specification, method, files
 end
 
 Gem::Specification.new do |s|
-  s.name									= "pennyworth"
-  s.version								= Pennyworth::VERSION
-  s.platform							= Gem::Platform::RUBY
-  s.author								= "Brooke Kuhlmann"
-  s.email									= "brooke@redalchemist.com"
-  s.homepage							= "https://github.com/bkuhlmann/pennyworth"
-  s.summary								= "Enhances and extends Alfred with Ruby support."
-  s.description						= "Enhances and extends Alfred with Ruby support. See the README for further details."
-	s.license								= "MIT"
+  s.name                  = "pennyworth"
+  s.version               = Pennyworth::VERSION
+  s.platform              = Gem::Platform::RUBY
+  s.authors               = ["Brooke Kuhlmann"]
+  s.email                 = ["brooke@redalchemist.com"]
+  s.homepage              = "https://github.com/bkuhlmann/pennyworth"
+  s.summary               = "Enhances and extends Alfred with Ruby support."
+  s.description           = "Enhances and extends Alfred with Ruby support. See the README for further details."
+  s.license               = "MIT"
 
   add_security_key s, "signing_key", File.expand_path("~/.ssh/gem-private.pem")
   add_security_key s, "cert_chain", [File.expand_path("~/.ssh/gem-public.pem")]
