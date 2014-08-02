@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>D00FF9D7-4976-488B-AC15-4F268B0FE089</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Brooke Kuhlmann</string>
+	<key>description</key>
+	<string>A collection of Ruby on Rails shortcuts.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Ruby on Rails Kit</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>ror</string>
+				<key>runningsubtext</key>
+				<string>Launching default browser...</string>
+				<key>script</key>
+				<string>#!/usr/bin/ruby -w
+
+root_url = "http://localhost:3000" 
+
+case "{query}"
+  when 'l'
+	`open #{root_url}`
+  when 'r'
+	`open #{root_url}/rails/routes`
+  when 'm'
+	`open #{root_url}/rails/mailers`
+  else
+    `open #{root_url}`
+end
+</string>
+				<key>subtext</key>
+				<string>Open local Rails endpoint in default browser.</string>
+				<key>title</key>
+				<string>Ruby on Rails</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D00FF9D7-4976-488B-AC15-4F268B0FE089</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Copyright © 2014 Alchemists.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
+	<key>uidata</key>
+	<dict>
+		<key>D00FF9D7-4976-488B-AC15-4F268B0FE089</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://www.alchemists.io</string>
+</dict>
+</plist>

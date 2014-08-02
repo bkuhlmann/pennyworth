@@ -12,7 +12,10 @@ GEM_WORKFLOW_ROOT = File.join(File.dirname(__FILE__), "..", "lib", "pennyworth",
 ALFRED_SETTINGS_ROOT = "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
 ALFRED_WORKFLOW_ROOT = "#{ALFRED_SETTINGS_ROOT}/workflows"
 
-WORKFLOWS = ["user.workflow.C431E56A-0EC2-47EE-94D5-D67D9FE323BE"]
+WORKFLOWS = [
+  "user.workflow.C431E56A-0EC2-47EE-94D5-D67D9FE323BE",
+  "user.workflow.B59B22A2-1880-4765-9358-412791BE9202"
+]
 
 # Package helper method that packages Alfred source folders for distribution.
 # ==== Parameters
