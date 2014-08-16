@@ -1,10 +1,10 @@
-# v2.5.0
+# v2.5.0 (2014-07-06)
 
 * Added Code Climate test coverage support.
 * Updated to Ruby 2.1.2.
 * Updated gem-public.pem for gem install certificate chain.
 
-# v2.4.0
+# v2.4.0 (2014-04-16)
 
 * Updated to MRI 2.1.1.
 * Updated to Rubinius 2.x.x.
@@ -15,12 +15,12 @@
 * Added Gemnasium support.
 * Added Coveralls support.
 
-# v2.3.0
+# v2.3.0 (2014-02-15)
 
 * Updated gemspec homepage URL to use GitHub project URL.
 * Added JRuby and Rubinius VM support.
 
-# v2.2.0
+# v2.2.0 (2013-12-28)
 
 * Fixed long-form commands to use "--" prefix. Example: --example.
 * Fixed Ruby Gem certificate requirements for package building.
@@ -31,7 +31,7 @@
 * Updated to Ruby 2.1.0.
 * Updated public gem certificate to be referenced from a central server.
 
-# v2.1.0
+# v2.1.0 (2013-08-13)
 
 * Cleaned up requirement path syntax.
 * Cleaned up RSpec spec definitions so that class and instance methods are described properly using . and # notation.
@@ -47,7 +47,7 @@
 * Switched from the pry-debugger to pry-byebug gem.
 * Ignore the signing of a gem when building in a Travis CI environment.
 
-# v2.0.0
+# v2.0.0 (2013-03-17)
 
 * Upgraded to Ruby 2.0.0.
 * Applied the Code Climate GPA badge to README.
@@ -56,7 +56,7 @@
 * Cleaned up Guard gem dependency requirements.
 * Added 'tmp' directory to .gitignore.
 
-# v1.0.0
+# v1.0.0 (2013-03-16)
 
 * Upgraded to Alfred 2.x.x.
 * Removed Alfred 1.x.x extensions and added Alfred 2.x.x workflows.
@@ -64,7 +64,7 @@
 * Converted/detailed the CONTRIBUTING guidelines per GitHub requirements.
 * Cleaned up the README documentation.
 
-# v0.2.0
+# v0.2.0 (2012-05-19)
 
 * Cleaned up doc.
 * Renamed MacOS X to OSX.
@@ -75,6 +75,6 @@
 * Switched to default editor for edit extensions so that TextMate isn't explicitly called.
 * Fixed spec with call to pbcopy.
 
-# v0.1.0
+# v0.1.0 (2012-03-18)
 
 * Initial version.
