@@ -11,12 +11,12 @@ Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 
 # Features
 
-* Adds Ruby support to Alfred.
-* Adds the following Alfred Workflows:
-    * Pennyworth String Upcase
-    * Pennyworth String Length
-    * Pennyworth String Downcase
-    * Pennyworth String Capitalize
+- Adds Ruby support to Alfred.
+- Adds the following Alfred Workflows:
+    - Pennyworth String Upcase
+    - Pennyworth String Length
+    - Pennyworth String Downcase
+    - Pennyworth String Capitalize
 
 # Requirements
 
@@ -25,9 +25,9 @@ Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 0. [Alfred Powerpack](http://www.alfredapp.com/purchase).
 0. [rbenv](https://github.com/sstephenson/rbenv).
 0. Any of the following Ruby VMs:
-    * [MRI 2.x.x](http://www.ruby-lang.org)
-    * [JRuby 1.x.x](http://jruby.org)
-    * [Rubinius 2.x.x](http://rubini.us)
+    - [MRI 2.x.x](http://www.ruby-lang.org)
+    - [JRuby 1.x.x](http://jruby.org)
+    - [Rubinius 2.x.x](http://rubini.us)
 
 # Setup
 
@@ -88,9 +88,9 @@ To test, run:
 
 Read [Semantic Versioning](http://semver.org) for details. Briefly, it means:
 
-* Patch (x.y.Z) - Incremented for small, backwards compatible bug fixes.
-* Minor (x.Y.z) - Incremented for new, backwards compatible public API enhancements and/or bug fixes.
-* Major (X.y.z) - Incremented for any backwards incompatible public API changes.
+- Patch (x.y.Z) - Incremented for small, backwards compatible bug fixes.
+- Minor (x.Y.z) - Incremented for new, backwards compatible public API enhancements and/or bug fixes.
+- Major (X.y.z) - Incremented for any backwards incompatible public API changes.
 
 # Contributions
 
