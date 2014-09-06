@@ -1,6 +1,10 @@
 require "bundler/setup"
-require "codeclimate-test-reporter"
-CodeClimate::TestReporter.start
+
+if ENV["CODECLIMATE_REPO_TOKEN"]
+  require "codeclimate-test-reporter"
+  CodeClimate::TestReporter.start
+end
+
 require "pennyworth"
 require "pry"
 require "pry-remote"
