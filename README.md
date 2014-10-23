@@ -17,6 +17,7 @@ Enhances and extends Alfred by providing a Ruby command line interface (CLI).
     - Pennyworth String Length
     - Pennyworth String Downcase
     - Pennyworth String Capitalize
+    - Ruby on Rails Kit
 
 # Requirements
 

@@ -1,3 +1,14 @@
+# v2.6.0 (2014-10-22)
+
+- Updated to Ruby 2.1.3.
+- Updated to Rubinius 2.2.10.
+- Updated gemspec to add security keys unless in a CI environment.
+- Updated Code Climate to run only if environment variable is present.
+- Added author and email arrays to gemspec.
+- Added the Ruby on Rails workflow.
+- Added the Guard Terminal Notifier gem.
+- Refactored RSpec configuration, support, and kit folders.
+
 # v2.5.0 (2014-07-06)
 
 - Added Code Climate test coverage support.
