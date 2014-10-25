@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.version               = Pennyworth::VERSION
   spec.platform              = Gem::Platform::RUBY
   spec.authors               = ["Brooke Kuhlmann"]
-  spec.email                 = ["bkuhlmann@alchemists.io"]
+  spec.email                 = ["brooke@alchemists.io"]
   spec.homepage              = "https://github.com/bkuhlmann/pennyworth"
   spec.summary               = "Enhances and extends Alfred with Ruby support."
   spec.description           = "Enhances and extends Alfred with Ruby support. See the README for further detailspec."
