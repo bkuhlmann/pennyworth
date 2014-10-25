@@ -440,6 +440,6 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>http://www.alchemists.io</string>
+	<string>https://www.alchemists.io</string>
 </dict>
 </plist>

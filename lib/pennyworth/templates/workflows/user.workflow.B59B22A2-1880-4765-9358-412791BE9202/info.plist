@@ -35,7 +35,7 @@
 				<key>script</key>
 				<string>#!/usr/bin/ruby -w
 
-root_url = "http://localhost:3000" 
+root_url = "http://localhost:3000"
 
 case "{query}"
   when 'l'
@@ -82,6 +82,6 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>http://www.alchemists.io</string>
+	<string>https://www.alchemists.io</string>
 </dict>
 </plist>
