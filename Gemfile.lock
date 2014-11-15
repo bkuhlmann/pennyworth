@@ -37,7 +37,7 @@ GEM
       rspec (>= 2.14, < 4.0)
     hitimes (1.2.2)
     interception (0.5)
-    listen (2.7.11)
+    listen (2.8.0)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
