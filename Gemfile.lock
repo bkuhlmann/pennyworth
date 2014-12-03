@@ -82,6 +82,7 @@ GEM
       simplecov-html (~> 0.8.0)
     simplecov-html (0.8.0)
     slop (3.6.0)
+    terminal-notifier (1.6.2)
     terminal-notifier-guard (1.6.4)
     thor (0.19.1)
     thor_plus (1.7.0)
@@ -104,4 +105,5 @@ DEPENDENCIES
   rake (~> 10.0)
   rb-fsevent
   rspec
+  terminal-notifier
   terminal-notifier-guard
