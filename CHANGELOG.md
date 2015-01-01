@@ -1,3 +1,11 @@
+# v3.0.0 (2015-01-01)
+
+- Removed Ruby 2.0.0 support.
+- Removed Rubinius support.
+- Updated gemspec to use RUBY_GEM_SECURITY env var for gem certs.
+- Updated to Thor+ 2.x.x.
+- Added Ruby 2.2.0 support.
+
 # v2.6.0 (2014-10-22)
 
 - Updated to Ruby 2.1.3.

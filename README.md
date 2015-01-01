@@ -28,7 +28,6 @@ Enhances and extends Alfred by providing a Ruby command line interface (CLI).
 0. Any of the following Ruby VMs:
     - [MRI 2.x.x](http://www.ruby-lang.org)
     - [JRuby 1.x.x](http://jruby.org)
-    - [Rubinius 2.x.x](http://rubini.us)
 
 # Setup
 
