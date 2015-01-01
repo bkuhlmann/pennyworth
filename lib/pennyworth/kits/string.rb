@@ -5,7 +5,7 @@ module Pennyworth
       # Builds a string from an array.
       # ==== Parameters
       # * +array+ - Required. The array to build a string from.
-      # * +delimiter+ - Optional. The delimiter used to join each array element. Default: ' ' 
+      # * +delimiter+ - Optional. The delimiter used to join each array element. Default: ' '
       def self.array_to_string array, delimiter = ' '
         array * delimiter
       end
@@ -18,7 +18,7 @@ module Pennyworth
         puts Pennyworth::Kits::Clipboard.copy(string.downcase)
       end
 
-      # Converts and outputs a string array as an upcased string. 
+      # Converts and outputs a string array as an upcased string.
       # ==== Parameters
       # * +array+ - Required. The string array to process.
       def self.upcase array
@@ -26,7 +26,7 @@ module Pennyworth
         puts Pennyworth::Kits::Clipboard.copy(string.upcase)
       end
 
-      # Converts and outputs a string array as a capitalized string. 
+      # Converts and outputs a string array as a capitalized string.
       # ==== Parameters
       # * +array+ - Required. The string array to process.
       def self.capitalize array
@@ -35,7 +35,7 @@ module Pennyworth
         puts Pennyworth::Kits::Clipboard.copy(words)
       end
 
-      # Converts a string array to a single string and outputs the string length. 
+      # Converts a string array to a single string and outputs the string length.
       # ==== Parameters
       # * +array+ - Required. The string array to process.
       def self.length array

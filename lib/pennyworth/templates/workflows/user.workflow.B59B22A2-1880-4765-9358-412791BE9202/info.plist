@@ -35,7 +35,7 @@
 				<key>script</key>
 				<string>#!/usr/bin/ruby -w
 
-root_url = "http://localhost:3000"
+root_url = "http://localhost:3000" 
 
 case "{query}"
   when 'l'
@@ -44,6 +44,10 @@ case "{query}"
 	`open #{root_url}/rails/routes`
   when 'm'
 	`open #{root_url}/rails/mailers`
+  when 'f'
+	`open #{root_url}?pp=flamegraph`
+  when 'p'
+	`open #{root_url}?pp=profile-gc-ruby-head`
   else
     `open #{root_url}`
 end
