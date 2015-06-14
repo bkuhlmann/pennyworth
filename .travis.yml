@@ -2,7 +2,6 @@ language: ruby
 env:
   global:
     - secure: SfWwycoghSoXOm/dYZQd1i7Sak/CvR0zmQAdFIzW7wF1U/D79pxFrALdkqZaa6eyMsv8eKBoPRxAjdw1OginSWFTzYj4YfDcACb7e/AJTnj84qNa3NgLOKZov3/YgwZKR28eiouBsbvtkK+ow32IDZiERnObAOzUriS8VK2hxbU=
-    - JRUBY_OPTS=--2.0
 rvm:
 - 2.1.0
 - 2.2.0
