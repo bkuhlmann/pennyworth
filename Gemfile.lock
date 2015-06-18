@@ -40,7 +40,7 @@ GEM
     hitimes (1.2.2)
     interception (0.5)
     json (1.8.3)
-    listen (2.10.0)
+    listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -117,4 +117,4 @@ DEPENDENCIES
   terminal-notifier-guard
 
 BUNDLED WITH
-   1.10.3
+   1.10.4
