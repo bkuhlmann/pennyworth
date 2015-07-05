@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    pennyworth (3.0.0)
+    pennyworth (3.1.0)
       thor (~> 0.19)
-      thor_plus (~> 2.0)
+      thor_plus (~> 2.1)
 
 GEM
   remote: https://rubygems.org/
@@ -89,7 +89,7 @@ GEM
     terminal-notifier (1.6.3)
     terminal-notifier-guard (1.6.4)
     thor (0.19.1)
-    thor_plus (2.0.0)
+    thor_plus (2.1.0)
       thor (~> 0.19)
 
 PLATFORMS
