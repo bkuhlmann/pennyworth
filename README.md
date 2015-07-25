@@ -1,4 +1,4 @@
-# Overview
+# Pennyworth
 
 [![Gem Version](https://badge.fury.io/rb/pennyworth.png)](http://badge.fury.io/rb/pennyworth)
 [![Code Climate GPA](https://codeclimate.com/github/bkuhlmann/pennyworth.png)](https://codeclimate.com/github/bkuhlmann/pennyworth)
