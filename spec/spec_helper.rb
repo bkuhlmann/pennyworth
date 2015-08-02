@@ -8,6 +8,7 @@ end
 require "pennyworth"
 require "pry"
 require "pry-byebug"
+require "pry-state"
 require "pry-stack_explorer"
 require "pry-remote"
 require "pry-rescue"
