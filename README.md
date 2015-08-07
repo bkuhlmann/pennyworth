@@ -1,6 +1,6 @@
 # Pennyworth
 
-[![Gem Version](https://badge.fury.io/rb/pennyworth.png)](http://badge.fury.io/rb/pennyworth)
+[![Gem Version](https://badge.fury.io/rb/pennyworth.svg)](http://badge.fury.io/rb/pennyworth)
 [![Code Climate GPA](https://codeclimate.com/github/bkuhlmann/pennyworth.png)](https://codeclimate.com/github/bkuhlmann/pennyworth)
 [![Code Climate Coverage](https://codeclimate.com/github/bkuhlmann/pennyworth/coverage.png)](https://codeclimate.com/github/bkuhlmann/pennyworth)
 [![Gemnasium Status](https://gemnasium.com/bkuhlmann/pennyworth.png)](https://gemnasium.com/bkuhlmann/pennyworth)
