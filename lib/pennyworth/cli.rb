@@ -8,7 +8,7 @@ module Pennyworth
     include Thor::Actions
     include ThorPlus::Actions
 
-    package_name Pennyworth::Identity.label
+    package_name Pennyworth::Identity.version_label
 
     # Overwrites the Thor template source root.
     def self.source_root
@@ -80,7 +80,7 @@ module Pennyworth
     desc "-v, [--version]", "Show version."
     map %w(-v --version) => :version
     def version
-      say Pennyworth::Identity.label_version
+      say Pennyworth::Identity.version_label
     end
 
     desc "-h, [--help=HELP]", "Show this message or get help for a command."
