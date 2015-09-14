@@ -77,7 +77,7 @@ module Pennyworth
       `#{editor} #{@settings_file}`
     end
 
-    desc "-v, [--version]", "Show version."
+    desc "-v, [--version]", "Show #{Pennyworth::Identity.label} version."
     map %w(-v --version) => :version
     def version
       say Pennyworth::Identity.version_label
