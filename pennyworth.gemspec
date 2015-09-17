@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors               = ["Brooke Kuhlmann"]
   spec.email                 = ["brooke@alchemists.io"]
   spec.homepage              = "https://github.com/bkuhlmann/pennyworth"
-  spec.summary               = "Enhances and extends Alfred with Ruby support."
-  spec.description           = "Enhances and extends Alfred with Ruby support. See the README for further detailspec."
+  spec.summary               = "A command line interface that enhances and extends Alfred with Ruby support."
+  spec.description           = "A command line interface that enhances and extends Alfred with Ruby support."
   spec.license               = "MIT"
 
   if ENV["RUBY_GEM_SECURITY"] == "enabled"

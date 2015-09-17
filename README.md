@@ -6,7 +6,7 @@
 [![Gemnasium Status](https://gemnasium.com/bkuhlmann/pennyworth.svg)](https://gemnasium.com/bkuhlmann/pennyworth)
 [![Travis CI Status](https://secure.travis-ci.org/bkuhlmann/pennyworth.svg)](http://travis-ci.org/bkuhlmann/pennyworth)
 
-Enhances and extends Alfred by providing a Ruby command line interface (CLI).
+A command line interface that enhances and extends Alfred with Ruby support.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
