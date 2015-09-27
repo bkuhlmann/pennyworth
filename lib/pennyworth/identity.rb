@@ -1,4 +1,5 @@
 module Pennyworth
+  # Gem identity information.
   module Identity
     def self.name
       "pennyworth"
