@@ -7,11 +7,11 @@ describe Pennyworth::Kits::String do
     end
 
     it "answers a string with a custom delimiter" do
-      expect(Pennyworth::Kits::String.array_to_string(%w(one two three), '-')).to eq("one-two-three")
+      expect(Pennyworth::Kits::String.array_to_string(%w(one two three), "-")).to eq("one-two-three")
     end
 
     it "raises an ArgumentError when array parameter is missing" do
-      expect{Pennyworth::Kits::String.array_to_string}.to raise_error(ArgumentError)
+      expect { Pennyworth::Kits::String.array_to_string }.to raise_error(ArgumentError)
     end
   end
 

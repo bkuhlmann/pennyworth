@@ -6,7 +6,7 @@ module Pennyworth
       # ==== Parameters
       # * +array+ - Required. The array to build a string from.
       # * +delimiter+ - Optional. The delimiter used to join each array element. Default: ' '
-      def self.array_to_string array, delimiter = ' '
+      def self.array_to_string array, delimiter = " "
         array * delimiter
       end
 
@@ -30,7 +30,7 @@ module Pennyworth
       # ==== Parameters
       # * +array+ - Required. The string array to process.
       def self.capitalize array
-        words = array.map {|word| word.capitalize}
+        words = array.map(&:capitalize)
         words = Pennyworth::Kits::String.array_to_string words
         puts Pennyworth::Kits::Clipboard.copy(words)
       end

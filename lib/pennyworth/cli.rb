@@ -4,6 +4,7 @@ require "thor/actions"
 require "thor_plus/actions"
 
 module Pennyworth
+  # The Command Line Interface (CLI) for the gem.
   class CLI < Thor
     include Thor::Actions
     include ThorPlus::Actions
@@ -30,15 +31,15 @@ module Pennyworth
     method_option :length, aliases: "-l", desc: "Answer the length of a string.", type: :array
     def string
       case
-      when options[:downcase]
-        Pennyworth::Kits::String.downcase options[:downcase]
-      when options[:upcase]
-        Pennyworth::Kits::String.upcase options[:upcase]
-      when options[:capitalize]
-        Pennyworth::Kits::String.capitalize options[:capitalize]
-      when options[:length]
-        Pennyworth::Kits::String.length options[:length]
-      else say("Type 'pennyworth help string' for usage.")
+        when options[:downcase]
+          Pennyworth::Kits::String.downcase options[:downcase]
+        when options[:upcase]
+          Pennyworth::Kits::String.upcase options[:upcase]
+        when options[:capitalize]
+          Pennyworth::Kits::String.capitalize options[:capitalize]
+        when options[:length]
+          Pennyworth::Kits::String.length options[:length]
+        else say("Type 'pennyworth help string' for usage.")
       end
     end
 

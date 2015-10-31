@@ -1,0 +1,6 @@
+Metrics/AbcSize:
+  Exclude:
+    - "lib/pennyworth/cli.rb"
+Metrics/MethodLength:
+  Exclude:
+    - "lib/pennyworth/cli.rb"
