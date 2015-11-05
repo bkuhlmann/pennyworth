@@ -14,7 +14,7 @@ module Pennyworth
     end
 
     def self.version_label
-      [label, version].join " "
+      "#{label} #{version}"
     end
 
     def self.file_name
