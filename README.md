@@ -98,7 +98,7 @@ gem is prefixed with _Pennyworth_.
 
 To test, run:
 
-    bundle exec rspec spec
+    bundle exec rake
 
 # Versioning
 
