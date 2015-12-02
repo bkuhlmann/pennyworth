@@ -4,7 +4,7 @@
 [![Code Climate GPA](https://codeclimate.com/github/bkuhlmann/pennyworth.svg)](https://codeclimate.com/github/bkuhlmann/pennyworth)
 [![Code Climate Coverage](https://codeclimate.com/github/bkuhlmann/pennyworth/coverage.svg)](https://codeclimate.com/github/bkuhlmann/pennyworth)
 [![Gemnasium Status](https://gemnasium.com/bkuhlmann/pennyworth.svg)](https://gemnasium.com/bkuhlmann/pennyworth)
-[![Travis CI Status](https://secure.travis-ci.org/bkuhlmann/pennyworth.svg)](http://travis-ci.org/bkuhlmann/pennyworth)
+[![Travis CI Status](https://secure.travis-ci.org/bkuhlmann/pennyworth.svg)](https://travis-ci.org/bkuhlmann/pennyworth)
 [![Patreon](https://img.shields.io/badge/patreon-donate-brightgreen.svg)](https://www.patreon.com/bkuhlmann)
 
 A command line interface that enhances and extends Alfred with Ruby support.
@@ -39,11 +39,11 @@ A command line interface that enhances and extends Alfred with Ruby support.
 
 # Requirements
 
-0. [OSX](http://www.apple.com/osx).
-0. [Alfred](http://www.alfredapp.com) (Version 2.x.x or higher).
-0. [Alfred Powerpack](http://www.alfredapp.com/purchase).
+0. [OSX](https://www.apple.com/osx).
+0. [Alfred](https://www.alfredapp.com) (Version 2.x.x or higher).
+0. [Alfred Powerpack](https://www.alfredapp.com/purchase).
 0. [rbenv](https://github.com/sstephenson/rbenv).
-0. [MRI 2.x.x](http://www.ruby-lang.org).
+0. [MRI 2.x.x](https://www.ruby-lang.org).
 
 # Setup
 
