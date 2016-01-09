@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Pennyworth::Kits::Clipboard do
+RSpec.describe Pennyworth::Kits::Clipboard do
   describe ".clip" do
     let(:text) { "Well, hello, I am a test string." }
 

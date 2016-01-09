@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Pennyworth::Kits::String do
+RSpec.describe Pennyworth::Kits::String do
   describe ".array_to_string" do
     it "answers a string with default settings" do
       expect(Pennyworth::Kits::String.array_to_string([1, 2, 3])).to eq("1 2 3")
