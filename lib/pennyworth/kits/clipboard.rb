@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Pennyworth
   module Kits
     # Provides OSX clipboard utility methods.

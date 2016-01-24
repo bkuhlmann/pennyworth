@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Overview
 # This script packages Alfred support files for gem distribution. Not meant for distribution.
 
@@ -9,13 +11,13 @@ require "fileutils"
 
 # Settings
 GEM_WORKFLOW_ROOT = File.join(File.dirname(__FILE__), "..", "lib", "pennyworth", "templates", "workflows")
-ALFRED_SETTINGS_ROOT = "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
-ALFRED_WORKFLOW_ROOT = "#{ALFRED_SETTINGS_ROOT}/workflows"
+ALFRED_SETTINGS_ROOT = "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences".freeze
+ALFRED_WORKFLOW_ROOT = "#{ALFRED_SETTINGS_ROOT}/workflows".freeze
 
 WORKFLOWS = [
   "user.workflow.C431E56A-0EC2-47EE-94D5-D67D9FE323BE",
   "user.workflow.B59B22A2-1880-4765-9358-412791BE9202"
-]
+].freeze
 
 # Package helper method that packages Alfred source folders for distribution.
 # ==== Parameters
