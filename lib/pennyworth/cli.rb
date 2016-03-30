@@ -21,7 +21,7 @@ module Pennyworth
     # Initialize.
     def initialize args = [], options = {}, config = {}
       super args, options, config
-      @settings_file = File.join ENV["HOME"], ".pennyworth", "settings.yml"
+      @settings_file = File.join ENV["HOME"], Identity.file_name
       @settings = load_yaml @settings_file
     end
 
