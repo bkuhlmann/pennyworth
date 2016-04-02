@@ -25,8 +25,8 @@ module Pennyworth
       @settings = load_yaml @settings_file
     end
 
-    desc "-s, [string=STRING]", "Manipulate strings."
-    map %w[-s --string] => :string
+    desc "-s, [--string=STRING]", "Manipulate strings."
+    map %w(-s --string) => :string
     method_option :downcase, aliases: "-d", desc: "Downcase a string.", type: :array
     method_option :upcase, aliases: "-u", desc: "Upcase a string.", type: :array
     method_option :capitalize, aliases: "-c", desc: "Capitalize words in a string.", type: :array
@@ -44,8 +44,8 @@ module Pennyworth
       end
     end
 
-    desc "-i, [install]", "Install Alfred Workflows."
-    map %w[-i --install] => :install
+    desc "-i, [--install]", "Install Alfred Workflows."
+    map %w(-i --install) => :install
     def install
       say
 
