@@ -73,14 +73,14 @@ module Pennyworth
       say
     end
 
-    desc "-e, [--edit]", "Edit #{Pennyworth::Identity.label} settings in default editor."
-    map %w[-e --edit] => :edit
+    desc "-e, [--edit]", "Edit gem settings in default editor."
+    map %w(-e --edit) => :edit
     def edit
       `#{editor} #{@settings_file}`
     end
 
-    desc "-v, [--version]", "Show #{Pennyworth::Identity.label} version."
-    map %w[-v --version] => :version
+    desc "-v, [--version]", "Show gem version."
+    map %w(-v --version) => :version
     def version
       say Pennyworth::Identity.version_label
     end
