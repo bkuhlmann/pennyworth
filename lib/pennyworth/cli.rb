@@ -26,7 +26,7 @@ module Pennyworth
     end
 
     desc "-s, [string=STRING]", "Manipulate strings."
-    map %w(-s --string) => :string
+    map %w[-s --string] => :string
     method_option :downcase, aliases: "-d", desc: "Downcase a string.", type: :array
     method_option :upcase, aliases: "-u", desc: "Upcase a string.", type: :array
     method_option :capitalize, aliases: "-c", desc: "Capitalize words in a string.", type: :array
@@ -46,7 +46,7 @@ module Pennyworth
     end
 
     desc "-i, [install]", "Install Alfred Workflows."
-    map %w(-i --install) => :install
+    map %w[-i --install] => :install
     def install
       say
 
@@ -75,21 +75,21 @@ module Pennyworth
     end
 
     desc "-e, [--edit]", "Edit #{Pennyworth::Identity.label} settings in default editor."
-    map %w(-e --edit) => :edit
+    map %w[-e --edit] => :edit
     def edit
       `#{editor} #{@settings_file}`
     end
 
     desc "-v, [--version]", "Show #{Pennyworth::Identity.label} version."
-    map %w(-v --version) => :version
+    map %w[-v --version] => :version
     def version
       say Pennyworth::Identity.version_label
     end
 
     desc "-h, [--help=HELP]", "Show this message or get help for a command."
-    map %w(-h --help) => :help
+    map %w[-h --help] => :help
     def help task = nil
-      say && super
+      say and super
     end
   end
 end

@@ -1,5 +1,7 @@
 inherit_from: .rubocop_todo.yml
 
+Style/AndOr:
+  EnforcedStyle: conditionals
 Style/CaseIndentation:
   IndentOneStep: true
 Style/MethodDefParentheses:
@@ -8,6 +10,10 @@ Style/NumericLiterals:
   Enabled: false
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
+    "%w": "[]"
+    "%W": "[]"
+    "%i": "[]"
+    "%I": "[]"
     "%r": "()"
 Style/SignalException:
   EnforcedStyle: semantic
