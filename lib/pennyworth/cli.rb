@@ -13,12 +13,10 @@ module Pennyworth
 
     package_name Pennyworth::Identity.version_label
 
-    # Overwrites the Thor template source root.
     def self.source_root
       File.expand_path File.join(File.dirname(__FILE__), "templates")
     end
 
-    # Initialize.
     def initialize args = [], options = {}, config = {}
       super args, options, config
       @settings_file = File.join ENV["HOME"], Identity.file_name
