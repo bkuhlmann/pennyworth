@@ -8,6 +8,17 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>8B48DD29-7E4B-4424-8B8E-18F47785F817</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A3A3916E-1338-4403-BA88-39E4D9E1B703</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>D00FF9D7-4976-488B-AC15-4F268B0FE089</key>
 		<array/>
 	</dict>
@@ -30,8 +41,16 @@
 				<integer>127</integer>
 				<key>keyword</key>
 				<string>ror</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Launching default browser...</string>
+				<string>Processing...</string>
 				<key>script</key>
 				<string>#!/usr/bin/ruby -w
 
@@ -44,12 +63,12 @@ case "{query}"
 	`open #{root_url}/rails/routes`
   when 'm'
 	`open #{root_url}/rails/mailers`
-  when 'f'
-	`open #{root_url}?pp=flamegraph`
-  when 'p'
-	`open #{root_url}?pp=profile-gc-ruby-head`
-  else
-    `open #{root_url}`
+  when 'q'
+	`open #{root_url}/sidekiq`
+  when 'j'
+    `open http://localhost:8888`
+  when 'e'
+    `open http://localhost:9200/_plugin/kopf`
 end
 </string>
 				<key>subtext</key>
@@ -68,6 +87,134 @@ end
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>rorp</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Getting Rack Mini-Profiler options...</string>
+				<key>script</key>
+				<string>#!/bin/bash
+
+root_url="http://localhost:3000"
+
+cat &lt;&lt; EOB
+  &lt;?xml version="1.0"?&gt;
+  &lt;items&gt;
+    &lt;item uid="env" arg="$root_url?pp=env" valid="YES" type="default"&gt;
+      &lt;title&gt;Display Rack Environment&lt;/title&gt;
+      &lt;subtitle&gt;Display the current Rack environment.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="skip" arg="$root_url?pp=skip" valid="YES" type="default"&gt;
+      &lt;title&gt;Skip This Request&lt;/title&gt;
+      &lt;subtitle&gt;Skip profiling for this request only.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="full-backtrace" arg="$root_url?pp=full-backtrace" valid="YES" type="default"&gt;
+      &lt;title&gt;Enable Full Backtraces&lt;/title&gt;
+      &lt;subtitle&gt;Enable full backtraces for SQL executed. Sticky. Use Normal Backtraces, to disable.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="normal-backtrace" arg="$root_url?pp=normal-backtrace" valid="YES" type="default"&gt;
+      &lt;title&gt;Enable Normal Backtraces&lt;/title&gt;
+      &lt;subtitle&gt;Collect stack traces from all the SQL executed and filter normally.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="disable-backtrace" arg="$root_url?pp=no-backtrace" valid="YES"  type="default"&gt;
+      &lt;title&gt;Disable Backtraces&lt;/title&gt;
+      &lt;subtitle&gt;Don\'t collect stack traces from the SQL executed. Sticky. Use Normal Backtraces, to enable.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="enable" arg="$root_url?pp=enable" valid="YES" type="default"&gt;
+      &lt;title&gt;Enable Profiling&lt;/title&gt;
+      &lt;subtitle&gt;Enable profiling for this session.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="disable" arg="$root_url?pp=disable" valid="YES" type="default"&gt;
+      &lt;title&gt;Disable Profiling&lt;/title&gt;
+      &lt;subtitle&gt;Disable profiling for this session.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="gc" arg="$root_url?pp=profile-gc-ruby-head" valid="YES" type="default"&gt;
+      &lt;title&gt;Profile Garbage Collection&lt;/title&gt;
+      &lt;subtitle&gt;Profile garbage collection.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="flamegraph" arg="$root_url?pp=flamegraph" valid="YES" type="default"&gt;
+      &lt;title&gt;Display Flamegraph&lt;/title&gt;
+      &lt;subtitle&gt;Displays graph representing sampled activity.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="flamegraph-embedded" arg="$root_url?pp=flamegraph_embed" valid="YES" type="default"&gt;
+      &lt;title&gt;Display Embedded Flamegraph&lt;/title&gt;
+      &lt;subtitle&gt;Displays a graph representing sampled activity, embedded resources for use on an intranet.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="trace-exceptions" arg="$root_url?pp=trace-exceptions" valid="YES" type="default"&gt;
+      &lt;title&gt;Trace Exceptions&lt;/title&gt;
+      &lt;subtitle&gt;Answers all the spots where application raises execptions.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="analyze-memory" arg="$root_url?pp=analyze-memory" valid="YES" type="default"&gt;
+      &lt;title&gt;Analyze Memory&lt;/title&gt;
+      &lt;subtitle&gt;Perform basic memory analysis of heap.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="help" arg="$root_url?pp=help" valid="YES" type="default"&gt;
+      &lt;title&gt;Display Help&lt;/title&gt;
+      &lt;subtitle&gt;Display all possible options.&lt;/subtitle&gt;
+      &lt;icon&gt;rails.png&lt;/icon&gt;
+    &lt;/item&gt;
+  &lt;/items&gt;
+EOB
+</string>
+				<key>subtext</key>
+				<string>Display Rack Mini-Profiler options.</string>
+				<key>title</key>
+				<string>Rack Mini-Profiler</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8B48DD29-7E4B-4424-8B8E-18F47785F817</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>A3A3916E-1338-4403-BA88-39E4D9E1B703</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Copyright © 2014 Alchemists.
@@ -79,6 +226,16 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
 	<key>uidata</key>
 	<dict>
+		<key>8B48DD29-7E4B-4424-8B8E-18F47785F817</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>A3A3916E-1338-4403-BA88-39E4D9E1B703</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
 		<key>D00FF9D7-4976-488B-AC15-4F268B0FE089</key>
 		<dict>
 			<key>ypos</key>

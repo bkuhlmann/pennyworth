@@ -8,88 +8,22 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>698D046C-476A-4A8A-8111-F76DF141B21B</key>
+		<key>3A7EDDC3-8686-4988-998C-9EA7A1B804D1</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>24649D39-1A7A-4AEC-9E24-FA20E51DD906</string>
+				<string>ED21B4FA-CD4A-4F43-8F17-4E6C62C2F6F1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
 		</array>
-		<key>6F03BAE2-FF35-45AA-9A12-34556B0748AF</key>
+		<key>F6F8148B-CEA3-47D4-BC24-142C40A03CBC</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>849D465B-8D8C-4561-983A-9365179E77E6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>85BF3157-4376-4EEF-822C-8787964193B7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BD02C510-C052-4E25-A59F-0766FCACEAE1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>BD02C510-C052-4E25-A59F-0766FCACEAE1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>236E683B-9FBD-466E-A00B-B59D7B12AC68</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>CAD327F3-637E-4E8F-8E2A-EC47DC775A59</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>44FEF82B-CA69-4786-9396-6C0518669386</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>CD056464-6D30-4A8A-8202-E7B7AB5836D8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>698D046C-476A-4A8A-8111-F76DF141B21B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>ED61F954-8B44-47F9-AD2D-C236868286D1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CAD327F3-637E-4E8F-8E2A-EC47DC775A59</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>F03EB975-27A1-49C1-BB1D-42886955C024</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6F03BAE2-FF35-45AA-9A12-34556B0748AF</string>
+				<string>3A7EDDC3-8686-4988-998C-9EA7A1B804D1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -110,105 +44,82 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>output</key>
+				<key>argumenttype</key>
 				<integer>0</integer>
-				<key>removeextension</key>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>p</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
 				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Displaying Pennyworth options...</string>
+				<key>script</key>
+				<string>cat &lt;&lt; EOB
+  &lt;?xml version="1.0"?&gt;
+  &lt;items&gt;
+    &lt;item uid="b68ce20c-5e07-469a-9d08-08203a921035" arg='pennyworth --string "{query}" --capitalize' valid="YES" type="default"&gt;
+      &lt;title&gt;Capitalize&lt;/title&gt;
+      &lt;subtitle&gt;Capitalize words and copy to clipboard.&lt;/subtitle&gt;
+      &lt;icon&gt;string-capitalize.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="aa8c8944-18f8-4165-a2a4-ab073d936dba" arg='pennyworth --string "{query}" --upcase' valid="YES" type="default"&gt;
+      &lt;title&gt;Uppercase&lt;/title&gt;
+      &lt;subtitle&gt;Uppercase string and copy to clipboard.&lt;/subtitle&gt;
+      &lt;icon&gt;string-uppercase.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="de2a88ca-298f-46a7-849a-2cfa8cbdf0d1" arg='pennyworth --string "{query}" --downcase' valid="YES" type="default"&gt;
+      &lt;title&gt;Lowercase&lt;/title&gt;
+      &lt;subtitle&gt;Lowercase string and copy to clipboard.&lt;/subtitle&gt;
+      &lt;icon&gt;string-lowercase.png&lt;/icon&gt;
+    &lt;/item&gt;
+    &lt;item uid="f57ef3e2-7d3a-429d-a564-9df0167047c8" arg='pennyworth --string "{query}" --size' valid="YES" type="default"&gt;
+      &lt;title&gt;Size&lt;/title&gt;
+      &lt;subtitle&gt;Calculate string size and copy to clipboard.&lt;/subtitle&gt;
+      &lt;icon&gt;string-size.png&lt;/icon&gt;
+    &lt;/item&gt;
+  &lt;/items&gt;
+EOB
+</string>
+				<key>subtext</key>
+				<string>Display Pennyworth options.</string>
 				<key>title</key>
-				<string>Pennyworth String Capitalize</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>849D465B-8D8C-4561-983A-9365179E77E6</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
+				<string>Pennyworth</string>
+				<key>type</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>cap</string>
-				<key>subtext</key>
-				<string>Capitalizes the first letter of each word. Result sent to clipboard.</string>
-				<key>text</key>
-				<string>Pennyworth String Capitalize</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>F03EB975-27A1-49C1-BB1D-42886955C024</string>
+			<string>F6F8148B-CEA3-47D4-BC24-142C40A03CBC</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
-				<integer>62</integer>
+				<integer>127</integer>
 				<key>script</key>
 				<string>source ~/.bashrc
-pennyworth -s -c {query}
-</string>
+eval {query}</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>6F03BAE2-FF35-45AA-9A12-34556B0748AF</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>up</string>
-				<key>subtext</key>
-				<string>Converts text to uppercase. Result sent to clipboard.</string>
-				<key>text</key>
-				<string>Pennyworth String Upcase</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>ED61F954-8B44-47F9-AD2D-C236868286D1</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>script</key>
-				<string>source ~/.bashrc
-pennyworth -s -u {query}
-</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CAD327F3-637E-4E8F-8E2A-EC47DC775A59</string>
+			<string>3A7EDDC3-8686-4988-998C-9EA7A1B804D1</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -228,142 +139,12 @@ pennyworth -s -u {query}
 				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
-				<string>Pennyworth String Upcase</string>
+				<string>Pennyworth</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>44FEF82B-CA69-4786-9396-6C0518669386</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>script</key>
-				<string>source ~/.bashrc
-pennyworth -s -d {query}
-</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>698D046C-476A-4A8A-8111-F76DF141B21B</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>output</key>
-				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Pennyworth String Downcase</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>24649D39-1A7A-4AEC-9E24-FA20E51DD906</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>down</string>
-				<key>subtext</key>
-				<string>Converts text to lowercase. Result sent to clipboard.</string>
-				<key>text</key>
-				<string>Pennyworth String Downcase</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>CD056464-6D30-4A8A-8202-E7B7AB5836D8</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>script</key>
-				<string>source ~/.bashrc
-pennyworth -s -l {query}
-</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>BD02C510-C052-4E25-A59F-0766FCACEAE1</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>length</string>
-				<key>subtext</key>
-				<string>Answers the string length. Input sent to clipboard.</string>
-				<key>text</key>
-				<string>Pennyworth String Length</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>85BF3157-4376-4EEF-822C-8787964193B7</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>output</key>
-				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Pennyworth String Length</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>236E683B-9FBD-466E-A00B-B59D7B12AC68</string>
+			<string>ED21B4FA-CD4A-4F43-8F17-4E6C62C2F6F1</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -378,62 +159,17 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
 	<key>uidata</key>
 	<dict>
-		<key>236E683B-9FBD-466E-A00B-B59D7B12AC68</key>
-		<dict>
-			<key>ypos</key>
-			<real>370</real>
-		</dict>
-		<key>24649D39-1A7A-4AEC-9E24-FA20E51DD906</key>
-		<dict>
-			<key>ypos</key>
-			<real>250</real>
-		</dict>
-		<key>44FEF82B-CA69-4786-9396-6C0518669386</key>
-		<dict>
-			<key>ypos</key>
-			<real>130</real>
-		</dict>
-		<key>698D046C-476A-4A8A-8111-F76DF141B21B</key>
-		<dict>
-			<key>ypos</key>
-			<real>250</real>
-		</dict>
-		<key>6F03BAE2-FF35-45AA-9A12-34556B0748AF</key>
+		<key>3A7EDDC3-8686-4988-998C-9EA7A1B804D1</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>849D465B-8D8C-4561-983A-9365179E77E6</key>
+		<key>ED21B4FA-CD4A-4F43-8F17-4E6C62C2F6F1</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>85BF3157-4376-4EEF-822C-8787964193B7</key>
-		<dict>
-			<key>ypos</key>
-			<real>370</real>
-		</dict>
-		<key>BD02C510-C052-4E25-A59F-0766FCACEAE1</key>
-		<dict>
-			<key>ypos</key>
-			<real>370</real>
-		</dict>
-		<key>CAD327F3-637E-4E8F-8E2A-EC47DC775A59</key>
-		<dict>
-			<key>ypos</key>
-			<real>130</real>
-		</dict>
-		<key>CD056464-6D30-4A8A-8202-E7B7AB5836D8</key>
-		<dict>
-			<key>ypos</key>
-			<real>250</real>
-		</dict>
-		<key>ED61F954-8B44-47F9-AD2D-C236868286D1</key>
-		<dict>
-			<key>ypos</key>
-			<real>130</real>
-		</dict>
-		<key>F03EB975-27A1-49C1-BB1D-42886955C024</key>
+		<key>F6F8148B-CEA3-47D4-BC24-142C40A03CBC</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
