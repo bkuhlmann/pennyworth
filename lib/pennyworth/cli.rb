@@ -4,12 +4,14 @@ require "yaml"
 require "thor"
 require "thor/actions"
 require "thor_plus/actions"
+require "refinements/string_extensions"
 
 module Pennyworth
   # The Command Line Interface (CLI) for the gem.
   class CLI < Thor
     include Thor::Actions
     include ThorPlus::Actions
+    using Refinements::StringExtensions
 
     package_name Pennyworth::Identity.version_label
 
@@ -30,15 +32,12 @@ module Pennyworth
     method_option :capitalize, aliases: "-c", desc: "Capitalize words in a string.", type: :array
     method_option :length, aliases: "-l", desc: "Answer the length of a string.", type: :array
     def string
-      if options[:downcase]
-        Pennyworth::Kits::String.downcase options[:downcase]
-      elsif options[:upcase]
-        Pennyworth::Kits::String.upcase options[:upcase]
-      elsif options[:capitalize]
-        Pennyworth::Kits::String.capitalize options[:capitalize]
-      elsif options[:length]
-        Pennyworth::Kits::String.length options[:length]
-      else say("Type 'pennyworth help string' for usage.")
+      case
+        when options[:downcase] then say(options[:downcase].join.downcase)
+        when options[:upcase] then say(options[:upcase].join.upcase)
+        when options[:capitalize] then say(options[:capitalize].join.titleize)
+        when options[:length] then say(options[:length].join.size)
+        else say("Type 'pennyworth help string' for usage.")
       end
     end
 
