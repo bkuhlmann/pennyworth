@@ -27,16 +27,16 @@ module Pennyworth
 
     desc "-s, [--string=STRING]", "Manipulate strings."
     map %w[-s --string] => :string
-    method_option :downcase, aliases: "-d", desc: "Downcase a string.", type: :array
-    method_option :upcase, aliases: "-u", desc: "Upcase a string.", type: :array
-    method_option :capitalize, aliases: "-c", desc: "Capitalize words in a string.", type: :array
-    method_option :length, aliases: "-l", desc: "Answer the length of a string.", type: :array
-    def string
+    method_option :downcase, aliases: "-d", desc: "Downcase string.", type: :boolean, default: false
+    method_option :upcase, aliases: "-u", desc: "Upcase string.", type: :boolean, default: false
+    method_option :capitalize, aliases: "-c", desc: "Capitalize words.", type: :boolean, default: false
+    method_option :length, aliases: "-l", desc: "Answer string length.", type: :boolean, default: false
+    def string value
       case
-        when options[:downcase] then say(options[:downcase].join.downcase)
-        when options[:upcase] then say(options[:upcase].join.upcase)
-        when options[:capitalize] then say(options[:capitalize].join.titleize)
-        when options[:length] then say(options[:length].join.size)
+        when options[:downcase] then say(value.downcase)
+        when options[:upcase] then say(value.upcase)
+        when options[:capitalize] then say(value.titleize)
+        when options[:length] then say(value.size)
         else say("Type 'pennyworth help string' for usage.")
       end
     end
