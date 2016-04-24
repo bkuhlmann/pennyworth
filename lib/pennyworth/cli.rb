@@ -30,13 +30,13 @@ module Pennyworth
     method_option :downcase, aliases: "-d", desc: "Downcase string.", type: :boolean, default: false
     method_option :upcase, aliases: "-u", desc: "Upcase string.", type: :boolean, default: false
     method_option :capitalize, aliases: "-c", desc: "Capitalize words.", type: :boolean, default: false
-    method_option :length, aliases: "-l", desc: "Answer string length.", type: :boolean, default: false
+    method_option :size, aliases: "-s", desc: "Answer string size.", type: :boolean, default: false
     def string value
       case
         when options[:downcase] then say(value.downcase)
         when options[:upcase] then say(value.upcase)
         when options[:capitalize] then say(value.titleize)
-        when options[:length] then say(value.size)
+        when options[:size] then say(value.size)
         else say("Type 'pennyworth help string' for usage.")
       end
     end
