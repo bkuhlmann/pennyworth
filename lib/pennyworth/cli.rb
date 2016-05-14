@@ -32,16 +32,15 @@ module Pennyworth
     method_option :capitalize, aliases: "-c", desc: "Capitalize words in a string.", type: :array
     method_option :length, aliases: "-l", desc: "Answer the length of a string.", type: :array
     def string
-      case
-        when options[:downcase]
-          Pennyworth::Kits::String.downcase options[:downcase]
-        when options[:upcase]
-          Pennyworth::Kits::String.upcase options[:upcase]
-        when options[:capitalize]
-          Pennyworth::Kits::String.capitalize options[:capitalize]
-        when options[:length]
-          Pennyworth::Kits::String.length options[:length]
-        else say("Type 'pennyworth help string' for usage.")
+      if options[:downcase]
+        Pennyworth::Kits::String.downcase options[:downcase]
+      elsif options[:upcase]
+        Pennyworth::Kits::String.upcase options[:upcase]
+      elsif options[:capitalize]
+        Pennyworth::Kits::String.capitalize options[:capitalize]
+      elsif options[:length]
+        Pennyworth::Kits::String.length options[:length]
+      else say("Type 'pennyworth help string' for usage.")
       end
     end
 
