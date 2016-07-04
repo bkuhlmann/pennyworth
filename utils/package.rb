@@ -11,8 +11,8 @@ require "fileutils"
 
 # Settings
 GEM_WORKFLOW_ROOT = File.join(File.dirname(__FILE__), "..", "lib", "pennyworth", "templates", "workflows")
-ALFRED_SETTINGS_ROOT = "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences".freeze
-ALFRED_WORKFLOW_ROOT = "#{ALFRED_SETTINGS_ROOT}/workflows".freeze
+ALFRED_SETTINGS_ROOT = "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
+ALFRED_WORKFLOW_ROOT = "#{ALFRED_SETTINGS_ROOT}/workflows"
 
 WORKFLOWS = [
   "user.workflow.C431E56A-0EC2-47EE-94D5-D67D9FE323BE",
