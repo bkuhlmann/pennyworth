@@ -39,7 +39,7 @@ A command line interface that enhances and extends Alfred with Ruby support.
 
 # Requirements
 
-0. [OSX](https://www.apple.com/osx).
+0. [macOS](https://www.apple.com/macos).
 0. [Alfred](https://www.alfredapp.com) (Version 2.x.x or higher).
 0. [Alfred Powerpack](https://www.alfredapp.com/purchase).
 0. [rbenv](https://github.com/sstephenson/rbenv).
@@ -110,8 +110,8 @@ Read [Semantic Versioning](http://semver.org) for details. Briefly, it means:
 
 # Code of Conduct
 
-Please note that this project is released with a [CODE OF CONDUCT](CODE_OF_CONDUCT.md). By participating in this project
-you agree to abide by its terms.
+Please note that this project is released with a [CODE OF CONDUCT](CODE_OF_CONDUCT.md). By
+participating in this project you agree to abide by its terms.
 
 # Contributions
 
