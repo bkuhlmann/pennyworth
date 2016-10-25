@@ -27,19 +27,45 @@ module Pennyworth
 
     desc "-s, [--string=STRING]", "Manipulate strings."
     map %w[-s --string] => :string
-    method_option :downcase, aliases: "-d", desc: "Downcase string.", type: :boolean, default: false
-    method_option :upcase, aliases: "-u", desc: "Upcase string.", type: :boolean, default: false
-    method_option :titleize, aliases: "-t", desc: "Capitalize each word and delimit with space or forward slash.", type: :boolean, default: false
-    method_option :camelcase, aliases: "-c", desc: "Capitalize each word and delimit with nothing or double colon.", type: :boolean, default: false
-    method_option :snakecase, aliases: "-s", desc: "Downcase each word and delimit with underscore or forward slash.", type: :boolean, default: false
-    method_option :size, aliases: "-s", desc: "Calculate string size.", type: :boolean, default: false
+    method_option :downcase,
+                  aliases: "-d",
+                  desc: "Downcase string.",
+                  type: :boolean,
+                  default: false
+    method_option :upcase,
+                  aliases: "-u",
+                  desc: "Upcase string.",
+                  type: :boolean,
+                  default: false
+    method_option :titleize,
+                  aliases: "-t",
+                  desc: "Capitalize each word and delimit with space or forward slash.",
+                  type: :boolean,
+                  default: false
+    method_option :camelcase,
+                  aliases: "-c",
+                  desc: "Capitalize each word and delimit with nothing or double colon.",
+                  type: :boolean,
+                  default: false
+    method_option :snakecase,
+                  aliases: "-s",
+                  desc: "Downcase each word and delimit with underscore or forward slash.",
+                  type: :boolean,
+                  default: false
+    method_option :size,
+                  aliases: "-s",
+                  desc: "Calculate string size.",
+                  type: :boolean,
+                  default: false
+    # rubocop:disable Metrics/CyclomaticComplexity
+    # rubocop:disable Metrics/PerceivedComplexity
     def string value
-      if options[:downcase] then say(value.downcase)
-      elsif options[:upcase] then say(value.upcase)
-      elsif options[:titleize] then say(value.titleize)
-      elsif options[:camelcase] then say(value.camelcase)
-      elsif options[:snakecase] then say(value.snakecase)
-      elsif options[:size] then say(value.size)
+      if options.downcase? then say(value.downcase)
+      elsif options.upcase? then say(value.upcase)
+      elsif options.titleize? then say(value.titleize)
+      elsif options.camelcase? then say(value.camelcase)
+      elsif options.snakecase? then say(value.snakecase)
+      elsif options.size? then say(value.size)
       else say("Type 'pennyworth help string' for usage.")
       end
     end
