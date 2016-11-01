@@ -4,14 +4,14 @@ require "yaml"
 require "thor"
 require "thor/actions"
 require "thor_plus/actions"
-require "refinements/string_extensions"
+require "refinements/strings"
 
 module Pennyworth
   # The Command Line Interface (CLI) for the gem.
   class CLI < Thor
     include Thor::Actions
     include ThorPlus::Actions
-    using Refinements::StringExtensions
+    using Refinements::Strings
 
     package_name Pennyworth::Identity.version_label
 
