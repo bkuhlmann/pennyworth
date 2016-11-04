@@ -9,6 +9,7 @@ require "runcom"
 
 module Pennyworth
   # The Command Line Interface (CLI) for the gem.
+  # rubocop:disable Metrics/ClassLength
   class CLI < Thor
     include Thor::Actions
     include ThorPlus::Actions
@@ -27,8 +28,6 @@ module Pennyworth
     def initialize args = [], options = {}, config = {}
       super args, options, config
       @configuration = Runcom::Configuration.new file_name: Identity.file_name, defaults: self.class.defaults
-      @settings_file = File.join ENV["HOME"], Identity.file_name
-      @settings = load_yaml @settings_file
     end
 
     desc "-s, [--string=STRING]", "Manipulate strings."
@@ -81,12 +80,14 @@ module Pennyworth
     def install
       say
 
-      if valid_file?(@settings[:alfred_settings_root], "Invalid directory for Alfred settings root")
+      alfred_settings_root = configuration.to_h[:alfred_settings_root]
+
+      if valid_file?(alfred_settings_root, "Invalid directory for Alfred settings root")
         if yes? "Installing Alfred Workflows will destroy exiting workflows of the same name. Continue (y/n)?"
           info "Installing Alfred Workflows..."
 
           workflows = Dir.glob File.join(self.class.source_root, "workflows", "**")
-          alfred_workflows_root = File.join @settings[:alfred_settings_root], "workflows"
+          alfred_workflows_root = File.join alfred_settings_root, "workflows"
           workflows.each do |workflow|
             name = File.basename workflow
             destination = File.join alfred_workflows_root, name
@@ -99,7 +100,7 @@ module Pennyworth
           info "Alfred Workflows installation cancelled."
         end
       else
-        error "Invalid Alfred settings directory: #{@settings[:alfred_settings_root]}"
+        error "Invalid Alfred settings directory: #{alfred_settings_root}"
       end
 
       say
