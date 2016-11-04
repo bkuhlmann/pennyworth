@@ -5,6 +5,7 @@ require "thor"
 require "thor/actions"
 require "thor_plus/actions"
 require "refinements/strings"
+require "runcom"
 
 module Pennyworth
   # The Command Line Interface (CLI) for the gem.
@@ -19,8 +20,13 @@ module Pennyworth
       File.expand_path File.join(File.dirname(__FILE__), "templates")
     end
 
+    def self.defaults
+      {}
+    end
+
     def initialize args = [], options = {}, config = {}
       super args, options, config
+      @configuration = Runcom::Configuration.new file_name: Identity.file_name, defaults: self.class.defaults
       @settings_file = File.join ENV["HOME"], Identity.file_name
       @settings = load_yaml @settings_file
     end
@@ -105,6 +111,17 @@ module Pennyworth
       `#{editor} #{@settings_file}`
     end
 
+    desc "-c, [--config]", "Manage gem configuration."
+    map %w[-c --config] => :config
+    method_option :edit, aliases: "-e", desc: "Edit gem configuration.", type: :boolean, default: false
+    method_option :info, aliases: "-i", desc: "Print gem configuration info.", type: :boolean, default: false
+    def config
+      if options.edit? then `#{editor} #{configuration.computed_path}`
+      elsif options.info? then say("Using: #{configuration.computed_path}.")
+      else help(:config)
+      end
+    end
+
     desc "-v, [--version]", "Show gem version."
     map %w[-v --version] => :version
     def version
@@ -116,5 +133,9 @@ module Pennyworth
     def help task = nil
       say and super
     end
+
+    private
+
+    attr_reader :configuration
   end
 end
