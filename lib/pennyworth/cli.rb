@@ -30,7 +30,7 @@ module Pennyworth
       @configuration = Runcom::Configuration.new file_name: Identity.file_name, defaults: self.class.defaults
     end
 
-    desc "-s, [--string=STRING]", "Manipulate strings."
+    desc "-s, [--string=VALUE]", "Manipulate strings."
     map %w[-s --string] => :string
     method_option :downcase,
                   aliases: "-d",
@@ -123,7 +123,7 @@ module Pennyworth
       say Pennyworth::Identity.version_label
     end
 
-    desc "-h, [--help=HELP]", "Show this message or get help for a command."
+    desc "-h, [--help=COMMAND]", "Show this message or get help for a command."
     map %w[-h --help] => :help
     def help task = nil
       say and super
