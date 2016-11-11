@@ -7,7 +7,12 @@ RSpec.describe Pennyworth::CLI do
   describe ".start" do
     let(:options) { [] }
     let(:command_line) { Array(command).concat options }
-    let(:cli) { -> { described_class.start command_line } }
+    let :cli do
+      lambda do
+        load "pennyworth/cli.rb" # Ensures clean Thor `.method_option` evaluation per spec.
+        described_class.start command_line
+      end
+    end
 
     shared_examples_for "a config command", :temp_dir do
       let(:configuration_path) { File.join temp_dir, Pennyworth::Identity.file_name }

@@ -21,13 +21,12 @@ module Pennyworth
       File.expand_path File.join(File.dirname(__FILE__), "templates")
     end
 
-    def self.defaults
-      {}
+    def self.configuration
+      Runcom::Configuration.new file_name: Identity.file_name
     end
 
     def initialize args = [], options = {}, config = {}
       super args, options, config
-      @configuration = Runcom::Configuration.new file_name: Identity.file_name, defaults: self.class.defaults
     end
 
     desc "-s, [--string=VALUE]", "Manipulate strings."
@@ -80,7 +79,7 @@ module Pennyworth
     def install
       say
 
-      alfred_settings_root = configuration.to_h[:alfred_settings_root]
+      alfred_settings_root = self.class.configuration.to_h[:alfred_settings_root]
 
       if valid_file?(alfred_settings_root, "Invalid directory for Alfred settings root")
         if yes? "Installing Alfred Workflows will destroy exiting workflows of the same name. Continue (y/n)?"
@@ -111,8 +110,10 @@ module Pennyworth
     method_option :edit, aliases: "-e", desc: "Edit gem configuration.", type: :boolean, default: false
     method_option :info, aliases: "-i", desc: "Print gem configuration info.", type: :boolean, default: false
     def config
-      if options.edit? then `#{editor} #{configuration.computed_path}`
-      elsif options.info? then say("Using: #{configuration.computed_path}.")
+      path = self.class.configuration.computed_path
+
+      if options.edit? then `#{editor} #{path}`
+      elsif options.info? then say("Using: #{path}.")
       else help(:config)
       end
     end
@@ -128,9 +129,5 @@ module Pennyworth
     def help task = nil
       say and super
     end
-
-    private
-
-    attr_reader :configuration
   end
 end
