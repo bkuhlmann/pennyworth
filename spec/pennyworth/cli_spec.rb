@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "pennyworth/cli"
 
 RSpec.describe Pennyworth::CLI do
   describe ".start" do

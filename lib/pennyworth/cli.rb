@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require "yaml"
 require "thor"
 require "thor/actions"
 require "thor_plus/actions"
@@ -15,7 +14,7 @@ module Pennyworth
     include ThorPlus::Actions
     using Refinements::Strings
 
-    package_name Pennyworth::Identity.version_label
+    package_name Identity.version_label
 
     def self.source_root
       File.expand_path File.join(File.dirname(__FILE__), "templates")
@@ -127,7 +126,7 @@ module Pennyworth
     desc "-v, [--version]", "Show gem version."
     map %w[-v --version] => :version
     def version
-      say Pennyworth::Identity.version_label
+      say Identity.version_label
     end
 
     desc "-h, [--help=COMMAND]", "Show this message or get help for a command."
