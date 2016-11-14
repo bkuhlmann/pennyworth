@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pennyworth (3.2.0)
+    pennyworth (4.0.0)
       refinements (~> 3.1)
       runcom (~> 0.3)
       thor (~> 0.19)

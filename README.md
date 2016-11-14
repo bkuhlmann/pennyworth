@@ -30,12 +30,9 @@ A command line interface that enhances and extends Alfred with Ruby support.
 # Features
 
 - Adds Ruby support to Alfred.
-- Adds the following Alfred Workflows:
-    - Pennyworth String Upcase
-    - Pennyworth String Length
-    - Pennyworth String Downcase
-    - Pennyworth String Capitalize
-    - Ruby on Rails Kit
+- Adds Alfred Workflow:
+
+      ![Alfred Workflow](doc/alfred_workflow.png)
 
 # Requirements
 
@@ -61,7 +58,7 @@ For an insecure install, type the following (not recommended):
 
 You can configure common settings for future gem builds by creating the following file:
 
-    ~/.pennyworth/settings.yml
+    ~/.pennyworthrc
 
 ...using the following settings (for example):
 
@@ -72,18 +69,20 @@ You can configure common settings for future gem builds by creating the followin
 
 From the command line, type: pennyworth
 
-    pennyworth -e, [edit]     # Edit gem settings in default editor (assumes $EDITOR environment variable).
-    pennyworth -h, [help]     # Show this message.
-    pennyworth -i, [install]  # Install Alfred Workflows.
-    pennyworth -s, [string]   # Manipulate strings.
-    pennyworth -v, [version]  # Show version.
+    pennyworth -c, [--config]        # Manage gem configuration.
+    pennyworth -h, [--help=COMMAND]  # Show this message or get help for a command.
+    pennyworth -i, [--install]       # Install Alfred Workflows.
+    pennyworth -s, [--string=VALUE]  # Manipulate strings.
+    pennyworth -v, [--version]       # Show gem version.
 
 For string options, type: pennyworth help string
 
-    -d, [--downcase=one two three]    # Downcase a string.
-    -u, [--upcase=one two three]      # Upcase a string.
-    -c, [--capitalize=one two three]  # Capitalize words in a string.
-    -l, [--length=one two three]      # Answer the length of a string.
+    -d, [--downcase], [--no-downcase]    # Downcase string.
+    -u, [--upcase], [--no-upcase]        # Upcase string.
+    -t, [--titleize], [--no-titleize]    # Capitalize each word and delimit with space or forward slash.
+    -c, [--camelcase], [--no-camelcase]  # Capitalize each word and delimit with nothing or double colon.
+    -s, [--snakecase], [--no-snakecase]  # Downcase each word and delimit with underscore or forward slash.
+    -s, [--size], [--no-size]            # Calculate string size.
 
 While the command line options are nice, the real power comes from running the following command:
 
