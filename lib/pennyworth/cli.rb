@@ -75,6 +75,7 @@ module Pennyworth
 
     desc "-i, [--install]", "Install Alfred Workflows."
     map %w[-i --install] => :install
+    # rubocop:disable Metrics/LineLength
     def install
       say
 

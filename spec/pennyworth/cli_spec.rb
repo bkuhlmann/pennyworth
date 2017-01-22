@@ -36,13 +36,15 @@ RSpec.describe Pennyworth::CLI do
 
     shared_examples_for "a version command" do
       it "prints version" do
-        expect(&cli).to output(/#{Pennyworth::Identity.label}\s#{Pennyworth::Identity.version}\n/).to_stdout
+        pattern = /#{Pennyworth::Identity.label}\s#{Pennyworth::Identity.version}\n/
+        expect(&cli).to output(pattern).to_stdout
       end
     end
 
     shared_examples_for "a help command" do
       it "prints usage" do
-        expect(&cli).to output(/#{Pennyworth::Identity.label}\s#{Pennyworth::Identity.version}\scommands:\n/).to_stdout
+        pattern = /#{Pennyworth::Identity.label}\s#{Pennyworth::Identity.version}\scommands:\n/
+        expect(&cli).to output(pattern).to_stdout
       end
     end
 

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors               = ["Brooke Kuhlmann"]
   spec.email                 = ["brooke@alchemists.io"]
   spec.homepage              = "https://github.com/bkuhlmann/pennyworth"
-  spec.summary               = "A command line interface that enhances and extends Alfred with Ruby support."
+  spec.summary               = "A command line interface that adds Ruby support to Alfred."
   spec.license               = "MIT"
 
   if File.exist?(Gem.default_key_path) && File.exist?(Gem.default_cert_path)
