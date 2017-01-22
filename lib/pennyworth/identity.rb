@@ -12,7 +12,7 @@ module Pennyworth
     end
 
     def self.version
-      "4.1.0"
+      "5.0.0"
     end
 
     def self.version_label
