@@ -3,7 +3,7 @@ language: ruby
 env:
   global:
     - secure: SfWwycoghSoXOm/dYZQd1i7Sak/CvR0zmQAdFIzW7wF1U/D79pxFrALdkqZaa6eyMsv8eKBoPRxAjdw1OginSWFTzYj4YfDcACb7e/AJTnj84qNa3NgLOKZov3/YgwZKR28eiouBsbvtkK+ow32IDZiERnObAOzUriS8VK2hxbU=
-before_install: gem update --system && gem update && gem cleanup
+before_install: gem update --system
 after_script: bundle exec codeclimate-test-reporter
 notifications:
   email: false
