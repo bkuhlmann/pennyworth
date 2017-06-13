@@ -21,7 +21,7 @@ module Pennyworth
     end
 
     def self.configuration
-      Runcom::Configuration.new file_name: Identity.file_name
+      Runcom::Configuration.new project_name: Identity.name
     end
 
     def initialize args = [], options = {}, config = {}
@@ -105,7 +105,7 @@ module Pennyworth
       say
     end
 
-    desc "-c, [--config]", %(Manage gem configuration ("#{configuration.computed_path}").)
+    desc "-c, [--config]", "Manage gem configuration."
     map %w[-c --config] => :config
     method_option :edit,
                   aliases: "-e",
@@ -116,10 +116,11 @@ module Pennyworth
                   desc: "Print gem configuration.",
                   type: :boolean, default: false
     def config
-      path = self.class.configuration.computed_path
+      path = self.class.configuration.path
 
       if options.edit? then `#{editor} #{path}`
-      elsif options.info? then say(path)
+      elsif options.info?
+        path ? say(path) : say("Configuration doesn't exist.")
       else help(:config)
       end
     end
