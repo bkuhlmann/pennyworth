@@ -17,6 +17,8 @@ A command line interface that enhances and extends Alfred with Ruby support.
 - [Requirements](#requirements)
 - [Setup](#setup)
 - [Usage](#usage)
+  - [Command Line Interface (CLI)](#command-line-interface-cli)
+  - [Customization](#customization)
 - [Tests](#tests)
 - [Versioning](#versioning)
 - [Code of Conduct](#code-of-conduct)
@@ -56,16 +58,10 @@ For an insecure install, type the following (not recommended):
 
     gem install pennyworth
 
-You can configure common settings for future gem builds by creating the following file:
-
-    ~/.pennyworthrc
-
-...using the following settings (for example):
-
-     ---
-     :alfred_settings_root: "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
 
 # Usage
+
+## Command Line Interface (CLI)
 
 From the command line, type: pennyworth
 
@@ -92,6 +88,22 @@ While the command line options are nice, the real power comes from running the f
 provided by each workflow instead of the CLI. Check each workflows documentation for details by
 opening Alfred preferences and clicking on the _Workflows_ tab. Each workflow associated with this
 gem is prefixed with _Pennyworth_.
+
+## Customization
+
+This gem can be configured via a global configuration:
+
+    ~/.config/pennyworth/configuration.yml
+
+It can also be configured via [XDG environment variables](https://github.com/bkuhlmann/runcom#xdg)
+as provided by the [Runcom](https://github.com/bkuhlmann/runcom) gem.
+
+The default configuration is as follows:
+
+     :alfred_settings_root: "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
+
+Feel free to take this default configuration, modify, and save as your own custom
+`configuration.yml`.
 
 # Tests
 
