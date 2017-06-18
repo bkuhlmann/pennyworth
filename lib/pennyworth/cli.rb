@@ -2,7 +2,6 @@
 
 require "thor"
 require "thor/actions"
-require "thor_plus/actions"
 require "refinements/strings"
 require "runcom"
 
@@ -11,7 +10,6 @@ module Pennyworth
   # rubocop:disable Metrics/ClassLength
   class CLI < Thor
     include Thor::Actions
-    include ThorPlus::Actions
     using Refinements::Strings
 
     package_name Identity.version_label
@@ -83,7 +81,7 @@ module Pennyworth
 
       if valid_file?(alfred_settings_root, "Invalid directory for Alfred settings root")
         if yes? "Installing Alfred Workflows will destroy exiting workflows of the same name. Continue (y/n)?"
-          info "Installing Alfred Workflows..."
+          say_status :info, "Installing Alfred Workflows...", :green
 
           workflows = Dir.glob File.join(self.class.source_root, "workflows", "**")
           alfred_workflows_root = File.join alfred_settings_root, "workflows"
@@ -94,12 +92,12 @@ module Pennyworth
             directory File.join("workflows", name), destination
           end
 
-          info "Alfred Workflows installed."
+          say_status :info, "Alfred Workflows installed.", :green
         else
-          info "Alfred Workflows installation cancelled."
+          say_status :info, "Alfred Workflows installation cancelled.", :green
         end
       else
-        error "Invalid Alfred settings directory: #{alfred_settings_root}"
+        say_status :error, "Invalid Alfred settings directory: #{alfred_settings_root}", :red
       end
 
       say
@@ -118,7 +116,7 @@ module Pennyworth
     def config
       path = self.class.configuration.path
 
-      if options.edit? then `#{editor} #{path}`
+      if options.edit? then `#{ENV["EDITOR"]} #{path}`
       elsif options.info?
         path ? say(path) : say("Configuration doesn't exist.")
       else help(:config)
