@@ -11,32 +11,32 @@ A command line interface that enhances and extends Alfred with Ruby support.
 
 <!-- Tocer[start]: Auto-generated, don't remove. -->
 
-# Table of Contents
+## Table of Contents
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Setup](#setup)
-- [Usage](#usage)
-  - [Command Line Interface (CLI)](#command-line-interface-cli)
-  - [Customization](#customization)
-- [Tests](#tests)
-- [Versioning](#versioning)
-- [Code of Conduct](#code-of-conduct)
-- [Contributions](#contributions)
-- [License](#license)
-- [History](#history)
-- [Credits](#credits)
+  - [Features](#features)
+  - [Requirements](#requirements)
+  - [Setup](#setup)
+  - [Usage](#usage)
+    - [Command Line Interface (CLI)](#command-line-interface-cli)
+    - [Customization](#customization)
+  - [Tests](#tests)
+  - [Versioning](#versioning)
+  - [Code of Conduct](#code-of-conduct)
+  - [Contributions](#contributions)
+  - [License](#license)
+  - [History](#history)
+  - [Credits](#credits)
 
 <!-- Tocer[finish]: Auto-generated, don't remove. -->
 
-# Features
+## Features
 
 - Adds Ruby support to Alfred.
 - Adds Alfred Workflow:
 
       ![Alfred Workflow](doc/alfred_workflow.png)
 
-# Requirements
+## Requirements
 
 0. [macOS](https://www.apple.com/macos).
 0. [Alfred](https://www.alfredapp.com) (Version 2.x.x or higher).
@@ -44,7 +44,7 @@ A command line interface that enhances and extends Alfred with Ruby support.
 0. [rbenv](https://github.com/sstephenson/rbenv).
 0. [Ruby 2.4.x](https://www.ruby-lang.org).
 
-# Setup
+## Setup
 
 For a secure install, type the following from the command line (recommended):
 
@@ -59,9 +59,9 @@ For an insecure install, type the following (not recommended):
     gem install pennyworth
 
 
-# Usage
+## Usage
 
-## Command Line Interface (CLI)
+### Command Line Interface (CLI)
 
 From the command line, type: pennyworth
 
@@ -89,7 +89,7 @@ provided by each workflow instead of the CLI. Check each workflows documentation
 opening Alfred preferences and clicking on the _Workflows_ tab. Each workflow associated with this
 gem is prefixed with _Pennyworth_.
 
-## Customization
+### Customization
 
 This gem can be configured via a global configuration:
 
@@ -105,13 +105,13 @@ The default configuration is as follows:
 Feel free to take this default configuration, modify, and save as your own custom
 `configuration.yml`.
 
-# Tests
+## Tests
 
 To test, run:
 
     bundle exec rake
 
-# Versioning
+## Versioning
 
 Read [Semantic Versioning](http://semver.org) for details. Briefly, it means:
 
@@ -119,25 +119,25 @@ Read [Semantic Versioning](http://semver.org) for details. Briefly, it means:
 - Minor (x.Y.z) - Incremented for new, backwards compatible, public API enhancements/fixes.
 - Patch (x.y.Z) - Incremented for small, backwards compatible, bug fixes.
 
-# Code of Conduct
+## Code of Conduct
 
 Please note that this project is released with a [CODE OF CONDUCT](CODE_OF_CONDUCT.md). By
 participating in this project you agree to abide by its terms.
 
-# Contributions
+## Contributions
 
 Read [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-# License
+## License
 
 Copyright (c) 2012 [Alchemists](https://www.alchemists.io).
 Read [LICENSE](LICENSE.md) for details.
 
-# History
+## History
 
 Read [CHANGES](CHANGES.md) for details.
 Built with [Gemsmith](https://github.com/bkuhlmann/gemsmith).
 
-# Credits
+## Credits
 
 Developed by [Brooke Kuhlmann](https://www.alchemists.io) at [Alchemists](https://www.alchemists.io)
