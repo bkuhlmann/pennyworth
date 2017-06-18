@@ -6,17 +6,13 @@ RSpec.describe Pennyworth::CLI do
   describe ".start" do
     let(:options) { [] }
     let(:command_line) { Array(command).concat options }
-    let :cli do
-      lambda do
-        load "pennyworth/cli.rb" # Ensures clean Thor `.method_option` evaluation per spec.
-        described_class.start command_line
-      end
-    end
+    let(:cli) { described_class.start command_line }
 
     shared_examples_for "a config command", :temp_dir do
       context "with no options" do
         it "prints help text" do
-          expect(&cli).to output(/Manage gem configuration./).to_stdout
+          result = -> { cli }
+          expect(&result).to output(/Manage gem configuration./).to_stdout
         end
       end
     end
@@ -24,14 +20,16 @@ RSpec.describe Pennyworth::CLI do
     shared_examples_for "a version command" do
       it "prints version" do
         pattern = /#{Pennyworth::Identity.label}\s#{Pennyworth::Identity.version}\n/
-        expect(&cli).to output(pattern).to_stdout
+        result = -> { cli }
+        expect(&result).to output(pattern).to_stdout
       end
     end
 
     shared_examples_for "a help command" do
       it "prints usage" do
         pattern = /#{Pennyworth::Identity.label}\s#{Pennyworth::Identity.version}\scommands:\n/
-        expect(&cli).to output(pattern).to_stdout
+        result = -> { cli }
+        expect(&result).to output(pattern).to_stdout
       end
     end
 
