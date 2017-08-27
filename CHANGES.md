@@ -1,3 +1,19 @@
+# v6.1.0 (2017-08-27)
+
+- Added Git Cop code quality task.
+- Added dynamic formatting of RSpec output.
+- Updated CONTRIBUTING documentation.
+- Updated GitHub templates.
+- Updated README headers.
+- Updated command line usage in CLI specs.
+- Updated gem dependencies.
+- Updated to Awesome Print 1.8.0.
+- Updated to Gemsmith 10.0.0.
+- Updated to Git Cop 1.3.0.
+- Removed Pry State gem.
+- Removed Thor+ gem.
+- Refactored CLI version/help specs.
+
 # v6.0.0 (2017-06-17)
 
 - Fixed Travis CI configuration to not update gems.
