@@ -1,3 +1,10 @@
+# v6.2.0 (2017-10-29)
+
+- Added Bundler Audit gem.
+- Updated to Rubocop 0.50.0.
+- Updated to Rubocop 0.51.0.
+- Updated to Ruby 2.4.2.
+
 # v6.1.0 (2017-08-27)
 
 - Added Git Cop code quality task.
