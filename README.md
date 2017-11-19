@@ -41,7 +41,7 @@ A command line interface that enhances and extends Alfred with Ruby support.
 0. [macOS](https://www.apple.com/macos).
 0. [Alfred](https://www.alfredapp.com) (Version 2.x.x or higher).
 0. [Alfred Powerpack](https://www.alfredapp.com/purchase).
-0. [rbenv](https://github.com/sstephenson/rbenv).
+0. [chruby](https://github.com/postmodern/chruby).
 0. [Ruby 2.4.x](https://www.ruby-lang.org).
 
 ## Setup
@@ -57,7 +57,6 @@ allowing the installation of unsigned dependencies since they are beyond the sco
 For an insecure install, type the following (not recommended):
 
     gem install pennyworth
-
 
 ## Usage
 

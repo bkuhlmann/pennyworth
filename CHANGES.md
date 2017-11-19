@@ -1,3 +1,9 @@
+# v6.3.0 (2017-11-19)
+
+- Updated Alfred workflows.
+- Updated to Git Cop 1.7.0.
+- Updated to Rake 12.3.0.
+
 # v6.2.0 (2017-10-29)
 
 - Added Bundler Audit gem.
