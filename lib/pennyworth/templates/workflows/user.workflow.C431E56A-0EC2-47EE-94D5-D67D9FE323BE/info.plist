@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>io.alchemists.pennyworth.workflow</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -79,6 +79,113 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>p</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Displaying Pennyworth options...</string>
+				<key>script</key>
+				<string>cat &lt;&lt; EOB
+  {
+    "items": [
+      {
+          "uid": "aa8c8944-18f8-4165-a2a4-ab073d936dba",
+          "title": "Uppercase",
+          "subtitle": "Convert all characters to uppercase.",
+          "arg": "pennyworth --string --upcase \"{query}\"",
+          "icon": {
+            "path": "string-uppercase.png"
+          }
+      },
+      {
+          "uid": "de2a88ca-298f-46a7-849a-2cfa8cbdf0d1",
+          "title": "Lowercase",
+          "subtitle": "Convert all characters to lowercase.",
+          "arg": "pennyworth --string --downcase \"{query}\"",
+          "icon": {
+            "path": "string-lowercase.png"
+          }
+      },
+      {
+          "uid": "b68ce20c-5e07-469a-9d08-08203a921035",
+          "title": "Titleize",
+          "subtitle": "Capitalize each word and delimit with space or forward slash.",
+          "arg": "pennyworth --string --titleize \"{query}\"",
+          "icon": {
+            "path": "string-titleize.png"
+          }
+      },
+      {
+          "uid": "1ab75806-8cf5-4f79-9094-77946cd2b8ec",
+          "title": "Camelcase",
+          "subtitle": "Capitalize each word and delimit with nothing or double colon.",
+          "arg": "pennyworth --string --camelcase \"{query}\"",
+          "icon": {
+            "path": "string-camelcase.png"
+          }
+      },
+      {
+          "uid": "06ea20b0-6b54-499c-8c21-c34c9870b621",
+          "title": "Snakecase",
+          "subtitle": "Lowercase each word and delimit with underscore or forward slash.",
+          "arg": "pennyworth --string --snakecase \"{query}\"",
+          "icon": {
+            "path": "string-snakecase.png"
+          }
+      },
+      {
+          "uid": "f57ef3e2-7d3a-429d-a564-9df0167047c8",
+          "title": "Size",
+          "subtitle": "Calculate string size.",
+          "arg": "pennyworth --string --size \"{query}\"",
+          "icon": {
+            "path": "string-size.png"
+          }
+      }
+    ]
+  }
+EOB
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Display Pennyworth options.</string>
+				<key>title</key>
+				<string>Pennyworth</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F6F8148B-CEA3-47D4-BC24-142C40A03CBC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -99,84 +206,6 @@ eval {query}</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>3A7EDDC3-8686-4988-998C-9EA7A1B804D1</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>p</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Displaying Pennyworth options...</string>
-				<key>script</key>
-				<string>cat &lt;&lt; EOB
-  &lt;?xml version="1.0"?&gt;
-  &lt;items&gt;
-    &lt;item uid="aa8c8944-18f8-4165-a2a4-ab073d936dba" arg='pennyworth --string --upcase "{query}"' valid="YES" type="default"&gt;
-      &lt;title&gt;Uppercase&lt;/title&gt;
-      &lt;subtitle&gt;Convert all characters to uppercase.&lt;/subtitle&gt;
-      &lt;icon&gt;string-uppercase.png&lt;/icon&gt;
-    &lt;/item&gt;
-    &lt;item uid="de2a88ca-298f-46a7-849a-2cfa8cbdf0d1" arg='pennyworth --string --downcase "{query}"' valid="YES" type="default"&gt;
-      &lt;title&gt;Lowercase&lt;/title&gt;
-      &lt;subtitle&gt;Convert all characters to lowercase.&lt;/subtitle&gt;
-      &lt;icon&gt;string-lowercase.png&lt;/icon&gt;
-    &lt;/item&gt;
-    &lt;item uid="b68ce20c-5e07-469a-9d08-08203a921035" arg='pennyworth --string --titleize "{query}"' valid="YES" type="default"&gt;
-      &lt;title&gt;Titleize&lt;/title&gt;
-      &lt;subtitle&gt;Capitalize each word and delimit with space or forward slash.&lt;/subtitle&gt;
-      &lt;icon&gt;string-titleize.png&lt;/icon&gt;
-    &lt;/item&gt;
-    &lt;item uid="1ab75806-8cf5-4f79-9094-77946cd2b8ec" arg='pennyworth --string --camelcase "{query}"' valid="YES" type="default"&gt;
-      &lt;title&gt;Camelcase&lt;/title&gt;
-      &lt;subtitle&gt;Capitalize each word and delimit with nothing or double colon.&lt;/subtitle&gt;
-      &lt;icon&gt;string-camelcase.png&lt;/icon&gt;
-    &lt;/item&gt;
-    &lt;item uid="06ea20b0-6b54-499c-8c21-c34c9870b621" arg='pennyworth --string --snakecase "{query}"' valid="YES" type="default"&gt;
-      &lt;title&gt;Snakecase&lt;/title&gt;
-      &lt;subtitle&gt;Lowercase each word and delimit with underscore or forward slash.&lt;/subtitle&gt;
-      &lt;icon&gt;string-snakecase.png&lt;/icon&gt;
-    &lt;/item&gt;
-    &lt;item uid="f57ef3e2-7d3a-429d-a564-9df0167047c8" arg='pennyworth --string --size "{query}"' valid="YES" type="default"&gt;
-      &lt;title&gt;Size&lt;/title&gt;
-      &lt;subtitle&gt;Calculate string size.&lt;/subtitle&gt;
-      &lt;icon&gt;string-size.png&lt;/icon&gt;
-    &lt;/item&gt;
-  &lt;/items&gt;
-EOB
-</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Display Pennyworth options.</string>
-				<key>title</key>
-				<string>Pennyworth</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>F6F8148B-CEA3-47D4-BC24-142C40A03CBC</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -211,32 +240,34 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 		<key>3A7EDDC3-8686-4988-998C-9EA7A1B804D1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>80</integer>
 		</dict>
 		<key>9F8D5496-FDF9-42A7-9247-60D15CCCE012</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>140</integer>
 		</dict>
 		<key>ED21B4FA-CD4A-4F43-8F17-4E6C62C2F6F1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>20</integer>
 		</dict>
 		<key>F6F8148B-CEA3-47D4-BC24-142C40A03CBC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>80</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>https://www.alchemists.io</string>
 </dict>
