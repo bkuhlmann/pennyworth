@@ -70,17 +70,19 @@ module Pennyworth
       else say("Type 'pennyworth help string' for usage.")
       end
     end
+    # rubocop:enable Metrics/CyclomaticComplexity
+    # rubocop:enable Metrics/PerceivedComplexity
 
     desc "-i, [--install]", "Install Alfred Workflows."
     map %w[-i --install] => :install
-    # rubocop:disable Metrics/LineLength
     def install
       say
 
       alfred_settings_root = self.class.configuration.to_h[:alfred_settings_root]
 
       if valid_file?(alfred_settings_root, "Invalid directory for Alfred settings root")
-        if yes? "Installing Alfred Workflows will destroy exiting workflows of the same name. Continue (y/n)?"
+        if yes? "Installing Alfred Workflows will destroy exiting, identical, workflows. " \
+                "Continue (y/n)?"
           say_status :info, "Installing Alfred Workflows...", :green
 
           workflows = Dir.glob File.join(self.class.source_root, "workflows", "**")
@@ -135,4 +137,5 @@ module Pennyworth
       say and super
     end
   end
+  # rubocop:enable Metrics/ClassLength
 end
