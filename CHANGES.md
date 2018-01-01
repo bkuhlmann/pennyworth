@@ -1,3 +1,14 @@
+# v7.0.0 (2018-01-01)
+
+- Updated Code Climate badges.
+- Updated Code Climate configuration to Version 2.0.0.
+- Updated to Apache 2.0 license.
+- Updated to Rubocop 0.52.0.
+- Updated to Ruby 2.4.3.
+- Updated to Ruby 2.5.0.
+- Removed documentation for secure installs.
+- Refactored code to use Ruby 2.5.0 `Array#append` syntax.
+
 # v6.3.0 (2017-11-19)
 
 - Updated Alfred workflows.
