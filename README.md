@@ -3,7 +3,6 @@
 [![Gem Version](https://badge.fury.io/rb/pennyworth.svg)](http://badge.fury.io/rb/pennyworth)
 [![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/c1c06f6b521bfd816bc2/maintainability)](https://codeclimate.com/github/bkuhlmann/pennyworth/maintainability)
 [![Code Climate Test Coverage](https://api.codeclimate.com/v1/badges/c1c06f6b521bfd816bc2/test_coverage)](https://codeclimate.com/github/bkuhlmann/pennyworth/test_coverage)
-[![Gemnasium Status](https://gemnasium.com/bkuhlmann/pennyworth.svg)](https://gemnasium.com/bkuhlmann/pennyworth)
 [![Circle CI Status](https://circleci.com/gh/bkuhlmann/pennyworth.svg?style=svg)](https://circleci.com/gh/bkuhlmann/pennyworth)
 
 A command line interface that enhances and extends Alfred with Ruby support.
