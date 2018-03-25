@@ -13,6 +13,12 @@ Gem::Specification.new do |spec|
   spec.summary = "A command line interface that adds Ruby support to Alfred."
   spec.license = "Apache-2.0"
 
+  spec.metadata = {
+    "source_code_uri" => "https://github.com/bkuhlmann/pennyworth",
+    "changelog_uri" => "https://github.com/bkuhlmann/pennyworth/blob/master/CHANGES.md",
+    "bug_tracker_uri" => "https://github.com/bkuhlmann/pennyworth/issues"
+  }
+
   spec.signing_key = Gem.default_key_path
   spec.cert_chain = [Gem.default_cert_path]
 
@@ -33,7 +39,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 12.3"
   spec.add_development_dependency "reek", "~> 4.8"
   spec.add_development_dependency "rspec", "~> 3.7"
-  spec.add_development_dependency "rubocop", "~> 0.53"
+  spec.add_development_dependency "rubocop", "~> 0.54"
   spec.add_development_dependency "wirb", "~> 2.1"
 
   spec.files            = Dir["lib/**/*"]
