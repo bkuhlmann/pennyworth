@@ -1,4 +1,4 @@
-# v7.1.0 (2018-04-01)
+# 7.1.0 (2018-04-01)
 
 - Fixed gemspec issues with missing gem signing key/certificate.
 - Added gemspec metadata for source, changes, and issue tracker URLs.
@@ -14,7 +14,7 @@
 - Removed Patreon badge from README.
 - Refactored temp dir shared context as a pathname.
 
-# v7.0.0 (2018-01-01)
+# 7.0.0 (2018-01-01)
 
 - Updated Code Climate badges.
 - Updated Code Climate configuration to Version 2.0.0.
@@ -25,20 +25,20 @@
 - Removed documentation for secure installs.
 - Refactored code to use Ruby 2.5.0 `Array#append` syntax.
 
-# v6.3.0 (2017-11-19)
+# 6.3.0 (2017-11-19)
 
 - Updated Alfred workflows.
 - Updated to Git Cop 1.7.0.
 - Updated to Rake 12.3.0.
 
-# v6.2.0 (2017-10-29)
+# 6.2.0 (2017-10-29)
 
 - Added Bundler Audit gem.
 - Updated to Rubocop 0.50.0.
 - Updated to Rubocop 0.51.0.
 - Updated to Ruby 2.4.2.
 
-# v6.1.0 (2017-08-27)
+# 6.1.0 (2017-08-27)
 
 - Added Git Cop code quality task.
 - Added dynamic formatting of RSpec output.
@@ -54,7 +54,7 @@
 - Removed Thor+ gem.
 - Refactored CLI version/help specs.
 
-# v6.0.0 (2017-06-17)
+# 6.0.0 (2017-06-17)
 
 - Fixed Travis CI configuration to not update gems.
 - Added Circle CI support.
@@ -74,7 +74,7 @@
 - Removed Travis CI support.
 - Removed `.bundle` directory from `.gitignore`.
 
-# v5.0.0 (2017-01-22)
+# 5.0.0 (2017-01-22)
 
 - Updated Rubocop Metrics/LineLength to 100 characters.
 - Updated Rubocop Metrics/ParameterLists max to three.
@@ -84,7 +84,7 @@
 - Updated to Ruby 2.4.0.
 - Removed Rubocop Style/Documentation check.
 
-# v4.1.0 (2016-12-18)
+# 4.1.0 (2016-12-18)
 
 - Fixed Rakefile support for RSpec, Reek, Rubocop, and SCSS Lint.
 - Added `Gemfile.lock` to `.gitignore`.
@@ -95,7 +95,7 @@
 - Updated to Ruby 2.3.2.
 - Updated to Ruby 2.3.3.
 
-# v4.0.0 (2016-11-13)
+# 4.0.0 (2016-11-13)
 
 - Fixed CLI command descriptions.
 - Fixed OSX versus macOS terminology.
@@ -162,7 +162,7 @@
 - Refactored gemspec to use default security keys.
 - Refactored source requirements.
 
-# v3.2.0 (2015-12-02)
+# 3.2.0 (2015-12-02)
 
 - Fixed README URLs to use HTTPS schemes where possible.
 - Fixed README test command instructions.
@@ -186,7 +186,7 @@
 - Removed GitTip badge from README.
 - Removed unnecessary exclusions from .gitignore.
 
-# v3.1.0 (2015-07-05)
+# 3.1.0 (2015-07-05)
 
 - Removed JRuby support (no longer officially supported).
 - Fixed secure gem installs (new cert has 10 year lifespan).
@@ -194,7 +194,7 @@
 - Added CLI process title support.
 - Added code of conduct documentation.
 
-# v3.0.0 (2015-01-01)
+# 3.0.0 (2015-01-01)
 
 - Removed Ruby 2.0.0 support.
 - Removed Rubinius support.
@@ -202,7 +202,7 @@
 - Updated to Thor+ 2.x.x.
 - Added Ruby 2.2.0 support.
 
-# v2.6.0 (2014-10-22)
+# 2.6.0 (2014-10-22)
 
 - Updated to Ruby 2.1.3.
 - Updated to Rubinius 2.2.10.
@@ -213,13 +213,13 @@
 - Added the Guard Terminal Notifier gem.
 - Refactored RSpec configuration, support, and kit folders.
 
-# v2.5.0 (2014-07-06)
+# 2.5.0 (2014-07-06)
 
 - Added Code Climate test coverage support.
 - Updated to Ruby 2.1.2.
 - Updated gem-public.pem for gem install certificate chain.
 
-# v2.4.0 (2014-04-16)
+# 2.4.0 (2014-04-16)
 
 - Updated to MRI 2.1.1.
 - Updated to Rubinius 2.x.x.
@@ -230,12 +230,12 @@
 - Added Gemnasium support.
 - Added Coveralls support.
 
-# v2.3.0 (2014-02-15)
+# 2.3.0 (2014-02-15)
 
 - Updated gemspec homepage URL to use GitHub project URL.
 - Added JRuby and Rubinius VM support.
 
-# v2.2.0 (2013-12-28)
+# 2.2.0 (2013-12-28)
 
 - Fixed long-form commands to use "--" prefix. Example: --example.
 - Fixed Ruby Gem certificate requirements for package building.
@@ -246,7 +246,7 @@
 - Updated to Ruby 2.1.0.
 - Updated public gem certificate to be referenced from a central server.
 
-# v2.1.0 (2013-08-13)
+# 2.1.0 (2013-08-13)
 
 - Cleaned up requirement path syntax.
 - Cleaned up RSpec spec definitions so that class and instance methods are described properly using . and # notation.
@@ -262,7 +262,7 @@
 - Switched from the pry-debugger to pry-byebug gem.
 - Ignore the signing of a gem when building in a Travis CI environment.
 
-# v2.0.0 (2013-03-17)
+# 2.0.0 (2013-03-17)
 
 - Upgraded to Ruby 2.0.0.
 - Applied the Code Climate GPA badge to README.
@@ -271,7 +271,7 @@
 - Cleaned up Guard gem dependency requirements.
 - Added 'tmp' directory to .gitignore.
 
-# v1.0.0 (2013-03-16)
+# 1.0.0 (2013-03-16)
 
 - Upgraded to Alfred 2.x.x.
 - Removed Alfred 1.x.x extensions and added Alfred 2.x.x workflows.
@@ -279,7 +279,7 @@
 - Converted/detailed the CONTRIBUTING guidelines per GitHub requirements.
 - Cleaned up the README documentation.
 
-# v0.2.0 (2012-05-19)
+# 0.2.0 (2012-05-19)
 
 - Cleaned up doc.
 - Renamed MacOS X to OSX.
@@ -290,6 +290,6 @@
 - Switched to default editor for edit extensions so that TextMate isn't explicitly called.
 - Fixed spec with call to pbcopy.
 
-# v0.1.0 (2012-03-18)
+# 0.1.0 (2012-03-18)
 
 - Initial version.
