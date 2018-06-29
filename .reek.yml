@@ -1,0 +1,10 @@
+---
+detectors:
+  DuplicateMethodCall:
+    exclude:
+    - Pennyworth::CLI#install
+  TooManyStatements:
+    exclude:
+    - initialize
+    - Pennyworth::CLI#install
+    - Pennyworth::CLI#string
