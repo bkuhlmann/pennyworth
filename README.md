@@ -36,11 +36,11 @@ A command line interface that enhances and extends Alfred with Ruby support.
 
 ## Requirements
 
-0. [macOS](https://www.apple.com/macos).
-0. [Alfred](https://www.alfredapp.com) (Version 2.x.x or higher).
-0. [Alfred Powerpack](https://www.alfredapp.com/purchase).
-0. [chruby](https://github.com/postmodern/chruby).
-0. [Ruby 2.5.x](https://www.ruby-lang.org).
+1. [macOS](https://www.apple.com/macos).
+1. [Alfred](https://www.alfredapp.com) (Version 2.x.x or higher).
+1. [Alfred Powerpack](https://www.alfredapp.com/purchase).
+1. [chruby](https://github.com/postmodern/chruby).
+1. [Ruby 2.5.x](https://www.ruby-lang.org).
 
 ## Setup
 
