@@ -32,7 +32,7 @@ A command line interface that enhances and extends Alfred with Ruby support.
 - Adds Ruby support to Alfred.
 - Adds Alfred Workflow:
 
-      ![Alfred Workflow](doc/alfred_workflow.png)
+![Alfred Workflow](doc/alfred_workflow.png)
 
 ## Requirements
 
