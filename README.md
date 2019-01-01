@@ -40,7 +40,7 @@ A command line interface that enhances and extends Alfred with Ruby support.
 1. [Alfred](https://www.alfredapp.com) (Version 2.x.x or higher).
 1. [Alfred Powerpack](https://www.alfredapp.com/purchase).
 1. [chruby](https://github.com/postmodern/chruby).
-1. [Ruby 2.5.x](https://www.ruby-lang.org).
+1. [Ruby 2.6.x](https://www.ruby-lang.org).
 
 ## Setup
 
