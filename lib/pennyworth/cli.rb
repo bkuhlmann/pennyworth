@@ -19,7 +19,7 @@ module Pennyworth
     end
 
     def self.configuration
-      Runcom::Configuration.new Identity.name
+      Runcom::Config.new Identity.name
     end
 
     def initialize args = [], options = {}, config = {}
