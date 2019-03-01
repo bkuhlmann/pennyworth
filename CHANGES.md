@@ -1,3 +1,9 @@
+# 8.1.0 (2019-03-01)
+
+- Updated README to reference updated Runcom documentation.
+- Updated to Rubocop 0.63.0.
+- Updated to Ruby 2.6.1.
+
 # 8.0.0 (2019-01-01)
 
 - Fixed Circle CI cache for Ruby version.
