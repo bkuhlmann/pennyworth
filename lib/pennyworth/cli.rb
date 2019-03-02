@@ -61,13 +61,13 @@ module Pennyworth
     # rubocop:disable Metrics/CyclomaticComplexity
     # rubocop:disable Metrics/PerceivedComplexity
     def string value
-      if options.downcase? then say(value.downcase)
-      elsif options.upcase? then say(value.upcase)
-      elsif options.titleize? then say(value.titleize)
-      elsif options.camelcase? then say(value.camelcase)
-      elsif options.snakecase? then say(value.snakecase)
-      elsif options.size? then say(value.size)
-      else say("Type 'pennyworth help string' for usage.")
+      if options.downcase? then say value.downcase
+      elsif options.upcase? then say value.upcase
+      elsif options.titleize? then say value.titleize
+      elsif options.camelcase? then say value.camelcase
+      elsif options.snakecase? then say value.snakecase
+      elsif options.size? then say value.size
+      else say "Type 'pennyworth help string' for usage."
       end
     end
     # rubocop:enable Metrics/CyclomaticComplexity
@@ -80,7 +80,7 @@ module Pennyworth
 
       alfred_settings_root = self.class.configuration.to_h[:alfred_settings_root]
 
-      if valid_file?(alfred_settings_root, "Invalid directory for Alfred settings root")
+      if valid_file? alfred_settings_root, "Invalid directory for Alfred settings root"
         if yes? "Installing Alfred Workflows will destroy exiting, identical, workflows. " \
                 "Continue (y/n)?"
           say_status :info, "Installing Alfred Workflows...", :green
@@ -121,7 +121,7 @@ module Pennyworth
       if options.edit? then `#{ENV["EDITOR"]} #{path}`
       elsif options.info?
         path ? say(path) : say("Configuration doesn't exist.")
-      else help(:config)
+      else help :config
       end
     end
 
