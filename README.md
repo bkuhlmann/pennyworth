@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="pennyworth.png" alt="Pennyworth Icon"/>
+</p>
+
 # Pennyworth
 
 [![Gem Version](https://badge.fury.io/rb/pennyworth.svg)](http://badge.fury.io/rb/pennyworth)
