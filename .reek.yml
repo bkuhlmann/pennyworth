@@ -3,6 +3,8 @@ detectors:
   DuplicateMethodCall:
     exclude:
     - Pennyworth::CLI#install
+  IrresponsibleModule:
+    enabled: false
   TooManyStatements:
     exclude:
     - initialize
