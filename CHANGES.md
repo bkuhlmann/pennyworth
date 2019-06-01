@@ -1,3 +1,14 @@
+# 8.3.0 (2019-06-01)
+
+- Fixed RSpec/ContextWording issues.
+- Updated Reek configuration to disable IrresponsibleModule.
+- Updated contributing documentation.
+- Updated to Reek 5.4.0.
+- Updated to Rubocop 0.69.0.
+- Updated to Rubocop Performance 1.3.0.
+- Updated to Rubocop RSpec 1.33.0.
+- Updated to Runcom 5.0.0.
+
 # 8.2.1 (2019-05-01)
 
 - Fixed Rubocop layout issues.
