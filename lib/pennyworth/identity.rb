@@ -12,7 +12,7 @@ module Pennyworth
     end
 
     def self.version
-      "8.3.2"
+      "8.3.3"
     end
 
     def self.version_label
