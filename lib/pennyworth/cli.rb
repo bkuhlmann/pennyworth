@@ -19,7 +19,7 @@ module Pennyworth
     end
 
     def self.configuration
-      Runcom::Config.new Identity.name
+      Runcom::Config.new "#{Identity.name}/configuration.yml"
     end
 
     def initialize args = [], options = {}, config = {}
@@ -118,7 +118,7 @@ module Pennyworth
                   type: :boolean,
                   default: false
     def config
-      path = self.class.configuration.path
+      path = self.class.configuration.current
 
       if options.edit? then `#{ENV["EDITOR"]} #{path}`
       elsif options.info?
