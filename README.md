@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="pennyworth.png" alt="Pennyworth Icon"/>
+  <img src="https://www.alchemists.io/images/projects/pennyworth/icon.png" alt="Pennyworth Icon"/>
 </p>
 
 # Pennyworth
@@ -36,7 +36,7 @@ A command line interface that enhances Alfred with Ruby support.
 - Adds Ruby support to Alfred.
 - Adds Alfred Workflow:
 
-![Alfred Workflow](doc/alfred_workflow.png)
+![Alfred Workflow](https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred_workflow.png)
 
 ## Requirements
 
