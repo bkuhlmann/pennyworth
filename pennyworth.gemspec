@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-$LOAD_PATH.append File.expand_path("lib", __dir__)
-require "pennyworth/identity"
+require_relative "lib/pennyworth/identity"
 
 Gem::Specification.new do |spec|
   spec.name = Pennyworth::Identity.name
