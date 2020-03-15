@@ -16,6 +16,8 @@ A command line interface that enhances Alfred with Ruby support.
   - [Features](#features)
   - [Requirements](#requirements)
   - [Setup](#setup)
+    - [Production](#production)
+    - [Development](#development)
   - [Usage](#usage)
     - [Command Line Interface (CLI)](#command-line-interface-cli)
     - [Customization](#customization)
@@ -46,9 +48,23 @@ A command line interface that enhances Alfred with Ruby support.
 
 ## Setup
 
-Type the following to install:
+### Production
+
+To install, run:
 
     gem install pennyworth
+
+### Development
+
+To contribute, run:
+
+    git clone https://github.com/bkuhlmann/pennyworth.git
+    cd pennyworth
+    bin/setup
+
+You can also use the IRB console for direct access to all objects:
+
+    bin/console
 
 ## Usage
 
