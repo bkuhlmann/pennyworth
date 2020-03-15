@@ -3,20 +3,9 @@
 module Pennyworth
   # Gem identity information.
   module Identity
-    def self.name
-      "pennyworth"
-    end
-
-    def self.label
-      "Pennyworth"
-    end
-
-    def self.version
-      "9.0.0"
-    end
-
-    def self.version_label
-      "#{label} #{version}"
-    end
+    NAME = "pennyworth"
+    LABEL = "Pennyworth"
+    VERSION = "9.0.0"
+    VERSION_LABEL = "#{LABEL} #{VERSION}"
   end
 end

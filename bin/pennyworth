@@ -5,5 +5,5 @@ require "pennyworth"
 require "pennyworth/cli"
 require "pennyworth/identity"
 
-Process.setproctitle Pennyworth::Identity.version_label
+Process.setproctitle Pennyworth::Identity::VERSION_LABEL
 Pennyworth::CLI.start

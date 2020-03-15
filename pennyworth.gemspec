@@ -3,8 +3,8 @@
 require_relative "lib/pennyworth/identity"
 
 Gem::Specification.new do |spec|
-  spec.name = Pennyworth::Identity.name
-  spec.version = Pennyworth::Identity.version
+  spec.name = Pennyworth::Identity::NAME
+  spec.version = Pennyworth::Identity::VERSION
   spec.platform = Gem::Platform::RUBY
   spec.authors = ["Brooke Kuhlmann"]
   spec.email = ["brooke@alchemists.io"]
