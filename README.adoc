@@ -1,0 +1,149 @@
+:toc: macro
+:toclevels: 5
+:figure-caption!:
+
+= Pennyworth
+
+[link=http://badge.fury.io/rb/pennyworth]
+image::https://badge.fury.io/rb/pennyworth.svg[Gem Version]
+[link=https://circleci.com/gh/bkuhlmann/pennyworth]
+image::https://circleci.com/gh/bkuhlmann/pennyworth.svg?style=svg[Circle CI Status]
+
+A command line interface that enhances Alfred with Ruby support.
+
+toc::[]
+
+== Features
+
+* Adds Ruby support to Alfred.
+* Adds Alfred Workflow:
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred_workflow.png[Alfred
+Workflow]
+
+== Requirements
+
+. https://www.apple.com/macos[macOS].
+. https://www.alfredapp.com[Alfred] (Version 2.x.x or higher).
+. https://www.alfredapp.com/purchase[Alfred Powerpack].
+. https://github.com/postmodern/chruby[chruby].
+. https://www.ruby-lang.org[Ruby 2.7.x].
+
+== Setup
+
+=== Production
+
+To install, run:
+
+[source,bash]
+----
+gem install pennyworth
+----
+
+=== Development
+
+To contribute, run:
+
+[source,bash]
+----
+git clone https://github.com/bkuhlmann/pennyworth.git
+cd pennyworth
+bin/setup
+----
+
+You can also use the IRB console for direct access to all objects:
+
+[source,bash]
+----
+bin/console
+----
+
+== Usage
+
+=== Command Line Interface (CLI)
+
+From the command line, type: pennyworth
+
+....
+pennyworth -c, [--config]        # Manage gem configuration.
+pennyworth -h, [--help=COMMAND]  # Show this message or get help for a command.
+pennyworth -i, [--install]       # Install Alfred Workflows.
+pennyworth -s, [--string=VALUE]  # Manipulate strings.
+pennyworth -v, [--version]       # Show gem version.
+....
+
+For string options, type: pennyworth help string
+
+....
+-d, [--downcase], [--no-downcase]    # Downcase string.
+-u, [--upcase], [--no-upcase]        # Upcase string.
+-t, [--titleize], [--no-titleize]    # Capitalize each word and delimit with space or forward slash.
+-c, [--camelcase], [--no-camelcase]  # Capitalize each word and delimit with nothing or double colon.
+-s, [--snakecase], [--no-snakecase]  # Downcase each word and delimit with underscore or forward slash.
+-s, [--size], [--no-size]            # Calculate string size.
+....
+
+While the command line options are nice, the real power comes from running the following command:
+`pennyworth -i`. This command installs the Alfred Workflows to support this gem. You can use the
+Alfred commands provided by each workflow instead of the CLI. Check each workflows documentation for
+details by opening Alfred preferences and clicking on the _Workflows_ tab. Each workflow associated
+with this gem is prefixed with _Pennyworth_.
+
+=== Customization
+
+This gem can be configured via a global configuration:
+
+....
+~/.config/pennyworth/configuration.yml
+....
+
+It can also be configured via link:https://www.alchemists.io/projects/xdg[XDG] environment
+variables.
+
+The default configuration is as follows:
+
+[source,yaml]
+----
+:alfred_settings_root: "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
+----
+
+Feel free to take this default configuration, modify, and save as your own custom
+`configuration.yml`.
+
+== Tests
+
+To test, run:
+
+[source,bash]
+----
+bundle exec rake
+----
+
+== Versioning
+
+Read link:https://semver.org[Semantic Versioning] for details. Briefly, it means:
+
+* Major (X.y.z) - Incremented for any backwards incompatible public API changes.
+* Minor (x.Y.z) - Incremented for new, backwards compatible, public API enhancements/fixes.
+* Patch (x.y.Z) - Incremented for small, backwards compatible, bug fixes.
+
+== Code of Conduct
+
+Please note that this project is released with a link:CODE_OF_CONDUCT.adoc[CODE OF CONDUCT]. By
+participating in this project you agree to abide by its terms.
+
+== Contributions
+
+Read link:CONTRIBUTING.adoc[CONTRIBUTING] for details.
+
+== License
+
+Read link:LICENSE.adoc[LICENSE] for details.
+
+== History
+
+Read link:CHANGES.adoc[CHANGES] for details.
+
+== Credits
+
+Engineered by link:https://www.alchemists.io/team/brooke_kuhlmann.html[Brooke Kuhlmann].
