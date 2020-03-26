@@ -8,14 +8,15 @@ Gem::Specification.new do |spec|
   spec.platform = Gem::Platform::RUBY
   spec.authors = ["Brooke Kuhlmann"]
   spec.email = ["brooke@alchemists.io"]
-  spec.homepage = "https://github.com/bkuhlmann/pennyworth"
+  spec.homepage = "https://www.alchemists.io/projects/pennyworth"
   spec.summary = "A command line interface that enhances Alfred with Ruby support."
   spec.license = "Apache-2.0"
 
   spec.metadata = {
-    "source_code_uri" => "https://github.com/bkuhlmann/pennyworth",
-    "changelog_uri" => "https://github.com/bkuhlmann/pennyworth/blob/master/CHANGES.md",
-    "bug_tracker_uri" => "https://github.com/bkuhlmann/pennyworth/issues"
+    "bug_tracker_uri" => "https://github.com/bkuhlmann/pennyworth/issues",
+    "changelog_uri" => "https://www.alchemists.io/projects/pennyworth/changes.html",
+    "documentation_uri" => "https://www.alchemists.io/projects/pennyworth",
+    "source_code_uri" => "https://github.com/bkuhlmann/pennyworth"
   }
 
   spec.signing_key = Gem.default_key_path
