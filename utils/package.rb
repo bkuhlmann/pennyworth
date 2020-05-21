@@ -6,40 +6,29 @@
 # Usage
 # ruby package.rb
 
-# Dependencies
 require "fileutils"
+require "pathname"
 
 # Settings
-GEM_WORKFLOW_ROOT = File.join File.dirname(__FILE__),
-                              "..",
-                              "lib",
-                              "pennyworth",
-                              "templates",
-                              "workflows"
-ALFRED_SETTINGS_ROOT = "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
-ALFRED_WORKFLOW_ROOT = "#{ALFRED_SETTINGS_ROOT}/workflows"
+GEM_WORKFLOW_ROOT = Pathname "../lib/pennyworth/templates/workflows"
+ALFRED_SETTINGS_ROOT = Pathname "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
+ALFRED_WORKFLOW_ROOT = ALFRED_SETTINGS_ROOT.join "workflows"
 
 WORKFLOWS = [
   "user.workflow.C431E56A-0EC2-47EE-94D5-D67D9FE323BE",
   "user.workflow.B59B22A2-1880-4765-9358-412791BE9202"
 ].freeze
 
-# Package helper method that packages Alfred source folders for distribution.
-# ==== Parameters
-# * +folders+ - Required. The array of folders to package.
-# * +source+ - Required. The folders source path.
-# * +destination+ - Required. The destination path for packaging.
 def package folders, source, destination
   folders.each do |folder|
-    FileUtils.cp_r File.join(source, folder), destination
+    FileUtils.cp_r source.join(folder), destination
     puts "  Packaged: #{folder}"
   end
 end
 
-# Execution
 puts "\nCleaning gem package root..."
-FileUtils.rm_r GEM_WORKFLOW_ROOT
-FileUtils.mkdir_p File.join(GEM_WORKFLOW_ROOT)
+GEM_WORKFLOW_ROOT.rmtree
+GEM_WORKFLOW_ROOT.mkdir
 
 puts "Packaging Alfred workflows..."
 package WORKFLOWS, ALFRED_WORKFLOW_ROOT, GEM_WORKFLOW_ROOT
