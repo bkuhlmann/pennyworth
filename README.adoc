@@ -23,11 +23,11 @@ Workflow]
 
 == Requirements
 
-. https://www.apple.com/macos[macOS].
-. https://www.alfredapp.com[Alfred] (Version 2.x.x or higher).
-. https://www.alfredapp.com/purchase[Alfred Powerpack].
-. https://github.com/postmodern/chruby[chruby].
-. https://www.ruby-lang.org[Ruby 2.7.x].
+. https://www.apple.com/macos[macOS]
+. https://www.alfredapp.com[Alfred]
+. https://www.alfredapp.com/purchase[Alfred Powerpack]
+. https://github.com/postmodern/chruby[chruby]
+. https://www.ruby-lang.org[Ruby]
 
 == Setup
 
