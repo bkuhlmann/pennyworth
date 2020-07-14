@@ -58,7 +58,6 @@ module Pennyworth
                   desc: "Calculate string size.",
                   type: :boolean,
                   default: false
-    # rubocop:disable Metrics/CyclomaticComplexity
     # rubocop:disable Metrics/PerceivedComplexity
     def string value
       if options.downcase? then say value.downcase
@@ -70,7 +69,6 @@ module Pennyworth
       else say "Type 'pennyworth help string' for usage."
       end
     end
-    # rubocop:enable Metrics/CyclomaticComplexity
     # rubocop:enable Metrics/PerceivedComplexity
 
     desc "-i, [--install]", "Install Alfred Workflows."
