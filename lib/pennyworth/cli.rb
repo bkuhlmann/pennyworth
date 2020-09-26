@@ -79,6 +79,7 @@ module Pennyworth
       if valid_file? alfred_settings_root, "Invalid directory for Alfred settings root"
         if yes? "Installing Alfred Workflows will destroy exiting, identical, workflows. " \
                 "Continue (y/n)?"
+
           say_status :info, "Installing Alfred Workflows...", :green
 
           workflows = Dir.glob File.join(self.class.source_root, "workflows", "**")
