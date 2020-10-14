@@ -31,31 +31,11 @@ Workflow]
 
 == Setup
 
-=== Production
-
 To install, run:
 
 [source,bash]
 ----
 gem install pennyworth
-----
-
-=== Development
-
-To contribute, run:
-
-[source,bash]
-----
-git clone https://github.com/bkuhlmann/pennyworth.git
-cd pennyworth
-bin/setup
-----
-
-You can also use the IRB console for direct access to all objects:
-
-[source,bash]
-----
-bin/console
 ----
 
 == Usage
@@ -109,6 +89,24 @@ The default configuration is as follows:
 
 Feel free to take this default configuration, modify, and save as your own custom
 `configuration.yml`.
+
+== Development
+
+To contribute, run:
+
+[source,bash]
+----
+git clone https://github.com/bkuhlmann/pennyworth.git
+cd pennyworth
+bin/setup
+----
+
+You can also use the IRB console for direct access to all objects:
+
+[source,bash]
+----
+bin/console
+----
 
 == Tests
 
