@@ -1,14 +1,34 @@
 = Changes
 
+== 9.4.0 (2020-11-14)
+
+* Fixed Rubocop Layout/EmptyLineAfterMultilineCondition issue
+* Added Alchemists style guide badge
+* Added Bundler Leak development dependency
+* Added Guard and Rubocop binstubs
+* Updated Rubocop gems
+* Updated project documentation to conform to Rubysmith template
+* Updated to Bundler Audit 0.7.0
+* Updated to Gemsmith 14.8.0
+* Updated to Git Lint 1.3.0
+* Updated to RSpec 3.10.0
+* Updated to Refinements 7.11.0
+* Updated to Refinements 7.14.0
+* Updated to Rubocop 0.89.0
+* Updated to Ruby 2.7.2
+* Updated to Runcom 6.4.0
+* Updated to SimpleCov 0.19.0
+* Removed Metrics/PerceivedComplexity from CLI
+
 == 9.3.0 (2020-07-22)
 
-- Fixed Rubocop Lint/NonDeterministicRequireOrder issues
-- Fixed Rubocop Lint/RedundantCopDisableDirective issue
-- Fixed project requirements
-- Updated GitHub templates
-- Updated to Gemsmith 14.2.0
-- Updated to Git Lint 1.0.0
-- Refactored Rakefile requirements
+* Fixed Rubocop Lint/NonDeterministicRequireOrder issues
+* Fixed Rubocop Lint/RedundantCopDisableDirective issue
+* Fixed project requirements
+* Updated GitHub templates
+* Updated to Gemsmith 14.2.0
+* Updated to Git Lint 1.0.0
+* Refactored Rakefile requirements
 
 == 9.2.0 (2020-05-21)
 
