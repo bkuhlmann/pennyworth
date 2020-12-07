@@ -7,6 +7,7 @@ require "simplecov"
 SimpleCov.start { enable_coverage :branch }
 
 require "pennyworth"
+require "refinements"
 
 using Refinements::Pathnames
 
