@@ -5,7 +5,7 @@ module Pennyworth
   module Identity
     NAME = "pennyworth"
     LABEL = "Pennyworth"
-    VERSION = "9.5.0"
+    VERSION = "10.0.0"
     VERSION_LABEL = "#{LABEL} #{VERSION}"
   end
 end
