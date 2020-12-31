@@ -3,12 +3,14 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::CLI do
+  include_context "with temporary directory"
+
   describe ".start" do
     let(:options) { [] }
     let(:command_line) { Array(command).concat options }
     let(:cli) { described_class.start command_line }
 
-    shared_examples_for "a config command", :temp_dir do
+    shared_examples_for "a config command" do
       context "with no options" do
         it "prints help text" do
           result = -> { cli }
