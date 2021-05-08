@@ -28,16 +28,8 @@ module Pennyworth
 
     desc "-s, [--string=VALUE]", "Manipulate strings."
     map %w[-s --string] => :string
-    method_option :downcase,
-                  aliases: "-d",
-                  desc: "Downcase string.",
-                  type: :boolean,
-                  default: false
-    method_option :upcase,
-                  aliases: "-u",
-                  desc: "Upcase string.",
-                  type: :boolean,
-                  default: false
+    method_option :downcase, aliases: "-d", desc: "Downcase string.", type: :boolean, default: false
+    method_option :upcase, aliases: "-u", desc: "Upcase string.", type: :boolean, default: false
     method_option :titleize,
                   aliases: "-t",
                   desc: "Capitalize each word and delimit with space or forward slash.",
