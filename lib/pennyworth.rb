@@ -1,4 +1,11 @@
 # frozen_string_literal: true
 
-require "pennyworth/identity"
-require "pennyworth/cli"
+require "zeitwerk"
+
+loader = Zeitwerk::Loader.for_gem
+loader.inflector.inflect "cli" => "CLI"
+loader.setup
+
+# Main namespace.
+module Pennyworth
+end
