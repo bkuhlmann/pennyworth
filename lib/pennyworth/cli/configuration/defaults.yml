@@ -1,0 +1,25 @@
+:alfred:
+  :preferences:
+:inflections:
+  - "Bkuhlmann": "bkuhlmann"
+  - "Dry Auto Inject": "Dry AutoInject"
+  - "Dry Cli": "Dry CLI"
+  - "Flacsmith": "FLACsmith"
+  - "Git Plus": "Git+"
+  - "Mac Os Config": "macOS Configuration"
+  - "Mac Os": "MacOS"
+  - "Prawn Plus": "Prawn+"
+  - "Rubocop Ast": "Rubocop  AST"
+  - "Rubocop Md": "Rubocop  Markdown"
+  - "Rubocop Rspec": "Rubocop RSpec"
+  - "Xdg": "XDG"
+:git_hub:
+  :api_url: "https://api.github.com"
+  :organization:
+  :user:
+:http:
+  :statuses:
+    :url: "https://httpstatuses.com"
+:ruby_gems:
+  :api_url: "https://rubygems.org/api/v1"
+  :owner:
