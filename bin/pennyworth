@@ -4,3 +4,4 @@
 require "pennyworth"
 
 Process.setproctitle Pennyworth::Identity::VERSION_LABEL
+Pennyworth::CLI::Shell.new.call ARGV
