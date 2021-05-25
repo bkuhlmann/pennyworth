@@ -2,8 +2,5 @@
 # frozen_string_literal: true
 
 require "pennyworth"
-require "pennyworth/cli"
-require "pennyworth/identity"
 
 Process.setproctitle Pennyworth::Identity::VERSION_LABEL
-Pennyworth::CLI.start
