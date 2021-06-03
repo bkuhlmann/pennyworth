@@ -16,8 +16,8 @@ RSpec.describe Pennyworth::CLI::Configuration::Loader do
         {"Mac Os Config" => "macOS Configuration"},
         {"Mac Os" => "MacOS"},
         {"Prawn Plus" => "Prawn+"},
-        {"Rubocop Ast" => "Rubocop  AST"},
-        {"Rubocop Md" => "Rubocop  Markdown"},
+        {"Rubocop Ast" => "Rubocop AST"},
+        {"Rubocop Md" => "Rubocop Markdown"},
         {"Rubocop Rspec" => "Rubocop RSpec"},
         {"Xdg" => "XDG"}
       ],
