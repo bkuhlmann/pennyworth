@@ -17,19 +17,20 @@ toc::[]
 
 == Features
 
-* Adds Ruby support to Alfred.
-* Adds Alfred Workflow:
+* Adds Ruby support to link:https://www.alfredapp.com/help/workflows/inputs/script-filter/json[Alfred].
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred_workflow.png[Alfred
-Workflow]
+== Screencast
+
+video::https://www.alchemists.io/videos/projects/pennyworth/demo.mp4[width=1062,height=1194,role=focal_point]
 
 == Requirements
 
-. https://www.apple.com/macos[macOS]
-. https://www.alfredapp.com[Alfred]
-. https://www.alfredapp.com/purchase[Alfred Powerpack]
-. https://github.com/postmodern/chruby[chruby]
-. https://www.ruby-lang.org[Ruby]
+. link:https://www.apple.com/macos[macOS]
+. link:https://www.alfredapp.com[Alfred]
+. link:https://www.alfredapp.com/purchase[Alfred Powerpack]
+. link:https://www.gnu.org/software/bash[Bash]
+. link:https://github.com/postmodern/chruby[chruby]
+. link:https://www.ruby-lang.org[Ruby]
 
 == Setup
 
@@ -40,36 +41,71 @@ To install, run:
 gem install pennyworth
 ----
 
+When using the `-\-git_hub` CLI option, you'll want to supply your login and personal access token
+with at least _read_ access via the following environment variables:
+
+[source,bash]
+----
+GITHUB_API_LOGIN=
+GITHUB_API_TOKEN=
+----
+
+You can configure these environment variables via link:https://direnv.net[direnv] if using the CLI
+or through the link:https://www.alfredapp.com/help/workflows/advanced/variables/#environment[Alfred
+Workflow Environment].
+
 == Usage
 
 === Command Line Interface (CLI)
 
-From the command line, type: pennyworth
+From the command line, type `pennyworth` to render usage:
 
 ....
-pennyworth -c, [--config]        # Manage gem configuration.
-pennyworth -h, [--help=COMMAND]  # Show this message or get help for a command.
-pennyworth -i, [--install]       # Install Alfred Workflows.
-pennyworth -s, [--string=VALUE]  # Manipulate strings.
-pennyworth -v, [--version]       # Show gem version.
+USAGE:
+  -c, --config ACTION                      Manage gem configuration. Actions: edit || view.
+      --encodings                          Render Alfred encodings script filter.
+      --git_hub                            Render Alfred GitHub repositories script filter.
+  -h, --help                               Show this message.
+      --http_statuses                      Render Alfred HTTP statuses script filter.
+      --ruby_gems                          Render Alfred RubyGems script filter.
+      --system_errors                      Render Alfred system errors script filter.
+      --system_signals                     Render Alfred system signals script filter.
+      --text CONTENT                       Render Alfred text script filter.
+  -v, --version                            Show gem version.
+
+GITHUB OPTIONS:
+      --organization [HANDLE]              Set organization. Default: "".
+      --user [HANDLE]                      Set user. Default: "".
+
+RUBYGEMS OPTIONS:
+      --owner [HANDLE]                     Set owner. Default: "".
 ....
 
-For string options, type: pennyworth help string
+The following demonstrates how to use Pennyworth from the CLI or within an Alfred script filter:
 
-....
--d, [--downcase], [--no-downcase]    # Downcase string.
--u, [--upcase], [--no-upcase]        # Upcase string.
--t, [--titleize], [--no-titleize]    # Capitalize each word and delimit with space or forward slash.
--c, [--camelcase], [--no-camelcase]  # Capitalize each word and delimit with nothing or double colon.
--s, [--snakecase], [--no-snakecase]  # Downcase each word and delimit with underscore or forward slash.
--s, [--size], [--no-size]            # Calculate string size.
-....
+[source,bash]
+----
+pennyworth --config edit
+pennyworth --config view
 
-While the command line options are nice, the real power comes from running the following command:
-`pennyworth -i`. This command installs the Alfred Workflows to support this gem. You can use the
-Alfred commands provided by each workflow instead of the CLI. Check each workflows documentation for
-details by opening Alfred preferences and clicking on the _Workflows_ tab. Each workflow associated
-with this gem is prefixed with _Pennyworth_.
+pennyworth --encodings
+
+pennyworth --git_hub --organization alchemists
+pennyworth --git_hub --user bkuhlmann
+
+pennyworth --http_statuses
+pennyworth --ruby_gems --owner bkuhlmann
+pennyworth --system_errors
+pennyworth --system_signals
+
+pennyworth --text demo
+pennyworth --text "An Example"
+----
+
+While the command line options are nice, the real power comes from using Pennyworth in conjunction
+with link:https://www.alfredapp.com/help/workflows/inputs/script-filter/json[Alfred Script Filters].
+Without having Alfred wired up to consume the CLI output, you'll only get a JSON in your console. To
+explain better, continue reading or skip ahead to the _Workflows_ section.
 
 === Customization
 
@@ -86,11 +122,154 @@ The default configuration is as follows:
 
 [source,yaml]
 ----
-:alfred_settings_root: "/Users/bkuhlmann/Dropbox/Cache/Alfred/Alfred.alfredpreferences"
+:alfred:
+  :preferences:
+:inflections:
+  - "Bkuhlmann": "bkuhlmann"
+  - "Dry Auto Inject": "Dry AutoInject"
+  - "Dry Cli": "Dry CLI"
+  - "Flacsmith": "FLACsmith"
+  - "Git Plus": "Git+"
+  - "Mac Os Config": "macOS Configuration"
+  - "Mac Os": "MacOS"
+  - "Prawn Plus": "Prawn+"
+  - "Rubocop Ast": "Rubocop  AST"
+  - "Rubocop Md": "Rubocop  Markdown"
+  - "Rubocop Rspec": "Rubocop RSpec"
+  - "Xdg": "XDG"
+:git_hub:
+  :api_url: "https://api.github.com"
+  :organization:
+  :user:
+:http:
+  :statuses:
+    :url: "https://httpstatuses.com"
+:ruby_gems:
+  :api_url: "https://rubygems.org/api/v1"
+  :owner:
 ----
 
 Feel free to take this default configuration, modify, and save as your own custom
 `configuration.yml`.
+
+=== Themes
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/alchemists-theme.png[Alchemists Theme,width=634,height=121,role=focal_point]
+
+To use the
+link:https://www.alchemists.io/public/aflred/themes/alchemists.alfredappearance[Alchemists Theme],
+used for all screenshots, follow these steps:
+
+1. link:https://www.alchemists.io/public/aflred/themes/alchemists.alfredappearance[Download] (right
+   click) theme.
+1. Double click to install.
+
+=== Workflows
+
+Not all workflows require Pennyworth to run properly. For the workflows that _do_ require Pennyworth
+support, the following assumptions are made:
+
+1. Your link:https://www.alchemists.io/projects/dotfiles[Dotfiles] are configured to use Bash and
+   load your environment appropriately.
+1. You have the latest version of Ruby and Pennyworth installed.
+
+With the above requirements in mind, you should only need to build an Alfred Script Filter that
+looks something like this:
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/script_filter.png[Script Filter,width=776,height=635,role=focal_point]
+
+That's all it takes to use Pennyworth as an Alfred script filter. 🎉 You don't have to do any of this
+work yourself. I've already built the corresponding workflows. The following sections will allow you
+to download and use the corresponding Alfred Workflows that are powered by Pennyworth.
+
+Before diving into each workflow, the following capabilties are mostly available to all workflows
+depending on what kind of item is selected in the script filter:
+
+* `SHIFT` or `COMMAND + y` will launch quick look for any URL based workflow.
+* `ENTER` or `COMMAND + c` will copy non-URL selections to clipboard.
+* `COMMAND + l` will launch large type of current selection.
+* `ENTER` Will either copy selection to clipboard or launch URL in default web browser.
+
+==== Alchemists
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/alchemists-projects.png[Alchemists Projects,width=706,height=622,role=focal_point]
+
+1. link:https://www.alchemists.io/public/aflred/workflows/alchemists.alfredworkflow[Download] (right
+   click).
+1. Type `ax` to activate.
+
+💡 Use `ENTER` to view site, `CONTROL` to view changes, `OPTION` to view source, and `COMMAND` to
+view issues.
+
+==== Dry RB
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/dry-gems.png[Dry Gems,width=706,height=622,role=focal_point]
+
+1. link:https://www.alchemists.io/public/aflred/workflows/dry.alfredworkflow[Download] (right click).
+1. Type `dry` to activate.
+
+💡 Use `ENTER` to visit site, `CONTROL` to view changes, `OPTION` to view source, and `COMMAND` to
+view issues.
+
+==== Encodings
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/encodings.png[Encodings,width=706,height=622,role=focal_point]
+
+1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] (right click).
+1. Type `encodings` to activate.
+
+💡 Use `ENTER` to copy label and `OPTION` to copy aliases to clipboard.
+
+==== HTTP Statuses
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/http_statuses.png[HTTP Statuses,width=706,height=622,role=focal_point]
+
+1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] (right click).
+1. Type `https` to activate.
+
+💡 Use `ENTER` to copy symbol, `CONTROL` to copy code, `OPTION` to copy label, and `COMMAND` to view
+documentation.
+
+==== Rubocop
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/rubocop-projects.png[Rubocop Projects,width=706,height=622,role=focal_point]
+
+1. link:https://www.alchemists.io/public/aflred/workflows/rubocop.alfredworkflow[Download] (right
+   click).
+1. Type `cop` to activate.
+
+💡 Use `ENTER` to view site, `CONTROL` to view changes, `OPTION` to view source, and `COMMAND` to
+view issues.
+
+==== System Errors
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/system_errors.png[System Errors,width=706,height=622,role=focal_point]
+
+1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] (right click).
+1. Type `syserr` to activate.
+
+💡 Use `ENTER` to copy constant/class, `CONTROL` to copy ID, `OPTION` to copy description, and
+`COMMAND` to copy ID, name, and description.
+
+==== System Signals
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/system_signals.png[System Signals,width=706,height=622,role=focal_point]
+
+1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] (right
+   click).
+1. Type `signals` to activate.
+
+💡 Use `ENTER` to copy name, `OPTION` to copy ID, and `COMMAND` to copy ID and name.
+
+==== Text
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/text.png[Text,width=706,height=622,role=focal_point]
+
+1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] (right
+   click).
+1. Type `text` plus your text to transform to activate.
+
+💡 Use `ENTER` to copy text to clipboard.
 
 == Development
 
