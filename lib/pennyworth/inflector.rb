@@ -9,7 +9,7 @@ module Pennyworth
       @overrides = overrides
     end
 
-    def call(key) = overrides.fetch(key) { |missing_key| missing_key }
+    def call(key) = overrides.fetch(key) { |fallback| fallback }
 
     private
 
