@@ -23,9 +23,9 @@ toc::[]
 * Supports building advanced link:https://www.alfredapp.com/help/workflows[Workflows] for personal
   augmentation.
 
-== Screencasts
+== Screencast
 
-video::https://www.alchemists.io/videos/projects/pennyworth/demo.mp4[width=1062,height=1194,role=focal_point]
+video::https://www.alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://www.alchemists.io/images/projects/pennyworth/demo.png,width=1062,height=1194,role=focal_point]
 
 == Requirements
 
@@ -163,7 +163,7 @@ Feel free to take this default configuration, modify, and save as your own custo
 
 === Themes
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/alchemists-theme.png[Alchemists Theme,width=634,height=121,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alchemists-theme.png[Alchemists Theme,width=634,height=121,role=focal_point]
 
 The above is shared as an link:https://www.alfredapp.com/extras/theme/ZQHTekMPm4[Alfred Theme] which
 can be
@@ -186,7 +186,7 @@ support, the following assumptions are made:
 With the above requirements in mind, you should only need to build an Alfred Script Filter that
 looks something like this:
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/script_filter.png[Script Filter,width=776,height=635,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/script_filter.png[Script Filter,width=776,height=635,role=focal_point]
 
 That's all it takes to use Pennyworth as an Alfred script filter. 🎉 You don't have to do any of this
 work yourself. I've already built the corresponding workflows. The following sections will allow you
@@ -206,10 +206,10 @@ depending on what kind of item is selected in the script filter:
 
 The official Alchemists workflow for site navigation.
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/alchemists-projects.png[Alchemists Projects,width=706,height=622,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alchemists-projects.png[Alchemists Projects,width=706,height=622,role=focal_point]
 
-1. link:https://www.alchemists.io/public/aflred/workflows/alchemists.alfredworkflow[Download] (right
-   click to save).
+1. link:https://www.alchemists.io/public/aflred/workflows/alchemists.alfredworkflow[Download] and
+   double click to install.
 1. Type `ax` to activate.
 
 💡 Use `ENTER` to view site, `CONTROL` to view changes, `OPTION` to view source, or `COMMAND` to
@@ -219,10 +219,10 @@ view issues.
 
 A link:https://dry-rb.org[Dry RB] workflow for navigating all of the Dry RB site.
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/dry-gems.png[Dry Gems,width=706,height=622,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/dry-gems.png[Dry Gems,width=706,height=622,role=focal_point]
 
-1. link:https://www.alchemists.io/public/aflred/workflows/dry.alfredworkflow[Download] (right click
-   to save).
+1. link:https://www.alchemists.io/public/aflred/workflows/dry.alfredworkflow[Download] and double
+   click to install.
 1. Type `dry` to activate.
 
 💡 Use `ENTER` to visit site, `CONTROL` to view changes, `OPTION` to view source, or `COMMAND` to
@@ -233,10 +233,10 @@ view issues.
 A Ruby encodings workflow for quickly searching for various encodings and/or their associated
 aliases to use in your own code.
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/encodings.png[Encodings,width=706,height=622,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/encodings.png[Encodings,width=706,height=622,role=focal_point]
 
-1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] (right click
-   to save).
+1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] and double
+   click to install.
 1. Type `encodings` to activate.
 
 💡 Use `ENTER` to copy label or `OPTION` to copy aliases to clipboard.
@@ -246,10 +246,10 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/en
 A HTTP statuses workflow for looking up statuses by code with quick access to the associated symbol
 for use in your own code. Includes associated documentation for sharing or learning more.
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/http_statuses.png[HTTP Statuses,width=706,height=622,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/http_statuses.png[HTTP Statuses,width=706,height=622,role=focal_point]
 
-1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] (right click
-   to save).
+1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] and double
+   click to install.
 1. Type `https` to activate.
 
 💡 Use `ENTER` to copy symbol, `CONTROL` to copy code, `OPTION` to copy label, or `COMMAND` to view
@@ -260,10 +260,10 @@ documentation.
 A link:https://docs.rubocop.org/rubocop[Rubocop] workflow for quick access to documentation,
 learning about project changes, viewing source code, etc.
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/rubocop-projects.png[Rubocop Projects,width=706,height=622,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rubocop-projects.png[Rubocop Projects,width=706,height=622,role=focal_point]
 
-1. link:https://www.alchemists.io/public/aflred/workflows/rubocop.alfredworkflow[Download] (right
-   click to save).
+1. link:https://www.alchemists.io/public/aflred/workflows/rubocop.alfredworkflow[Download] and
+   double click to install.
 1. Type `cop` to activate.
 
 💡 Use `ENTER` to view site, `CONTROL` to view changes, `OPTION` to view source, or `COMMAND` to
@@ -276,10 +276,10 @@ you are on, these errors can differ. Error IDs are provided for fuzzy searching 
 likely what you'll see in your stack dumps. The associated constant can be copied to clipboard for
 use in your Ruby code.
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/system_errors.png[System Errors,width=706,height=622,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/system_errors.png[System Errors,width=706,height=622,role=focal_point]
 
-1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] (right click
-   to save).
+1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] and double
+   click to install.
 1. Type `syserr` to activate.
 
 💡 Use `ENTER` to copy constant, `CONTROL` to copy ID, `OPTION` to copy description, or `COMMAND` to
@@ -289,10 +289,10 @@ copy ID, name, and description.
 
 A workflow for searching and acquiring the system signal you want to `trap` in your own Ruby code.
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/system_signals.png[System Signals,width=706,height=622,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/system_signals.png[System Signals,width=706,height=622,role=focal_point]
 
-1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] (right
-   click to save).
+1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] and double
+   click to install.
 1. Type `signals` to activate.
 
 💡 Use `ENTER` to copy name, `OPTION` to copy ID, or `COMMAND` to copy ID and name.
@@ -302,10 +302,10 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/sy
 A workflow for text manipulation. Supply a string, phrase, or sentence and let Pennyworth calculate
 all transformations and information for you to copy to clipboard and use further.
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/text.png[Text,width=706,height=622,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/text.png[Text,width=706,height=622,role=focal_point]
 
-1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] (right
-   click to save).
+1. link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[Download] and double
+   click to install.
 1. Type `text` plus your text to transform to activate.
 
 💡 Use `ENTER` to copy text to clipboard.
@@ -313,28 +313,29 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alfred/te
 ==== Other
 
 The following workflows don't require Pennyworth support but are provided for convenience in case
-they are of interest/aid to your own productivity. Right click to download, save, and install for
-your own use:
+they are of interest/aid to your own productivity. Click each link to download and then double click
+to install:
 
-* link:https://www.alchemists.io/public/aflred/worfklows/acronyms.alfredworkflow[Acronyms] -
-  Expands acronyms into full explanations so you can think and type in terms of an acronym but
-  appear as if you typed out the full definition each time.
-* link:https://www.alchemists.io/public/aflred/worfklows/applications.alfredworkflow[Applications] -
+* link:https://www.alchemists.io/public/aflred/workflows/acronyms.alfredworkflow[Acronyms] - Expands
+  acronyms into full explanations so you can think and type in terms of an acronym but appear as if
+  you typed out the full definition each time.
+* link:https://www.alchemists.io/public/aflred/workflows/applications.alfredworkflow[Applications] -
   Launches development environment but can be tweaked for your preferences. Using Alfred in this
   manner ensures your machine boots or restarts quickly and gives you more control over what is
   launched.
-* link:https://www.alchemists.io/public/aflred/worfklows/browsers.alfredworkflow[Browsers] -
+* link:https://www.alchemists.io/public/aflred/workflows/browsers.alfredworkflow[Browsers] -
   Provides browser related utilities.
-* link:https://www.alchemists.io/public/aflred/worfklows/hanami.alfredworkflow[Hanami] - Provides
+* link:https://www.alchemists.io/public/aflred/workflows/hanami.alfredworkflow[Hanami] - Provides
   Hanami related resources.
-* link:https://www.alchemists.io/public/aflred/worfklows/chlli.alfredworkflow[chi.li] - Shortens
-  URLs for you.
-* link:https://www.alchemists.io/public/aflred/worfklows/docker.alfredworkflow[Docker] - Provides
+* link:https://www.alchemists.io/public/aflred/workflows/chlli.alfredworkflow[chi.li] - Shortens
+  URLS.
+* link:https://www.alchemists.io/public/aflred/workflows/docker.alfredworkflow[Docker] - Provides
   quick access to Docker related information.
-* link:https://www.alchemists.io/public/aflred/worfklows/mac_os.alfredworkflow[macOS] - Provides macOS utilities.
-* link:https://www.alchemists.io/public/aflred/worfklows/terraform.alfredworkflow[Terraform] -
+* link:https://www.alchemists.io/public/aflred/workflows/mac_os.alfredworkflow[macOS] - Provides
+  macOS utilities.
+* link:https://www.alchemists.io/public/aflred/workflows/terraform.alfredworkflow[Terraform] -
   Provides quick access to Terraform related information.
-* link:https://www.alchemists.io/public/aflred/worfklows/text.alfredworkflow[Text] - Provides
+* link:https://www.alchemists.io/public/aflred/workflows/text.alfredworkflow[Text] - Provides
   additional and general text manipulation utilities beyond the _Text Workflow_ powered by
   Pennyworth (mentioned earlier).
 
