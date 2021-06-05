@@ -6,7 +6,7 @@ module Pennyworth
     NAME = "pennyworth"
     LABEL = "Pennyworth"
     SUMMARY = "A command line interface that augments Alfred workflows."
-    VERSION = "11.0.0"
+    VERSION = "11.0.1"
     VERSION_LABEL = "#{LABEL} #{VERSION}"
   end
 end

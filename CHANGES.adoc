@@ -1,5 +1,14 @@
 = Changes
 
+== 11.0.1 (2021-06-05)
+
+* Fixed CLI configuration defaults which had extra spaces - Brooke Kuhlmann
+* Fixed README documentation Alfred workflow links - Brooke Kuhlmann
+* Updated README Alfred theme and workflow information and links - Brooke Kuhlmann
+* Updated README to allow direct install of Alfred theme - Brooke Kuhlmann
+* Updated README with additional documentation and tips - Brooke Kuhlmann
+* Refactored inflector to refer to fallback key - Brooke Kuhlmann
+
 == 11.0.0 (2021-06-02)
 
 * Fixed Rubocop Layout/RedundantLineBreak issues - Brooke Kuhlmann
