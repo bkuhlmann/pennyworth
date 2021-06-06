@@ -289,7 +289,7 @@ label, or `COMMAND` to view documentation.
 
 ===== Number
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-number.png[Hex,width=706,height=200,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-number.png[Number,width=706,height=200,role=focal_point]
 
 This keyword allows you to generate a random number.
 
@@ -298,7 +298,7 @@ length.
 
 ===== Repeat
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-repeat.png[Hex,width=706,height=200,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-repeat.png[Repeat,width=706,height=200,role=focal_point]
 
 This keyword allows you to generate a repeating sequence of the same character(s).
 
@@ -338,11 +338,21 @@ clipboard.
 
 ===== UUID
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-uuid.png[Hex,width=706,height=200,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-uuid.png[UUID,width=706,height=200,role=focal_point]
 
 This keyword allows you to generate a random Universally Unique IDentifier (UUID).
 
 Type `uuid` to activate and `ENTER` generate.
+
+===== Version
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-version.png[Version,width=706,height=254,role=focal_point]
+
+This keyword allows you obtain Ruby version information.
+
+Type `version` to activate and `ENTER` generate. Optionally, you can press `OPTION` when selected to
+answer the Ruby version used by Alfred since Alfred defaults to using whatever version is supplied
+by macOS.
 
 ==== Other
 
