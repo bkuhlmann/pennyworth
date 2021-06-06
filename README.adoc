@@ -13,8 +13,6 @@ image::https://circleci.com/gh/bkuhlmann/pennyworth.svg?style=svg[Circle CI Stat
 
 A command line interface that augments link:https://www.alfredapp.com[Alfred] workflows.
 
-
-
 toc::[]
 
 == Features
@@ -384,6 +382,12 @@ to install:
 * link:https://www.alchemists.io/public/aflred/workflows/text.alfredworkflow[Text] - Provides
   general text manipulation utilities beyond the Pennyworth powered _text_ keyword (mentioned
   earlier).
+
+== Architecture
+
+The following documents the workfow used to process all actions from Alfred.
+
+image::/doc/architecture.svg[Architecture Diagram]
 
 == Troubleshooting
 
