@@ -1,5 +1,11 @@
 = Changes
 
+== 11.1.0 (2021-06-07)
+
+* Added Ruby version macro documentation - Brooke Kuhlmann
+* Added architecture documentation - Brooke Kuhlmann
+* Updated to Dry Container 0.8.0 - Brooke Kuhlmann
+
 == 11.0.1 (2021-06-05)
 
 * Fixed CLI configuration defaults which had extra spaces - Brooke Kuhlmann
