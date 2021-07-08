@@ -387,7 +387,7 @@ to install:
 
 The following documents the workfow used to process all actions from Alfred.
 
-image::/doc/architecture.svg[Architecture Diagram]
+image::https://www.alchemists.io/images/projects/pennyworth/doc/architecture.svg[Architecture Diagram]
 
 == Troubleshooting
 
