@@ -378,6 +378,8 @@ to install:
   launched.
 * link:https://www.alchemists.io/public/aflred/workflows/browsers.alfredworkflow[Browsers] -
   Provides browser related utilities.
+* link:https://www.alchemists.io/public/aflred/workflows/bundler.alfredworkflow[Bundler] - Provides
+  quick access to link:https://bundler.io[Bundler] related resources.
 * link:https://www.alchemists.io/public/aflred/workflows/hanami.alfredworkflow[Hanami] - Provides
   link:https://hanamirb.org[Hanami] resources.
 * link:https://www.alchemists.io/public/aflred/workflows/chlli.alfredworkflow[chi.li] - Shortens
