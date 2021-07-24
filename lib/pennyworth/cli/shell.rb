@@ -44,7 +44,6 @@ module Pennyworth
           in action_system_errors: true then system_errors
           in action_text: String => content then text content
           in action_version: String => version then logger.info version
-          in action_help: then usage
           else usage
         end
       end
