@@ -285,6 +285,15 @@ link:https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#Unofficial_codes[un
 Type `https` to activate. Use `ENTER` to copy symbol, `CONTROL` to copy code, `OPTION` to copy
 label, or `COMMAND` to view documentation.
 
+===== Links
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-links.png[Links,width=706,height=632,role=focal_point]
+
+This keyword allows you to navigate to additional Ruby related information and resources.
+
+Type `rb` plus `SPACE` to activate, then fuzzy type to filter the list to what you are looking for,
+and hit `ENTER` to visit the link in your default browser.
+
 ===== Number
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-number.png[Number,width=706,height=200,role=focal_point]
