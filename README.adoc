@@ -2,6 +2,8 @@
 :toclevels: 5
 :figure-caption!:
 
+:frum_link: link:https://github.com/tako8ki/frum[Frum]
+
 = Pennyworth
 
 [link=http://badge.fury.io/rb/pennyworth]
@@ -23,7 +25,7 @@ toc::[]
 
 == Screencast
 
-video::https://www.alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://www.alchemists.io/images/projects/pennyworth/demo.png,width=1062,height=1194,role=focal_point]
+video::https://www.alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://www.alchemists.io/images/projects/pennyworth/demo.png,width=700,height=636,role=focal_point]
 
 == Requirements
 
@@ -31,7 +33,7 @@ video::https://www.alchemists.io/videos/projects/pennyworth/demo.mp4[poster=http
 . link:https://www.gnu.org/software/bash[Bash]
 . link:https://www.alfredapp.com[Alfred]
 . link:https://www.alfredapp.com/purchase[Alfred Powerpack]
-. link:https://github.com/postmodern/chruby[chruby]
+. {frum_link}
 . link:https://www.ruby-lang.org[Ruby]
 
 == Setup
@@ -178,8 +180,7 @@ support, the following assumptions are made:
    a hard requirement, though. You can use _any shell_ you are comfortable with as long as you teach
    Alfred to load your development environment before running the Alfred Workflow.
 2. You have the latest version of Alfred, Ruby, and Pennyworth installed.
-3. You are using a Ruby version manager, like link:https://github.com/postmodern/chruby[chruby],
-   which ensures Ruby is on your load path.
+3. You are using a Ruby version manager, like {frum_link}, which ensures Ruby is on your load path.
 
 With the above requirements in mind, the following sections document how to download and install all
 Pennyworth workflows that are compatible with Alfred. Should you want to tweak any of these
@@ -383,7 +384,7 @@ to install:
 * link:https://www.alchemists.io/public/aflred/workflows/hanami.alfredworkflow[Hanami] - Provides
   link:https://hanamirb.org[Hanami] resources.
 * link:https://www.alchemists.io/public/aflred/workflows/chlli.alfredworkflow[chi.li] - Shortens
-  URLs.
+  URLs using link:https://chl.li[chl.li].
 * link:https://www.alchemists.io/public/aflred/workflows/docker.alfredworkflow[Docker] - Provides
   link:https://www.docker.com[Docker] resources.
 * link:https://www.alchemists.io/public/aflred/workflows/mac_os.alfredworkflow[macOS] - Provides
@@ -404,8 +405,7 @@ image::https://www.alchemists.io/images/projects/pennyworth/doc/architecture.svg
 
 * link:https://github.com/ruby/psych[Psych] 4.0.0 has a
   link:https://github.com/ruby/psych/issues/490[bug] which prevents loading of YAML configurations
-  that use symbols as keys. If you get caught by this, uninstall Psych 4.0.0 and fall back to 3.x.x
-  instead.
+  that use symbols as keys. If you get caught by this, please upgrade to Psych 4.0.1 for the fix.
 * When your Alfred Workflow yields no output, you might want to open the
   link:https://www.alfredapp.com/help/workflows/utilities/debug[Alfred Debugger], rerun your
   workflow, and check for errors. You can also jump to the CLI and run Pennyworth directly.
