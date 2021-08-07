@@ -219,7 +219,7 @@ A link:https://dry-rb.org[Dry RB] workflow for navigating all of the Dry RB site
 
 1. link:https://www.alchemists.io/public/aflred/workflows/dry.alfredworkflow[Download] and double
    click to install.
-2. Type `dry` to activate.
+2. Type `dry` to activate general information and `dryx` for project list.
 
 💡 Use `ENTER` to visit site, `CONTROL` to view changes, `OPTION` to view source, or `COMMAND` to
 view issues.
