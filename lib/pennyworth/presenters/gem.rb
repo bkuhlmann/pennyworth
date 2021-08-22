@@ -26,7 +26,7 @@ module Pennyworth
 
       def version = record.fetch(__method__)
 
-      def licenses = record.fetch(__method__).join(", ")
+      def licenses = Array(record.fetch(__method__)).join(", ")
 
       def downloads = record.fetch(__method__)
 

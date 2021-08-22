@@ -42,6 +42,11 @@ RSpec.describe Pennyworth::Presenters::Gem do
       ruby_gems_record[:licenses] = %w[MIT Apache]
       expect(presenter.licenses).to eq("MIT, Apache")
     end
+
+    it "answers empty string with missing licenses" do
+      ruby_gems_record[:licenses] = nil
+      expect(presenter.licenses).to eq("")
+    end
   end
 
   describe "#downloads" do
