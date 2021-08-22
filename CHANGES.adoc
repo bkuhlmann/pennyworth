@@ -1,5 +1,12 @@
 = Changes
 
+== 11.1.2 (2021-08-22)
+
+* Fixed issue with acquiring gem licenses when license is missing - Brooke Kuhlmann
+* Added TTY inflections configuration - Brooke Kuhlmann
+* Updated Alfred Dry Workflow documenration usage - Brooke Kuhlmann
+* Removed Bundler Audit - Brooke Kuhlmann
+
 == 11.1.1 (2021-07-24)
 
 * Fixed Rubocop Lint/DuplicateBranch issue - Brooke Kuhlmann
