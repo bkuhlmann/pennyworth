@@ -13,7 +13,10 @@ image::https://img.shields.io/badge/code_style-alchemists-brightgreen.svg[Alchem
 [link=https://circleci.com/gh/bkuhlmann/pennyworth]
 image::https://circleci.com/gh/bkuhlmann/pennyworth.svg?style=svg[Circle CI Status]
 
-A command line interface that augments link:https://www.alfredapp.com[Alfred] workflows.
+Pennyworth is a command line interface and the perfect companion to
+link:https://www.alfredapp.com[Alfred]. With Pennyworth, you can unlock the full potential of the
+Ruby language by leveraging modern versions of Ruby through Alfred Workflows. Perfect for when you
+want to advance beyond the based workflows Alfred provides by default.
 
 toc::[]
 
@@ -145,6 +148,29 @@ The default configuration is as follows:
   - "Rubocop Ast": "Rubocop AST"
   - "Rubocop Md": "Rubocop Markdown"
   - "Rubocop Rspec": "Rubocop RSpec"
+  - "Tty Box": "TTY Box"
+  - "Tty Color": "TTY Color"
+  - "Tty Command": "TTY Command"
+  - "Tty Config": "TTY Config"
+  - "Tty Cursor": "TTY Cursor"
+  - "Tty Editor": "TTY Editor"
+  - "Tty File": "TTY File"
+  - "Tty Font": "TTY Font"
+  - "Tty Link": "TTY Link"
+  - "Tty Logger": "TTY Logger"
+  - "Tty Markdown": "TTY Markdown"
+  - "Tty Option": "TTY Option"
+  - "Tty Pager": "TTY Pager"
+  - "Tty Pie": "TTY Pie"
+  - "Tty Platform": "TTY Platform"
+  - "Tty Progressbar": "TTY ProgressBar"
+  - "Tty Prompt": "TTY Prompt"
+  - "Tty Reader": "TTY Reader"
+  - "Tty Screen": "TTY Screen"
+  - "Tty Spinner": "TTY Spinner"
+  - "Tty Table": "TTY Table"
+  - "Tty Tree": "TTY Tree"
+  - "Tty Which": "TTY Which"
   - "Xdg": "XDG"
 :git_hub:
   :api_url: "https://api.github.com"
@@ -341,7 +367,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-text
 This keyword is for is for basic text manipulation. Supply a string, phrase, or sentence and let
 Pennyworth calculate all transformations and information you might need.
 
-Type `text` to activate plus andy string or phrase to transform. Use `ENTER` to copy text to
+Type `text` to activate plus any string or phrase to transform. Use `ENTER` to copy text to
 clipboard.
 
 ===== UUID
