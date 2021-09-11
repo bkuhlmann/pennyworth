@@ -290,6 +290,14 @@ use in your own code.
 Type `encodings` to activate. Use `ENTER` to copy label or `OPTION` to copy associated aliases to
 clipboard.
 
+===== Gems
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-gems.png[Gems,width=706,height=362,role=focal_point]
+
+Provides access to the RubyGems ecosystem.
+
+Type `gems` to activate. Use the arrow keys to navigate options and `ENTER` to use.
+
 ===== Hex
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-hex.png[Hex,width=706,height=200,role=focal_point]
