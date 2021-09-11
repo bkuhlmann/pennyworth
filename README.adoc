@@ -250,6 +250,16 @@ A link:https://dry-rb.org[Dry RB] workflow for navigating all of the Dry RB site
 💡 Use `ENTER` to visit site, `CONTROL` to view changes, `OPTION` to view source, or `COMMAND` to
 view issues.
 
+==== Elm
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/elm.png[Elm,width=706,height=470,role=focal_point]
+
+A link:https://elm-lang.org[Elm] workflow for quick access to Elm resources.
+
+1. link:https://www.alchemists.io/public/aflred/workflows/elm.alfredworkflow[Download] and double
+   click to install.
+2. Type `elm` to view general information, arrow keys to navigate, and `ENTER` to view information.
+
 ==== Rubocop
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rubocop-projects.png[Rubocop Projects,width=706,height=632,role=focal_point]
