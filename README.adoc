@@ -502,7 +502,7 @@ Provides macOS utilities.
 
 ===== Terraform
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/terraform.png[Terraform workflow screenshot.,width=362,height=524,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/terraform.png[Terraform workflow screenshot.,width=706,height=632,role=focal_point]
 
 Provides link:https://www.terraform.io[Terraform] resources.
 
