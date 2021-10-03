@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "http", "~> 5.0"
   spec.add_dependency "pastel", "~> 0.8"
   spec.add_dependency "rack", "~> 2.2"
-  spec.add_dependency "refinements", "~> 8.0"
+  spec.add_dependency "refinements", "~> 8.4"
   spec.add_dependency "runcom", "~> 7.0"
   spec.add_dependency "zeitwerk", "~> 2.4"
 
