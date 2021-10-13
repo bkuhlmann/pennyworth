@@ -16,7 +16,7 @@ image::https://circleci.com/gh/bkuhlmann/pennyworth.svg?style=svg[Circle CI Stat
 Pennyworth is a command line interface and the perfect companion to
 link:https://www.alfredapp.com[Alfred]. With Pennyworth, you can unlock the full potential of the
 Ruby language by leveraging modern versions of Ruby through Alfred Workflows. Perfect for when you
-want to advance beyond the based workflows Alfred provides by default.
+want to advance beyond the basic workflows Alfred provides by default.
 
 toc::[]
 
@@ -36,8 +36,17 @@ video::https://www.alchemists.io/videos/projects/pennyworth/demo.mp4[poster=http
 . link:https://www.gnu.org/software/bash[Bash]
 . link:https://www.alfredapp.com[Alfred]
 . link:https://www.alfredapp.com/purchase[Alfred Powerpack]
-. {frum_link}
 . link:https://www.ruby-lang.org[Ruby]
+
+While using a Ruby version manager -- like {frum_link} -- is not a hard requirement, it is strongly
+encouraged since a version manager will give you the freedom to toggle between different Ruby
+versions since this gem has strict Ruby version requirements (especially in regards to using a
+modern version of Ruby).
+
+I would also like to point out that all of the workflows, scripts, examples for this gem use Bash
+syntax. That said, if you are comfortable with translating Bash syntax to your shell syntax of
+choice, you can make this gem work in different shells too. That is beyond the scope of this
+document, though, so leave that exercise up to you.
 
 == Setup
 
@@ -207,6 +216,8 @@ For the workflows that _do_ require Pennyworth support, the following assumption
    Alfred to load your development environment before running the Alfred Workflow.
 2. You have the latest version of Alfred, Ruby, and Pennyworth installed.
 3. You are using a Ruby version manager, like {frum_link}, which ensures Ruby is on your load path.
+   As mentioned in the _Requirements_ section above, this is not a hard requirement so if you have
+   the correct version of Ruby required by this gem on your path, that'll work too.
 
 With the above requirements in mind, the following sections document how to download and install all
 Pennyworth workflows that are compatible with Alfred. Should you want to tweak any of these
