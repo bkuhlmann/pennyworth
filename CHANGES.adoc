@@ -1,5 +1,14 @@
 = Changes
 
+== 11.2.1 (2021-10-20)
+
+* Fixed README Terraform workflow screenshot dimensions - Brooke Kuhlmann
+* Updated README Ruby version and shell requirements - Brooke Kuhlmann
+* Updated to Refinements 8.4.0 - Brooke Kuhlmann
+* Updated to Refinements 8.5.0 - Brooke Kuhlmann
+* Updated to Zeitwerk 2.5.0 - Brooke Kuhlmann
+* Removed notes from pull request template - Brooke Kuhlmann
+
 == 11.2.0 (2021-10-02)
 
 * Added Debug gem - Brooke Kuhlmann
