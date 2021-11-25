@@ -241,7 +241,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alchemist
 
 The official link:https://www.alchemists.io[Alchemists] workflow for site navigation.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/alchemists.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/alchemists.alfredworkflow[Download] and
    double click to install.
 2. Type `ax` to activate.
 
@@ -254,7 +254,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/dry-gems.
 
 A link:https://dry-rb.org[Dry RB] workflow for navigating all of the Dry RB site.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/dry.alfredworkflow[Download] and double
+1. link:https://www.alchemists.io/public/alfred/workflows/dry.alfredworkflow[Download] and double
    click to install.
 2. Type `dry` to activate general information and `dryx` for project list.
 
@@ -268,7 +268,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rubocop-p
 A link:https://docs.rubocop.org/rubocop[Rubocop] workflow for quick access to documentation,
 learning about project changes, viewing source code, etc.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/rubocop.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/rubocop.alfredworkflow[Download] and
    double click to install.
 2. Type `cop` to activate.
 
@@ -278,7 +278,7 @@ view issues.
 ==== Ruby
 
 This workflow is feature packed and only requires a
-link:https://www.alchemists.io/public/aflred/workflows/ruby.alfredworkflow[single download]. Once
+link:https://www.alchemists.io/public/alfred/workflows/ruby.alfredworkflow[single download]. Once
 downloaded, double click to install, and then continue reading to learn all of the
 capabilities this single workflow provides.
 
@@ -417,7 +417,7 @@ they are of interest/aid to your own productivity.
 Expands acronyms so you can think and type in terms of an acronym but appear as if you typed out the
 full definition each time.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/acronyms.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/acronyms.alfredworkflow[Download] and
    double click to install.
 2. Use any of the macros provided by the workflow to expand acronyms for legibility.
 
@@ -427,7 +427,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alpine.pn
 
 Provides link:https://www.alpinelinux.org[Alpine Linux] resources.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/alpine.alfredworkflow[Download] and double
+1. link:https://www.alchemists.io/public/alfred/workflows/alpine.alfredworkflow[Download] and double
    click to install.
 2. Type `al` to activate.
 
@@ -439,7 +439,7 @@ Launches development environment but can be tweaked for your preferences. Using 
 manner ensures your machine boots or restarts quickly and gives you more control over what is
 launched.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/applications.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/applications.alfredworkflow[Download] and
    double click to install.
 2. Type `work` to activate.
 
@@ -449,7 +449,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/browsers.
 
 Provides browser related utilities.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/browsers.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/browsers.alfredworkflow[Download] and
    double click to install.
 2. Type `open` to activate.
 
@@ -459,7 +459,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/bundler.p
 
 Provides quick access to link:https://bundler.io[Bundler] related resources.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/bundler.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/bundler.alfredworkflow[Download] and
    double click to install.
 2. Type `bundler` to activate.
 
@@ -469,7 +469,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/elm.png[E
 
 A link:https://elm-lang.org[Elm] workflow for quick access to Elm resources.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/elm.alfredworkflow[Download] and double
+1. link:https://www.alchemists.io/public/alfred/workflows/elm.alfredworkflow[Download] and double
    click to install.
 2. Type `elm` to view general information, arrow keys to navigate, and `ENTER` to view information.
 
@@ -479,7 +479,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/hanami.pn
 
 Provides link:https://hanamirb.org[Hanami] resources.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/hanami.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/hanami.alfredworkflow[Download] and
    double click to install.
 2. Type `h` to activate.
 
@@ -489,7 +489,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/chili.png
 
 Shortens URLs using link:https://chl.li[chl.li].
 
-1. link:https://www.alchemists.io/public/aflred/workflows/chlli.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/chlli.alfredworkflow[Download] and
    double click to install.
 2. Type `surl` to activate.
 
@@ -499,7 +499,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/docker.pn
 
 Provides link:https://www.docker.com[Docker] resources.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/docker.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/docker.alfredworkflow[Download] and
    double click to install.
 2. Type `dr` to activate.
 
@@ -507,7 +507,7 @@ Provides link:https://www.docker.com[Docker] resources.
 
 Provides macOS utilities.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/mac_os.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/mac_os.alfredworkflow[Download] and
    double click to install.
 2. Open the workflow to see all available keywords.
 
@@ -517,7 +517,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/terraform
 
 Provides link:https://www.terraform.io[Terraform] resources.
 
-1. link:https://www.alchemists.io/public/aflred/workflows/terraform.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/terraform.alfredworkflow[Download] and
    double click to install.
 2. Type `tf` to activate.
 
@@ -526,7 +526,7 @@ Provides link:https://www.terraform.io[Terraform] resources.
 Provides general text manipulation utilities beyond the Pennyworth powered _text_ keyword (mentioned
 earlier).
 
-1. link:https://www.alchemists.io/public/aflred/workflows/text.alfredworkflow[Download] and
+1. link:https://www.alchemists.io/public/alfred/workflows/text.alfredworkflow[Download] and
    double click to install.
 2. Use any of the following global hotkeys to activate:
 ** `CONTROL + OPTION + COMMAND + o` - Open selected URL in default browser.
