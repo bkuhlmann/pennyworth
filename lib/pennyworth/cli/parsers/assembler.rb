@@ -16,7 +16,7 @@ module Pennyworth
         end
 
         def call arguments = []
-          sections.each { |parser| parser.call configuration, client: client }
+          sections.each { |parser| parser.call configuration, client: }
           client.parse! arguments
           configuration
         end

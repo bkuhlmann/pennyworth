@@ -4,7 +4,7 @@ require "spec_helper"
 require "http"
 
 RSpec.describe Pennyworth::Loaders::Projects do
-  subject(:adapter) { described_class.new client: client }
+  subject(:adapter) { described_class.new client: }
 
   include_context "with GitHub integration"
 

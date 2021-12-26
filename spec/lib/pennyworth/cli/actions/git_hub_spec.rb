@@ -5,7 +5,7 @@ require "spec_helper"
 RSpec.describe Pennyworth::CLI::Actions::GitHub do
   using Refinements::Structs
 
-  subject(:action) { described_class.new processor: processor }
+  subject(:action) { described_class.new processor: }
 
   include_context "with application container"
   include_context "with GitHub integration"

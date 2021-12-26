@@ -15,7 +15,7 @@ module Pennyworth
       end
 
       def call _omit = nil
-        codes.map { |(code, label)| model[code: code, label: label, url: "#{url}/#{code}"] }
+        codes.map { |(code, label)| model[code:, label:, url: "#{url}/#{code}"] }
       end
 
       private

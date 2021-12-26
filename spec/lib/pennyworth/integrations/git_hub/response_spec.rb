@@ -13,7 +13,7 @@ RSpec.describe Pennyworth::Integrations::GitHub::Response do
                                    "<https://api.github.com/user/0/repos?page=10>; rel=\"last\""
                        },
                        body: [{text: "test"}].to_json,
-                       status: status,
+                       status:,
                        version: "1.1"
   end
 
