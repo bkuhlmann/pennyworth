@@ -15,7 +15,7 @@ module Pennyworth
         text: Actions::Text.new
       }.freeze
 
-      def initialize parser: Parsers::Assembler.new, actions: ACTIONS, container: Container
+      def initialize parser: Parser.new, actions: ACTIONS, container: Container
         @parser = parser
         @actions = actions
         @container = container

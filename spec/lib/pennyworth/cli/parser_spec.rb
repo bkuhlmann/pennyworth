@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::CLI::Parsers::Assembler do
+RSpec.describe Pennyworth::CLI::Parser do
   subject(:parser) { described_class.new Pennyworth::Configuration::Loader.call }
 
   describe "#call" do

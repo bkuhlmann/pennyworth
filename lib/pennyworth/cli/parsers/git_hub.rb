@@ -11,7 +11,7 @@ module Pennyworth
 
         def self.call(...) = new(...).call
 
-        def initialize configuration = Configuration::Loader.call, client: CLIENT
+        def initialize configuration = Configuration::Loader.call, client: Parser::CLIENT
           @configuration = configuration
           @client = client
         end
