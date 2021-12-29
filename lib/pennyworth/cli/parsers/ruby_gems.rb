@@ -15,7 +15,8 @@ module Pennyworth
         def call arguments = []
           client.separator "\nRUBYGEMS OPTIONS:\n"
           add_owner
-          arguments.empty? ? arguments : client.parse!(arguments)
+          client.parse arguments
+          configuration
         end
 
         private

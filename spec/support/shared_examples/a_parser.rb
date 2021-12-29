@@ -3,8 +3,7 @@
 RSpec.shared_examples "a parser" do
   describe ".call" do
     it "answers empty array" do
-      parser = described_class.call Pennyworth::Configuration::Content.new, client: OptionParser.new
-      expect(parser).to eq([])
+      expect(described_class.call).to be_a(Pennyworth::Configuration::Content)
     end
   end
 end

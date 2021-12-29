@@ -19,7 +19,8 @@ module Pennyworth
         def call arguments = []
           client.separator "\nGITHUB OPTIONS:\n"
           private_methods.sort.grep(/add_/).each { |method| __send__ method }
-          arguments.empty? ? arguments : client.parse!(arguments)
+          client.parse arguments
+          configuration
         end
 
         private

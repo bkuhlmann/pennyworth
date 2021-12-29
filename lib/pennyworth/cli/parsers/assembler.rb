@@ -10,15 +10,15 @@ module Pennyworth
         def initialize configuration = Configuration::Loader.call,
                        sections: SECTIONS,
                        client: CLIENT
-          @configuration = configuration
+          @configuration = configuration.dup
           @sections = sections
           @client = client
         end
 
         def call arguments = []
           sections.each { |parser| parser.call configuration, client: }
-          client.parse! arguments
-          configuration
+          client.parse arguments
+          configuration.freeze
         end
 
         def to_s = client.to_s

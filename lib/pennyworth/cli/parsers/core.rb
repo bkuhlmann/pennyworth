@@ -21,7 +21,8 @@ module Pennyworth
           client.banner = "#{Identity::LABEL} - #{Identity::SUMMARY}"
           client.separator "\nUSAGE:\n"
           collate
-          arguments.empty? ? arguments : client.parse!(arguments)
+          client.parse arguments
+          configuration
         end
 
         private
@@ -85,7 +86,7 @@ module Pennyworth
 
         def add_version
           client.on "-v", "--version", "Show gem version." do
-            configuration.action_version = Identity::VERSION_LABEL
+            configuration.action_version = true
           end
         end
 

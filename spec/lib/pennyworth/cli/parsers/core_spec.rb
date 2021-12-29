@@ -3,31 +3,27 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::CLI::Parsers::Core do
-  subject(:parser) { described_class.new configuration }
+  subject(:parser) { described_class.new configuration.dup }
 
-  let(:configuration) { Pennyworth::Configuration::Loader.call }
+  include_context "with application container"
 
   it_behaves_like "a parser"
 
   describe "#call" do
     it "answers config edit (short)" do
-      parser.call %w[-c edit]
-      expect(configuration.action_config).to eq(:edit)
+      expect(parser.call(%w[-c edit])).to have_attributes(action_config: :edit)
     end
 
     it "answers config edit (long)" do
-      parser.call %w[--config edit]
-      expect(configuration.action_config).to eq(:edit)
+      expect(parser.call(%w[--config edit])).to have_attributes(action_config: :edit)
     end
 
     it "answers config view (short)" do
-      parser.call %w[-c view]
-      expect(configuration.action_config).to eq(:view)
+      expect(parser.call(%w[-c view])).to have_attributes(action_config: :view)
     end
 
     it "answers config view (long)" do
-      parser.call %w[--config view]
-      expect(configuration.action_config).to eq(:view)
+      expect(parser.call(%w[--config view])).to have_attributes(action_config: :view)
     end
 
     it "fails with missing config action" do
@@ -41,58 +37,47 @@ RSpec.describe Pennyworth::CLI::Parsers::Core do
     end
 
     it "enables encodings" do
-      parser.call %w[--encodings]
-      expect(configuration.action_encodings).to eq(true)
+      expect(parser.call(%w[--encodings])).to have_attributes(action_encodings: true)
     end
 
     it "enables GitHub" do
-      parser.call %w[--git_hub]
-      expect(configuration.action_git_hub).to eq(true)
+      expect(parser.call(%w[--git_hub])).to have_attributes(action_git_hub: true)
     end
 
     it "enables HTTP statuses" do
-      parser.call %w[--http_statuses]
-      expect(configuration.action_http_statuses).to eq(true)
+      expect(parser.call(%w[--http_statuses])).to have_attributes(action_http_statuses: true)
     end
 
     it "enables RubyGems" do
-      parser.call %w[--ruby_gems]
-      expect(configuration.action_ruby_gems).to eq(true)
+      expect(parser.call(%w[--ruby_gems])).to have_attributes(action_ruby_gems: true)
     end
 
     it "enables system errors" do
-      parser.call %w[--system_errors]
-      expect(configuration.action_system_errors).to eq(true)
+      expect(parser.call(%w[--system_errors])).to have_attributes(action_system_errors: true)
     end
 
     it "enables system signals" do
-      parser.call %w[--system_signals]
-      expect(configuration.action_system_signals).to eq(true)
+      expect(parser.call(%w[--system_signals])).to have_attributes(action_system_signals: true)
     end
 
     it "answers text content" do
-      parser.call %w[--text test]
-      expect(configuration.action_text).to eq("test")
+      expect(parser.call(%w[--text test])).to have_attributes(action_text: "test")
     end
 
     it "answers version (short)" do
-      parser.call %w[-v]
-      expect(configuration.action_version).to match(/Pennyworth\s\d+\.\d+\.\d+/)
+      expect(parser.call(%w[-v])).to have_attributes(action_version: true)
     end
 
     it "answers version (long)" do
-      parser.call %w[--version]
-      expect(configuration.action_version).to match(/Pennyworth\s\d+\.\d+\.\d+/)
+      expect(parser.call(%w[--version])).to have_attributes(action_version: true)
     end
 
     it "enables help (short)" do
-      parser.call %w[-h]
-      expect(configuration.action_help).to eq(true)
+      expect(parser.call(%w[-h])).to have_attributes(action_help: true)
     end
 
     it "enables help (long)" do
-      parser.call %w[--help]
-      expect(configuration.action_help).to eq(true)
+      expect(parser.call(%w[--help])).to have_attributes(action_help: true)
     end
   end
 end
