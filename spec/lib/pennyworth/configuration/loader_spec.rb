@@ -2,11 +2,11 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::CLI::Configuration::Loader do
+RSpec.describe Pennyworth::Configuration::Loader do
   subject(:loader) { described_class.with_defaults }
 
   let :content do
-    Pennyworth::CLI::Configuration::Content.new(
+    Pennyworth::Configuration::Content.new(
       inflections: [
         {"Bkuhlmann" => "bkuhlmann"},
         {"Dry Auto Inject" => "Dry AutoInject"},
@@ -52,7 +52,7 @@ RSpec.describe Pennyworth::CLI::Configuration::Loader do
 
   describe ".call" do
     it "answers default configuration" do
-      expect(described_class.call).to be_a(Pennyworth::CLI::Configuration::Content)
+      expect(described_class.call).to be_a(Pennyworth::Configuration::Content)
     end
   end
 

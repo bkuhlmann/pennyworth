@@ -10,7 +10,7 @@ module Pennyworth
   module Container
     extend Dry::Container::Mixin
 
-    register(:configuration) { CLI::Configuration::Loader.call }
+    register(:configuration) { Configuration::Loader.call }
     register(:environment) { ENV }
     register(:kernel) { Kernel }
     register(:http) { HTTP }

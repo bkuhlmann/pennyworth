@@ -8,7 +8,7 @@ module Pennyworth
     class HTTPStatuses
       def initialize codes: Rack::Utils::HTTP_STATUS_CODES,
                      model: Models::HTTPStatus,
-                     configuration: CLI::Configuration::Loader.call
+                     configuration: Configuration::Loader.call
         @codes = codes
         @model = model
         @configuration = configuration

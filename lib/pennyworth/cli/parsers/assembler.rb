@@ -7,7 +7,7 @@ module Pennyworth
 
       # Assembles and parses all Command Line Interface (CLI) options.
       class Assembler
-        def initialize configuration = CLI::Configuration::Loader.call,
+        def initialize configuration = Configuration::Loader.call,
                        sections: SECTIONS,
                        client: CLIENT
           @configuration = configuration

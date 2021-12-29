@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::CLI::Configuration::Content do
+RSpec.describe Pennyworth::Configuration::Content do
   subject(:content) { described_class.new }
 
   describe "#initialize" do

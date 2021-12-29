@@ -5,7 +5,7 @@ require "spec_helper"
 RSpec.describe Pennyworth::CLI::Parsers::Core do
   subject(:parser) { described_class.new configuration }
 
-  let(:configuration) { Pennyworth::CLI::Configuration::Loader.call }
+  let(:configuration) { Pennyworth::Configuration::Loader.call }
 
   it_behaves_like "a parser"
 

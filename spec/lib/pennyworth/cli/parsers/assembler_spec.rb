@@ -3,7 +3,7 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::CLI::Parsers::Assembler do
-  subject(:parser) { described_class.new Pennyworth::CLI::Configuration::Loader.call }
+  subject(:parser) { described_class.new Pennyworth::Configuration::Loader.call }
 
   describe "#call" do
     it "answers hash with valid option" do
@@ -12,7 +12,7 @@ RSpec.describe Pennyworth::CLI::Parsers::Assembler do
     end
 
     it "answers configuration content by default" do
-      expect(parser.call).to be_a(Pennyworth::CLI::Configuration::Content)
+      expect(parser.call).to be_a(Pennyworth::Configuration::Content)
     end
 
     it "fails with invalid option" do

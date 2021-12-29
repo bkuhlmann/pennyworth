@@ -3,7 +3,7 @@
 module Pennyworth
   # Overrides any string to desired form if matched, otherwise answers the original string.
   class Inflector
-    DEFAULTS = Array(CLI::Configuration::Loader.call.inflections).reduce({}, :merge)
+    DEFAULTS = Array(Configuration::Loader.call.inflections).reduce({}, :merge)
 
     def initialize overrides = DEFAULTS
       @overrides = overrides
