@@ -24,7 +24,7 @@ module Pennyworth
       def call arguments = []
         perform parser.call(arguments)
       rescue OptionParser::ParseError, KeyError => error
-        logger.error error.message
+        logger.error { error.message }
       end
 
       private
@@ -43,7 +43,7 @@ module Pennyworth
           in action_system_signals: true then system_signals
           in action_system_errors: true then system_errors
           in action_text: String => content then text content
-          in action_version: true then logger.info Identity::VERSION_LABEL
+          in action_version: true then logger.info { Identity::VERSION_LABEL }
           else usage
         end
       end
