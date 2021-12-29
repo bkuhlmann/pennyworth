@@ -11,7 +11,7 @@ module Pennyworth
             @container = container
           end
 
-          def call = processor.call.to_json.then { |json| logger.info json }
+          def call = processor.call.to_json.then { |json| logger.info { json } }
 
           private
 

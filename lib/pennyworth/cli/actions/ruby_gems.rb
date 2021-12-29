@@ -13,7 +13,7 @@ module Pennyworth
         def call endpoint
           processor.call(endpoint)
                    .to_json
-                   .then { |json| logger.info json }
+                   .then { |json| logger.info { json } }
         end
 
         private
