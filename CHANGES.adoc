@@ -1,5 +1,36 @@
 = Changes
 
+== 12.0.0 (2021-12-29)
+
+* Fixed Hippocratic license structure - Brooke Kuhlmann
+* Fixed README changes and credits sections - Brooke Kuhlmann
+* Fixed README typo with Alfred URL - Brooke Kuhlmann
+* Fixed RSpec/Dialect issues - Brooke Kuhlmann
+* Fixed contributing documentation - Brooke Kuhlmann
+* Added Rakefile Bundler gem tasks - Brooke Kuhlmann
+* Added project citation information - Brooke Kuhlmann
+* Updated CLI assembler as parser - Brooke Kuhlmann
+* Updated CLI assembler to use duplicated configuration - Brooke Kuhlmann
+* Updated GitHub issue template - Brooke Kuhlmann
+* Updated Rubocop sub-project gem dependencies - Brooke Kuhlmann
+* Updated actions to logger blocks - Brooke Kuhlmann
+* Updated configuration content to be frozen by default - Brooke Kuhlmann
+* Updated shell to use logger blocks - Brooke Kuhlmann
+* Updated to Amazing Print 1.4.0 - Brooke Kuhlmann
+* Updated to Debug 1.4.0 - Brooke Kuhlmann
+* Updated to Git Lint 3.0.0 - Brooke Kuhlmann
+* Updated to Hippocratic License 3.0.0 - Brooke Kuhlmann
+* Updated to Refinements 9.0.0 - Brooke Kuhlmann
+* Updated to Rubocop 1.24.0 - Brooke Kuhlmann
+* Updated to Ruby 3.0.3 - Brooke Kuhlmann
+* Updated to Ruby 3.1.0 - Brooke Kuhlmann
+* Updated to Runcom 8.0.0 - Brooke Kuhlmann
+* Updated to SimpleCov 0.21.2 - Brooke Kuhlmann
+* Removed Gemsmith depenendecy - Brooke Kuhlmann
+* Refactored configuration to top-level namespace - Brooke Kuhlmann
+* Refactored configuration to use client constant - Brooke Kuhlmann
+* Refactored implementation to use punning - Brooke Kuhlmann
+
 == 11.2.2 (2021-11-20)
 
 * Added README community link - Brooke Kuhlmann
