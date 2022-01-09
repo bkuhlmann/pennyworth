@@ -23,9 +23,14 @@ module Pennyworth
 
       def source_url = record.fetch(:html_url)
 
-      def changes_url = "#{site_url}/changes.html"
+      def changes_url
+        warn "[DEPRECATION]: #changes_url is deprecated, use #versions_url instead."
+        versions_url
+      end
 
       def issues_url = "#{source_url}/issues"
+
+      def versions_url = "#{site_url}/versions"
 
       private
 

@@ -38,14 +38,25 @@ RSpec.describe Pennyworth::Presenters::Repository do
   end
 
   describe "#changes_url" do
+    it "prints deprecation warning" do
+      expectation = proc { presenter.changes_url }
+      expect(&expectation).to output(/DEPRECATION/).to_stderr
+    end
+
     it "answers changes URL" do
-      expect(presenter.changes_url).to eq("https://www.alchemists.io/projects/test/changes.html")
+      expect(presenter.changes_url).to eq("https://www.alchemists.io/projects/test/versions")
     end
   end
 
   describe "#issues_url" do
     it "answers issues URL" do
       expect(presenter.issues_url).to eq("https://github.com/bkuhlmann/test/issues")
+    end
+  end
+
+  describe "#versions_url" do
+    it "answers versions URL" do
+      expect(presenter.versions_url).to eq("https://www.alchemists.io/projects/test/versions")
     end
   end
 end
