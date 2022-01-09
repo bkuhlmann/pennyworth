@@ -34,9 +34,14 @@ module Pennyworth
 
       def source_url = record.fetch(:source_code_uri)
 
-      def changes_url = record.fetch(:changelog_uri)
+      def changes_url
+        warn "[DEPRECATION]: #changes_url is deprecated, use #versions_url instead."
+        versions_url
+      end
 
       def issues_url = record.fetch(:bug_tracker_uri)
+
+      def versions_url = record.fetch(:changelog_uri)
 
       def updated_at = record.fetch(:version_created_at)
 

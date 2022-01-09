@@ -74,6 +74,11 @@ RSpec.describe Pennyworth::Presenters::Gem do
   end
 
   describe "#changes_url" do
+    it "prints deprecation warning" do
+      expectation = proc { presenter.changes_url }
+      expect(&expectation).to output(/DEPRECATION/).to_stderr
+    end
+
     it "answers changes URL" do
       expect(presenter.changes_url).to eq("https://changes.example.com")
     end
@@ -82,6 +87,12 @@ RSpec.describe Pennyworth::Presenters::Gem do
   describe "#issues_url" do
     it "answers issues URL" do
       expect(presenter.issues_url).to eq("https://issues.example.com")
+    end
+  end
+
+  describe "#versions_url" do
+    it "answers versions URL" do
+      expect(presenter.versions_url).to eq("https://changes.example.com")
     end
   end
 end
