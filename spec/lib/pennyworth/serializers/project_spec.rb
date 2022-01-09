@@ -17,10 +17,6 @@ RSpec.describe Pennyworth::Serializers::Project do
       arg: "https://site.example.com",
       quicklookurl: "https://site.example.com",
       mods: {
-        control: {
-          subtitle: "View versions.",
-          arg: "https://changes.example.com"
-        },
         alt: {
           subtitle: "View source.",
           arg: "https://source.example.com"
@@ -28,6 +24,10 @@ RSpec.describe Pennyworth::Serializers::Project do
         cmd: {
           subtitle: "View issues.",
           arg: "https://issues.example.com"
+        },
+        control: {
+          subtitle: "View versions.",
+          arg: "https://changes.example.com"
         }
       },
       text: {
