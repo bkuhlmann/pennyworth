@@ -1,5 +1,12 @@
 = Versions
 
+== 12.0.2 (2022-01-09)
+
+* Added gem presenter versions URL and deprecated changes URL - Brooke Kuhlmann
+* Added repository presenter versions URL and deprecated changes URL - Brooke Kuhlmann
+* Refactored project serializer modification order - Brooke Kuhlmann
+* Refactored project serializer to use versions URL - Brooke Kuhlmann
+
 == 12.0.1 (2022-01-01)
 
 * Updated README policy section links - Brooke Kuhlmann
