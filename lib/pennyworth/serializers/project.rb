@@ -26,7 +26,7 @@ module Pennyworth
 
       def modifications
         {
-          control: modification(presenter.changes_url, "View changes."),
+          control: modification(presenter.versions_url, "View versions."),
           alt: modification(presenter.source_url, "View source."),
           cmd: modification(presenter.issues_url, "View issues.")
         }

@@ -245,7 +245,7 @@ The official link:https://www.alchemists.io[Alchemists] workflow for site naviga
    double click to install.
 2. Type `ax` to activate.
 
-💡 Use `ENTER` to view site, `CONTROL` to view changes, `OPTION` to view source, or `COMMAND` to
+💡 Use `ENTER` to view site, `CONTROL` to view versions, `OPTION` to view source, or `COMMAND` to
 view issues.
 
 ==== Dry RB
@@ -258,7 +258,7 @@ A link:https://dry-rb.org[Dry RB] workflow for navigating all of the Dry RB site
    click to install.
 2. Type `dry` to activate general information and `dryx` for project list.
 
-💡 Use `ENTER` to visit site, `CONTROL` to view changes, `OPTION` to view source, or `COMMAND` to
+💡 Use `ENTER` to visit site, `CONTROL` to view versions, `OPTION` to view source, or `COMMAND` to
 view issues.
 
 ==== Rubocop
@@ -266,13 +266,13 @@ view issues.
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rubocop-projects.png[Rubocop Projects,width=706,height=632,role=focal_point]
 
 A link:https://docs.rubocop.org/rubocop[Rubocop] workflow for quick access to documentation,
-learning about project changes, viewing source code, etc.
+learning about project versions, viewing source code, etc.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/rubocop.alfredworkflow[Download] and
    double click to install.
 2. Type `cop` to activate.
 
-💡 Use `ENTER` to view site, `CONTROL` to view changes, `OPTION` to view source, or `COMMAND` to
+💡 Use `ENTER` to view site, `CONTROL` to view versions, `OPTION` to view source, or `COMMAND` to
 view issues.
 
 ==== Ruby

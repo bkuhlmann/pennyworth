@@ -18,7 +18,7 @@ RSpec.describe Pennyworth::Serializers::Project do
       quicklookurl: "https://site.example.com",
       mods: {
         control: {
-          subtitle: "View changes.",
+          subtitle: "View versions.",
           arg: "https://changes.example.com"
         },
         alt: {
