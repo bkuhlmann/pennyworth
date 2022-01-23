@@ -10,7 +10,10 @@ module Pennyworth
   module Container
     extend Dry::Container::Mixin
 
+    SPEC_PATH = "#{__dir__}/../../pennyworth.gemspec".freeze
+
     register(:configuration) { Configuration::Loader.call }
+    register(:specification) { Gem::Specification.load SPEC_PATH }
     register(:environment) { ENV }
     register(:kernel) { Kernel }
     register(:http) { HTTP }

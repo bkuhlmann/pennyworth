@@ -43,7 +43,7 @@ module Pennyworth
           in action_system_signals: true then system_signals
           in action_system_errors: true then system_errors
           in action_text: String => content then text content
-          in action_version: true then logger.info { Identity::VERSION_LABEL }
+          in action_version: true then logger.info { "Pennyworth #{specification.version}" }
           else usage
         end
       end
@@ -74,6 +74,8 @@ module Pennyworth
       def text(content) = actions.fetch(__method__).call(content)
 
       def usage = logger.unknown { parser.to_s }
+
+      def specification = container[__method__]
 
       def logger = container[__method__]
     end
