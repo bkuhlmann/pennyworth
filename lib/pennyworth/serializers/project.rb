@@ -16,7 +16,7 @@ module Pennyworth
           arg: site_url,
           quicklookurl: site_url,
           mods: modifications,
-          text: text
+          text:
         }
       end
 
@@ -34,7 +34,7 @@ module Pennyworth
 
       def modification argument, subtitle
         {
-          subtitle: subtitle,
+          subtitle:,
           arg: argument
         }
       end
