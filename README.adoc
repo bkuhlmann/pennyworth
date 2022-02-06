@@ -6,13 +6,6 @@
 
 = Pennyworth
 
-[link=http://badge.fury.io/rb/pennyworth]
-image::https://badge.fury.io/rb/pennyworth.svg[Gem Version]
-[link=https://www.alchemists.io/projects/code_quality]
-image::https://img.shields.io/badge/code_style-alchemists-brightgreen.svg[Alchemists Style Guide]
-[link=https://circleci.com/gh/bkuhlmann/pennyworth]
-image::https://circleci.com/gh/bkuhlmann/pennyworth.svg?style=svg[Circle CI Status]
-
 Pennyworth is a command line interface and the perfect companion to
 link:https://www.alfredapp.com[Alfred]. With Pennyworth, you can unlock the full potential of the
 Ruby language by leveraging modern versions of Ruby through Alfred Workflows. Perfect for when you
