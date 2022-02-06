@@ -43,7 +43,7 @@ module Pennyworth
           in action_system_signals: true then system_signals
           in action_system_errors: true then system_errors
           in action_text: String => content then text content
-          in action_version: true then logger.info { "Pennyworth #{specification.version}" }
+          in action_version: true then logger.info { specification.labeled_version }
           else usage
         end
       end

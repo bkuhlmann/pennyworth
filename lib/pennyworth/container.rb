@@ -4,16 +4,15 @@ require "dry-container"
 require "logger"
 require "http"
 require "pastel"
+require "spek"
 
 module Pennyworth
   # Provides a global gem container for injection into other objects.
   module Container
     extend Dry::Container::Mixin
 
-    SPEC_PATH = "#{__dir__}/../../pennyworth.gemspec".freeze
-
     register(:configuration) { Configuration::Loader.call }
-    register(:specification) { Gem::Specification.load SPEC_PATH }
+    register(:specification) { Spek::Loader.call "#{__dir__}/../../pennyworth.gemspec" }
     register(:environment) { ENV }
     register(:kernel) { Kernel }
     register(:http) { HTTP }
