@@ -57,14 +57,14 @@ RSpec.describe Pennyworth::Integrations::GitHub::Response do
 
   describe "#success?" do
     it "answers true when success" do
-      expect(response.success?).to eq(true)
+      expect(response.success?).to be(true)
     end
 
     context "when failure" do
       let(:status) { 400 }
 
       it "answers false" do
-        expect(response.success?).to eq(false)
+        expect(response.success?).to be(false)
       end
     end
   end
