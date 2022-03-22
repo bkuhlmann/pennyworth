@@ -438,7 +438,7 @@ launched.
 
 ===== Browsers
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/browsers.png[Browsers workflow screenshot.,width=706,height=470,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/browsers.png[Browsers workflow screenshot.,width=706,height=308,role=focal_point]
 
 Provides browser related utilities.
 
@@ -488,7 +488,7 @@ Shortens URLs using link:https://chl.li[chl.li].
 
 ===== Docker
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/docker.png[Docker workflow screenshot.,width=706,height=524,role=focal_point]
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/docker.png[Docker workflow screenshot.,width=706,height=470,role=focal_point]
 
 Provides link:https://www.docker.com[Docker] resources.
 
