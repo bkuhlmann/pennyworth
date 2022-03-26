@@ -9,8 +9,8 @@ RSpec.describe Pennyworth::CLI::Actions::Encodings do
 
   describe "#call" do
     it "answers JSON" do
-      results = proc { action.call }
-      expect(&results).to output(/items.+title.+ASCII-8BIT.+subtitle.+BINARY/).to_stdout
+      action.call
+      expect(logger.reread).to match(/items.+title.+ASCII-8BIT.+subtitle.+BINARY/)
     end
   end
 end

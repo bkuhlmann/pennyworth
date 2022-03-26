@@ -11,8 +11,8 @@ RSpec.describe Pennyworth::CLI::Actions::Text do
 
   describe "#call" do
     it "answers JSON" do
-      results = proc { action.call "an Example" }
-      expect(&results).to output(/items.+title.+AnExample.+subtitle.+Camelcase/).to_stdout
+      action.call "an Example"
+      expect(logger.reread).to match(/items.+title.+AnExample.+subtitle.+Camelcase/)
     end
   end
 end

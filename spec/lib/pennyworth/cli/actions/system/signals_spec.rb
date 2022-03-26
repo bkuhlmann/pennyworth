@@ -9,8 +9,8 @@ RSpec.describe Pennyworth::CLI::Actions::System::Signals do
 
   describe "#call" do
     it "answers JSON" do
-      results = proc { action.call }
-      expect(&results).to output(/items.+title.+ABRT.+subtitle.+6/).to_stdout
+      action.call
+      expect(logger.reread).to match(/items.+title.+ABRT.+subtitle.+6/)
     end
   end
 end

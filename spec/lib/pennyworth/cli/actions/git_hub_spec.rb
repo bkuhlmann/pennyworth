@@ -19,8 +19,8 @@ RSpec.describe Pennyworth::CLI::Actions::GitHub do
     end
 
     it "answers JSON" do
-      results = proc { action.call "orgs/acme/repos" }
-      expect(&results).to output("#{[git_hub_record].to_json}\n").to_stdout
+      action.call "orgs/acme/repos"
+      expect(logger.reread).to eq("#{[git_hub_record].to_json}\n")
     end
   end
 end

@@ -19,8 +19,8 @@ RSpec.describe Pennyworth::CLI::Actions::RubyGems do
     end
 
     it "answers JSON" do
-      results = proc { action.call "owners/test/gems.json" }
-      expect(&results).to output("#{[ruby_gems_record].to_json}\n").to_stdout
+      action.call "owners/test/gems.json"
+      expect(logger.reread).to eq("#{[ruby_gems_record].to_json}\n")
     end
   end
 end

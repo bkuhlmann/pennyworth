@@ -9,8 +9,8 @@ RSpec.describe Pennyworth::CLI::Actions::HTTPStatuses do
 
   describe "#call" do
     it "answers JSON" do
-      results = proc { action.call }
-      expect(&results).to output(/items.+title.+200.+subtitle.+OK/).to_stdout
+      action.call
+      expect(logger.reread).to match(/items.+title.+200.+subtitle.+OK/)
     end
   end
 end
