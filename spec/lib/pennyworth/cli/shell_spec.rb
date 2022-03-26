@@ -4,10 +4,15 @@ require "spec_helper"
 
 RSpec.describe Pennyworth::CLI::Shell do
   using Refinements::Pathnames
+  using AutoInjector::Stub
 
   subject(:shell) { described_class.new }
 
   include_context "with application container"
+
+  before { Pennyworth::CLI::Actions::Import.stub configuration:, kernel:, logger: }
+
+  after { Pennyworth::CLI::Actions::Import.unstub :configuration, :kernel, :logger }
 
   describe "#call" do
     it "answers encodings script filter items" do

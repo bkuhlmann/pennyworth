@@ -9,25 +9,25 @@ module Pennyworth
       CLIENT = OptionParser.new nil, 40, "  "
       SECTIONS = [Parsers::Core, Parsers::GitHub, Parsers::RubyGems].freeze # Order is important.
 
-      def initialize configuration = Configuration::Loader.call,
+      def initialize configuration = Container[:configuration],
                      sections: SECTIONS,
                      client: CLIENT
-        @configuration = configuration.dup
+        @configuration_duplicate = configuration.dup
         @sections = sections
         @client = client
       end
 
       def call arguments = []
-        sections.each { |parser| parser.call configuration, client: }
+        sections.each { |parser| parser.call configuration_duplicate, client: }
         client.parse arguments
-        configuration.freeze
+        configuration_duplicate.freeze
       end
 
       def to_s = client.to_s
 
       private
 
-      attr_reader :configuration, :client, :sections
+      attr_reader :configuration_duplicate, :client, :sections
     end
   end
 end

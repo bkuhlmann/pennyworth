@@ -6,12 +6,14 @@ module Pennyworth
   module Loaders
     # Loads an array of HTTP status records.
     class HTTPStatuses
+      include Import[:configuration]
+
       def initialize codes: Rack::Utils::HTTP_STATUS_CODES,
                      model: Models::HTTPStatus,
-                     configuration: Configuration::Loader.call
+                     **dependencies
+        super(**dependencies)
         @codes = codes
         @model = model
-        @configuration = configuration
       end
 
       def call _omit = nil
@@ -20,7 +22,7 @@ module Pennyworth
 
       private
 
-      attr_reader :codes, :model, :configuration
+      attr_reader :codes, :model
 
       def url = configuration.http_statuses_url
     end

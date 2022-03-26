@@ -1,2 +1,9 @@
 inherit_gem:
   caliber: config/all.yml
+
+Metrics/AbcSize:
+  Exclude:
+    - "lib/pennyworth/cli/shell.rb"
+Metrics/MethodLength:
+  Exclude:
+    - "lib/pennyworth/cli/shell.rb"

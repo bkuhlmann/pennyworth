@@ -5,9 +5,11 @@ module Pennyworth
     module Actions
       # Handles the RubyGems action.
       class RubyGems
-        def initialize processor: Processor.for_gems, container: Container
+        include Pennyworth::Import[:logger]
+
+        def initialize processor: Processor.for_gems, **dependencies
+          super(**dependencies)
           @processor = processor
-          @container = container
         end
 
         def call endpoint
@@ -18,9 +20,7 @@ module Pennyworth
 
         private
 
-        attr_reader :processor, :container
-
-        def logger = container[__method__]
+        attr_reader :processor
       end
     end
   end

@@ -6,18 +6,18 @@ module Pennyworth
       module System
         # Handles the system errors action.
         class Errors
-          def initialize processor: Processor.for_system_errors, container: Container
+          include Pennyworth::Import[:logger]
+
+          def initialize processor: Processor.for_system_errors, **dependencies
+            super(**dependencies)
             @processor = processor
-            @container = container
           end
 
           def call = processor.call.to_json.then { |json| logger.info { json } }
 
           private
 
-          attr_reader :processor, :container
-
-          def logger = container[__method__]
+          attr_reader :processor
         end
       end
     end

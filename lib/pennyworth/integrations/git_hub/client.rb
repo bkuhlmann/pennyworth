@@ -7,6 +7,8 @@ module Pennyworth
     module GitHub
       # Provides low-level API access to the GitHub API.
       class Client
+        include Import[:configuration, :http, :environment]
+
         using Refinements::Arrays
 
         HEADERS = {
@@ -14,9 +16,9 @@ module Pennyworth
           content_type: "Content-Type: application/json; charset=utf-8"
         }.freeze
 
-        def initialize headers: HEADERS, container: Container
+        def initialize headers: HEADERS, **dependencies
+          super(**dependencies)
           @headers = headers
-          @container = container
         end
 
         def get endpoint, parameters: {}
@@ -25,7 +27,7 @@ module Pennyworth
 
         private
 
-        attr_reader :headers, :container
+        attr_reader :headers
 
         # :reek:FeatureEnvy
         def paginate request, records: [], page: 1
@@ -42,17 +44,13 @@ module Pennyworth
         def sole_get endpoint, parameters: {}
           http.headers(headers)
               .basic_auth(user: api_login, pass: api_token)
-              .get("#{api_url}/#{endpoint}", params: parameters)
+              .get("#{configuration.git_hub_api_url}/#{endpoint}", params: parameters)
               .then { |response| Response.new response }
         end
 
-        def http = container[__method__]
+        def api_login = environment.fetch "GITHUB_API_LOGIN"
 
-        def api_url = container[:configuration].git_hub_api_url
-
-        def api_login = container[:environment].fetch("GITHUB_API_LOGIN")
-
-        def api_token = container[:environment].fetch("GITHUB_API_TOKEN")
+        def api_token = environment.fetch "GITHUB_API_TOKEN"
       end
     end
   end

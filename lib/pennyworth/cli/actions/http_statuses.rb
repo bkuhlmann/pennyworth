@@ -5,18 +5,18 @@ module Pennyworth
     module Actions
       # Handles the HTTP statuses action.
       class HTTPStatuses
-        def initialize processor: Processor.for_http_statuses, container: Container
+        include Pennyworth::Import[:logger]
+
+        def initialize processor: Processor.for_http_statuses, **dependencies
+          super(**dependencies)
           @processor = processor
-          @container = container
         end
 
         def call = processor.call.to_json.then { |json| logger.info { json } }
 
         private
 
-        attr_reader :processor, :container
-
-        def logger = container[__method__]
+        attr_reader :processor
       end
     end
   end

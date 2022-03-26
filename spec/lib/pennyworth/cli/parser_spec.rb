@@ -3,7 +3,7 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::CLI::Parser do
-  subject(:parser) { described_class.new Pennyworth::Configuration::Loader.call }
+  subject(:parser) { described_class.new }
 
   describe "#call" do
     it "answers hash with valid option" do

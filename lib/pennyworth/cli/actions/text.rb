@@ -5,18 +5,18 @@ module Pennyworth
     module Actions
       # Handles the text action.
       class Text
-        def initialize processor: Processor.for_text, container: Container
+        include Pennyworth::Import[:logger]
+
+        def initialize processor: Processor.for_text, **dependencies
+          super(**dependencies)
           @processor = processor
-          @container = container
         end
 
         def call(content) = processor.call(content).to_json.then { |json| logger.info { json } }
 
         private
 
-        attr_reader :processor, :container
-
-        def logger = container[__method__]
+        attr_reader :processor
       end
     end
   end
