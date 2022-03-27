@@ -7,7 +7,7 @@ RSpec.describe Pennyworth::CLI::Actions::RubyGems do
 
   subject(:action) { described_class.new processor: }
 
-  include_context "with application container"
+  include_context "with application dependencies"
   include_context "with RubyGems integration"
 
   let(:processor) { instance_spy Pennyworth::Processor, call: [ruby_gems_record] }

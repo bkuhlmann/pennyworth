@@ -8,7 +8,7 @@ RSpec.describe Pennyworth::CLI::Shell do
 
   subject(:shell) { described_class.new }
 
-  include_context "with application container"
+  include_context "with application dependencies"
 
   before { Pennyworth::CLI::Actions::Import.stub configuration:, kernel:, logger: }
 

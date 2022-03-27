@@ -5,7 +5,7 @@ require "spec_helper"
 RSpec.describe Pennyworth::CLI::Actions::HTTPStatuses do
   subject(:action) { described_class.new }
 
-  include_context "with application container"
+  include_context "with application dependencies"
 
   describe "#call" do
     it "answers JSON" do

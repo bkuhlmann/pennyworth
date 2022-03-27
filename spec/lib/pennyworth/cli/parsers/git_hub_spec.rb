@@ -7,7 +7,7 @@ RSpec.describe Pennyworth::CLI::Parsers::GitHub do
 
   subject(:parser) { described_class.new test_configuration }
 
-  include_context "with application container"
+  include_context "with application dependencies"
 
   it_behaves_like "a parser"
 
