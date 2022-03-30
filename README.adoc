@@ -466,6 +466,16 @@ A link:https://elm-lang.org[Elm] workflow for quick access to Elm resources.
    click to install.
 2. Type `elm` to view general information, arrow keys to navigate, and `ENTER` to view information.
 
+===== GitHub
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/github.png[GitHub workflow screenshot.,width=706,height=632,role=focal_point]
+
+Provides link:https://github.com[GitHub] resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/github.alfredworkflow[Download] and
+   double click to install.
+2. Type `gh` to activate and then fuzzy type to filter.
+
 ===== Hanami
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/hanami.png[Hanami workflow screenshot.,width=706,height=632,role=focal_point]
