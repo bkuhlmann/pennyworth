@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = "~> 3.1"
   spec.add_dependency "auto_injector", "~> 0.4"
   spec.add_dependency "cogger", "~> 0.0"
-  spec.add_dependency "dry-container", "~> 0.8"
+  spec.add_dependency "dry-container", "~> 0.9"
   spec.add_dependency "http", "~> 5.0"
   spec.add_dependency "rack", "~> 2.2"
   spec.add_dependency "refinements", "~> 9.2"
