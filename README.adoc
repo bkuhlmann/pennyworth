@@ -456,6 +456,27 @@ Provides quick access to link:https://bundler.io[Bundler] related resources.
    double click to install.
 2. Type `bundler` to activate.
 
+===== Crystal
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/crystal.png[Crystal workflow screenshot.,width=706,height=362,role=focal_point]
+
+A link:https://crystal-lang.org[Crystal] workflow for quick access to Crystal resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/crystal.alfredworkflow[Download] and
+   double click to install.
+2. Type `crystal` to view general information, arrow keys to navigate, and `ENTER` to view
+   information.
+
+===== CSS
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/css.png[CSS workflow screenshot.,width=706,height=470,role=focal_point]
+
+A link:https://www.w3.org/Style/CSS/specs.en.html[CSS] workflow for quick access to CSS resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/css.alfredworkflow[Download] and double
+   click to install.
+2. Type `cx` to view general information, arrow keys to navigate, and `ENTER` to view information.
+
 ===== Elm
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/elm.png[Elm workflow screenshot.,width=706,height=470,role=focal_point]
@@ -513,6 +534,17 @@ Provides macOS utilities.
 1. link:https://www.alchemists.io/public/alfred/workflows/mac_os.alfredworkflow[Download] and
    double click to install.
 2. Open the workflow to see all available keywords.
+
+===== RSpec
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rspec.png[RSpec workflow screenshot.,width=706,height=362,role=focal_point]
+
+A link:https://rspec.info[RSpec] workflow for quick access to RSpec resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/rspec.alfredworkflow[Download] and double
+   click to install.
+2. Type `rspec` to view general information, arrow keys to navigate, and `ENTER` to view
+   information.
 
 ===== Terraform
 
