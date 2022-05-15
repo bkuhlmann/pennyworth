@@ -71,6 +71,12 @@ module Pennyworth
           end
         end
 
+        def add_standard_errors
+          client.on "--standard_errors", "Render Alfred standard errors script filter." do
+            configuration.action_standard_errors = true
+          end
+        end
+
         def add_system_errors
           client.on "--system_errors", "Render Alfred system errors script filter." do
             configuration.action_system_errors = true

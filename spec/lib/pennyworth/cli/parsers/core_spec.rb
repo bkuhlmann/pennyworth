@@ -52,6 +52,10 @@ RSpec.describe Pennyworth::CLI::Parsers::Core do
       expect(parser.call(%w[--ruby_gems])).to have_attributes(action_ruby_gems: true)
     end
 
+    it "enables standard errors" do
+      expect(parser.call(%w[--standard_errors])).to have_attributes(action_standard_errors: true)
+    end
+
     it "enables system errors" do
       expect(parser.call(%w[--system_errors])).to have_attributes(action_system_errors: true)
     end
