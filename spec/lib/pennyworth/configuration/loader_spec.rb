@@ -13,6 +13,7 @@ RSpec.describe Pennyworth::Configuration::Loader do
         {"Dry Cli" => "Dry CLI"},
         {"Flacsmith" => "FLACsmith"},
         {"Git Plus" => "Git+"},
+        {"Http Fake" => "HTTP Fake"},
         {"Mac Os Config" => "macOS Configuration"},
         {"Mac Os" => "MacOS"},
         {"Prawn Plus" => "Prawn+"},
