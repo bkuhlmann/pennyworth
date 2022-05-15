@@ -12,6 +12,7 @@ RSpec.describe Pennyworth::Configuration::Content do
         action_git_hub: nil,
         action_http_statuses: nil,
         action_ruby_gems: nil,
+        action_standard_errors: nil,
         action_system_errors: nil,
         action_system_signals: nil,
         action_text: nil,

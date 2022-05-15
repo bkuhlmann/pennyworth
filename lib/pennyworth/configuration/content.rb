@@ -8,6 +8,7 @@ module Pennyworth
       :action_git_hub,
       :action_http_statuses,
       :action_ruby_gems,
+      :action_standard_errors,
       :action_system_errors,
       :action_system_signals,
       :action_text,
