@@ -1,14 +1,10 @@
 # frozen_string_literal: true
 
-require "refinements/arrays"
-
 module Pennyworth
   module Loaders
     module System
       # Loads an array of system error records.
       class Errors
-        using Refinements::Arrays
-
         def initialize errno: Errno, model: Models::System::Error
           @errno = errno
           @model = model
