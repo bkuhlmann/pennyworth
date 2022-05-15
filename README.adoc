@@ -75,6 +75,8 @@ with others.
 From the command line, type `pennyworth` to view usage:
 
 ....
+Pennyworth - A command line interface that augments Alfred workflows.
+
 USAGE:
   -c, --config ACTION                      Manage gem configuration. Actions: edit || view.
       --encodings                          Render Alfred encodings script filter.
@@ -82,6 +84,7 @@ USAGE:
   -h, --help                               Show this message.
       --http_statuses                      Render Alfred HTTP statuses script filter.
       --ruby_gems                          Render Alfred RubyGems script filter.
+      --standard_errors                    Render Alfred standard errors script filter.
       --system_errors                      Render Alfred system errors script filter.
       --system_signals                     Render Alfred system signals script filter.
       --text CONTENT                       Render Alfred text script filter.
@@ -109,6 +112,7 @@ pennyworth --git_hub --user bkuhlmann
 
 pennyworth --http_statuses
 pennyworth --ruby_gems --owner bkuhlmann
+pennyworth --standard_errors
 pennyworth --system_errors
 pennyworth --system_signals
 
@@ -144,6 +148,7 @@ The default configuration is as follows:
   - "Dry Cli": "Dry CLI"
   - "Flacsmith": "FLACsmith"
   - "Git Plus": "Git+"
+  - "Http Fake": "HTTP Fake"
   - "Mac Os Config": "macOS Configuration"
   - "Mac Os": "MacOS"
   - "Prawn Plus": "Prawn+"
@@ -588,7 +593,7 @@ earlier).
 
 == Architecture
 
-The following documents the workfow used to process all actions from Alfred.
+The following documents the workflow used to process all actions from Alfred.
 
 image::https://www.alchemists.io/images/projects/pennyworth/doc/architecture.svg[Architecture Diagram]
 
