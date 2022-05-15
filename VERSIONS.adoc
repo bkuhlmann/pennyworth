@@ -1,5 +1,19 @@
 = Versions
 
+== 13.2.0 (2022-05-15)
+
+* Added CLI core parser standard errors option - Brooke Kuhlmann
+* Added CLI shell support for standard errors - Brooke Kuhlmann
+* Added CLI standard errors action - Brooke Kuhlmann
+* Added configuration for standard errors - Brooke Kuhlmann
+* Added process support for standard errors - Brooke Kuhlmann
+* Added standard error loader - Brooke Kuhlmann
+* Added standard error model - Brooke Kuhlmann
+* Added standard error presenter - Brooke Kuhlmann
+* Added standard error serializer - Brooke Kuhlmann
+* Updated default configuration to include HTTP Fake inflection - Brooke Kuhlmann
+* Removed system errors loader use of arrays refinement - Brooke Kuhlmann
+
 == 13.1.0 (2022-05-07)
 
 * Added README Crystal, CSS, and RSpec workflow documentation - Brooke Kuhlmann

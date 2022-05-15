@@ -351,6 +351,23 @@ This keyword allows you to generate a repeating sequence of the same character(s
 Type `repeat` to activate and `ENTER` generate. You must supply the character(s) you want to repeat
 followed by a number indicating how many times you want the character(s) to repeat.
 
+===== Standard Errors
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-standard_errors.png[Standard Errors,width=706,height=632,role=focal_point]
+
+This keyword allows you to list all subclasses of `StandardError`. Due to the dynamic nature of how
+these subclasses are loaded, they are influenced by this gem's environment and dependencies which
+can be either too narrow or too verbose. This list also includes system errors which have a
+specialized workflow as described below. While this list can be long, it is alphabetically sorted
+for quick filtering when fuzzy typing.
+
+Type `stderr` to activate. Use `ENTER` to copy the subclass to clipboard, `CONTROL` to copy the
+error name, or `OPTION` to copy the source path.
+
+💡 The subclass source path might not always be available because not all subclasses are written in
+Ruby but C instead. That said, when the source path does exist, you'll get the full path plus line
+number in the format of `<source path>:<line number>` for easy loading within your editor of choice.
+
 ===== System Errors
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-system_errors.png[System Errors,width=706,height=632,role=focal_point]
