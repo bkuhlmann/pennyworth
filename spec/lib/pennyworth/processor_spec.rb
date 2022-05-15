@@ -29,15 +29,21 @@ RSpec.describe Pennyworth::Processor do
     end
   end
 
-  describe ".for_system_signals" do
+  describe ".for_standard_errors" do
     it "answers new instance" do
-      expect(described_class.for_system_signals).to be_a(described_class)
+      expect(described_class.for_standard_errors).to be_a(described_class)
     end
   end
 
   describe ".for_system_errors" do
     it "answers new instance" do
       expect(described_class.for_system_errors).to be_a(described_class)
+    end
+  end
+
+  describe ".for_system_signals" do
+    it "answers new instance" do
+      expect(described_class.for_system_signals).to be_a(described_class)
     end
   end
 

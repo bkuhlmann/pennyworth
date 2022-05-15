@@ -27,16 +27,22 @@ module Pennyworth
           serializer: Serializers::Project
     end
 
-    def self.for_system_signals
-      new loader: Loaders::System::Signals.new,
-          presenter: Presenters::System::Signal,
-          serializer: Serializers::System::Signal
+    def self.for_standard_errors
+      new loader: Loaders::StandardErrors.new,
+          presenter: Presenters::StandardError,
+          serializer: Serializers::StandardError
     end
 
     def self.for_system_errors
       new loader: Loaders::System::Errors.new,
           presenter: Presenters::System::Error,
           serializer: Serializers::System::Error
+    end
+
+    def self.for_system_signals
+      new loader: Loaders::System::Signals.new,
+          presenter: Presenters::System::Signal,
+          serializer: Serializers::System::Signal
     end
 
     def self.for_text
