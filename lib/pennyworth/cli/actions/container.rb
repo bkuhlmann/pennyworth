@@ -18,6 +18,7 @@ module Pennyworth
         register(:git_hub) { GitHub.new }
         register(:http_statuses) { HTTPStatuses.new }
         register(:ruby_gems) { RubyGems.new }
+        register(:standard_errors) { StandardErrors.new }
         register(:system_errors) { System::Errors.new }
         register(:system_signals) { System::Signals.new }
         register(:text) { Text.new }
