@@ -55,6 +55,11 @@ RSpec.describe Pennyworth::CLI::Shell do
       expect(logger.reread).to match(/items.+title.+200.+subtitle.+OK/)
     end
 
+    it "answers standard errors script filter items" do
+      shell.call %w[--standard_errors]
+      expect(logger.reread).to match(/.+title.+ArgumentError.+arg.+ArgumentError/)
+    end
+
     it "answers system errors script filter items" do
       shell.call %w[--system_errors]
       expect(logger.reread).to match(/items.+title.+Errno::EACCES.+subtitle.+Permission denied/)

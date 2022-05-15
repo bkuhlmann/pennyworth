@@ -10,6 +10,7 @@ module Pennyworth
         :git_hub,
         :http_statuses,
         :ruby_gems,
+        :standard_errors,
         :system_errors,
         :system_signals,
         :text,
@@ -42,8 +43,9 @@ module Pennyworth
           in action_http_statuses: true then http_statuses.call
           in action_ruby_gems: true
             ruby_gems.call "owners/#{configuration.ruby_gems_owner}/gems.json"
-          in action_system_signals: true then system_signals.call
+          in action_standard_errors: true then standard_errors.call
           in action_system_errors: true then system_errors.call
+          in action_system_signals: true then system_signals.call
           in action_text: String => content then text.call content
           in action_version: true then logger.info { specification.labeled_version }
           else logger.any { parser.to_s }
