@@ -280,6 +280,22 @@ link:https://www.alchemists.io/public/alfred/workflows/ruby.alfredworkflow[singl
 downloaded, double click to install, and then continue reading to learn all of the
 capabilities this single workflow provides.
 
+===== Alphanumeric
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-alphanumeric.png[Alphanumeric,width=706,height=200,role=focal_point]
+
+This keyword allows you to generate a random alphanumeric string.
+
+Type `anum` to activate and `ENTER` generate. You can supply an optional number for specific length.
+
+===== Base64
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-base64.png[Base64,width=706,height=200,role=focal_point]
+
+This keyword allows you to generate a random Base64 string.
+
+Type `b64` to activate and `ENTER` generate. You can supply an optional number for specific length.
+
 ===== Bytes
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby-bytes.png[Bytes,width=706,height=200,role=focal_point]
