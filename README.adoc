@@ -529,16 +529,6 @@ Provides link:https://hanamirb.org[Hanami] resources.
    double click to install.
 2. Type `h` to activate.
 
-===== chi.li
-
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/chili.png[chi.li workflow screenshot.,width=706,height=200,role=focal_point]
-
-Shortens URLs using link:https://chl.li[chl.li].
-
-1. link:https://www.alchemists.io/public/alfred/workflows/chlli.alfredworkflow[Download] and
-   double click to install.
-2. Type `surl` to activate.
-
 ===== Docker
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/docker.png[Docker workflow screenshot.,width=706,height=470,role=focal_point]
