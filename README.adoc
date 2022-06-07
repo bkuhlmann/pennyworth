@@ -563,6 +563,17 @@ Provides macOS utilities.
    double click to install.
 2. Open the workflow to see all available keywords.
 
+===== Rack
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rack.png[Rack workflow screenshot.,width=706,height=470,role=focal_point]
+
+A link:https://github.com/rack/rack[Rack] workflow for quick access to Rack resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/rack.alfredworkflow[Download] and double
+   click to install.
+2. Type `rack` to view general information, arrow keys to navigate, and `ENTER` to view
+   information.
+
 ===== RSpec
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rspec.png[RSpec workflow screenshot.,width=706,height=362,role=focal_point]
