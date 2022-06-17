@@ -4,13 +4,12 @@ require "refinements/structs"
 
 module Pennyworth
   module CLI
-    # Handles parsing of Command Line Interface (CLI) primary options.
     module Parsers
-      using Refinements::Structs
-
       # Handles parsing of Command Line Interface (CLI) core options.
       class Core
         include Import[:specification]
+
+        using Refinements::Structs
 
         def self.call(...) = new(...).call
 
