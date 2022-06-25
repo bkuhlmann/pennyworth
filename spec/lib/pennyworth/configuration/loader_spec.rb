@@ -16,6 +16,7 @@ RSpec.describe Pennyworth::Configuration::Loader do
         {"Http Fake" => "HTTP Fake"},
         {"Mac Os Config" => "macOS Configuration"},
         {"Mac Os" => "MacOS"},
+        {"Pkce" => "PKCE"},
         {"Prawn Plus" => "Prawn+"},
         {"Rubocop Ast" => "Rubocop AST"},
         {"Rubocop Md" => "Rubocop Markdown"},
