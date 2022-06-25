@@ -1,5 +1,16 @@
 = Versions
 
+== 13.3.0 (2022-06-25)
+
+* Fixed README to include standard error defaults and CLI usage - Brooke Kuhlmann
+* Fixed core parser comment and refinement - Brooke Kuhlmann
+* Added Rack workflow documentation - Brooke Kuhlmann
+* Added Ruby alphanumeric and base64 workflow documentation - Brooke Kuhlmann
+* Updated default configuration to include PKCE inflection - Brooke Kuhlmann
+* Removed Bundler Leak gem - Brooke Kuhlmann
+* Removed Rakefile Bundler gem tasks - Brooke Kuhlmann
+* Removed chi.li documentation - Brooke Kuhlmann
+
 == 13.2.0 (2022-05-15)
 
 * Added CLI core parser standard errors option - Brooke Kuhlmann
