@@ -556,6 +556,16 @@ Provides link:https://hanamirb.org[Hanami] resources.
    double click to install.
 2. Type `h` to activate.
 
+===== Jitsi
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/jitsi.png[Hanami workflow screenshot.,width=706,height=254,role=focal_point]
+
+Provides link:https://jitsi.org[Jitsi] resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/jitsi.alfredworkflow[Download] and
+   double click to install.
+2. Type `jitsi` to activate.
+
 ===== Docker
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/docker.png[Docker workflow screenshot.,width=706,height=470,role=focal_point]
