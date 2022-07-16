@@ -475,6 +475,16 @@ launched.
    double click to install.
 2. Type `work` to activate.
 
+===== Bash
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/bash.png[Bash workflow screenshot.,width=706,height=362,role=focal_point]
+
+Provides link:https://www.gnu.org/software/bash[Bash] shell resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/bash.alfredworkflow[Download] and
+   double click to install.
+2. Type `bh` to activate.
+
 ===== Browsers
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/browsers.png[Browsers workflow screenshot.,width=706,height=308,role=focal_point]
