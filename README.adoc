@@ -615,6 +615,16 @@ Provides access to link:https://https://rubyonrails.org[Ruby on Rails] resources
 1. link:https://www.alchemists.io/public/alfred/workflows/ruby_on_rails.alfredworkflow[Download] and double click to install.
 2. Type `ror` to view general information, arrow keys to navigate, and `ENTER` to view information.
 
+===== Slack
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/slack.png[Slack workflow screenshot.,width=706,height=524,role=focal_point]
+
+Provides link:https://slack.com[Slack] resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/slack.alfredworkflow[Download] and
+   double click to install.
+2. Type `slack` to activate.
+
 ===== Terraform
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/terraform.png[Terraform workflow screenshot.,width=706,height=632,role=focal_point]
