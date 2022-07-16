@@ -625,6 +625,15 @@ Provides link:https://slack.com[Slack] resources.
    double click to install.
 2. Type `slack` to activate.
 
+===== SSL
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ssl.png[SSL workflow screenshot.,width=706,height=362,role=focal_point]
+
+Provides SSL resources for the security conscious.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/ssl.alfredworkflow[Download] and double click to install.
+2. Type `ssl` to activate.
+
 ===== Terraform
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/terraform.png[Terraform workflow screenshot.,width=706,height=632,role=focal_point]
