@@ -482,6 +482,14 @@ Provides link:https://www.gnu.org/software/bash[Bash] shell resources.
    double click to install.
 2. Type `bh` to activate.
 
+===== Bio
+
+Provides biographical calculations.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/bio.alfredworkflow[Download] and
+   double click to install.
+2. View workflow configuration to learn more.
+
 ===== Browsers
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/browsers.png[Browsers workflow screenshot.,width=706,height=308,role=focal_point]
