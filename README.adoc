@@ -22,7 +22,7 @@ toc::[]
 
 == Screencast
 
-video::https://www.alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://www.alchemists.io/images/projects/pennyworth/demo.png,width=700,height=636,role=focal_point]
+video::https://www.alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://www.alchemists.io/images/projects/pennyworth/demo.png,width=706,height=632,role=focal_point]
 
 == Requirements
 
