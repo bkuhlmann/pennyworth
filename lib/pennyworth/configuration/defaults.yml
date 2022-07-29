@@ -44,7 +44,7 @@
   :user:
 :http:
   :statuses:
-    :url: "https://httpstatuses.com"
+    :url: "https://developer.mozilla.org/docs/Web/HTTP/Status"
 :ruby_gems:
   :api_url: "https://rubygems.org/api/v1"
   :owner:
