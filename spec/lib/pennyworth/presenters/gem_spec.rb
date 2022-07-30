@@ -38,7 +38,7 @@ RSpec.describe Pennyworth::Presenters::Gem do
 
     it "answers multiple licenses" do
       ruby_gems_record[:licenses] = %w[MIT Apache]
-      expect(presenter.licenses).to eq("MIT, Apache")
+      expect(presenter.licenses).to eq("MIT and Apache")
     end
 
     it "answers empty string with missing licenses" do

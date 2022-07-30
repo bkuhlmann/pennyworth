@@ -4,6 +4,8 @@ module Pennyworth
   module Serializers
     # Serializes a encoding into a compatible format for parsing within Alfred script filters.
     class Encoding
+      using Refinements::Arrays
+
       def initialize presenter
         @presenter = presenter
       end
@@ -12,10 +14,10 @@ module Pennyworth
         {
           uid: presenter.id,
           title: label,
-          subtitle: %(Aliases: #{aliases}.),
+          subtitle: %(Aliases: #{aliases.to_sentence}.),
           arg: label,
           mods: {
-            alt: {subtitle: "Copy aliases.", arg: aliases}
+            alt: {subtitle: "Copy aliases.", arg: aliases.join(", ")}
           },
           text: {copy: label, largetype: label}
         }
@@ -27,7 +29,7 @@ module Pennyworth
 
       def label = presenter.label
 
-      def aliases = presenter.aliases.join(", ")
+      def aliases = presenter.aliases
     end
   end
 end

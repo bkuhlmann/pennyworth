@@ -6,6 +6,7 @@ module Pennyworth
   module Presenters
     # Renders RubyGems records into a compatible format for use in Alfred script filters.
     class Gem
+      using Refinements::Arrays
       using Refinements::Strings
 
       def initialize record, inflector: Inflector.new
@@ -21,7 +22,7 @@ module Pennyworth
 
       def version = record.fetch(__method__)
 
-      def licenses = Array(record.fetch(__method__)).join(", ")
+      def licenses = Array(record.fetch(__method__)).to_sentence
 
       def downloads = record.fetch(__method__)
 
