@@ -47,7 +47,7 @@ RSpec.describe Pennyworth::Configuration::Loader do
         {"Xdg" => "XDG"}
       ],
       git_hub_api_url: "https://api.github.com",
-      http_statuses_url: "https://httpstatuses.com",
+      http_statuses_url: "https://developer.mozilla.org/docs/Web/HTTP/Status",
       ruby_gems_api_url: "https://rubygems.org/api/v1"
     )
   end

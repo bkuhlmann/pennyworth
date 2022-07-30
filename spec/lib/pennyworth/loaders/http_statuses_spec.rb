@@ -11,17 +11,17 @@ RSpec.describe Pennyworth::Loaders::HTTPStatuses do
         Pennyworth::Models::HTTPStatus[
           code: 100,
           label: "Continue",
-          url: "https://httpstatuses.com/100"
+          url: "https://developer.mozilla.org/docs/Web/HTTP/Status/100"
         ],
         Pennyworth::Models::HTTPStatus[
           code: 101,
           label: "Switching Protocols",
-          url: "https://httpstatuses.com/101"
+          url: "https://developer.mozilla.org/docs/Web/HTTP/Status/101"
         ],
         Pennyworth::Models::HTTPStatus[
           code: 102,
           label: "Processing",
-          url: "https://httpstatuses.com/102"
+          url: "https://developer.mozilla.org/docs/Web/HTTP/Status/102"
         ]
       ]
     end
