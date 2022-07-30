@@ -21,7 +21,7 @@ RSpec.describe Pennyworth::Presenters::Gem do
 
   describe "#subtitle" do
     it "answwers subtitle" do
-      expect(presenter.subtitle).to eq("Updated: 2021-05-20. Licenses: MIT. Downloads: 1000.")
+      expect(presenter.subtitle).to eq("Downloads: 1000. Licenses: MIT. Updated: 2021-05-20.")
     end
   end
 

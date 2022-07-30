@@ -13,7 +13,7 @@ RSpec.describe Pennyworth::Serializers::Project do
     {
       uid: "test",
       title: "Test 0.1.0",
-      subtitle: "Updated: 2021-05-20. Licenses: MIT. Downloads: 1000.",
+      subtitle: "Downloads: 1000. Licenses: MIT. Updated: 2021-05-20.",
       arg: "https://site.example.com",
       quicklookurl: "https://site.example.com",
       mods: {
