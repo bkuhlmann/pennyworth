@@ -339,6 +339,16 @@ Provides quick access to link:https://bundler.io[Bundler] related resources.
    double click to install.
 2. Click on _Configure Workflow_ to configure the workflow and view documentation.
 
+===== Circle CI
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/circle_ci.png[Circle CI workflow screenshot.,width=706,height=416,role=focal_point]
+
+Provides quick access to link:https://circleci.com/[Circle CI] resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/circle_ci.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+
 ===== Crystal
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/crystal.png[Crystal workflow screenshot.,width=706,height=632,role=focal_point]
