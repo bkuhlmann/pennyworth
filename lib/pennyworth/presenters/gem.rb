@@ -15,10 +15,9 @@ module Pennyworth
 
       def id = record.fetch(:name)
 
-      def label = inflector.call(id.titleize)
+      def label = "#{inflector.call id.titleize} #{version}"
 
       def subtitle
-        "Version: #{version}. " \
         "Updated: #{updated_at[..9]}. " \
         "Licenses: #{licenses}. " \
         "Downloads: #{downloads}."

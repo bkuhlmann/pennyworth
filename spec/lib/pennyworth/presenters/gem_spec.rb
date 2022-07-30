@@ -15,15 +15,13 @@ RSpec.describe Pennyworth::Presenters::Gem do
 
   describe "#label" do
     it "answers label" do
-      expect(presenter.label).to eq("Test")
+      expect(presenter.label).to eq("Test 0.1.0")
     end
   end
 
   describe "#subtitle" do
     it "answwers subtitle" do
-      expect(presenter.subtitle).to eq(
-        "Version: 0.1.0. Updated: 2021-05-20. Licenses: MIT. Downloads: 1000."
-      )
+      expect(presenter.subtitle).to eq("Updated: 2021-05-20. Licenses: MIT. Downloads: 1000.")
     end
   end
 
