@@ -1,5 +1,16 @@
 = Versions
 
+== 13.5.0 (2022-08-01)
+
+* Fixed failing specs due to previous HTTP status URL update - Brooke Kuhlmann
+* Fixed gem and encoding details to use sentences where appropriate - Brooke Kuhlmann
+* Added Circle CI SimpleCov artifacts - Brooke Kuhlmann
+* Added Circle CI workflow - Brooke Kuhlmann
+* Updated HTTP stateses default URL to reference MDN - Brooke Kuhlmann
+* Updated SimpleCov configuration to use filters and minimum coverage - Brooke Kuhlmann
+* Updated gem presenter to change description statistics order - Brooke Kuhlmann
+* Updated gem presenter to include version in label - Brooke Kuhlmann
+
 == 13.4.0 (2022-07-17)
 
 * Added Bash workflow - Brooke Kuhlmann
