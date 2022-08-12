@@ -22,7 +22,7 @@ module Pennyworth
         end
 
         def get endpoint, parameters: {}
-          paginate ->(page) { sole_get endpoint, parameters: parameters.merge(page:) }
+          paginate -> page { sole_get endpoint, parameters: parameters.merge(page:) }
         end
 
         private

@@ -10,7 +10,7 @@ RSpec.describe Pennyworth::CLI::Actions::StandardErrors do
 
   let :logger do
     Cogger::Client.new Logger.new(log_path),
-                       formatter: ->(_severity, _name, _at, message) { "#{message}\n" }
+                       formatter: -> _severity, _name, _at, message { "#{message}\n" }
   end
 
   let(:log_path) { temp_dir.join "standard_errors.json" }
