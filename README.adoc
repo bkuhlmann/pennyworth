@@ -497,13 +497,7 @@ Provides general text manipulation utilities beyond the Pennyworth powered _text
    double click to install.
 2. Click on _Configure Workflow_ to configure the workflow and view documentation.
 
-== Architecture
-
-The following documents the workflow used to process all actions from Alfred.
-
-image::https://www.alchemists.io/images/projects/pennyworth/doc/architecture.svg[Architecture Diagram]
-
-== Troubleshooting
+=== Troubleshooting
 
 * link:https://github.com/ruby/psych[Psych] 4.0.0 has a
   link:https://github.com/ruby/psych/issues/490[bug] which prevents loading of YAML configurations
@@ -521,7 +515,7 @@ To contribute, run:
 
 [source,bash]
 ----
-git clone https://github.com/bkuhlmann/pennyworth.git
+git clone https://github.com/bkuhlmann/pennyworth
 cd pennyworth
 bin/setup
 ----
@@ -532,6 +526,12 @@ You can also use the IRB console for direct access to all objects:
 ----
 bin/console
 ----
+
+=== Architecture
+
+The following documents the workflow used to process all actions from Alfred.
+
+image::https://www.alchemists.io/images/projects/pennyworth/doc/architecture.svg[Architecture Diagram]
 
 == Tests
 
