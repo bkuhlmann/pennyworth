@@ -389,6 +389,16 @@ Provides quick access to link:https://elm-lang.org[Elm] resources.
    click to install.
 2. Click on _Configure Workflow_ to configure the workflow and view documentation.
 
+===== Git
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/git.png[Git workflow screenshot.,width=706,height=415,role=focal_point]
+
+Provides quick access to link:https://git-scm.com[Git] resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/git.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+
 ===== GitHub
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/github.png[GitHub workflow screenshot.,width=706,height=632,role=focal_point]
