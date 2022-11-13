@@ -232,7 +232,7 @@ Provides quick access to link:https://www.alchemists.io[Alchemists] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/alchemists.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ==== Dry RB
 
@@ -242,7 +242,7 @@ Provides quick access to link:https://dry-rb.org[Dry RB] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/dry.alfredworkflow[Download] and double
    click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ==== RuboCop
 
@@ -252,7 +252,7 @@ Provides quick access to link:https://docs.rubocop.org/rubocop[RuboCop] resource
 
 1. link:https://www.alchemists.io/public/alfred/workflows/rubocop.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ==== Ruby
 
@@ -262,7 +262,7 @@ Provides quick access to link:https://www.ruby-lang.org[Ruby] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/ruby.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ==== Other
 
@@ -277,7 +277,7 @@ full definition each time.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/acronyms.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Alpine
 
@@ -287,7 +287,7 @@ Provides quick access to link:https://www.alpinelinux.org[Alpine Linux] resource
 
 1. link:https://www.alchemists.io/public/alfred/workflows/alpine.alfredworkflow[Download] and double
    click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Applications
 
@@ -297,7 +297,7 @@ Launches your engineering environment but can be tweaked to your preferences. Us
 
 1. link:https://www.alchemists.io/public/alfred/workflows/applications.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Bash
 
@@ -307,7 +307,7 @@ Provides quick access to link:https://www.gnu.org/software/bash[Bash] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/bash.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Bio
 
@@ -317,7 +317,7 @@ Provides biographical calculations and information.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/bio.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Browsers
 
@@ -327,7 +327,7 @@ Provides quick access to browser resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/browsers.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Bundler
 
@@ -337,7 +337,7 @@ Provides quick access to link:https://bundler.io[Bundler] related resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/bundler.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Circle CI
 
@@ -347,7 +347,7 @@ Provides quick access to link:https://circleci.com/[Circle CI] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/circle_ci.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Crystal
 
@@ -357,7 +357,7 @@ Provides quick access to link:https://crystal-lang.org[Crystal] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/crystal.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== CSS
 
@@ -367,7 +367,7 @@ Provides quick access to link:https://www.w3.org/Style/CSS/specs.en.html[CSS] re
 
 1. link:https://www.alchemists.io/public/alfred/workflows/css.alfredworkflow[Download] and double
    click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Docker
 
@@ -377,7 +377,7 @@ Provides quick access to link:https://www.docker.com[Docker] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/docker.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Elm
 
@@ -387,7 +387,17 @@ Provides quick access to link:https://elm-lang.org[Elm] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/elm.alfredworkflow[Download] and double
    click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
+
+===== Farnam Street
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/farnam_street.png[Farnam Street workflow screenshot.,width=706,height=631,role=focal_point]
+
+Provides quick access to link:https://fs.blog[Farnam Street] resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/farnam_street.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Git
 
@@ -397,7 +407,7 @@ Provides quick access to link:https://git-scm.com[Git] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/git.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== GitHub
 
@@ -407,7 +417,7 @@ Provides quick access to link:https://github.com[GitHub] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/github.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Hanami
 
@@ -417,7 +427,7 @@ Provides quick access to link:https://hanamirb.org[Hanami] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/hanami.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Jitsi
 
@@ -427,7 +437,7 @@ Provides quick access to link:https://jitsi.org[Jitsi] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/jitsi.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== macOS
 
@@ -437,7 +447,7 @@ Provides quick access to macOS resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/mac_os.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Rack
 
@@ -447,7 +457,7 @@ Provides quick access to link:https://github.com/rack/rack[Rack] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/rack.alfredworkflow[Download] and double
    click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== RSpec
 
@@ -457,7 +467,7 @@ Provides quick access to link:https://rspec.info[RSpec] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/rspec.alfredworkflow[Download] and double
    click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Ruby on Rails
 
@@ -466,7 +476,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby_on_r
 Provides access to link:https://https://rubyonrails.org[Ruby on Rails] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/ruby_on_rails.alfredworkflow[Download] and double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Slack
 
@@ -476,7 +486,7 @@ Provides quick access to link:https://slack.com[Slack] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/slack.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== SSL
 
@@ -485,7 +495,7 @@ image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ssl.png[S
 Provides quick access to SSL resources for the security conscious.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/ssl.alfredworkflow[Download] and double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Terraform
 
@@ -495,7 +505,7 @@ Provides quick access to link:https://www.terraform.io[Terraform] resources.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/terraform.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 ===== Text
 
@@ -505,7 +515,7 @@ Provides general text manipulation utilities beyond the Pennyworth powered _text
 
 1. link:https://www.alchemists.io/public/alfred/workflows/text.alfredworkflow[Download] and
    double click to install.
-2. Click on _Configure Workflow_ to configure the workflow and view documentation.
+2. Click on _Configure Workflow_ to view documentation.
 
 === Troubleshooting
 
