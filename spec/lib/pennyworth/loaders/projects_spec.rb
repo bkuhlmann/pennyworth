@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require "spec_helper"
 require "http"
+require "spec_helper"
 
 RSpec.describe Pennyworth::Loaders::Projects do
   subject(:adapter) { described_class.new client: }

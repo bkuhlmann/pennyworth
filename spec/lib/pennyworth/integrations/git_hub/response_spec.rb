@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require "spec_helper"
 require "http"
+require "spec_helper"
 
 RSpec.describe Pennyworth::Integrations::GitHub::Response do
   subject(:response) { described_class.new raw }

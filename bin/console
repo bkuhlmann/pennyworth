@@ -4,7 +4,7 @@
 require "bundler/setup"
 Bundler.require :tools
 
-require "pennyworth"
 require "irb"
+require "pennyworth"
 
 IRB.start __FILE__
