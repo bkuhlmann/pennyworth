@@ -14,12 +14,12 @@ RSpec.describe Pennyworth::CLI::Actions::GitHub do
 
   describe "#call" do
     it "calls processor with API endpoint" do
-      action.call "orgs/acme/repos"
-      expect(processor).to have_received(:call).with("orgs/acme/repos")
+      action.call "orgs/acme"
+      expect(processor).to have_received(:call).with("orgs/acme")
     end
 
     it "answers JSON" do
-      action.call "orgs/acme/repos"
+      action.call "orgs/acme"
       expect(logger.reread).to eq("#{[git_hub_record].to_json}\n")
     end
   end

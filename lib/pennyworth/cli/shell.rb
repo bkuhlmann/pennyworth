@@ -38,8 +38,8 @@ module Pennyworth
           in action_config: Symbol => action then config.call action
           in action_encodings: true then encodings.call
           in action_git_hub: :organization
-            git_hub.call "orgs/#{configuration.git_hub_organization}/repos"
-          in action_git_hub: :user then git_hub.call "users/#{configuration.git_hub_user}/repos"
+            git_hub.call "orgs/#{configuration.git_hub_organization}"
+          in action_git_hub: :user then git_hub.call "users/#{configuration.git_hub_user}"
           in action_http_statuses: true then http_statuses.call
           in action_ruby_gems: true
             ruby_gems.call "owners/#{configuration.ruby_gems_owner}/gems.json"

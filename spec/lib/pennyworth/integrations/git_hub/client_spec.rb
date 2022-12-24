@@ -7,11 +7,11 @@ RSpec.describe Pennyworth::Integrations::GitHub::Client do
 
   describe "#get" do
     it "answers paginated records when request succeeds" do
-      expect(client.get("users/bkuhlmann/repos").size).to be_between(30, 100)
+      expect(client.get("users/bkuhlmann").size).to be_between(30, 100)
     end
 
-    it "answers zero records when request fails" do
-      expect(client.get("users/bogus-57ea1e9940/repos").size).to eq(0)
+    it "answers empty array when request fails" do
+      expect(client.get("users/bogus-57ea1e9940")).to eq([])
     end
   end
 end
