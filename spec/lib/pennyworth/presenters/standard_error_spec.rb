@@ -8,7 +8,7 @@ RSpec.describe Pennyworth::Presenters::StandardError do
   let :record do
     Pennyworth::Models::StandardError[
       name: "ArgumentError",
-      file_path: "/a/test/path/argument_error.rb",
+      file_path: "/an/argument_error.rb",
       line_number: 20
     ]
   end
@@ -27,22 +27,33 @@ RSpec.describe Pennyworth::Presenters::StandardError do
 
   describe "#path" do
     it "answers path and line number" do
-      expect(presenter.path).to eq("/a/test/path/argument_error.rb:20")
+      expect(presenter.path).to eq("/an/argument_error.rb:20")
     end
 
-    it "answers only path when line number is missing" do
-      record.line_number = nil
-      expect(presenter.path).to eq("/a/test/path/argument_error.rb")
+    context "without line number" do
+      let :record do
+        Pennyworth::Models::StandardError[name: "ArgumentError", file_path: "/an/argument_error.rb"]
+      end
+
+      it "answers path only" do
+        expect(presenter.path).to eq("/an/argument_error.rb")
+      end
     end
 
-    it "answers empty string if file path is nil" do
-      record.file_path = nil
-      expect(presenter.path).to eq("")
+    context "without file path or line number" do
+      let(:record) { Pennyworth::Models::StandardError[name: "ArgumentError"] }
+
+      it "answers empty string if file path is nil" do
+        expect(presenter.path).to eq("")
+      end
     end
 
-    it "answers empty string if file path is empty" do
-      record.file_path = ""
-      expect(presenter.path).to eq("")
+    context "with blank file path and no line number" do
+      let(:record) { Pennyworth::Models::StandardError[name: "ArgumentError", file_path: ""] }
+
+      it "answers empty string if file path is nil" do
+        expect(presenter.path).to eq("")
+      end
     end
   end
 end

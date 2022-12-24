@@ -1,8 +1,13 @@
 # frozen_string_literal: true
 
 module Pennyworth
+  # :reek:ModuleInitialize
   module Models
     # Defines HTTP status details.
-    HTTPStatus = Struct.new :code, :label, :url, keyword_init: true
+    HTTPStatus = Data.define :code, :label, :url do
+      def initialize code: nil, label: nil, url: nil
+        super
+      end
+    end
   end
 end

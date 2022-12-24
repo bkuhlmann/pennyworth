@@ -16,7 +16,7 @@ module Pennyworth
 
       def label = record.name.to_s
 
-      def path = file_path.empty? ? "" : [file_path, record.line_number].compress!.join(":")
+      def path = file_path.empty? ? "" : [file_path, record.line_number].compress.join(":")
 
       private
 

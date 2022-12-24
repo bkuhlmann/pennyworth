@@ -4,7 +4,7 @@ module Pennyworth
   module Models
     module System
       # Defines a system error.
-      Error = Struct.new :id, :name, :description, keyword_init: true
+      Error = Data.define :id, :name, :description
     end
   end
 end

@@ -3,6 +3,6 @@
 module Pennyworth
   module Models
     # Defines an encoding.
-    Encoding = Struct.new :name, :aliases, keyword_init: true
+    Encoding = Data.define :name, :aliases
   end
 end

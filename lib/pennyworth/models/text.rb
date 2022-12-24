@@ -3,6 +3,6 @@
 module Pennyworth
   module Models
     # Defines basic text.
-    Text = Struct.new :id, :content, keyword_init: true
+    Text = Data.define :id, :content
   end
 end

@@ -14,13 +14,16 @@ RSpec.describe Pennyworth::Presenters::Text do
   end
 
   describe "#label" do
-    it "answers label when originally a string" do
+    it "answers label" do
       expect(presenter.label).to eq("test")
     end
 
-    it "answers label when originally an integer" do
-      record.content = 10
-      expect(presenter.label).to eq("10")
+    context "with integer content" do
+      let(:record) { Pennyworth::Models::Text[id: "abc", content: 10] }
+
+      it "answers string label" do
+        expect(presenter.label).to eq("10")
+      end
     end
   end
 

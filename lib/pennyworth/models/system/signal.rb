@@ -4,7 +4,7 @@ module Pennyworth
   module Models
     module System
       # Defines a low-level operating system signal.
-      Signal = Struct.new :number, :name, keyword_init: true
+      Signal = Data.define :number, :name
     end
   end
 end
