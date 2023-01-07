@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "core"
 require "optparse"
 
 module Pennyworth
@@ -17,7 +18,7 @@ module Pennyworth
         @client = client
       end
 
-      def call arguments = []
+      def call arguments = Core::EMPTY_ARRAY
         sections.each { |parser| parser.call configuration_duplicate, client: }
         client.parse arguments
         configuration_duplicate.freeze

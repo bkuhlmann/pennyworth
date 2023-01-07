@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "core"
+
 module Pennyworth
   module CLI
     module Parsers
@@ -12,7 +14,7 @@ module Pennyworth
           @client = client
         end
 
-        def call arguments = []
+        def call arguments = ::Core::EMPTY_ARRAY
           client.separator "\nRUBYGEMS OPTIONS:\n"
           add_owner
           client.parse arguments
