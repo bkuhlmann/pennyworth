@@ -488,6 +488,16 @@ Provides access to link:https://https://rubyonrails.org[Ruby on Rails] resources
 1. link:https://www.alchemists.io/public/alfred/workflows/ruby_on_rails.alfredworkflow[Download] and double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
+===== Search
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/search.png[Search workflow screenshot.,width=706,height=631,role=focal_point]
+
+Provides quick access to search resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/search.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
 ===== Slack
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/slack.png[Slack workflow screenshot.,width=706,height=524,role=focal_point]
