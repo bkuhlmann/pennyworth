@@ -459,6 +459,16 @@ Provides quick access to link:https://github.com/rack/rack[Rack] resources.
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
+===== ROM
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rom.png[ROM workflow screenshot.,width=706,height=415,role=focal_point]
+
+Provides quick access to link:https://rom-rb.org[Ruby Object Mapper (ROM)] resources.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/rom.alfredworkflow[Download] and double
+   click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
 ===== RSpec
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rspec.png[RSpec workflow screenshot.,width=706,height=362,role=focal_point]
