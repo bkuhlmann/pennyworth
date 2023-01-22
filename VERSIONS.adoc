@@ -1,5 +1,13 @@
 = Versions
 
+== 14.1.1 (2023-01-22)
+
+* Fixed Guardfile to use RSpec binstub - Brooke Kuhlmann
+* Added Rake binstub - Brooke Kuhlmann
+* Added Ruby Object Mapper (ROM) workflow - Brooke Kuhlmann
+* Added search workflow - Brooke Kuhlmann
+* Refactored RSpec helper to use spec root constant - Brooke Kuhlmann
+
 == 14.1.0 (2023-01-07)
 
 * Added Core gem - Brooke Kuhlmann
