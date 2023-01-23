@@ -26,7 +26,7 @@ module Pennyworth
       end
 
       def call arguments = Core::EMPTY_ARRAY
-        perform parser.call(arguments)
+        act_on parser.call(arguments)
       rescue OptionParser::ParseError, KeyError => error
         logger.error { error.message }
       end
@@ -35,7 +35,7 @@ module Pennyworth
 
       attr_reader :parser
 
-      def perform configuration
+      def act_on configuration
         case configuration
           in action_config: Symbol => action then config.call action
           in action_encodings: true then encodings.call
