@@ -423,7 +423,7 @@ Provides quick access to link:https://github.com[GitHub] resources.
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/hanami.png[Hanami workflow screenshot.,width=706,height=632,role=focal_point]
 
-Provides quick access to link:https://hanamirb.org[Hanami] resources.
+Provides quick access to the link:https://hanamirb.org[Hanami] web framework.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/hanami.alfredworkflow[Download] and
    double click to install.
@@ -459,6 +459,16 @@ Provides quick access to link:https://github.com/rack/rack[Rack] resources.
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
+===== Roda
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/roda.png[Roda workflow screenshot.,width=706,height=577,role=focal_point]
+
+Provides quick access to the link:http://roda.jeremyevans.net[Roda] web framework.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/roda.alfredworkflow[Download] and double
+   click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
 ===== ROM
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rom.png[ROM workflow screenshot.,width=706,height=415,role=focal_point]
@@ -483,7 +493,7 @@ Provides quick access to link:https://rspec.info[RSpec] resources.
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby_on_rails.png[Ruby on Rails workflow screenshot.,width=706,height=524,role=focal_point]
 
-Provides access to link:https://https://rubyonrails.org[Ruby on Rails] resources.
+Provides access to the link:https://https://rubyonrails.org[Ruby on Rails] web framework.
 
 1. link:https://www.alchemists.io/public/alfred/workflows/ruby_on_rails.alfredworkflow[Download] and double click to install.
 2. Click on _Configure Workflow_ to view documentation.
