@@ -429,6 +429,16 @@ Provides quick access to the link:https://hanamirb.org[Hanami] web framework.
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
+===== HTMX
+
+image:https://www.alchemists.io/images/projects/pennyworth/screenshots/htmx.png[HTMX workflow screenshot.,width=706,height=523,role=focal_point]
+
+Provides quick access to the link:https://htmx.org[HTMX] JavaScript library.
+
+1. link:https://www.alchemists.io/public/alfred/workflows/htmx.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
 ===== Jitsi
 
 image:https://www.alchemists.io/images/projects/pennyworth/screenshots/jitsi.png[Jitsi workflow screenshot.,width=706,height=254,role=focal_point]
