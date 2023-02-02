@@ -20,8 +20,8 @@ module Pennyworth
         :logger
       ]
 
-      def initialize parser: Parser.new, **dependencies
-        super(**dependencies)
+      def initialize(parser: Parser.new, **)
+        super(**)
         @parser = parser
       end
 

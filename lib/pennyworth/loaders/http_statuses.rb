@@ -8,10 +8,8 @@ module Pennyworth
     class HTTPStatuses
       include Import[:configuration]
 
-      def initialize codes: Rack::Utils::HTTP_STATUS_CODES,
-                     model: Models::HTTPStatus,
-                     **dependencies
-        super(**dependencies)
+      def initialize(codes: Rack::Utils::HTTP_STATUS_CODES, model: Models::HTTPStatus, **)
+        super(**)
         @codes = codes
         @model = model
       end

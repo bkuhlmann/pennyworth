@@ -7,8 +7,8 @@ module Pennyworth
       class Text
         include Pennyworth::Import[:logger]
 
-        def initialize processor: Processor.for_text, **dependencies
-          super(**dependencies)
+        def initialize(processor: Processor.for_text, **)
+          super(**)
           @processor = processor
         end
 

@@ -7,8 +7,8 @@ module Pennyworth
       class HTTPStatuses
         include Pennyworth::Import[:logger]
 
-        def initialize processor: Processor.for_http_statuses, **dependencies
-          super(**dependencies)
+        def initialize(processor: Processor.for_http_statuses, **)
+          super(**)
           @processor = processor
         end
 

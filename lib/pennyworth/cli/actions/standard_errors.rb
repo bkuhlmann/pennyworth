@@ -7,8 +7,8 @@ module Pennyworth
       class StandardErrors
         include Pennyworth::Import[:logger]
 
-        def initialize processor: Processor.for_standard_errors, **dependencies
-          super(**dependencies)
+        def initialize(processor: Processor.for_standard_errors, **)
+          super(**)
           @processor = processor
         end
 

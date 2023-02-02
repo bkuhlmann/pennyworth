@@ -7,8 +7,8 @@ module Pennyworth
       class Encodings
         include Pennyworth::Import[:logger]
 
-        def initialize processor: Processor.for_encodings, **dependencies
-          super(**dependencies)
+        def initialize(processor: Processor.for_encodings, **)
+          super(**)
           @processor = processor
         end
 

@@ -7,8 +7,8 @@ module Pennyworth
       class RubyGems
         include Pennyworth::Import[:logger]
 
-        def initialize processor: Processor.for_gems, **dependencies
-          super(**dependencies)
+        def initialize(processor: Processor.for_gems, **)
+          super(**)
           @processor = processor
         end
 

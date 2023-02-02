@@ -7,8 +7,8 @@ module Pennyworth
       class GitHub
         include Pennyworth::Import[:logger]
 
-        def initialize processor: Processor.for_projects, **dependencies
-          super(**dependencies)
+        def initialize(processor: Processor.for_projects, **)
+          super(**)
           @processor = processor
         end
 

@@ -8,8 +8,8 @@ module Pennyworth
         class Signals
           include Pennyworth::Import[:logger]
 
-          def initialize processor: Processor.for_system_signals, **dependencies
-            super(**dependencies)
+          def initialize(processor: Processor.for_system_signals, **)
+            super(**)
             @processor = processor
           end
 

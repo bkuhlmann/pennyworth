@@ -8,8 +8,8 @@ module Pennyworth
         class Errors
           include Pennyworth::Import[:logger]
 
-          def initialize processor: Processor.for_system_errors, **dependencies
-            super(**dependencies)
+          def initialize(processor: Processor.for_system_errors, **)
+            super(**)
             @processor = processor
           end
 
