@@ -6,7 +6,7 @@ RSpec.shared_context "with GitHub integration" do
       name: "test",
       html_url: "https://github.com/bkuhlmann/test",
       description: "A test project.",
-      homepage: "https://www.alchemists.io/projects/test"
+      homepage: "https://alchemists.io/projects/test"
     }
   end
 end

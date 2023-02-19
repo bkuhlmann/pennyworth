@@ -3,7 +3,7 @@
 :figure-caption!:
 
 :bash_link: link:https://www.gnu.org/software/bash[Bash]
-:ruby_version_managers_link: link:https://www.alchemists.io/articles/ruby_version_managers[Ruby Version Manager]
+:ruby_version_managers_link: link:https://alchemists.io/articles/ruby_version_managers[Ruby Version Manager]
 
 = Pennyworth
 
@@ -22,7 +22,7 @@ toc::[]
 
 == Screencast
 
-video::https://www.alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://www.alchemists.io/images/projects/pennyworth/demo.png,width=706,height=632,role=focal_point]
+video::https://alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://alchemists.io/images/projects/pennyworth/demo.png,width=706,height=632,role=focal_point]
 
 == Requirements
 
@@ -128,7 +128,7 @@ This gem can be configured via a global configuration:
 ~/.config/pennyworth/configuration.yml
 ....
 
-It can also be configured via link:https://www.alchemists.io/projects/xdg[XDG] environment
+It can also be configured via link:https://alchemists.io/projects/xdg[XDG] environment
 variables.
 
 The default configuration is as follows:
@@ -192,7 +192,7 @@ Feel free to take this default configuration, modify, and save as your own custo
 
 === Themes
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alchemists-theme.png[Alchemists Theme,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/alchemists-theme.png[Alchemists Theme,width=706,height=632,role=focal_point]
 
 The above is shared as the link:https://www.alfredapp.com/extras/theme/FSz9kjN1wX[Alchemists Alfred
 Theme] which can be
@@ -204,7 +204,7 @@ directly].
 Not all workflows require Pennyworth to run properly (see the _Other_ section below for details).
 For the workflows that _do_ require Pennyworth support, the following assumptions are made:
 
-1. Your link:https://www.alchemists.io/projects/dotfiles[Dotfiles] are configured to use {bash_link} and load your environment appropriately. Bash is not a hard requirement, though. You can use _any shell_ you are comfortable with as long as you teach Alfred to load your development environment before running the Alfred Workflow.
+1. Your link:https://alchemists.io/projects/dotfiles[Dotfiles] are configured to use {bash_link} and load your environment appropriately. Bash is not a hard requirement, though. You can use _any shell_ you are comfortable with as long as you teach Alfred to load your development environment before running the Alfred Workflow.
 2. You have the latest version of Alfred, Ruby, and Pennyworth installed.
 3. You are using a {ruby_version_managers_link} which ensures Ruby is on your load path. As mentioned in the _Requirements_ section above, this is not a hard requirement so if you have the correct version of Ruby required by this gem on your path, that'll work too.
 
@@ -212,7 +212,7 @@ With the above requirements in mind, the following sections document how to down
 Pennyworth workflows that are compatible with Alfred. Should you want to tweak any of these
 workflows, you'd only need to edit an existing workflow or build your own with these settings:
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/script_filter.png[Script Filter,width=776,height=635,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/script_filter.png[Script Filter,width=776,height=635,role=focal_point]
 
 Before diving into each workflow, I want to highlight that the following capabilities are available
 to all workflows depending on what kind of item is currently selected within the Alfred UI:
@@ -226,41 +226,41 @@ to all workflows depending on what kind of item is currently selected within the
 
 ==== Alchemists
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alchemists-projects.png[Alchemists Projects,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/alchemists-projects.png[Alchemists Projects,width=706,height=632,role=focal_point]
 
-Provides quick access to link:https://www.alchemists.io[Alchemists] resources.
+Provides quick access to link:https://alchemists.io[Alchemists] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/alchemists.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/alchemists.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ==== Dry RB
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/dry-gems.png[Dry Gems,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/dry-gems.png[Dry Gems,width=706,height=632,role=focal_point]
 
 Provides quick access to link:https://dry-rb.org[Dry RB] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/dry.alfredworkflow[Download] and double
+1. link:https://alchemists.io/public/alfred/workflows/dry.alfredworkflow[Download] and double
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ==== RuboCop
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rubocop-projects.png[Rubocop Projects,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/rubocop-projects.png[Rubocop Projects,width=706,height=632,role=focal_point]
 
 Provides quick access to link:https://docs.rubocop.org/rubocop[RuboCop] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/rubocop.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/rubocop.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ==== Ruby
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby.png[Ruby workflow screenshot,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/ruby.png[Ruby workflow screenshot,width=706,height=632,role=focal_point]
 
 Provides quick access to link:https://www.ruby-lang.org[Ruby] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/ruby.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/ruby.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
@@ -270,290 +270,290 @@ The following workflows don't require this gem to use but are provided for conve
 
 ===== Acronyms
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/acronyms.png[Acronyms workflow screenshot.,width=1001,height=610,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/acronyms.png[Acronyms workflow screenshot.,width=1001,height=610,role=focal_point]
 
 Expands acronyms so you can think and type in terms of an acronym but appear as if you typed out the
 full definition each time.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/acronyms.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/acronyms.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Alpine
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/alpine.png[Alpine Linux workflow screenshot.,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/alpine.png[Alpine Linux workflow screenshot.,width=706,height=632,role=focal_point]
 
 Provides quick access to link:https://www.alpinelinux.org[Alpine Linux] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/alpine.alfredworkflow[Download] and double
+1. link:https://alchemists.io/public/alfred/workflows/alpine.alfredworkflow[Download] and double
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Applications
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/applications.png[Applications workflow screenshot.,width=706,height=362,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/applications.png[Applications workflow screenshot.,width=706,height=362,role=focal_point]
 
 Launches your engineering environment but can be tweaked to your preferences. Using Alfred in this manner ensures your machine boots quickly so you have more control over _what_ is launched.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/applications.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/applications.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Bash
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/bash.png[Bash workflow screenshot.,width=706,height=362,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/bash.png[Bash workflow screenshot.,width=706,height=362,role=focal_point]
 
 Provides quick access to link:https://www.gnu.org/software/bash[Bash] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/bash.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/bash.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Bio
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/bio.png[Bio workflow screenshot.,width=706,height=200,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/bio.png[Bio workflow screenshot.,width=706,height=200,role=focal_point]
 
 Provides biographical calculations and information.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/bio.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/bio.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Browsers
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/browsers.png[Browsers workflow screenshot.,width=706,height=308,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/browsers.png[Browsers workflow screenshot.,width=706,height=308,role=focal_point]
 
 Provides quick access to browser resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/browsers.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/browsers.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Bundler
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/bundler.png[Bundler workflow screenshot.,width=706,height=524,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/bundler.png[Bundler workflow screenshot.,width=706,height=524,role=focal_point]
 
 Provides quick access to link:https://bundler.io[Bundler] related resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/bundler.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/bundler.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Circle CI
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/circle_ci.png[Circle CI workflow screenshot.,width=706,height=416,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/circle_ci.png[Circle CI workflow screenshot.,width=706,height=416,role=focal_point]
 
 Provides quick access to link:https://circleci.com/[Circle CI] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/circle_ci.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/circle_ci.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Crystal
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/crystal.png[Crystal workflow screenshot.,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/crystal.png[Crystal workflow screenshot.,width=706,height=632,role=focal_point]
 
 Provides quick access to link:https://crystal-lang.org[Crystal] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/crystal.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/crystal.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== CSS
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/css.png[CSS workflow screenshot.,width=706,height=470,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/css.png[CSS workflow screenshot.,width=706,height=470,role=focal_point]
 
 Provides quick access to link:https://www.w3.org/Style/CSS/specs.en.html[CSS] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/css.alfredworkflow[Download] and double
+1. link:https://alchemists.io/public/alfred/workflows/css.alfredworkflow[Download] and double
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Docker
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/docker.png[Docker workflow screenshot.,width=706,height=470,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/docker.png[Docker workflow screenshot.,width=706,height=470,role=focal_point]
 
 Provides quick access to link:https://www.docker.com[Docker] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/docker.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/docker.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Elm
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/elm.png[Elm workflow screenshot.,width=706,height=470,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/elm.png[Elm workflow screenshot.,width=706,height=470,role=focal_point]
 
 Provides quick access to link:https://elm-lang.org[Elm] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/elm.alfredworkflow[Download] and double
+1. link:https://alchemists.io/public/alfred/workflows/elm.alfredworkflow[Download] and double
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Farnam Street
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/farnam_street.png[Farnam Street workflow screenshot.,width=706,height=631,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/farnam_street.png[Farnam Street workflow screenshot.,width=706,height=631,role=focal_point]
 
 Provides quick access to link:https://fs.blog[Farnam Street] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/farnam_street.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/farnam_street.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Git
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/git.png[Git workflow screenshot.,width=706,height=415,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/git.png[Git workflow screenshot.,width=706,height=415,role=focal_point]
 
 Provides quick access to link:https://git-scm.com[Git] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/git.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/git.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== GitHub
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/github.png[GitHub workflow screenshot.,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/github.png[GitHub workflow screenshot.,width=706,height=632,role=focal_point]
 
 Provides quick access to link:https://github.com[GitHub] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/github.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/github.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Hanami
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/hanami.png[Hanami workflow screenshot.,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/hanami.png[Hanami workflow screenshot.,width=706,height=632,role=focal_point]
 
 Provides quick access to the link:https://hanamirb.org[Hanami] web framework.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/hanami.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/hanami.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== HTMX
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/htmx.png[HTMX workflow screenshot.,width=706,height=523,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/htmx.png[HTMX workflow screenshot.,width=706,height=523,role=focal_point]
 
 Provides quick access to the link:https://htmx.org[HTMX] JavaScript library.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/htmx.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/htmx.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Jitsi
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/jitsi.png[Jitsi workflow screenshot.,width=706,height=254,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/jitsi.png[Jitsi workflow screenshot.,width=706,height=254,role=focal_point]
 
 Provides quick access to link:https://jitsi.org[Jitsi] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/jitsi.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/jitsi.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== macOS
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/mac_os.png[macOS workflow screenshot.,width=706,height=200,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/mac_os.png[macOS workflow screenshot.,width=706,height=200,role=focal_point]
 
 Provides quick access to macOS resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/mac_os.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/mac_os.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Rack
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rack.png[Rack workflow screenshot.,width=706,height=470,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/rack.png[Rack workflow screenshot.,width=706,height=470,role=focal_point]
 
 Provides quick access to link:https://github.com/rack/rack[Rack] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/rack.alfredworkflow[Download] and double
+1. link:https://alchemists.io/public/alfred/workflows/rack.alfredworkflow[Download] and double
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Roda
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/roda.png[Roda workflow screenshot.,width=706,height=577,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/roda.png[Roda workflow screenshot.,width=706,height=577,role=focal_point]
 
 Provides quick access to the link:http://roda.jeremyevans.net[Roda] web framework.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/roda.alfredworkflow[Download] and double
+1. link:https://alchemists.io/public/alfred/workflows/roda.alfredworkflow[Download] and double
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== ROM
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rom.png[ROM workflow screenshot.,width=706,height=415,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/rom.png[ROM workflow screenshot.,width=706,height=415,role=focal_point]
 
 Provides quick access to link:https://rom-rb.org[Ruby Object Mapper (ROM)] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/rom.alfredworkflow[Download] and double
+1. link:https://alchemists.io/public/alfred/workflows/rom.alfredworkflow[Download] and double
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== RSpec
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/rspec.png[RSpec workflow screenshot.,width=706,height=362,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/rspec.png[RSpec workflow screenshot.,width=706,height=362,role=focal_point]
 
 Provides quick access to link:https://rspec.info[RSpec] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/rspec.alfredworkflow[Download] and double
+1. link:https://alchemists.io/public/alfred/workflows/rspec.alfredworkflow[Download] and double
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Ruby on Rails
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ruby_on_rails.png[Ruby on Rails workflow screenshot.,width=706,height=524,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/ruby_on_rails.png[Ruby on Rails workflow screenshot.,width=706,height=524,role=focal_point]
 
 Provides access to the link:https://https://rubyonrails.org[Ruby on Rails] web framework.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/ruby_on_rails.alfredworkflow[Download] and double click to install.
+1. link:https://alchemists.io/public/alfred/workflows/ruby_on_rails.alfredworkflow[Download] and double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Search
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/search.png[Search workflow screenshot.,width=706,height=631,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/search.png[Search workflow screenshot.,width=706,height=631,role=focal_point]
 
 Provides quick access to search resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/search.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/search.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Slack
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/slack.png[Slack workflow screenshot.,width=706,height=524,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/slack.png[Slack workflow screenshot.,width=706,height=524,role=focal_point]
 
 Provides quick access to link:https://slack.com[Slack] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/slack.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/slack.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== SSL
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/ssl.png[SSL workflow screenshot.,width=706,height=362,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/ssl.png[SSL workflow screenshot.,width=706,height=362,role=focal_point]
 
 Provides quick access to SSL resources for the security conscious.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/ssl.alfredworkflow[Download] and double click to install.
+1. link:https://alchemists.io/public/alfred/workflows/ssl.alfredworkflow[Download] and double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Terraform
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/terraform.png[Terraform workflow screenshot.,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/terraform.png[Terraform workflow screenshot.,width=706,height=632,role=focal_point]
 
 Provides quick access to link:https://www.terraform.io[Terraform] resources.
 
-1. link:https://www.alchemists.io/public/alfred/workflows/terraform.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/terraform.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Text
 
-image:https://www.alchemists.io/images/projects/pennyworth/screenshots/text.png[Text workflow screenshot.,width=1000,height=610,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/text.png[Text workflow screenshot.,width=1000,height=610,role=focal_point]
 
 Provides general text manipulation utilities beyond the Pennyworth powered _text_ macro which is part of the _Ruby_ workflow (mentioned earlier).
 
-1. link:https://www.alchemists.io/public/alfred/workflows/text.alfredworkflow[Download] and
+1. link:https://alchemists.io/public/alfred/workflows/text.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
@@ -591,7 +591,7 @@ bin/console
 
 The following documents the workflow used to process all actions from Alfred.
 
-image::https://www.alchemists.io/images/projects/pennyworth/doc/architecture.svg[Architecture Diagram]
+image::https://alchemists.io/images/projects/pennyworth/doc/architecture.svg[Architecture Diagram]
 
 == Tests
 
@@ -602,19 +602,19 @@ To test, run:
 bin/rake
 ----
 
-== link:https://www.alchemists.io/policies/license[License]
+== link:https://alchemists.io/policies/license[License]
 
-== link:https://www.alchemists.io/policies/security[Security]
+== link:https://alchemists.io/policies/security[Security]
 
-== link:https://www.alchemists.io/policies/code_of_conduct[Code of Conduct]
+== link:https://alchemists.io/policies/code_of_conduct[Code of Conduct]
 
-== link:https://www.alchemists.io/policies/contributions[Contributions]
+== link:https://alchemists.io/policies/contributions[Contributions]
 
-== link:https://www.alchemists.io/projects/pennyworth/versions[Versions]
+== link:https://alchemists.io/projects/pennyworth/versions[Versions]
 
-== link:https://www.alchemists.io/community[Community]
+== link:https://alchemists.io/community[Community]
 
 == Credits
 
-* Built with link:https://www.alchemists.io/projects/gemsmith[Gemsmith].
-* Engineered by link:https://www.alchemists.io/team/brooke_kuhlmann[Brooke Kuhlmann].
+* Built with link:https://alchemists.io/projects/gemsmith[Gemsmith].
+* Engineered by link:https://alchemists.io/team/brooke_kuhlmann[Brooke Kuhlmann].

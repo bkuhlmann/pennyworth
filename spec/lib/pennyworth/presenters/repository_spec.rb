@@ -27,7 +27,7 @@ RSpec.describe Pennyworth::Presenters::Repository do
 
   describe "#site_url" do
     it "answers site URL" do
-      expect(presenter.site_url).to eq("https://www.alchemists.io/projects/test")
+      expect(presenter.site_url).to eq("https://alchemists.io/projects/test")
     end
   end
 
@@ -45,7 +45,7 @@ RSpec.describe Pennyworth::Presenters::Repository do
 
   describe "#versions_url" do
     it "answers versions URL" do
-      expect(presenter.versions_url).to eq("https://www.alchemists.io/projects/test/versions")
+      expect(presenter.versions_url).to eq("https://alchemists.io/projects/test/versions")
     end
   end
 end
