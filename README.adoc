@@ -449,6 +449,16 @@ Provides quick access to the link:https://htmx.org[HTMX] JavaScript library.
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
+===== Internet Protocol (IP)
+
+image:https://alchemists.io/images/projects/pennyworth/screenshots/ip.png[IP workflow screenshot.,width=706,height=415,role=focal_point]
+
+Provides quick access to link:https://en.wikipedia.org/wiki/Internet_Protocol[IP] tooling and resources.
+
+1. link:https://alchemists.io/public/alfred/workflows/ip.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
 ===== Jitsi
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/jitsi.png[Jitsi workflow screenshot.,width=706,height=254,role=focal_point]
