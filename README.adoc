@@ -429,6 +429,16 @@ Provides quick access to the link:https://hanamirb.org[Hanami] web framework.
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
+===== HTML
+
+image:https://alchemists.io/images/projects/pennyworth/screenshots/html.png[HTML workflow screenshot.,width=706,height=631,role=focal_point]
+
+Provides quick access to the link:https://html.spec.whatwg.org/multipage[HTML] language.
+
+1. link:https://alchemists.io/public/alfred/workflows/html.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
 ===== HTMX
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/htmx.png[HTMX workflow screenshot.,width=706,height=523,role=focal_point]
