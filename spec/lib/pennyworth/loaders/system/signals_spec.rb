@@ -11,7 +11,7 @@ RSpec.describe Pennyworth::Loaders::System::Signals do
         Pennyworth::Models::System::Signal[number:, name:]
       end
 
-      expect(loader.call).to contain_exactly(*records)
+      expect(loader.call).to match_array(records)
     end
   end
 end
