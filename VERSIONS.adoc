@@ -1,5 +1,10 @@
 = Versions
 
+== 14.2.1 (2023-03-22)
+
+* Fixed RuboCop RSpec/ContainExactly issue - Brooke Kuhlmann
+* Refactored Pathname require tree refinement to pass single argument - Brooke Kuhlmann
+
 == 14.2.0 (2023-03-01)
 
 * Fixed Rubocop Metrics/CollectionLiteralLength issues - Brooke Kuhlmann
