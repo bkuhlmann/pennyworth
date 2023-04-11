@@ -17,62 +17,65 @@ RSpec.describe Pennyworth::CLI::Shell do
   describe "#call" do
     it "answers encodings script filter items" do
       shell.call %w[--encodings]
-      expect(logger.reread).to match(/items.+title.+ASCII-8BIT.+subtitle.+BINARY/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+ASCII-8BIT.+subtitle.+BINARY/)
     end
 
     it "answers GitHub organization script filter items with valid organization" do
       shell.call %w[--git_hub --organization dry-rb]
-      expect(logger.reread).to match(/items.+title.+Branding/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+Branding/)
     end
 
     it "answers empty GitHub organization script filter items with invalid organization" do
       shell.call %w[--git_hub --organization acme-23ce5c4735]
-      expect(logger.reread).to eq("#{{items: []}.to_json}\n")
+      expect(kernel).to have_received(:puts).with({items: []}.to_json)
     end
 
     it "answers GitHub user script filter items with valid user" do
       shell.call %w[--git_hub --user bkuhlmann]
-      expect(logger.reread).to match(/items.+title.+Alfred/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+Alfred/)
     end
 
     it "answers empty GitHub user script filter items with invalid user" do
       shell.call %w[--git_hub --user bogus-59ddb7b2a4]
-      expect(logger.reread).to eq("#{{items: []}.to_json}\n")
+      expect(kernel).to have_received(:puts).with({items: []}.to_json)
     end
 
     it "answers RubyGems owner script filter items with valid owner" do
       shell.call %w[--ruby_gems --owner bkuhlmann]
-      expect(logger.reread).to match(/items.+title.+Auther/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+Auther/)
     end
 
     it "answers empty RubyGems owner script filter items with invalid owner" do
       shell.call %w[--ruby_gems --owner bogus-59ddb7b2a4]
-      expect(logger.reread).to eq("#{{items: []}.to_json}\n")
+      expect(kernel).to have_received(:puts).with({items: []}.to_json)
     end
 
     it "answers HTTP statuses script filter items" do
       shell.call %w[--http_statuses]
-      expect(logger.reread).to match(/items.+title.+200.+subtitle.+OK/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+200.+subtitle.+OK/)
     end
 
     it "answers standard errors script filter items" do
       shell.call %w[--standard_errors]
-      expect(logger.reread).to match(/.+title.+ArgumentError.+arg.+ArgumentError/)
+      expect(kernel).to have_received(:puts).with(/.+title.+ArgumentError.+arg.+ArgumentError/)
     end
 
     it "answers system errors script filter items" do
       shell.call %w[--system_errors]
-      expect(logger.reread).to match(/items.+title.+Errno::EACCES.+subtitle.+Permission denied/)
+
+      expect(kernel).to have_received(:puts).with(
+        /items.+title.+Errno::EACCES.+subtitle.+Permission denied/
+      )
     end
 
     it "answers system signals script filter items" do
       shell.call %w[--system_signals]
-      expect(logger.reread).to match(/items.+title.+ABRT.+subtitle.+6/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+ABRT.+subtitle.+6/)
     end
 
     it "answers text script filter items" do
       shell.call %w[--text test]
-      expect(logger.reread).to match(/items.+title.+TEST/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+TEST/)
     end
 
     it "edits configuration" do
@@ -87,22 +90,22 @@ RSpec.describe Pennyworth::CLI::Shell do
 
     it "prints version" do
       shell.call %w[--version]
-      expect(logger.reread).to match(/Pennyworth\s\d+\.\d+\.\d+/)
+      expect(kernel).to have_received(:puts).with(/Pennyworth\s\d+\.\d+\.\d+/)
     end
 
     it "prints help" do
       shell.call %w[--help]
-      expect(logger.reread).to match(/Pennyworth.+USAGE.+/m)
+      expect(kernel).to have_received(:puts).with(/Pennyworth.+USAGE.+/m)
     end
 
     it "prints usage when no options are given" do
       shell.call
-      expect(logger.reread).to match(/Pennyworth.+USAGE.+/m)
+      expect(kernel).to have_received(:puts).with(/Pennyworth.+USAGE.+/m)
     end
 
     it "prints error with invalid option" do
       shell.call %w[--bogus]
-      expect(logger.reread).to match(/invalid option.+bogus/)
+      expect(logger.reread).to match(/🛑.+invalid option.+bogus/)
     end
   end
 end

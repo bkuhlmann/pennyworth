@@ -10,7 +10,7 @@ RSpec.describe Pennyworth::CLI::Actions::System::Signals do
   describe "#call" do
     it "answers JSON" do
       action.call
-      expect(logger.reread).to match(/items.+title.+ABRT.+subtitle.+6/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+ABRT.+subtitle.+6/)
     end
   end
 end

@@ -5,18 +5,14 @@ module Pennyworth
     module Actions
       # Handles the RubyGems action.
       class RubyGems
-        include Pennyworth::Import[:logger]
+        include Pennyworth::Import[:kernel]
 
         def initialize(processor: Processor.for_gems, **)
           super(**)
           @processor = processor
         end
 
-        def call endpoint
-          processor.call(endpoint)
-                   .to_json
-                   .then { |json| logger.info { json } }
-        end
+        def call(endpoint) = kernel.puts processor.call(endpoint).to_json
 
         private
 

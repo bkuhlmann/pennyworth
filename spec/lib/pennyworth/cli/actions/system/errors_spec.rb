@@ -10,7 +10,10 @@ RSpec.describe Pennyworth::CLI::Actions::System::Errors do
   describe "#call" do
     it "answers JSON" do
       action.call
-      expect(logger.reread).to match(/items.+title.+Errno::EACCES.+subtitle.+Permission denied/)
+
+      expect(kernel).to have_received(:puts).with(
+        /items.+title.+Errno::EACCES.+subtitle.+Permission denied/
+      )
     end
   end
 end

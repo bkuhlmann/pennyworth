@@ -5,14 +5,14 @@ module Pennyworth
     module Actions
       # Handles the system errors action.
       class StandardErrors
-        include Pennyworth::Import[:logger]
+        include Pennyworth::Import[:kernel]
 
         def initialize(processor: Processor.for_standard_errors, **)
           super(**)
           @processor = processor
         end
 
-        def call = processor.call.to_json.then { |json| logger.info { json } }
+        def call = kernel.puts processor.call.to_json
 
         private
 

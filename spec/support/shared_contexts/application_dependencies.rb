@@ -8,11 +8,7 @@ RSpec.shared_context "with application dependencies" do
 
   let(:configuration) { Pennyworth::Configuration::Loader.with_defaults.call }
   let(:kernel) { class_spy Kernel }
-
-  let :logger do
-    Cogger::Client.new Logger.new(StringIO.new),
-                       formatter: -> _severity, _name, _at, message { "#{message}\n" }
-  end
+  let(:logger) { Cogger.new io: StringIO.new, formatter: :emoji }
 
   before { Pennyworth::Import.stub configuration:, kernel:, logger: }
 

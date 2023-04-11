@@ -20,7 +20,7 @@ RSpec.describe Pennyworth::CLI::Actions::GitHub do
 
     it "answers JSON" do
       action.call "orgs/acme"
-      expect(logger.reread).to eq("#{[git_hub_record].to_json}\n")
+      expect(kernel).to have_received(:puts).with([git_hub_record].to_json)
     end
   end
 end

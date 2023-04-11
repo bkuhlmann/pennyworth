@@ -15,6 +15,6 @@ module Pennyworth
     register(:environment) { ENV }
     register(:kernel) { Kernel }
     register(:http) { HTTP }
-    register(:logger) { Cogger::Client.new }
+    register(:logger) { Cogger.new formatter: :emoji }
   end
 end

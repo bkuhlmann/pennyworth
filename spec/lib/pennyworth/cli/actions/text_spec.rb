@@ -12,7 +12,7 @@ RSpec.describe Pennyworth::CLI::Actions::Text do
   describe "#call" do
     it "answers JSON" do
       action.call "an Example"
-      expect(logger.reread).to match(/items.+title.+AnExample.+subtitle.+Camelcase/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+AnExample.+subtitle.+Camelcase/)
     end
   end
 end

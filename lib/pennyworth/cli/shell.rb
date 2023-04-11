@@ -11,13 +11,14 @@ module Pennyworth
         :encodings,
         :git_hub,
         :http_statuses,
+        :kernel,
+        :logger,
         :ruby_gems,
+        :specification,
         :standard_errors,
         :system_errors,
         :system_signals,
         :text,
-        :specification,
-        :logger
       ]
 
       def initialize(parser: Parser.new, **)
@@ -49,8 +50,8 @@ module Pennyworth
           in action_system_errors: true then system_errors.call
           in action_system_signals: true then system_signals.call
           in action_text: String => content then text.call content
-          in action_version: true then logger.info { specification.labeled_version }
-          else logger.any { parser.to_s }
+          in action_version: true then kernel.puts specification.labeled_version
+          else kernel.puts parser.to_s
         end
       end
     end

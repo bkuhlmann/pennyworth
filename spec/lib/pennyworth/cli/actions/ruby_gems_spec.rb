@@ -20,7 +20,7 @@ RSpec.describe Pennyworth::CLI::Actions::RubyGems do
 
     it "answers JSON" do
       action.call "owners/test/gems.json"
-      expect(logger.reread).to eq("#{[ruby_gems_record].to_json}\n")
+      expect(kernel).to have_received(:puts).with([ruby_gems_record].to_json)
     end
   end
 end
