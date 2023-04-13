@@ -1,6 +1,6 @@
 = Versions
 
-== 14.2.0 (2023-04-12)
+== 14.3.0 (2023-04-12)
 
 * Updated setup instructions to secure and insecure installs - Brooke Kuhlmann
 * Updated to Caliber 0.30.0 - Brooke Kuhlmann
