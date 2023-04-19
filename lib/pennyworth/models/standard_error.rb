@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module Pennyworth
-  # :reek:ModuleInitialize
   module Models
     # Defines a standard error.
     StandardError = Data.define :name, :file_path, :line_number do

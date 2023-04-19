@@ -4,12 +4,6 @@ inherit_gem:
 Metrics/AbcSize:
   Exclude:
     - "lib/pennyworth/cli/shell.rb"
-Metrics/CyclomaticComplexity:
-  AllowedMethods:
-    - act_on
 Metrics/MethodLength:
   Exclude:
     - "lib/pennyworth/cli/shell.rb"
-Metrics/PerceivedComplexity:
-  AllowedMethods:
-    - act_on

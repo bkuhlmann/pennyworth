@@ -7,6 +7,7 @@ RSpec.describe Pennyworth::Integrations::GitHub::Client do
 
   describe "#get" do
     it "answers paginated records when request succeeds" do
+      pending "Requires updated CI keys" if ENV.fetch("CI", false) == "true"
       expect(client.get("users/bkuhlmann").size).to be_between(30, 100)
     end
 

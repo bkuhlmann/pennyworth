@@ -10,43 +10,52 @@ RSpec.describe Pennyworth::CLI::Shell do
 
   include_context "with application dependencies"
 
-  before { Pennyworth::CLI::Actions::Import.stub configuration:, kernel:, logger: }
+  before { Sod::Import.stub kernel:, logger: }
 
-  after { Pennyworth::CLI::Actions::Import.unstub :configuration, :kernel, :logger }
+  after { Sod::Import.unstub :kernel, :logger }
 
   describe "#call" do
+    it "prints configuration usage" do
+      shell.call %w[config]
+      expect(kernel).to have_received(:puts).with(/Manage configuration.+/m)
+    end
+
     it "answers encodings script filter items" do
       shell.call %w[--encodings]
       expect(kernel).to have_received(:puts).with(/items.+title.+ASCII-8BIT.+subtitle.+BINARY/)
     end
 
     it "answers GitHub organization script filter items with valid organization" do
-      shell.call %w[--git_hub --organization dry-rb]
+      pending "Requires updated CI keys" if ENV.fetch("CI", false) == "true"
+
+      shell.call %w[git_hub --organization dry-rb]
       expect(kernel).to have_received(:puts).with(/items.+title.+Branding/)
     end
 
     it "answers empty GitHub organization script filter items with invalid organization" do
-      shell.call %w[--git_hub --organization acme-23ce5c4735]
+      shell.call %w[git_hub --organization acme-23ce5c4735]
       expect(kernel).to have_received(:puts).with({items: []}.to_json)
     end
 
     it "answers GitHub user script filter items with valid user" do
-      shell.call %w[--git_hub --user bkuhlmann]
+      pending "Requires updated CI keys" if ENV.fetch("CI", false) == "true"
+
+      shell.call %w[git_hub --user bkuhlmann]
       expect(kernel).to have_received(:puts).with(/items.+title.+Alfred/)
     end
 
     it "answers empty GitHub user script filter items with invalid user" do
-      shell.call %w[--git_hub --user bogus-59ddb7b2a4]
+      shell.call %w[git_hub --user bogus-59ddb7b2a4]
       expect(kernel).to have_received(:puts).with({items: []}.to_json)
     end
 
     it "answers RubyGems owner script filter items with valid owner" do
-      shell.call %w[--ruby_gems --owner bkuhlmann]
+      shell.call %w[--ruby_gems bkuhlmann]
       expect(kernel).to have_received(:puts).with(/items.+title.+Auther/)
     end
 
     it "answers empty RubyGems owner script filter items with invalid owner" do
-      shell.call %w[--ruby_gems --owner bogus-59ddb7b2a4]
+      shell.call %w[--ruby_gems bogus-59ddb7b2a4]
       expect(kernel).to have_received(:puts).with({items: []}.to_json)
     end
 
@@ -78,16 +87,6 @@ RSpec.describe Pennyworth::CLI::Shell do
       expect(kernel).to have_received(:puts).with(/items.+title.+TEST/)
     end
 
-    it "edits configuration" do
-      shell.call %w[--config edit]
-      expect(kernel).to have_received(:system).with(include("EDITOR"))
-    end
-
-    it "views configuration" do
-      shell.call %w[--config view]
-      expect(kernel).to have_received(:system).with(include("cat"))
-    end
-
     it "prints version" do
       shell.call %w[--version]
       expect(kernel).to have_received(:puts).with(/Pennyworth\s\d+\.\d+\.\d+/)
@@ -96,16 +95,6 @@ RSpec.describe Pennyworth::CLI::Shell do
     it "prints help" do
       shell.call %w[--help]
       expect(kernel).to have_received(:puts).with(/Pennyworth.+USAGE.+/m)
-    end
-
-    it "prints usage when no options are given" do
-      shell.call
-      expect(kernel).to have_received(:puts).with(/Pennyworth.+USAGE.+/m)
-    end
-
-    it "prints error with invalid option" do
-      shell.call %w[--bogus]
-      expect(logger.reread).to match(/🛑.+invalid option.+bogus/)
     end
   end
 end

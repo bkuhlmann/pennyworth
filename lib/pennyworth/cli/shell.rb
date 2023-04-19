@@ -1,58 +1,50 @@
 # frozen_string_literal: true
 
-require "core"
+require "sod"
 
 module Pennyworth
   module CLI
     # The main Command Line Interface (CLI) object.
     class Shell
-      include Actions::Import[
-        :config,
-        :encodings,
-        :git_hub,
-        :http_statuses,
-        :kernel,
-        :logger,
-        :ruby_gems,
-        :specification,
-        :standard_errors,
-        :system_errors,
-        :system_signals,
-        :text,
-      ]
+      include Import[:defaults_path, :xdg_config, :specification]
 
-      def initialize(parser: Parser.new, **)
+      def initialize(context: Sod::Context, dsl: Sod, **)
         super(**)
-        @parser = parser
+        @context = context
+        @dsl = dsl
       end
 
-      def call arguments = Core::EMPTY_ARRAY
-        act_on parser.call(arguments)
-      rescue OptionParser::ParseError, KeyError => error
-        logger.error { error.message }
-      end
+      def call(...) = cli.call(...)
 
       private
 
-      attr_reader :parser
+      attr_reader :context, :dsl
 
-      def act_on configuration
-        case configuration
-          in action_config: Symbol => action then config.call action
-          in action_encodings: true then encodings.call
-          in action_git_hub: :organization
-            git_hub.call "orgs/#{configuration.git_hub_organization}"
-          in action_git_hub: :user then git_hub.call "users/#{configuration.git_hub_user}"
-          in action_http_statuses: true then http_statuses.call
-          in action_ruby_gems: true
-            ruby_gems.call "owners/#{configuration.ruby_gems_owner}/gems.json"
-          in action_standard_errors: true then standard_errors.call
-          in action_system_errors: true then system_errors.call
-          in action_system_signals: true then system_signals.call
-          in action_text: String => content then text.call content
-          in action_version: true then kernel.puts specification.labeled_version
-          else kernel.puts parser.to_s
+      def cli
+        context = build_context
+
+        dsl.new :sublime_text_kit, banner: specification.banner do
+          on(Sod::Prefabs::Commands::Config, context:)
+
+          on "git_hub", "Render Alfred GitHub repositories script filter." do
+            on Actions::GitHub::Organization
+            on Actions::GitHub::User
+          end
+
+          on Actions::Encodings
+          on Actions::HTTPStatuses
+          on Actions::RubyGems
+          on Actions::StandardErrors
+          on Actions::System::Errors
+          on Actions::System::Signals
+          on Actions::Text
+          on(Sod::Prefabs::Actions::Version, context:)
+          on Sod::Prefabs::Actions::Help, self
         end
+      end
+
+      def build_context
+        context[defaults_path:, xdg_config:, version_label: specification.labeled_version]
       end
     end
   end

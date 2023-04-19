@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::CLI::Actions::GitHub do
+RSpec.describe Pennyworth::CLI::Actions::GitHub::User do
   using Refinements::Structs
 
   subject(:action) { described_class.new processor: }
@@ -13,13 +13,18 @@ RSpec.describe Pennyworth::CLI::Actions::GitHub do
   let(:processor) { instance_spy Pennyworth::Processor, call: [git_hub_record] }
 
   describe "#call" do
-    it "calls processor with API endpoint" do
-      action.call "orgs/acme"
-      expect(processor).to have_received(:call).with("orgs/acme")
+    it "calls processor with default handle" do
+      action.call
+      expect(processor).to have_received(:call).with(%r(users/\w*))
+    end
+
+    it "calls processor with custom handle" do
+      action.call "acme"
+      expect(processor).to have_received(:call).with("users/acme")
     end
 
     it "answers JSON" do
-      action.call "orgs/acme"
+      action.call "acme"
       expect(kernel).to have_received(:puts).with([git_hub_record].to_json)
     end
   end

@@ -1,11 +1,17 @@
 # frozen_string_literal: true
 
+require "sod"
+
 module Pennyworth
   module CLI
     module Actions
       # Handles the text action.
-      class Text
-        include Pennyworth::Import[:kernel]
+      class Text < Sod::Action
+        include Import[:kernel]
+
+        description "Render Alfred text script filter."
+
+        on "--text", argument: "CONTENT"
 
         def initialize(processor: Processor.for_text, **)
           super(**)

@@ -1,0 +1,13 @@
+exclude_paths:
+  - tmp
+  - vendor
+
+detectors:
+  LongParameterList:
+    enabled: false
+  ModuleInitialize:
+    exclude:
+      - "Pennyworth::Models"
+  TooManyStatements:
+    exclude:
+      - "Pennyworth::CLI::Shell#cli"

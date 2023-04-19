@@ -1,18 +1,27 @@
 # frozen_string_literal: true
 
+require "sod"
+
 module Pennyworth
   module CLI
     module Actions
       # Handles the RubyGems action.
-      class RubyGems
-        include Pennyworth::Import[:kernel]
+      class RubyGems < Sod::Action
+        include Import[:kernel]
+
+        description "Render Alfred RubyGems script filter."
+
+        on "--ruby_gems", argument: "[HANDLE]", default: Container[:configuration].ruby_gems_owner
 
         def initialize(processor: Processor.for_gems, **)
           super(**)
           @processor = processor
         end
 
-        def call(endpoint) = kernel.puts processor.call(endpoint).to_json
+        def call handle = default
+          endpoint = "owners/#{handle}/gems.json"
+          kernel.puts processor.call(endpoint).to_json
+        end
 
         private
 

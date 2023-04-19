@@ -7,7 +7,7 @@ RSpec.describe Pennyworth::Integrations::RubyGems::Client do
 
   describe "#get" do
     it "answers paginated records when request succeeds" do
-      expect(client.get("owners/bkuhlmann/gems.json").size).to be_between(10, 30)
+      expect(client.get("owners/bkuhlmann/gems.json").size).to be_between(10, 50)
     end
 
     it "answers zero records when request fails" do

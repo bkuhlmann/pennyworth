@@ -5,7 +5,7 @@ module Pennyworth
     module Actions
       # Handles the configuration action.
       class Config
-        include Pennyworth::Import[:kernel, :logger]
+        include Import[:kernel, :logger]
 
         def initialize(configuration: Configuration::Loader::CLIENT, **)
           super(**)
