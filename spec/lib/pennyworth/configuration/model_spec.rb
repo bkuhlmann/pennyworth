@@ -8,17 +8,6 @@ RSpec.describe Pennyworth::Configuration::Model do
   describe "#initialize" do
     let :proof do
       {
-        action_encodings: nil,
-        action_git_hub: nil,
-        action_http_statuses: nil,
-        action_ruby_gems: nil,
-        action_standard_errors: nil,
-        action_system_errors: nil,
-        action_system_signals: nil,
-        action_text: nil,
-        action_config: nil,
-        action_version: nil,
-        action_help: nil,
         alfred_preferences: nil,
         inflections: nil,
         git_hub_api_url: nil,
