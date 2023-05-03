@@ -3,7 +3,7 @@
 module Pennyworth
   module Configuration
     # Defines configuration content as the primary source of truth for use throughout the gem.
-    Content = Struct.new(
+    Model = Struct.new(
       :action_encodings,
       :action_git_hub,
       :action_http_statuses,
