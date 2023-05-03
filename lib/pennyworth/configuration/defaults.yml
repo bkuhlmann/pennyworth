@@ -1,6 +1,4 @@
-:alfred:
-  :preferences:
-:inflections:
+inflections:
   - "Bkuhlmann": "bkuhlmann"
   - "Dry Auto Inject": "Dry AutoInject"
   - "Dry Cli": "Dry CLI"
@@ -38,13 +36,10 @@
   - "Tty Tree": "TTY Tree"
   - "Tty Which": "TTY Which"
   - "Xdg": "XDG"
-:git_hub:
-  :api_url: "https://api.github.com"
-  :organization:
-  :user:
-:http:
-  :statuses:
-    :url: "https://developer.mozilla.org/docs/Web/HTTP/Status"
-:ruby_gems:
-  :api_url: "https://rubygems.org/api/v1"
-  :owner:
+git_hub:
+  api_url: "https://api.github.com"
+http:
+  statuses:
+    url: "https://developer.mozilla.org/docs/Web/HTTP/Status"
+ruby_gems:
+  api_url: "https://rubygems.org/api/v1"
