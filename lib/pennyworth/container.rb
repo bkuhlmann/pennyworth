@@ -2,7 +2,9 @@
 
 require "cogger"
 require "dry/container"
+require "etcher"
 require "http"
+require "runcom"
 require "spek"
 
 module Pennyworth
