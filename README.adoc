@@ -79,50 +79,26 @@ with others.
 From the command line, type `pennyworth` to view usage:
 
 ....
-Pennyworth - A command line interface that augments Alfred workflows.
+USAGE
+  sublime_text_kit [OPTIONS]
+  sublime_text_kit COMMAND [OPTIONS]
 
-USAGE:
-  -c, --config ACTION                      Manage gem configuration. Actions: edit || view.
-      --encodings                          Render Alfred encodings script filter.
-      --git_hub                            Render Alfred GitHub repositories script filter.
-  -h, --help                               Show this message.
-      --http_statuses                      Render Alfred HTTP statuses script filter.
-      --ruby_gems                          Render Alfred RubyGems script filter.
-      --standard_errors                    Render Alfred standard errors script filter.
-      --system_errors                      Render Alfred system errors script filter.
-      --system_signals                     Render Alfred system signals script filter.
-      --text CONTENT                       Render Alfred text script filter.
-  -v, --version                            Show gem version.
+OPTIONS
+  --encodings              Render Alfred encodings script filter.
+  --http_statuses          Render Alfred HTTP statuses script filter.
+  --ruby_gems [HANDLE]     Render Alfred RubyGems script filter.
+  --standard_errors        Render Alfred standard errors script filter.
+  --system_errors          Render Alfred system errors script filter.
+  --system_signals         Render Alfred system signals script filter.
+  --text CONTENT           Render Alfred text script filter.
+  -v, --version            Show version.
+  -h, --help [COMMAND]     Show this message.
 
-GITHUB OPTIONS:
-      --organization [HANDLE]              Set organization. Default: "".
-      --user [HANDLE]                      Set user. Default: "".
-
-RUBYGEMS OPTIONS:
-      --owner [HANDLE]                     Set owner. Default: "".
+COMMANDS
+  config                   Manage configuration.
+                           Path is dynamic per current directory.
+  git_hub                  Render Alfred GitHub repositories script filter.
 ....
-
-The following demonstrates how to use Pennyworth from the CLI or within an Alfred Script Filter:
-
-[source,bash]
-----
-pennyworth --config edit
-pennyworth --config view
-
-pennyworth --encodings
-
-pennyworth --git_hub --organization alchemists
-pennyworth --git_hub --user bkuhlmann
-
-pennyworth --http_statuses
-pennyworth --ruby_gems --owner bkuhlmann
-pennyworth --standard_errors
-pennyworth --system_errors
-pennyworth --system_signals
-
-pennyworth --text demo
-pennyworth --text "An Example"
-----
 
 While the command line options are nice, the real power comes from using Pennyworth in conjunction
 with link:https://www.alfredapp.com/help/workflows/inputs/script-filter/json[Alfred Script Filters].
@@ -144,13 +120,12 @@ The default configuration is as follows:
 
 [source,yaml]
 ----
-:alfred:
-  :preferences:
-:inflections:
+alfred:
+  preferences:
+inflections:
   - "Bkuhlmann": "bkuhlmann"
   - "Dry Auto Inject": "Dry AutoInject"
   - "Dry Cli": "Dry CLI"
-  - "Flacsmith": "FLACsmith"
   - "Http Fake": "HTTP Fake"
   - "Mac Os Config": "macOS Configuration"
   - "Mac Os": "MacOS"
@@ -159,40 +134,17 @@ The default configuration is as follows:
   - "Rubocop Ast": "Rubocop AST"
   - "Rubocop Md": "Rubocop Markdown"
   - "Rubocop Rspec": "Rubocop RSpec"
-  - "Tty Box": "TTY Box"
-  - "Tty Color": "TTY Color"
-  - "Tty Command": "TTY Command"
-  - "Tty Config": "TTY Config"
-  - "Tty Cursor": "TTY Cursor"
-  - "Tty Editor": "TTY Editor"
-  - "Tty File": "TTY File"
-  - "Tty Font": "TTY Font"
-  - "Tty Link": "TTY Link"
-  - "Tty Logger": "TTY Logger"
-  - "Tty Markdown": "TTY Markdown"
-  - "Tty Option": "TTY Option"
-  - "Tty Pager": "TTY Pager"
-  - "Tty Pie": "TTY Pie"
-  - "Tty Platform": "TTY Platform"
-  - "Tty Progressbar": "TTY ProgressBar"
-  - "Tty Prompt": "TTY Prompt"
-  - "Tty Reader": "TTY Reader"
-  - "Tty Screen": "TTY Screen"
-  - "Tty Spinner": "TTY Spinner"
-  - "Tty Table": "TTY Table"
-  - "Tty Tree": "TTY Tree"
-  - "Tty Which": "TTY Which"
   - "Xdg": "XDG"
-:git_hub:
-  :api_url: "https://api.github.com"
-  :organization:
-  :user:
-:http:
-  :statuses:
-    :url: "https://developer.mozilla.org/docs/Web/HTTP/Status"
-:ruby_gems:
-  :api_url: "https://rubygems.org/api/v1"
-  :owner:
+git_hub:
+  api_url: "https://api.github.com"
+  organization:
+  user:
+http:
+  statuses:
+    url: "https://developer.mozilla.org/docs/Web/HTTP/Status"
+ruby_gems:
+  api_url: "https://rubygems.org/api/v1"
+  owner:
 ----
 
 Feel free to take this default configuration, modify, and save as your own custom
@@ -587,9 +539,6 @@ Provides general text manipulation utilities beyond the Pennyworth powered _text
 
 === Troubleshooting
 
-* link:https://github.com/ruby/psych[Psych] 4.0.0 has a
-  link:https://github.com/ruby/psych/issues/490[bug] which prevents loading of YAML configurations
-  that use symbols as keys. If you get caught by this, please upgrade to Psych 4.0.1 for the fix.
 * When your Alfred Workflow yields no output, you might want to open the
   link:https://www.alfredapp.com/help/workflows/utilities/debug[Alfred Debugger], rerun your
   workflow, and check for errors. You can also jump to the CLI and run Pennyworth directly.
