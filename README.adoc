@@ -151,7 +151,6 @@ The default configuration is as follows:
   - "Dry Auto Inject": "Dry AutoInject"
   - "Dry Cli": "Dry CLI"
   - "Flacsmith": "FLACsmith"
-  - "Git Plus": "Git+"
   - "Http Fake": "HTTP Fake"
   - "Mac Os Config": "macOS Configuration"
   - "Mac Os": "MacOS"
