@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "etcher", "~> 0.1"
   spec.add_dependency "ghub", "~> 0.3"
   spec.add_dependency "http", "~> 5.1"
-  spec.add_dependency "infusible", "~> 1.0"
+  spec.add_dependency "infusible", "~> 2.0"
   spec.add_dependency "rack", "~> 3.0"
   spec.add_dependency "refinements", "~> 11.0"
   spec.add_dependency "runcom", "~> 10.0"
