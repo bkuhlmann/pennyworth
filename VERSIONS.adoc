@@ -1,5 +1,10 @@
 = Versions
 
+== 15.0.1 (2023-06-19)
+
+* Updated to Caliber 0.35.0 - Brooke Kuhlmann
+* Updated to Git Lint 6.0.0 - Brooke Kuhlmann
+
 == 15.0.0 (2023-06-15)
 
 * Added Dry Schema gem - Brooke Kuhlmann
