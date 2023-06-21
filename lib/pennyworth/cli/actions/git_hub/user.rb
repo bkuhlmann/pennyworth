@@ -12,14 +12,16 @@ module Pennyworth
 
           description "Specify user."
 
-          on %w[-u --user], argument: "[HANDLE]", default: Container[:configuration].git_hub_user
+          on %w[-u --user], argument: "[HANDLE]"
+
+          default { Container[:configuration].git_hub_user }
 
           def initialize(processor: Processor.for_projects, **)
             super(**)
             @processor = processor
           end
 
-          def call(handle = default) = kernel.puts processor.call("users/#{handle}").to_json
+          def call(handle = nil) = kernel.puts processor.call("users/#{handle || default}").to_json
 
           private
 
