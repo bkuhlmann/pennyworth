@@ -26,8 +26,6 @@ RSpec.describe Pennyworth::CLI::Shell do
     end
 
     it "answers GitHub organization script filter items with valid organization" do
-      pending "Requires updated CI keys" if ENV.fetch("CI", false) == "true"
-
       shell.call %w[git_hub --organization dry-rb]
       expect(kernel).to have_received(:puts).with(/items.+title.+Branding/)
     end
@@ -38,8 +36,6 @@ RSpec.describe Pennyworth::CLI::Shell do
     end
 
     it "answers GitHub user script filter items with valid user" do
-      pending "Requires updated CI keys" if ENV.fetch("CI", false) == "true"
-
       shell.call %w[git_hub --user bkuhlmann]
       expect(kernel).to have_received(:puts).with(/items.+title.+Alfred/)
     end
