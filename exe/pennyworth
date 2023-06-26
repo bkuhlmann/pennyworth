@@ -3,4 +3,4 @@
 
 require "pennyworth"
 
-Pennyworth::CLI::Shell.new.call ARGV
+Pennyworth::CLI::Shell.new.call
