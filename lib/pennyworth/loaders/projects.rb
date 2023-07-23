@@ -8,6 +8,8 @@ module Pennyworth
 
       def self.for_ruby_gems = new(client: Integrations::RubyGems::Client.new)
 
+      def self.for_standard_gems = new(client: Integrations::StandardGems::Client.new)
+
       def initialize client:
         @client = client
       end

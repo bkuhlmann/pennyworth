@@ -8,6 +8,7 @@ detectors:
       - "Pennyworth::CLI::Actions::GitHub::Organization#call"
       - "Pennyworth::CLI::Actions::GitHub::User#call"
       - "Pennyworth::CLI::Actions::RubyGems#call"
+      - "Pennyworth::CLI::Actions::StandardGems#call"
   LongParameterList:
     enabled: false
   ModuleInitialize:

@@ -34,6 +34,7 @@ module Pennyworth
           on Actions::Encodings
           on Actions::HTTPStatuses
           on Actions::RubyGems
+          on Actions::StandardGems
           on Actions::StandardErrors
           on Actions::System::Errors
           on Actions::System::Signals

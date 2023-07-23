@@ -55,6 +55,11 @@ RSpec.describe Pennyworth::CLI::Shell do
       expect(kernel).to have_received(:puts).with({items: []}.to_json)
     end
 
+    it "answers Standard Gems script filter items with valid kind" do
+      shell.call %w[--standard_gems bundled]
+      expect(kernel).to have_received(:puts).with(/items.+title.+Debug/)
+    end
+
     it "answers HTTP statuses script filter items" do
       shell.call %w[--http_statuses]
       expect(kernel).to have_received(:puts).with(/items.+title.+200.+subtitle.+OK/)

@@ -27,6 +27,12 @@ module Pennyworth
           serializer: Serializers::Project
     end
 
+    def self.for_standard_gems
+      new loader: Loaders::Projects.for_standard_gems,
+          presenter: Presenters::StandardGem,
+          serializer: Serializers::Project
+    end
+
     def self.for_standard_errors
       new loader: Loaders::StandardErrors.new,
           presenter: Presenters::StandardError,
