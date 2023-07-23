@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "core"
 require "ghub"
 
 module Pennyworth
@@ -11,7 +12,7 @@ module Pennyworth
           @endpoint = endpoint
         end
 
-        def get(path) = endpoint.index(*path.split("/")).value_or([]).map(&:to_h)
+        def get(path) = endpoint.index(*path.split("/")).value_or(Core::EMPTY_ARRAY).map(&:to_h)
 
         private
 
