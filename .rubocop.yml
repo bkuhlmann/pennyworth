@@ -1,6 +1,9 @@
 inherit_gem:
   caliber: config/all.yml
 
+Naming/VariableNumber:
+  Exclude:
+    - "spec/support/shared_contexts/standard_gems_integration.rb"
 Metrics/AbcSize:
   Exclude:
     - "lib/pennyworth/cli/shell.rb"
