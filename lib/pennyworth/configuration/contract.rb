@@ -15,6 +15,7 @@ module Pennyworth
       required(:http_statuses_url).filled :string
       required(:ruby_gems_api_url).filled :string
       optional(:ruby_gems_owner).filled :string
+      required(:standard_gems_api_url).filled :string
     end
   end
 end

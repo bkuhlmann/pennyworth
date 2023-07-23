@@ -18,3 +18,5 @@ http:
     url: "https://developer.mozilla.org/docs/Web/HTTP/Status"
 ruby_gems:
   api_url: "https://rubygems.org/api/v1"
+standard_gems:
+  api_url: "https://stdgems.org"

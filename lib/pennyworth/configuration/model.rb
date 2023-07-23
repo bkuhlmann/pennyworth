@@ -10,6 +10,7 @@ module Pennyworth
                        :git_hub_user,
                        :http_statuses_url,
                        :ruby_gems_api_url,
-                       :ruby_gems_owner
+                       :ruby_gems_owner,
+                       :standard_gems_api_url
   end
 end
