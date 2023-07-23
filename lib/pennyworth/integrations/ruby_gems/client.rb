@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "core"
+
 module Pennyworth
   module Integrations
     module RubyGems
@@ -10,7 +12,9 @@ module Pennyworth
         def get endpoint
           http.get("#{configuration.ruby_gems_api_url}/#{endpoint}")
               .then do |response|
-                response.status.success? ? JSON(response.body.to_s, symbolize_names: true) : {}
+                return JSON response.body.to_s, symbolize_names: true if response.status.success?
+
+                Core::EMPTY_HASH
               end
         end
       end
