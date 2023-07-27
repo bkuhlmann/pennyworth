@@ -23,7 +23,7 @@ module Pennyworth
       def cli
         context = build_context
 
-        dsl.new :sublime_text_kit, banner: specification.banner do
+        dsl.new :pennyworth, banner: specification.banner do
           on(Sod::Prefabs::Commands::Config, context:)
 
           on "git_hub", "Render Alfred GitHub repositories script filter." do
