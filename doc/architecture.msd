@@ -9,6 +9,7 @@ participant Alfred
 participant Pennyworth
 participant Ruby
 participant RubyGems
+participant "Standard Gems"
 participant GitHub
 
 group Native Ruby
@@ -39,7 +40,16 @@ group RubyGems API
   Pennyworth->Pennyworth: Process action
   Pennyworth->RubyGems: API request
   Pennyworth<-RubyGems: API response
-  Pennyworth->Pennyworth: Load records
+  Pennyworth->Pennyworth: Load presenters
+  Pennyworth->Pennyworth: Load serializers
+  Alfred<-Pennyworth: Render script filter
+end
+
+group Standard Gems API
+  Alfred->Pennyworth: User request
+  Pennyworth->Pennyworth: Process action
+  Pennyworth->"Standard Gems": API request
+  Pennyworth<-"Standard Gems": API response
   Pennyworth->Pennyworth: Load presenters
   Pennyworth->Pennyworth: Load serializers
   Alfred<-Pennyworth: Render script filter
@@ -50,7 +60,6 @@ group GitHub API
   Pennyworth->Pennyworth: Process action
   Pennyworth->GitHub: API request
   Pennyworth<-GitHub: API response
-  Pennyworth->Pennyworth: Load records
   Pennyworth->Pennyworth: Load presenters
   Pennyworth->Pennyworth: Load serializers
   Alfred<-Pennyworth: Render script filter
