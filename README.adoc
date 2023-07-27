@@ -78,7 +78,7 @@ with others.
 
 From the command line, type `pennyworth` to view usage:
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/usage.png[Usage,width=651,height=484,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/usage.png[Usage,width=668,height=499,role=focal_point]
 
 While the command line options are nice, the real power comes from using Pennyworth in conjunction
 with link:https://www.alfredapp.com/help/workflows/inputs/script-filter/json[Alfred Script Filters].
@@ -222,7 +222,7 @@ to all workflows depending on what kind of item is currently selected within the
 
 ==== Alchemists
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/alchemists-projects.png[Alchemists Projects,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/alchemists-projects.png[Alchemists Projects,width=706,height=631,role=focal_point]
 
 Provides quick access to link:https://alchemists.io[Alchemists] resources.
 
@@ -232,7 +232,7 @@ Provides quick access to link:https://alchemists.io[Alchemists] resources.
 
 ==== Dry RB
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/dry-gems.png[Dry Gems,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/dry.png[Dry Gems,width=706,height=631,role=focal_point]
 
 Provides quick access to link:https://dry-rb.org[Dry RB] resources.
 
@@ -317,7 +317,7 @@ Provides biographical calculations and information.
 
 ===== Browsers
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/browsers.png[Browsers workflow screenshot.,width=706,height=308,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/browsers.png[Browsers workflow screenshot.,width=706,height=307,role=focal_point]
 
 Provides quick access to browser resources.
 
