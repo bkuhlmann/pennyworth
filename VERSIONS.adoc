@@ -1,5 +1,17 @@
 = Versions
 
+== 15.1.0 (2023-07-26)
+
+* Fixed GitHub integration to use empty array - Brooke Kuhlmann
+* Fixed RubyGems integration to use empty hash - Brooke Kuhlmann
+* Added Core gem - Brooke Kuhlmann
+* Added container memoization - Brooke Kuhlmann
+* Added standard gems CLI action - Brooke Kuhlmann
+* Added standard gems client integration - Brooke Kuhlmann
+* Added standard gems configuration - Brooke Kuhlmann
+* Added standard gems inflections to default configuration - Brooke Kuhlmann
+* Added standard gems presenter - Brooke Kuhlmann
+
 == 15.0.3 (2023-07-01)
 
 * Fixed RuboCop Packaging/BundlerSetupInTests issues - Brooke Kuhlmann

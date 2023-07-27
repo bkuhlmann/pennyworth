@@ -84,20 +84,24 @@ USAGE
   sublime_text_kit COMMAND [OPTIONS]
 
 OPTIONS
-  --encodings              Render Alfred encodings script filter.
-  --http_statuses          Render Alfred HTTP statuses script filter.
-  --ruby_gems [HANDLE]     Render Alfred RubyGems script filter.
-  --standard_errors        Render Alfred standard errors script filter.
-  --system_errors          Render Alfred system errors script filter.
-  --system_signals         Render Alfred system signals script filter.
-  --text CONTENT           Render Alfred text script filter.
-  -v, --version            Show version.
-  -h, --help [COMMAND]     Show this message.
+  --encodings                Render Alfred encodings script filter.
+  --http_statuses            Render Alfred HTTP statuses script filter.
+  --ruby_gems [HANDLE]       Render Alfred RubyGems script filter.
+                             Default: bkuhlmann.
+  --standard_gems [KIND]     Render Alfred Standard Gems script filter.
+                             Use: all, default, or bundled.
+                             Default: all.
+  --standard_errors          Render Alfred standard errors script filter.
+  --system_errors            Render Alfred system errors script filter.
+  --system_signals           Render Alfred system signals script filter.
+  --text CONTENT             Render Alfred text script filter.
+  -v, --version              Show version.
+  -h, --help [COMMAND]       Show this message.
 
 COMMANDS
-  config                   Manage configuration.
-                           Path is dynamic per current directory.
-  git_hub                  Render Alfred GitHub repositories script filter.
+  config                     Manage configuration.
+                             Path is dynamic per current directory.
+  git_hub                    Render Alfred GitHub repositories script filter.
 ....
 
 While the command line options are nice, the real power comes from using Pennyworth in conjunction
@@ -120,31 +124,87 @@ The default configuration is as follows:
 
 [source,yaml]
 ----
-alfred:
-  preferences:
 inflections:
-  - "Bkuhlmann": "bkuhlmann"
+  - "Base64": "Base64"
+  - "Bigdecimal": "BigDecimal"
+  - "Cgi": "CGI"
+  - "Cmath": "CMath"
+  - "Csv": "CSV"
+  - "Dbm": "DBM"
+  - "Drb": "Distributed Ruby"
   - "Dry Auto Inject": "Dry AutoInject"
   - "Dry Cli": "Dry CLI"
+  - "E2mmap": "Exception to Message Mapper"
+  - "Erb": "ERB"
+  - "Fileutils": "File Utilities"
+  - "Gdbm": "GDBM"
+  - "Getoptlong": "Get Option Long"
   - "Http Fake": "HTTP Fake"
+  - "Io Console": "IO Console"
+  - "Io Nonblock": "IO Nonblock"
+  - "Io Wait": "IO Wait"
+  - "Ipaddr": "IP Address"
+  - "Irb": "IRB"
+  - "Json": "JSON"
   - "Mac Os Config": "macOS Configuration"
   - "Mac Os": "MacOS"
+  - "Net Ftp": "Net FTP"
+  - "Net Http": "Net HTTP"
+  - "Net Imap": "Net IMAP"
+  - "Net Pop": "Net POP"
+  - "Net Smtp": "Net SMTP"
+  - "Nkf": "NKF"
+  - "Open Uri": "OpenURI"
+  - "Openssl": "OpenSSL"
+  - "Optparse": "Option Parser"
+  - "Ostruct": "OpenStruct"
   - "Pkce": "PKCE"
+  - "Pp": "PP"
   - "Prawn Plus": "Prawn+"
-  - "Rubocop Ast": "Rubocop AST"
-  - "Rubocop Md": "Rubocop Markdown"
-  - "Rubocop Rspec": "Rubocop RSpec"
+  - "Prettyprint": "Pretty Print"
+  - "Pstore": "PStore"
+  - "Rbs": "RBS"
+  - "Rdoc": "RDoc"
+  - "Rexml": "REXML"
+  - "Rss": "RSS"
+  - "Rubocop Ast": "RuboCop AST"
+  - "Rubocop Capybara": "RuboCop Capybara"
+  - "Rubocop Factory Bot": "RuboCop FactoryBot"
+  - "Rubocop Md": "RuboCop Markdown"
+  - "Rubocop Performance": "RuboCop Performance"
+  - "Rubocop Rails": "RuboCop Rails"
+  - "Rubocop Rake": "RuboCop Rake"
+  - "Rubocop Rspec": "RuboCop RSpec"
+  - "Rubocop Sequel": "RuboCop Sequel"
+  - "Rubocop Thread Safety": "RuboCop Thread Safety"
+  - "Rubocop": "RuboCop"
+  - "Ruby2_keywords": "Ruby to Keywords"
+  - "Rubygems": "RubyGems"
+  - "Sdbm": "SDBM"
+  - "Securerandom": "Secure Random"
+  - "Stringio": "String IO"
+  - "Strscan": "String Scan"
+  - "Tempfile": "Temporary File"
+  - "Thwait": "Threads Wait"
+  - "Tmpdir": "Temporary Directory"
+  - "Tsort": "TSort"
+  - "Typeprof": "Type Profiler"
+  - "Un": "un"
+  - "Uri": "URI"
+  - "Weakref": "Weak Reference"
+  - "Win32ole": "Windows 32 OLE"
   - "Xdg": "XDG"
+  - "Xmlrpc": "XMLRPC"
+  - "Yaml": "YAML"
 git_hub:
   api_url: "https://api.github.com"
-  organization:
-  user:
 http:
   statuses:
     url: "https://developer.mozilla.org/docs/Web/HTTP/Status"
 ruby_gems:
   api_url: "https://rubygems.org/api/v1"
-  owner:
+standard_gems:
+  api_url: "https://stdgems.org"
 ----
 
 Feel free to take this default configuration, modify, and save as your own custom
@@ -216,7 +276,7 @@ Provides quick access to link:https://docs.rubocop.org/rubocop[RuboCop] resource
 
 ==== Ruby
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/ruby.png[Ruby workflow screenshot,width=706,height=632,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/ruby.png[Ruby workflow screenshot,width=706,height=631,role=focal_point]
 
 Provides quick access to link:https://www.ruby-lang.org[Ruby] resources.
 
