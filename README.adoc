@@ -22,7 +22,7 @@ toc::[]
 
 == Screencast
 
-video::https://alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://alchemists.io/images/projects/pennyworth/demo.png,width=706,height=632,role=focal_point]
+video::https://alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://alchemists.io/images/projects/pennyworth/demo.png,width=706,height=631,role=focal_point]
 
 == Requirements
 
@@ -78,31 +78,7 @@ with others.
 
 From the command line, type `pennyworth` to view usage:
 
-....
-USAGE
-  sublime_text_kit [OPTIONS]
-  sublime_text_kit COMMAND [OPTIONS]
-
-OPTIONS
-  --encodings                Render Alfred encodings script filter.
-  --http_statuses            Render Alfred HTTP statuses script filter.
-  --ruby_gems [HANDLE]       Render Alfred RubyGems script filter.
-                             Default: bkuhlmann.
-  --standard_gems [KIND]     Render Alfred Standard Gems script filter.
-                             Use: all, default, or bundled.
-                             Default: all.
-  --standard_errors          Render Alfred standard errors script filter.
-  --system_errors            Render Alfred system errors script filter.
-  --system_signals           Render Alfred system signals script filter.
-  --text CONTENT             Render Alfred text script filter.
-  -v, --version              Show version.
-  -h, --help [COMMAND]       Show this message.
-
-COMMANDS
-  config                     Manage configuration.
-                             Path is dynamic per current directory.
-  git_hub                    Render Alfred GitHub repositories script filter.
-....
+image:https://alchemists.io/images/projects/pennyworth/screenshots/usage.png[Usage,width=651,height=484,role=focal_point]
 
 While the command line options are nice, the real power comes from using Pennyworth in conjunction
 with link:https://www.alfredapp.com/help/workflows/inputs/script-filter/json[Alfred Script Filters].
