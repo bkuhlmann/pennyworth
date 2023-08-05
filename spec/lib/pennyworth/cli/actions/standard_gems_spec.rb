@@ -13,14 +13,29 @@ RSpec.describe Pennyworth::CLI::Actions::StandardGems do
   let(:processor) { instance_spy Pennyworth::Processor, call: [standard_gems_record] }
 
   describe "#call" do
-    it "calls processor with all gems" do
+    it "calls processor with all gems by default" do
       action.call
-      expect(processor).to have_received(:call).with("all_gems.json")
+      expect(processor).to have_received(:call).with("stdgems.json")
     end
 
-    it "calls processor with specific gem category" do
+    it "calls processor with all gems" do
+      action.call "all"
+      expect(processor).to have_received(:call).with("stdgems.json")
+    end
+
+    it "calls processor with bundled gems" do
       action.call "bundled"
       expect(processor).to have_received(:call).with("bundled_gems.json")
+    end
+
+    it "calls processor with default gems" do
+      action.call "default"
+      expect(processor).to have_received(:call).with("default_gems.json")
+    end
+
+    it "fails with invalid gems" do
+      expectation = proc { action.call "bogus" }
+      expect(&expectation).to raise_error(KeyError, /bogus/)
     end
 
     it "answers JSON" do

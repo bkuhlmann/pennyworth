@@ -9,23 +9,27 @@ module Pennyworth
       class StandardGems < Sod::Action
         include Import[:kernel]
 
+        ENDPOINTS = {
+          "all" => "stdgems.json",
+          "default" => "default_gems.json",
+          "bundled" => "bundled_gems.json"
+        }.freeze
+
         description "Render Alfred Standard Gems script filter."
 
         on "--standard_gems", argument: "[KIND]", allow: %w[all default bundled], default: "all"
 
-        def initialize(processor: Processor.for_standard_gems, **)
+        def initialize(processor: Processor.for_standard_gems, endpoints: ENDPOINTS, **)
           super(**)
           @processor = processor
+          @endpoints = endpoints
         end
 
-        def call kind = nil
-          endpoint = "#{kind || default}_gems.json"
-          kernel.puts processor.call(endpoint).to_json
-        end
+        def call(kind = nil) = kernel.puts processor.call(endpoints.fetch(kind || default)).to_json
 
         private
 
-        attr_reader :processor
+        attr_reader :processor, :endpoints
       end
     end
   end
