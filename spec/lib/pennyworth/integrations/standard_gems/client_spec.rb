@@ -7,7 +7,7 @@ RSpec.describe Pennyworth::Integrations::StandardGems::Client do
 
   describe "#get" do
     it "answers successful response for all gems" do
-      expect(client.get("all_gems.json").size).to be_between(1, 120)
+      expect(client.get("stdgems.json").size).to be_between(1, 120)
     end
 
     it "answers successful response for bundled gems" do
@@ -19,7 +19,7 @@ RSpec.describe Pennyworth::Integrations::StandardGems::Client do
     end
 
     it "answers empty array when given invalid category" do
-      expect(client.get("bogus.json")).to eq([])
+      expect(client.get("bogus.json")).to eq({})
     end
 
     it "answers empty array when unable to reach server" do
@@ -28,7 +28,7 @@ RSpec.describe Pennyworth::Integrations::StandardGems::Client do
       http = class_double HTTP, get: response
       client = described_class.new(http:)
 
-      expect(client.get("all_gems.json")).to eq([])
+      expect(client.get("stdgems.json")).to eq({})
     end
   end
 end
