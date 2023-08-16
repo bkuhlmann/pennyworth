@@ -7,8 +7,8 @@ RSpec.shared_context "with Standard Gems integration" do
       description: "A test gem.",
       sourceRepository: "https://github.com/ruby/test",
       versions: {
-        "3.3": "1.2.3",
-        "3.2": "4.5.6"
+        "1.2": "1.2.3",
+        "4.5": "4.5.6"
       }
     }
   end
