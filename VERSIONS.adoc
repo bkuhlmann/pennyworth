@@ -1,5 +1,13 @@
 = Versions
 
+== 15.2.0 (2023-08-16)
+
+* Fixed RSpec standard gems shared context versions - Brooke Kuhlmann
+* Fixed usage, Alchemists, Dry RB, and Browser screenshots - Brooke Kuhlmann
+* Updated Standard Gems CLI action to translate endpoints - Brooke Kuhlmann
+* Updated Standard Gems client to accept endpoint only - Brooke Kuhlmann
+* Updated standard gem presenter to account for new API - Brooke Kuhlmann
+
 == 15.1.1 (2023-07-27)
 
 * Fixed CLI name - Brooke Kuhlmann
