@@ -13,4 +13,5 @@ end
 
 # Main namespace.
 module Pennyworth
+  def self.loader(registry = Zeitwerk::Registry) = registry.loader_for __FILE__
 end
