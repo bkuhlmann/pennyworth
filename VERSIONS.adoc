@@ -1,5 +1,11 @@
 = Versions
 
+== 15.3.0 (2023-09-30)
+
+* Fixed Zeitwerk loader - Brooke Kuhlmann
+* Added gem loader - Brooke Kuhlmann
+* Updated GitHub issue template with simplified sections - Brooke Kuhlmann
+
 == 15.2.0 (2023-08-16)
 
 * Fixed RSpec standard gems shared context versions - Brooke Kuhlmann
