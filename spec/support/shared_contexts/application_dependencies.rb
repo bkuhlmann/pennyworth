@@ -13,7 +13,7 @@ RSpec.shared_context "with application dependencies" do
   end
 
   let(:kernel) { class_spy Kernel }
-  let(:logger) { Cogger.new io: StringIO.new, formatter: :emoji }
+  let(:logger) { Cogger.new id: :pennyworth, io: StringIO.new }
 
   before { Pennyworth::Import.stub configuration:, kernel:, logger: }
 

@@ -8,7 +8,7 @@ RSpec.describe Pennyworth::CLI::Actions::StandardErrors do
   include_context "with application dependencies"
   include_context "with temporary directory"
 
-  let(:logger) { Cogger.new io: log_path }
+  let(:logger) { Cogger.new id: :pennyworth, io: log_path }
   let(:log_path) { temp_dir.join "standard_errors.json" }
 
   describe "#call" do

@@ -28,7 +28,7 @@ module Pennyworth
 
     register(:defaults_path, memoize: true) { Pathname(__dir__).join("configuration/defaults.yml") }
     register(:xdg_config, memoize: true) { Runcom::Config.new "pennyworth/configuration.yml" }
-    register(:logger, memoize: true) { Cogger.new formatter: :emoji }
+    register(:logger, memoize: true) { Cogger.new id: :pennyworth }
     register :http, HTTP
     register :kernel, Kernel
   end
