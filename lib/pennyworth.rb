@@ -13,5 +13,7 @@ end
 
 # Main namespace.
 module Pennyworth
-  def self.loader(registry = Zeitwerk::Registry) = registry.loader_for __FILE__
+  def self.loader registry = Zeitwerk::Registry
+    @loader ||= registry.loaders.find { |loader| loader.tag == File.basename(__FILE__, ".rb") }
+  end
 end
