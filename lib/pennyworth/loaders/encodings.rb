@@ -13,7 +13,7 @@ module Pennyworth
         @model = model
       end
 
-      def call _omit = nil
+      def call(*)
         encoding.aliases
                 .map { |_second, first| first }
                 .uniq

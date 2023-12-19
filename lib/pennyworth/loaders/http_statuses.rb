@@ -14,7 +14,7 @@ module Pennyworth
         @model = model
       end
 
-      def call _omit = nil
+      def call(*)
         codes.map { |(code, label)| model[code:, label:, url: "#{url}/#{code}"] }
       end
 

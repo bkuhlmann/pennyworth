@@ -10,7 +10,7 @@ module Pennyworth
           @model = model
         end
 
-        def call _omit = nil
+        def call(*)
           errno.constants
                .map { |name| errno.const_get name }
                .uniq

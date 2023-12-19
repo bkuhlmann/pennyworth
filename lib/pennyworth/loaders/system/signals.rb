@@ -10,7 +10,7 @@ module Pennyworth
           @model = model
         end
 
-        def call(_omit = nil) = list.map { |name, number| model[number:, name:] }
+        def call(*) = list.map { |name, number| model[number:, name:] }
 
         private
 

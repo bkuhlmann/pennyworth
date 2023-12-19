@@ -9,7 +9,7 @@ module Pennyworth
         @model = model
       end
 
-      def call _omit = nil
+      def call(*)
         ObjectSpace.each_object(Class)
                    .select { |klass| klass < root }
                    .sort_by(&:name)
