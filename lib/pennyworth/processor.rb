@@ -10,9 +10,7 @@ module Pennyworth
     end
 
     def self.for_gems
-      new loader: Loaders::Projects.for_ruby_gems,
-          presenter: Presenters::Gem,
-          serializer: Serializers::Project
+      new loader: Loaders::RubyGem.new, presenter: Presenters::Gem, serializer: Serializers::Project
     end
 
     def self.for_http_statuses
@@ -22,13 +20,13 @@ module Pennyworth
     end
 
     def self.for_projects
-      new loader: Loaders::Projects.for_git_hub,
+      new loader: Loaders::GitHub.new,
           presenter: Presenters::Repository,
           serializer: Serializers::Project
     end
 
     def self.for_standard_gems
-      new loader: Loaders::Projects.for_standard_gems,
+      new loader: Loaders::StandardGem.new,
           presenter: Presenters::StandardGem,
           serializer: Serializers::Project
     end
