@@ -5,8 +5,8 @@ require "sod"
 module Pennyworth
   module CLI
     module Actions
-      # Handles the HTTP statuses action.
-      class HTTPStatuses < Sod::Action
+      # Handles the HTTP status action.
+      class HTTPStatus < Sod::Action
         include Import[:kernel]
 
         description "Render Alfred HTTP statuses script filter."

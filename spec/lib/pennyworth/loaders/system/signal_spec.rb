@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::Loaders::System::Signals do
+RSpec.describe Pennyworth::Loaders::System::Signal do
   subject(:loader) { described_class.new }
 
   describe "#call" do

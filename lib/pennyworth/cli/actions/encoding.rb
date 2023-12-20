@@ -5,8 +5,8 @@ require "sod"
 module Pennyworth
   module CLI
     module Actions
-      # Handles the encodings action.
-      class Encodings < Sod::Action
+      # Handles the encoding action.
+      class Encoding < Sod::Action
         include Import[:kernel]
 
         description "Render Alfred encodings script filter."

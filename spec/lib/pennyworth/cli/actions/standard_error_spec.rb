@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::CLI::Actions::StandardErrors do
+RSpec.describe Pennyworth::CLI::Actions::StandardError do
   subject(:action) { described_class.new }
 
   include_context "with application dependencies"

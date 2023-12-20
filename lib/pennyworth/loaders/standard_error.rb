@@ -3,8 +3,8 @@
 module Pennyworth
   module Loaders
     # Loads an array of standard error records.
-    class StandardErrors
-      def initialize root: StandardError, model: Models::StandardError
+    class StandardError
+      def initialize root: ::StandardError, model: Models::StandardError
         @root = root
         @model = model
       end

@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::Loaders::System::Errors do
+RSpec.describe Pennyworth::Loaders::System::Error do
   subject(:loader) { described_class.new }
 
   describe "#call" do

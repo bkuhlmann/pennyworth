@@ -4,8 +4,8 @@ module Pennyworth
   module Loaders
     module System
       # Loads an array of signal records.
-      class Signals
-        def initialize list: Signal.list, model: Models::System::Signal
+      class Signal
+        def initialize list: ::Signal.list, model: Models::System::Signal
           @list = list
           @model = model
         end

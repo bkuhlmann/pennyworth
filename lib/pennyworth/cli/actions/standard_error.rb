@@ -5,8 +5,8 @@ require "sod"
 module Pennyworth
   module CLI
     module Actions
-      # Handles the system errors action.
-      class StandardErrors < Sod::Action
+      # Handles the system error action.
+      class StandardError < Sod::Action
         include Import[:kernel]
 
         description "Render Alfred standard errors script filter."

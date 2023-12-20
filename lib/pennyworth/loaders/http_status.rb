@@ -5,7 +5,7 @@ require "rack"
 module Pennyworth
   module Loaders
     # Loads an array of HTTP status records.
-    class HTTPStatuses
+    class HTTPStatus
       include Import[:configuration]
 
       def initialize(codes: Rack::Utils::HTTP_STATUS_CODES, model: Models::HTTPStatus, **)

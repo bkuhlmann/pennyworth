@@ -6,8 +6,8 @@ module Pennyworth
   module CLI
     module Actions
       module System
-        # Handles the signal action.
-        class Signals < Sod::Action
+        # Handles the system signal action.
+        class Signal < Sod::Action
           include Import[:kernel]
 
           description "Render Alfred system signals script filter."

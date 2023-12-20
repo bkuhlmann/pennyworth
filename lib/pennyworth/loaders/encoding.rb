@@ -5,10 +5,10 @@ require "refinements/arrays"
 module Pennyworth
   module Loaders
     # Loads an array of encoding records.
-    class Encodings
+    class Encoding
       using Refinements::Arrays
 
-      def initialize encoding: Encoding, model: Models::Encoding
+      def initialize encoding: ::Encoding, model: Models::Encoding
         @encoding = encoding
         @model = model
       end

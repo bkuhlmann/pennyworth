@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::CLI::Actions::RubyGems do
+RSpec.describe Pennyworth::CLI::Actions::Gem do
   using Refinements::Structs
 
   subject(:action) { described_class.new processor: }

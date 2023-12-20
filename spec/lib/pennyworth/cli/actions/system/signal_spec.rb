@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::CLI::Actions::Encodings do
+RSpec.describe Pennyworth::CLI::Actions::System::Signal do
   subject(:action) { described_class.new }
 
   include_context "with application dependencies"
@@ -10,7 +10,7 @@ RSpec.describe Pennyworth::CLI::Actions::Encodings do
   describe "#call" do
     it "answers JSON" do
       action.call
-      expect(kernel).to have_received(:puts).with(/items.+title.+ASCII-8BIT.+subtitle.+BINARY/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+ABRT.+subtitle.+6/)
     end
   end
 end

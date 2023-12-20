@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::Loaders::HTTPStatuses do
+RSpec.describe Pennyworth::Loaders::HTTPStatus do
   subject(:loader) { described_class.new }
 
   describe "#call" do

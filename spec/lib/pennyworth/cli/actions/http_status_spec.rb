@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::CLI::Actions::System::Signals do
+RSpec.describe Pennyworth::CLI::Actions::HTTPStatus do
   subject(:action) { described_class.new }
 
   include_context "with application dependencies"
@@ -10,7 +10,7 @@ RSpec.describe Pennyworth::CLI::Actions::System::Signals do
   describe "#call" do
     it "answers JSON" do
       action.call
-      expect(kernel).to have_received(:puts).with(/items.+title.+ABRT.+subtitle.+6/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+200.+subtitle.+OK/)
     end
   end
 end

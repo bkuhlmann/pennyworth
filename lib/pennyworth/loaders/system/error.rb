@@ -4,7 +4,7 @@ module Pennyworth
   module Loaders
     module System
       # Loads an array of system error records.
-      class Errors
+      class Error
         def initialize errno: Errno, model: Models::System::Error
           @errno = errno
           @model = model

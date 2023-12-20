@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::CLI::Actions::System::Errors do
+RSpec.describe Pennyworth::CLI::Actions::Encoding do
   subject(:action) { described_class.new }
 
   include_context "with application dependencies"
@@ -10,10 +10,7 @@ RSpec.describe Pennyworth::CLI::Actions::System::Errors do
   describe "#call" do
     it "answers JSON" do
       action.call
-
-      expect(kernel).to have_received(:puts).with(
-        /items.+title.+Errno::EACCES.+subtitle.+Permission denied/
-      )
+      expect(kernel).to have_received(:puts).with(/items.+title.+ASCII-8BIT.+subtitle.+BINARY/)
     end
   end
 end

@@ -5,13 +5,13 @@ require "sod"
 module Pennyworth
   module CLI
     module Actions
-      # Handles the RubyGems action.
-      class RubyGems < Sod::Action
+      # Handles the RubyGem action.
+      class Gem < Sod::Action
         include Import[:kernel]
 
         description "Render Alfred RubyGems script filter."
 
-        on "--ruby_gems", argument: "[HANDLE]"
+        on "--gems", argument: "[HANDLE]"
 
         default { Container[:configuration].ruby_gems_owner }
 

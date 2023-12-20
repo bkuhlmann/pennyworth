@@ -6,8 +6,8 @@ module Pennyworth
   module CLI
     module Actions
       module System
-        # Handles the system errors action.
-        class Errors < Sod::Action
+        # Handles the system error action.
+        class Error < Sod::Action
           include Import[:kernel]
 
           description "Render Alfred system errors script filter."

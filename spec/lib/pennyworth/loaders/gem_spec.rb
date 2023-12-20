@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::Loaders::RubyGem do
+RSpec.describe Pennyworth::Loaders::Gem do
   subject(:client) { described_class.new }
 
   describe "#call" do

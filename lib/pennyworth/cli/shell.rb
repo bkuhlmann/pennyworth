@@ -31,13 +31,13 @@ module Pennyworth
             on Actions::GitHub::User
           end
 
-          on Actions::Encodings
-          on Actions::HTTPStatuses
-          on Actions::RubyGems
-          on Actions::StandardGems
-          on Actions::StandardErrors
-          on Actions::System::Errors
-          on Actions::System::Signals
+          on Actions::Encoding
+          on Actions::HTTPStatus
+          on Actions::Gem
+          on Actions::StandardGem
+          on Actions::StandardError
+          on Actions::System::Error
+          on Actions::System::Signal
           on Actions::Text
           on(Sod::Prefabs::Actions::Version, context:)
           on Sod::Prefabs::Actions::Help, self

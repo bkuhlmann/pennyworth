@@ -5,7 +5,7 @@ require "core"
 module Pennyworth
   module Loaders
     # Loads an array gems from the RubyGems API.
-    class RubyGem
+    class Gem
       include Import[:configuration, :http]
 
       def call endpoint

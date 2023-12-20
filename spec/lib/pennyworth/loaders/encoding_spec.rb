@@ -3,7 +3,7 @@
 require "spec_helper"
 require "yaml"
 
-RSpec.describe Pennyworth::Loaders::Encodings do
+RSpec.describe Pennyworth::Loaders::Encoding do
   subject(:loader) { described_class.new }
 
   describe "#call" do

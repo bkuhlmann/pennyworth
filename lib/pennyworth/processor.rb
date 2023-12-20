@@ -4,17 +4,17 @@ module Pennyworth
   # Processes all steps required to render an Alfred Script Filter response.
   class Processor
     def self.for_encodings
-      new loader: Loaders::Encodings.new,
+      new loader: Loaders::Encoding.new,
           presenter: Presenters::Encoding,
           serializer: Serializers::Encoding
     end
 
     def self.for_gems
-      new loader: Loaders::RubyGem.new, presenter: Presenters::Gem, serializer: Serializers::Project
+      new loader: Loaders::Gem.new, presenter: Presenters::Gem, serializer: Serializers::Project
     end
 
     def self.for_http_statuses
-      new loader: Loaders::HTTPStatuses.new,
+      new loader: Loaders::HTTPStatus.new,
           presenter: Presenters::HTTPStatus,
           serializer: Serializers::HTTPStatus
     end
@@ -32,19 +32,19 @@ module Pennyworth
     end
 
     def self.for_standard_errors
-      new loader: Loaders::StandardErrors.new,
+      new loader: Loaders::StandardError.new,
           presenter: Presenters::StandardError,
           serializer: Serializers::StandardError
     end
 
     def self.for_system_errors
-      new loader: Loaders::System::Errors.new,
+      new loader: Loaders::System::Error.new,
           presenter: Presenters::System::Error,
           serializer: Serializers::System::Error
     end
 
     def self.for_system_signals
-      new loader: Loaders::System::Signals.new,
+      new loader: Loaders::System::Signal.new,
           presenter: Presenters::System::Signal,
           serializer: Serializers::System::Signal
     end

@@ -5,8 +5,8 @@ require "sod"
 module Pennyworth
   module CLI
     module Actions
-      # Handles the Standard Gems action.
-      class StandardGems < Sod::Action
+      # Handles the Standard Gem action.
+      class StandardGem < Sod::Action
         include Import[:kernel]
 
         ENDPOINTS = {

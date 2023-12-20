@@ -46,12 +46,12 @@ RSpec.describe Pennyworth::CLI::Shell do
     end
 
     it "answers RubyGems owner script filter items with valid owner" do
-      shell.call %w[--ruby_gems bkuhlmann]
+      shell.call %w[--gems bkuhlmann]
       expect(kernel).to have_received(:puts).with(/items.+title.+Auther/)
     end
 
     it "answers empty RubyGems owner script filter items with invalid owner" do
-      shell.call %w[--ruby_gems bogus-59ddb7b2a4]
+      shell.call %w[--gems bogus-59ddb7b2a4]
       expect(kernel).to have_received(:puts).with({items: []}.to_json)
     end
 
