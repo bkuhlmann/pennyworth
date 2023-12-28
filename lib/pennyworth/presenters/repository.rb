@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require "refinements/strings"
+require "refinements/string"
 
 module Pennyworth
   module Presenters
     # Renders a GitHub repository record into a compatible format for use in Alfred script filters.
     class Repository
-      using Refinements::Strings
+      using Refinements::String
 
       def initialize record, inflector: Inflector.new
         @record = record

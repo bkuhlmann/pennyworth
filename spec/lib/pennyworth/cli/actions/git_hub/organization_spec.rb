@@ -3,7 +3,7 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::CLI::Actions::GitHub::Organization do
-  using Refinements::Structs
+  using Refinements::Struct
 
   subject(:action) { described_class.new processor: }
 

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "forwardable"
-require "refinements/strings"
+require "refinements/string"
 
 module Pennyworth
   module Presenters
@@ -9,7 +9,7 @@ module Pennyworth
     class HTTPStatus
       extend Forwardable
 
-      using Refinements::Strings
+      using Refinements::String
 
       delegate %i[code label url] => :record
 

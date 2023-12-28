@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-require "refinements/strings"
+require "refinements/string"
 
 module Pennyworth
   module Presenters
     # Renders RubyGems records into a compatible format for use in Alfred script filters.
     class Gem
-      using Refinements::Arrays
-      using Refinements::Strings
+      using Refinements::Array
+      using Refinements::String
 
       def initialize record, inflector: Inflector.new
         @record = record

@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require "refinements/arrays"
+require "refinements/array"
 
 module Pennyworth
   module Loaders
     # Loads an array of encoding records.
     class Encoding
-      using Refinements::Arrays
+      using Refinements::Array
 
       def initialize encoding: ::Encoding, model: Models::Encoding
         @encoding = encoding

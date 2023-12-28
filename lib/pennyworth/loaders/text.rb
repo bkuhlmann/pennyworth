@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require "refinements/strings"
+require "refinements/string"
 
 module Pennyworth
   module Loaders
     # Loads an array of text records.
     class Text
-      using Refinements::Strings
+      using Refinements::String
 
       TRANSFORMS = %w[camelcase capitalize downcase size snakecase titleize upcase].freeze
 
