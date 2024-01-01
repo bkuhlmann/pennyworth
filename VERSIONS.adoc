@@ -1,5 +1,17 @@
 = Versions
 
+== 16.0.0 (2024-01-01)
+
+* Updated Circle CI step names - Brooke Kuhlmann
+* Updated gem dependencies - Brooke Kuhlmann
+* Updated to Ruby 3.3.0 - Brooke Kuhlmann
+* Removed Gemfile code prefix from quality group - Brooke Kuhlmann
+* Removed Rakefile code prefix from quality task - Brooke Kuhlmann
+* Removed project loader - Brooke Kuhlmann
+* Refactored implementation to use singular object names - Brooke Kuhlmann
+* Refactored integrations as loaders - Brooke Kuhlmann
+* Refactored loaders to use splat for ignored arguments - Brooke Kuhlmann
+
 == 15.4.1 (2023-11-15)
 
 * Fixed gem loader to find by tag and cache instance - Brooke Kuhlmann
