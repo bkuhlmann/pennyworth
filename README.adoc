@@ -34,7 +34,7 @@ video::https://alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://
 
 While using a {ruby_version_managers_link} is not a hard requirement, it is strongly encouraged since a version manager will give you the freedom to toggle between different Ruby versions since this gem has strict Ruby version requirements (especially in regards to using a modern version of Ruby).
 
-All of the workflows, scripts, examples for this gem use {bash_link} syntax. That said, if you are comfortable with translating Bash syntax to your shell syntax of choice, you can make this gem work in different shells too. That is beyond the scope of this document, though, so leave that exercise up to you.
+All of the workflows, scripts, examples for this gem use {bash_link} syntax. That said, if you are comfortable with translating Bash syntax to your shell syntax of choice, you can make this gem work in different shells too. That is beyond the scope of this document, though, so leave that exercise to you.
 
 == Setup
 
@@ -78,7 +78,7 @@ with others.
 
 From the command line, type `pennyworth` to view usage:
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/usage.png[Usage,width=668,height=499,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/usage.png[Usage,width=667,height=499,role=focal_point]
 
 While the command line options are nice, the real power comes from using Pennyworth in conjunction
 with link:https://www.alfredapp.com/help/workflows/inputs/script-filter/json[Alfred Script Filters].
