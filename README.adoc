@@ -445,6 +445,16 @@ Provides quick access to the link:https://htmx.org[HTMX] JavaScript library.
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
+===== Icon
+
+image:https://alchemists.io/images/projects/pennyworth/screenshots/icon.png[Icon workflow screenshot.,width=706,height=631,role=focal_point]
+
+Provides quick access to icon resources.
+
+1. link:https://alchemists.io/public/alfred/workflows/icon.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
 ===== Internet Protocol (IP)
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/ip.png[IP workflow screenshot.,width=706,height=415,role=focal_point]
@@ -551,6 +561,16 @@ image:https://alchemists.io/images/projects/pennyworth/screenshots/ssl.png[SSL w
 Provides quick access to SSL resources for the security conscious.
 
 1. link:https://alchemists.io/public/alfred/workflows/ssl.alfredworkflow[Download] and double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
+===== Tana
+
+image:https://alchemists.io/images/projects/pennyworth/screenshots/tana.png[Tana workflow screenshot.,width=706,height=631,role=focal_point]
+
+Provides quick access to link:https://tana.inc[Tana] resources.
+
+1. link:https://alchemists.io/public/alfred/workflows/tana.alfredworkflow[Download] and
+   double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Terraform
