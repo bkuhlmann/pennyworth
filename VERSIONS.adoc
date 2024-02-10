@@ -1,5 +1,13 @@
 = Versions
 
+== 16.1.0 (2024-02-10)
+
+* 🟢 Added Icon and Tana workflows - Brooke Kuhlmann
+* 🟢 Added repl_type_completor gem - Brooke Kuhlmann
+* 🔼 Updated to Caliber 0.50.0 - Brooke Kuhlmann
+* 🔼 Updated to Reek 6.3.0 - Brooke Kuhlmann
+* 🔼 Updated usage screenshot - Brooke Kuhlmann
+
 == 16.0.0 (2024-01-01)
 
 * Updated Circle CI step names - Brooke Kuhlmann
