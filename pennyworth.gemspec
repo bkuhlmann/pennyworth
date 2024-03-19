@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "core", "~> 1.0"
   spec.add_dependency "dry-container", "~> 0.11"
   spec.add_dependency "etcher", "~> 1.0"
-  spec.add_dependency "ghub", "~> 0.9"
+  spec.add_dependency "ghub", "~> 0.11"
   spec.add_dependency "http", "~> 5.1"
   spec.add_dependency "infusible", "~> 3.4"
   spec.add_dependency "rack", "~> 3.0"
