@@ -377,7 +377,7 @@ Provides quick access to link:https://www.docker.com[Docker] resources.
 
 ===== Elm
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/elm.png[Elm workflow screenshot.,width=706,height=470,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/elm.png[Elm workflow screenshot.,width=706,height=469,role=focal_point]
 
 Provides quick access to link:https://elm-lang.org[Elm] resources.
 
@@ -397,7 +397,7 @@ Provides quick access to link:https://fs.blog[Farnam Street] resources.
 
 ===== Git
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/git.png[Git workflow screenshot.,width=706,height=415,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/git.png[Git workflow screenshot.,width=706,height=523,role=focal_point]
 
 Provides quick access to link:https://git-scm.com[Git] resources.
 

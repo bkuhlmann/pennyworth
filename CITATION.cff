@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: Please use the following metadata when citing this project in your work.
 title: Pennyworth
 abstract: A command line interface for augmenting Alfred workflows.
-version: 16.2.0
+version: 16.3.0
 license: Hippocratic-2.1
-date-released: 2024-03-03
+date-released: 2024-03-20
 authors:
   - family-names: Kuhlmann
     given-names: Brooke
