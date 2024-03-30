@@ -1,11 +1,6 @@
 # frozen_string_literal: true
 
-require "dry/container/stub"
-require "infusible/stub"
-
 RSpec.shared_context "with application dependencies" do
-  using Infusible::Stub
-
   let :configuration do
     Etcher.new(Pennyworth::Container[:defaults])
           .call(git_hub_organization: "acme", git_hub_user: "test", ruby_gems_owner: "test")
@@ -15,7 +10,7 @@ RSpec.shared_context "with application dependencies" do
   let(:kernel) { class_spy Kernel }
   let(:logger) { Cogger.new id: :pennyworth, io: StringIO.new }
 
-  before { Pennyworth::Import.stub configuration:, kernel:, logger: }
+  before { Pennyworth::Container.stub! configuration:, kernel:, logger: }
 
-  after { Pennyworth::Import.unstub :configuration, :kernel, :logger }
+  after { Pennyworth::Container.restore }
 end
