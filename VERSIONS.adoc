@@ -1,5 +1,11 @@
 = Versions
 
+== 16.5.0 (2024-04-21)
+
+* 🟢 Added PostgreSQL workflow - Brooke Kuhlmann
+* 🔼 Updated to Git Lint 7.3.0 - Brooke Kuhlmann
+* 🔼 Updated to Rake 13.2.0 - Brooke Kuhlmann
+
 == 16.4.0 (2024-04-03)
 
 * 🟢 Added Containable gem - Brooke Kuhlmann

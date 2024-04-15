@@ -485,6 +485,16 @@ Provides quick access to macOS resources.
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
+===== PostgreSQL
+
+image:https://alchemists.io/images/projects/pennyworth/screenshots/postgresql.png[PostgreSQL workflow screenshot.,width=706,height=361,role=focal_point]
+
+Provides quick access to link:https://www.postgresql.org[PostgreSQL] resources.
+
+1. link:https://alchemists.io/public/alfred/workflows/postgresql.alfredworkflow[Download] and double
+   click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
 ===== Rack
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/rack.png[Rack workflow screenshot.,width=706,height=470,role=focal_point]
