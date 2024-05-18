@@ -19,6 +19,7 @@ inflections:
   - "Io Wait": "IO Wait"
   - "Ipaddr": "IP Address"
   - "Irb": "IRB"
+  - "Irb Kit": "IRB Kit"
   - "Json": "JSON"
   - "Mac Os Config": "macOS Configuration"
   - "Mac Os": "MacOS"
