@@ -36,7 +36,7 @@ RSpec.describe Pennyworth::CLI::Shell do
 
     it "answers GitHub user script filter items with valid user" do
       shell.call %w[git_hub --user bkuhlmann]
-      expect(kernel).to have_received(:puts).with(/items.+title.+Alfred/)
+      expect(kernel).to have_received(:puts).with(/items.+title.+Archiver/)
     end
 
     it "answers empty GitHub user script filter items with invalid user" do
