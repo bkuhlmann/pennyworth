@@ -1,5 +1,13 @@
 = Versions
 
+== 16.6.0 (2024-05-27)
+
+* ✅ Fixed shell spec to check for archiver project - Brooke Kuhlmann
+* 🟢 Added IRB Kit gem - Brooke Kuhlmann
+* 🟢 Added IRB Kit inflection - Brooke Kuhlmann
+* 🔼 Updated citation URLs - Brooke Kuhlmann
+* 🔼 Updated to Etcher 1.5.0 - Brooke Kuhlmann
+
 == 16.5.1 (2024-05-16)
 
 * 🔼 Updated RSpec configuration to ignore backtraces in pending specs - Brooke Kuhlmann
