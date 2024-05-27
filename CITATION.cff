@@ -17,5 +17,6 @@ keywords:
  - workflows
  - augmentation
  - enhancements
-repository-code: https://alchemists.io/projects/pennyworth
+repository-code: https://github.com/bkuhlmann/pennyworth
 repository-artifact: https://rubygems.org/gems/pennyworth
+url: https://alchemists.io/projects/pennyworth
