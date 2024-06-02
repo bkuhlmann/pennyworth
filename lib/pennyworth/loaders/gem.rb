@@ -6,10 +6,10 @@ module Pennyworth
   module Loaders
     # Loads an array gems from the RubyGems API.
     class Gem
-      include Import[:configuration, :http]
+      include Import[:settings, :http]
 
       def call endpoint
-        http.get("#{configuration.ruby_gems_api_url}/#{endpoint}")
+        http.get("#{settings.ruby_gems_api_url}/#{endpoint}")
             .then do |response|
               return JSON response.body.to_s, symbolize_names: true if response.status.success?
 

@@ -13,7 +13,7 @@ module Pennyworth
 
         on "--gems", argument: "[HANDLE]"
 
-        default { Container[:configuration].ruby_gems_owner }
+        default { Container[:settings].ruby_gems_owner }
 
         def initialize(processor: Processor.for_gems, **)
           super(**)

@@ -6,10 +6,10 @@ module Pennyworth
   module Loaders
     # Loads an array gems from the Standard Gems API.
     class StandardGem
-      include Import[:configuration, :http]
+      include Import[:settings, :http]
 
       def call endpoint
-        http.get("#{configuration.standard_gems_api_url}/#{endpoint}")
+        http.get("#{settings.standard_gems_api_url}/#{endpoint}")
             .then do |response|
               response.status.success? ? records(response.body.to_s) : Core::EMPTY_HASH
             end

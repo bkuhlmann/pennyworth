@@ -14,7 +14,7 @@ module Pennyworth
 
           on %w[-o --organization], argument: "[HANDLE]"
 
-          default { Container[:configuration].git_hub_organization }
+          default { Container[:settings].git_hub_organization }
 
           def initialize(processor: Processor.for_projects, **)
             super(**)

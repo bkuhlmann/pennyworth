@@ -14,7 +14,7 @@ module Pennyworth
 
           on %w[-u --user], argument: "[HANDLE]"
 
-          default { Container[:configuration].git_hub_user }
+          default { Container[:settings].git_hub_user }
 
           def initialize(processor: Processor.for_projects, **)
             super(**)

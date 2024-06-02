@@ -12,16 +12,13 @@ module Pennyworth
   module Container
     extend Containable
 
-    register :configuration do
-      self[:defaults].add_loader(:yaml, self[:xdg_config].active)
-                     .then { |registry| Etcher.call registry }
-    end
-
-    register :defaults do
+    register :registry do
       Etcher::Registry.new(contract: Configuration::Contract, model: Configuration::Model)
                       .add_loader(:yaml, self[:defaults_path])
+                      .add_loader(:yaml, self[:xdg_config].active)
     end
 
+    register(:settings) { Etcher.call(self[:registry]).dup }
     register(:specification) { Spek::Loader.call "#{__dir__}/../../pennyworth.gemspec" }
     register(:defaults_path) { Pathname(__dir__).join("configuration/defaults.yml") }
     register(:xdg_config) { Runcom::Config.new "pennyworth/configuration.yml" }
