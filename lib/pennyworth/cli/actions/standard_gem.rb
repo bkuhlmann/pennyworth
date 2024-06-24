@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the Standard Gem action.
       class StandardGem < Sod::Action
-        include Import[:kernel]
+        include Import[:io]
 
         ENDPOINTS = {
           "all" => "stdgems.json",
@@ -25,7 +25,7 @@ module Pennyworth
           @endpoints = endpoints
         end
 
-        def call(kind = nil) = kernel.puts processor.call(endpoints.fetch(kind || default)).to_json
+        def call(kind = nil) = io.puts processor.call(endpoints.fetch(kind || default)).to_json
 
         private
 

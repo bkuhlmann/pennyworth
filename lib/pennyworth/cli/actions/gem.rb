@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the RubyGem action.
       class Gem < Sod::Action
-        include Import[:kernel]
+        include Import[:io]
 
         description "Render Alfred RubyGems script filter."
 
@@ -22,7 +22,7 @@ module Pennyworth
 
         def call handle = nil
           endpoint = "owners/#{handle || default}/gems.json"
-          kernel.puts processor.call(endpoint).to_json
+          io.puts processor.call(endpoint).to_json
         end
 
         private

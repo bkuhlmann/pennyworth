@@ -8,7 +8,7 @@ module Pennyworth
       module GitHub
         # Handles the GitHub user action.
         class User < Sod::Action
-          include Import[:kernel]
+          include Import[:io]
 
           description "Specify user."
 
@@ -21,7 +21,7 @@ module Pennyworth
             @processor = processor
           end
 
-          def call(handle = nil) = kernel.puts processor.call("users/#{handle || default}").to_json
+          def call(handle = nil) = io.puts processor.call("users/#{handle || default}").to_json
 
           private
 

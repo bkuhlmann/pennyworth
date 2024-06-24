@@ -3,6 +3,8 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::CLI::Actions::System::Signal do
+  using Refinements::StringIO
+
   subject(:action) { described_class.new }
 
   include_context "with application dependencies"
@@ -10,7 +12,7 @@ RSpec.describe Pennyworth::CLI::Actions::System::Signal do
   describe "#call" do
     it "answers JSON" do
       action.call
-      expect(kernel).to have_received(:puts).with(/items.+title.+ABRT.+subtitle.+6/)
+      expect(io.reread).to match(/items.+title.+ABRT.+subtitle.+6/)
     end
   end
 end

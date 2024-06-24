@@ -3,6 +3,7 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::CLI::Actions::GitHub::Organization do
+  using Refinements::StringIO
   using Refinements::Struct
 
   subject(:action) { described_class.new processor: }
@@ -25,7 +26,7 @@ RSpec.describe Pennyworth::CLI::Actions::GitHub::Organization do
 
     it "answers JSON" do
       action.call "acme"
-      expect(kernel).to have_received(:puts).with([git_hub_record].to_json)
+      expect(io.reread).to match([git_hub_record].to_json)
     end
   end
 end

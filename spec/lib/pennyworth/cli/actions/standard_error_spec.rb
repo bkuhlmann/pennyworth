@@ -3,6 +3,8 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::CLI::Actions::StandardError do
+  using Refinements::StringIO
+
   subject(:action) { described_class.new }
 
   include_context "with application dependencies"
@@ -14,7 +16,7 @@ RSpec.describe Pennyworth::CLI::Actions::StandardError do
   describe "#call" do
     it "answers JSON" do
       action.call
-      expect(kernel).to have_received(:puts).with(/.+title.+ArgumentError.+arg.+ArgumentError/)
+      expect(io.reread).to match(/.+title.+ArgumentError.+arg.+ArgumentError/)
     end
   end
 end

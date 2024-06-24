@@ -8,7 +8,7 @@ module Pennyworth
       module System
         # Handles the system error action.
         class Error < Sod::Action
-          include Import[:kernel]
+          include Import[:io]
 
           description "Render Alfred system errors script filter."
 
@@ -19,7 +19,7 @@ module Pennyworth
             @processor = processor
           end
 
-          def call(*) = kernel.puts processor.call.to_json
+          def call(*) = io.puts processor.call.to_json
 
           private
 

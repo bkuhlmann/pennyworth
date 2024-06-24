@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the HTTP status action.
       class HTTPStatus < Sod::Action
-        include Import[:kernel]
+        include Import[:io]
 
         description "Render Alfred HTTP statuses script filter."
 
@@ -18,7 +18,7 @@ module Pennyworth
           @processor = processor
         end
 
-        def call(*) = kernel.puts processor.call.to_json
+        def call(*) = io.puts processor.call.to_json
 
         private
 

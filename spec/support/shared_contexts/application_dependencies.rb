@@ -4,8 +4,8 @@ RSpec.shared_context "with application dependencies" do
   using Refinements::Struct
 
   let(:settings) { Pennyworth::Container[:settings] }
-  let(:kernel) { class_spy Kernel }
   let(:logger) { Cogger.new id: :pennyworth, io: StringIO.new }
+  let(:io) { StringIO.new }
 
   before do
     settings.merge! Etcher.call(
@@ -15,7 +15,7 @@ RSpec.shared_context "with application dependencies" do
       ruby_gems_owner: "test"
     )
 
-    Pennyworth::Container.stub! kernel:, logger:
+    Pennyworth::Container.stub! logger:, io:
   end
 
   after { Pennyworth::Container.restore }

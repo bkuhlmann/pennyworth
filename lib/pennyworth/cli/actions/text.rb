@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the text action.
       class Text < Sod::Action
-        include Import[:kernel]
+        include Import[:io]
 
         description "Render Alfred text script filter."
 
@@ -18,7 +18,7 @@ module Pennyworth
           @processor = processor
         end
 
-        def call(content) = kernel.puts processor.call(content).to_json
+        def call(content) = io.puts processor.call(content).to_json
 
         private
 

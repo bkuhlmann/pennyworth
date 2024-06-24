@@ -8,7 +8,7 @@ module Pennyworth
       module System
         # Handles the system signal action.
         class Signal < Sod::Action
-          include Import[:kernel]
+          include Import[:io]
 
           description "Render Alfred system signals script filter."
 
@@ -19,7 +19,7 @@ module Pennyworth
             @processor = processor
           end
 
-          def call(*) = kernel.puts processor.call.to_json
+          def call(*) = io.puts processor.call.to_json
 
           private
 

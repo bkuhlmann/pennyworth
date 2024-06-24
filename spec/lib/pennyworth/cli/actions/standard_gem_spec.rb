@@ -3,6 +3,7 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::CLI::Actions::StandardGem do
+  using Refinements::StringIO
   using Refinements::Struct
 
   subject(:action) { described_class.new processor: }
@@ -40,7 +41,7 @@ RSpec.describe Pennyworth::CLI::Actions::StandardGem do
 
     it "answers JSON" do
       action.call
-      expect(kernel).to have_received(:puts).with([standard_gems_record].to_json)
+      expect(io.reread).to match([standard_gems_record].to_json)
     end
   end
 end
