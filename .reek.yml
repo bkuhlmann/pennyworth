@@ -3,12 +3,6 @@ exclude_paths:
   - vendor
 
 detectors:
-  ControlParameter:
-    exclude:
-      - "Pennyworth::CLI::Actions::GitHub::Organization#call"
-      - "Pennyworth::CLI::Actions::GitHub::User#call"
-      - "Pennyworth::CLI::Actions::Gem#call"
-      - "Pennyworth::CLI::Actions::StandardGem#call"
   LongParameterList:
     enabled: false
   ModuleInitialize:

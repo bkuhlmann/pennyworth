@@ -20,10 +20,7 @@ module Pennyworth
           @processor = processor
         end
 
-        def call handle = nil
-          endpoint = "owners/#{handle || default}/gems.json"
-          io.puts processor.call(endpoint).to_json
-        end
+        def call(handle = default) = io.puts processor.call("owners/#{handle}/gems.json").to_json
 
         private
 

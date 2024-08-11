@@ -25,7 +25,7 @@ module Pennyworth
           @endpoints = endpoints
         end
 
-        def call(kind = nil) = io.puts processor.call(endpoints.fetch(kind || default)).to_json
+        def call(kind = default) = io.puts processor.call(endpoints.fetch(kind)).to_json
 
         private
 

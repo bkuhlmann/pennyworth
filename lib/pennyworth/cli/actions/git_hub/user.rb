@@ -21,7 +21,7 @@ module Pennyworth
             @processor = processor
           end
 
-          def call(handle = nil) = io.puts processor.call("users/#{handle || default}").to_json
+          def call(handle = default) = io.puts processor.call("users/#{handle}").to_json
 
           private
 
