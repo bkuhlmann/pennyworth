@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.metadata = {
     "bug_tracker_uri" => "https://github.com/bkuhlmann/pennyworth/issues",
     "changelog_uri" => "https://alchemists.io/projects/pennyworth/versions",
-    "documentation_uri" => "https://alchemists.io/projects/pennyworth",
+    "homepage_uri" => "https://alchemists.io/projects/pennyworth",
     "funding_uri" => "https://github.com/sponsors/bkuhlmann",
     "label" => "Pennyworth",
     "rubygems_mfa_required" => "true",
