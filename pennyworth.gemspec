@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "http", "~> 5.1"
   spec.add_dependency "infusible", "~> 3.8"
   spec.add_dependency "rack", "~> 3.0"
-  spec.add_dependency "refinements", "~> 12.7"
+  spec.add_dependency "refinements", "~> 12.8"
   spec.add_dependency "runcom", "~> 11.5"
   spec.add_dependency "sod", "~> 0.14"
   spec.add_dependency "spek", "~> 3.0"
