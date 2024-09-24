@@ -23,6 +23,12 @@ RSpec.describe Pennyworth::Processor do
     end
   end
 
+  describe ".for_htmx" do
+    it "answers new instance" do
+      expect(described_class.for_htmx).to be_a(described_class)
+    end
+  end
+
   describe ".for_projects" do
     it "answers new instance" do
       expect(described_class.for_projects).to be_a(described_class)

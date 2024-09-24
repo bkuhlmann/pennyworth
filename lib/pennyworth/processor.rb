@@ -19,6 +19,10 @@ module Pennyworth
           serializer: Serializers::HTTPStatus
     end
 
+    def self.for_htmx
+      new loader: Loaders::HTMX.new, presenter: Presenters::HTMX, serializer: Serializers::HTMX
+    end
+
     def self.for_projects
       new loader: Loaders::GitHub.new,
           presenter: Presenters::Repository,
