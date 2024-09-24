@@ -22,7 +22,7 @@ module Pennyworth
     register(:specification) { Spek::Loader.call "#{__dir__}/../../pennyworth.gemspec" }
     register(:defaults_path) { Pathname(__dir__).join("configuration/defaults.yml") }
     register(:xdg_config) { Runcom::Config.new "pennyworth/configuration.yml" }
-    register :http, HTTP
+    register(:http) { HTTP.timeout 3 }
     register(:logger) { Cogger.new id: :pennyworth }
     register :io, STDOUT
   end
