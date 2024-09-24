@@ -4,7 +4,7 @@ require "forwardable"
 
 module Pennyworth
   module Presenters
-    # Renders text into a compatible format for use in Alfred script filters.
+    # Shapes a text record for serialization.
     class Text
       extend Forwardable
 

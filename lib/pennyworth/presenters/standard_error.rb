@@ -4,7 +4,7 @@ require "refinements/array"
 
 module Pennyworth
   module Presenters
-    # Renders a standard error into a compatible format for use in Alfred script filters.
+    # Shapes a standard error record for serialization.
     class StandardError
       using Refinements::Array
 

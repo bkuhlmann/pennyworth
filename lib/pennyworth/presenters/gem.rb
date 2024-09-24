@@ -4,7 +4,7 @@ require "refinements/string"
 
 module Pennyworth
   module Presenters
-    # Renders RubyGems records into a compatible format for use in Alfred script filters.
+    # Shapes a RubyGems record for serialization.
     class Gem
       using Refinements::Array
       using Refinements::String

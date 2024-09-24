@@ -3,7 +3,7 @@
 module Pennyworth
   module Presenters
     module System
-      # Renders strings into a compatible format for use in Alfred script filters.
+      # Shapes a system signal record for serialization.
       class Signal
         def initialize record
           @record = record

@@ -5,7 +5,7 @@ require "forwardable"
 module Pennyworth
   module Presenters
     module System
-      # Renders system error into a compatible format for use in Alfred script filters.
+      # Shapes a system error record for serialization.
       class Error
         extend Forwardable
 

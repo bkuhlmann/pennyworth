@@ -4,7 +4,7 @@ require "refinements/string"
 
 module Pennyworth
   module Presenters
-    # Renders a GitHub repository record into a compatible format for use in Alfred script filters.
+    # Shapes a repository record for serialization.
     class Repository
       using Refinements::String
 

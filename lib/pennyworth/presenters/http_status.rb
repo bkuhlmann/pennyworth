@@ -5,7 +5,7 @@ require "refinements/string"
 
 module Pennyworth
   module Presenters
-    # Renders system error into a compatible format for use in Alfred script filters.
+    # Shapes a HTTP status record for serialization.
     class HTTPStatus
       extend Forwardable
 

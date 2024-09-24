@@ -2,7 +2,7 @@
 
 module Pennyworth
   module Presenters
-    # Renders encoding into a compatible format for use in Alfred script filters.
+    # Shapes an encoding record for serialization.
     class Encoding
       def initialize record
         @record = record
