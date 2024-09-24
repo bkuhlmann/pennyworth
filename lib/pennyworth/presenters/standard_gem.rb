@@ -21,10 +21,11 @@ module Pennyworth
 
       def subtitle = record.fetch :description
 
-      # :reek:FeatureEnvy
       def version
         versions = record.fetch :versions, Core::EMPTY_HASH
-        (versions[:bundled] || versions[:default] || versions).values.first
+        bundled, defaults = versions.values_at :bundled, :default
+
+        (bundled || defaults || versions).values.first
       end
 
       def site_url = record.fetch(:sourceRepository, Core::EMPTY_STRING)
