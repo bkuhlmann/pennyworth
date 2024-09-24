@@ -76,6 +76,9 @@ git_hub:
 http:
   statuses:
     url: "https://developer.mozilla.org/docs/Web/HTTP/Status"
+htmx:
+  examples_uri: "https://htmx.org/examples"
+  references_uri: "https://htmx.org/reference"
 ruby_gems:
   api_url: "https://rubygems.org/api/v1"
 standard_gems:

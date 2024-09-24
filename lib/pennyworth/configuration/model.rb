@@ -9,6 +9,8 @@ module Pennyworth
                        :git_hub_organization,
                        :git_hub_user,
                        :http_statuses_url,
+                       :htmx_examples_uri,
+                       :htmx_references_uri,
                        :ruby_gems_api_url,
                        :ruby_gems_owner,
                        :standard_gems_api_url
