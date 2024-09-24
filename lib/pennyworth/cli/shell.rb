@@ -31,6 +31,11 @@ module Pennyworth
             on Actions::GitHub::User
           end
 
+          on "htmx", "Render htmx script filters" do
+            on Actions::HTMX::Example
+            on Actions::HTMX::Reference
+          end
+
           on Actions::Encoding
           on Actions::HTTPStatus
           on Actions::Gem

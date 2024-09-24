@@ -45,6 +45,16 @@ RSpec.describe Pennyworth::CLI::Shell do
       expect(io.reread).to eq("#{{items: []}.to_json}\n")
     end
 
+    it "answers htmx examples" do
+      shell.call %w[htmx --examples]
+      expect(io.reread).to match(/items.+title.+Click To Edit.+subtitle.+Demonstrates/)
+    end
+
+    it "answers htmx references" do
+      shell.call %w[htmx --references]
+      expect(io.reread).to match(/items.+title.+hx-boost.+subtitle.+Add/)
+    end
+
     it "answers RubyGems owner script filter items with valid owner" do
       shell.call %w[--gems bkuhlmann]
       expect(io.reread).to match(/items.+title.+Auther/)
