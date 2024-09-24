@@ -2,7 +2,7 @@
 
 module Pennyworth
   module Serializers
-    # Serializes a text into a compatible format for parsing within Alfred script filters.
+    # Serializes a text presenter for parsing by Alfred script filters.
     class Text
       def initialize presenter
         @presenter = presenter

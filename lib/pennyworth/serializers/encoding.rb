@@ -2,7 +2,7 @@
 
 module Pennyworth
   module Serializers
-    # Serializes a encoding into a compatible format for parsing within Alfred script filters.
+    # Serializes an encoding presenter for parsing by Alfred script filters.
     class Encoding
       using Refinements::Array
 

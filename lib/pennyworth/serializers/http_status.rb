@@ -2,7 +2,7 @@
 
 module Pennyworth
   module Serializers
-    # Serializes a HTTP status into a compatible format for parsing within Alfred script filters.
+    # Serializes a HTTP status presenter for parsing by Alfred script filters.
     class HTTPStatus
       def initialize presenter
         @presenter = presenter

@@ -3,7 +3,7 @@
 module Pennyworth
   module Serializers
     module System
-      # Serializes a system error into a compatible format for parsing within Alfred script filters.
+      # Serializes a system error presenter for parsing by Alfred script filters.
       class Error
         def initialize presenter
           @presenter = presenter

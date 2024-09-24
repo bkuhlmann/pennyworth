@@ -2,7 +2,7 @@
 
 module Pennyworth
   module Serializers
-    # Serializes a standard error into a compatible format for parsing within Alfred script filters.
+    # Serializes a standard error presenter for parsing by Alfred script filters.
     class StandardError
       def initialize presenter
         @presenter = presenter

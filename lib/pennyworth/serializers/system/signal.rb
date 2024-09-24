@@ -3,7 +3,7 @@
 module Pennyworth
   module Serializers
     module System
-      # Serializes a signal into a compatible format for parsing within Alfred script filters.
+      # Serializes a system signal presenter for parsing by Alfred script filters.
       class Signal
         def initialize presenter
           @presenter = presenter

@@ -2,7 +2,7 @@
 
 module Pennyworth
   module Serializers
-    # Serializes a project into a compatible format for parsing within Alfred script filters.
+    # Serializes a project presenter for parsing by Alfred script filters.
     class Project
       def initialize presenter
         @presenter = presenter
