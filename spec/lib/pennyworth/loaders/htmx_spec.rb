@@ -39,12 +39,12 @@ RSpec.describe Pennyworth::Loaders::HTMX do
           label: "htmx-added",
           description: "Applied to a new piece of content before it is swapped, " \
                        "removed after it is settled.",
-          uri: nil
+          uri: "https://htmx.org/reference"
         ],
         Pennyworth::Models::HTMX[
           label: "HX-Boosted",
           description: "Indicates that the request is via an element using `hx-boost`.",
-          uri: nil
+          uri: "https://htmx.org/reference"
         ],
         Pennyworth::Models::HTMX[
           label: "HX-Location",
@@ -65,7 +65,7 @@ RSpec.describe Pennyworth::Loaders::HTMX do
         Pennyworth::Models::HTMX[
           label: "htmx.config.historyEnabled",
           description: "Defaults to `true`, really only useful for testing.",
-          uri: nil
+          uri: "https://htmx.org/reference"
         ]
       ]
     end

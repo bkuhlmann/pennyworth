@@ -34,9 +34,7 @@ module Pennyworth
         read(uri).each.with_object [] do |row, entries|
           next unless row.locate("td") in Ox::Element => item, Ox::Element => description
 
-          label = item.locate("*/code").first || item.locate("a").first
-
-          entries.append record_for(label, description, item)
+          entries.append record_for(item, description, uri)
         end
       end
 
@@ -52,11 +50,11 @@ module Pennyworth
 
       def parse_rows(document) = parser.parse(document).locate "*/tr"
 
-      def record_for label, description, item
+      def record_for item, description, uri
         model[
-          label: label.text,
+          label: (item.locate("*/code").first || item.locate("a").first).text,
           description: "#{self.class.text_for description}.",
-          uri: item.locate("*/@href").first
+          uri: item.locate("*/@href").first || uri
         ]
       end
     end
