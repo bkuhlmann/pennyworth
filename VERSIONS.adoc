@@ -1,5 +1,9 @@
 = Versions
 
+== 17.4.1 (2024-09-25)
+
+* ✅ Fixed htmx loader to fallback to root URI when none found - Brooke Kuhlmann
+
 == 17.4.0 (2024-09-24)
 
 * ✅ Fixed presenter descriptions - Brooke Kuhlmann

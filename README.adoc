@@ -2,7 +2,9 @@
 :toclevels: 5
 :figure-caption!:
 
+:alfred_link: link:https://www.alfredapp.com[Alfred]
 :bash_link: link:https://www.gnu.org/software/bash[Bash]
+:ruby_link: link:https://www.ruby-lang.org[Ruby]
 :ruby_version_managers_link: link:https://alchemists.io/articles/ruby_version_managers[Ruby Version Manager]
 
 = Pennyworth
@@ -28,9 +30,9 @@ video::https://alchemists.io/videos/projects/pennyworth/demo.mp4[poster=https://
 
 . link:https://www.apple.com/macos[macOS]
 . {bash_link}
-. link:https://www.alfredapp.com[Alfred]
+. {alfred_link}
 . link:https://www.alfredapp.com/purchase[Alfred Powerpack]
-. link:https://www.ruby-lang.org[Ruby]
+. {ruby_link}
 
 While using a {ruby_version_managers_link} is not a hard requirement, it is strongly encouraged since a version manager will give you the freedom to toggle between different Ruby versions since this gem has strict Ruby version requirements (especially in regards to using a modern version of Ruby).
 
@@ -201,15 +203,19 @@ directly].
 
 === Workflows
 
-Not all workflows require Pennyworth to run properly (see the _Other_ section below for details).
-For the workflows that _do_ require Pennyworth support, the following assumptions are made:
+All workflows are split into two categories:
 
-1. Your link:https://alchemists.io/projects/dotfiles[Dotfiles] are configured to use {bash_link} and load your environment appropriately. Bash is not a hard requirement, though. You can use _any shell_ you are comfortable with as long as you teach Alfred to load your development environment before running the Alfred Workflow.
-2. You have the latest version of Alfred, Ruby, and Pennyworth installed.
-3. You are using a {ruby_version_managers_link} which ensures Ruby is on your load path. As mentioned in the _Requirements_ section above, this is not a hard requirement so if you have the correct version of Ruby required by this gem on your path, that'll work too.
+* xref:_ruby_required[Ruby Required]
+* xref:_ruby_optional[Ruby Optional]
 
-With the above requirements in mind, the following sections document how to download and install all
-Pennyworth workflows that are compatible with Alfred. Should you want to tweak any of these
+For workflows that _do_ require {ruby_link} and this gem, the following assumptions are made:
+
+. Your link:https://alchemists.io/projects/dotfiles[Dotfiles] are configured to use {bash_link} and load your environment appropriately. Bash is not a hard requirement, though. You can use _any shell_ you are comfortable with as long as you teach Alfred to load your development environment before running the Alfred Workflow.
+. You have the latest version of {alfred_link}, {ruby_link}, and this gem installed.
+. You are using a {ruby_version_managers_link} which ensures Ruby is on your load path. As mentioned in the xref:_requirements[Requirements], this is not a hard requirement so if you have the correct version of Ruby required by this gem on your path, that'll work too.
+
+With the above in mind, the following sections document how to download and install all
+Pennyworth workflows that are compatible with {alfred_link}. Should you want to tweak any of these
 workflows, you'd only need to edit an existing workflow or build your own with these settings:
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/script_filter.png[Script Filter,width=776,height=635,role=focal_point]
@@ -224,7 +230,11 @@ to all workflows depending on what kind of item is currently selected within the
   current selection.
 * `ENTER` Will either copy selection to clipboard or launch URL in default web browser.
 
-==== Alchemists
+==== Ruby Required
+
+The following workflows require {ruby_link} -- and this gem -- to unleash all capabilities.
+
+===== Alchemists
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/alchemists-projects.png[Alchemists Projects,width=706,height=631,role=focal_point]
 
@@ -234,7 +244,7 @@ Provides quick access to link:https://alchemists.io[Alchemists] resources.
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
-==== Dry RB
+===== Dry RB
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/dry.png[Dry Gems,width=706,height=631,role=focal_point]
 
@@ -244,7 +254,17 @@ Provides quick access to link:https://dry-rb.org[Dry RB] resources.
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
-==== RuboCop
+===== htmx
+
+image:https://alchemists.io/images/projects/pennyworth/screenshots/htmx.png[htmx workflow screenshot.,width=706,height=631,role=focal_point]
+
+Provides quick access to the link:https://htmx.org[htmx] JavaScript library.
+
+1. link:https://alchemists.io/public/alfred/workflows/htmx.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
+===== RuboCop
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/rubocop-projects.png[Rubocop Projects,width=706,height=632,role=focal_point]
 
@@ -254,7 +274,7 @@ Provides quick access to link:https://docs.rubocop.org/rubocop[RuboCop] resource
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
-==== Ruby
+===== Ruby
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/ruby.png[Ruby workflow screenshot,width=706,height=631,role=focal_point]
 
@@ -264,9 +284,9 @@ Provides quick access to link:https://www.ruby-lang.org[Ruby] resources.
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
-==== Other
+==== Ruby Optional
 
-The following workflows don't require this gem to use but are provided for convenience in case they are of aid to your own productivity.
+The following workflows don't require {ruby_link} -- or this gem -- to use but are provided for convenience in case they can augment your own workflow further.
 
 ===== Acronyms
 
@@ -436,16 +456,6 @@ image:https://alchemists.io/images/projects/pennyworth/screenshots/html.png[HTML
 Provides quick access to the link:https://html.spec.whatwg.org/multipage[HTML] language.
 
 1. link:https://alchemists.io/public/alfred/workflows/html.alfredworkflow[Download] and
-   double click to install.
-2. Click on _Configure Workflow_ to view documentation.
-
-===== htmx
-
-image:https://alchemists.io/images/projects/pennyworth/screenshots/htmx.png[htmx workflow screenshot.,width=706,height=631,role=focal_point]
-
-Provides quick access to the link:https://htmx.org[htmx] JavaScript library.
-
-1. link:https://alchemists.io/public/alfred/workflows/htmx.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
