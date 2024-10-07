@@ -1,5 +1,14 @@
 = Versions
 
+== 17.5.0 (2024-10-07)
+
+* 🟢 Added CLI htmx extensions action - Brooke Kuhlmann
+* 🟢 Added CLI shell htmx extensions - Brooke Kuhlmann
+* 🟢 Added htmx extensions configuration - Brooke Kuhlmann
+* 🟢 Added htmx site URI configuration - Brooke Kuhlmann
+* 🔼 Updated htmx loader to support extensions - Brooke Kuhlmann
+* 🔼 Updated to Refinements 12.9.0 - Brooke Kuhlmann
+
 == 17.4.1 (2024-09-25)
 
 * ✅ Fixed htmx loader to fallback to root URI when none found - Brooke Kuhlmann

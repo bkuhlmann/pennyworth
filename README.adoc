@@ -4,7 +4,9 @@
 
 :alfred_link: link:https://www.alfredapp.com[Alfred]
 :bash_link: link:https://www.gnu.org/software/bash[Bash]
+:htmx_link: link:https://htmx.org[htmx]
 :ruby_link: link:https://www.ruby-lang.org[Ruby]
+:ruby_string_format_link: link:https://docs.ruby-lang.org/en/master/format_specifications_rdoc.html[String Format]
 :ruby_version_managers_link: link:https://alchemists.io/articles/ruby_version_managers[Ruby Version Manager]
 
 = Pennyworth
@@ -181,8 +183,10 @@ http:
   statuses:
     url: "https://developer.mozilla.org/docs/Web/HTTP/Status"
 htmx:
-  examples_uri: "https://htmx.org/examples"
-  references_uri: "https://htmx.org/reference"
+  examples_uri: "%<htmx_site_uri>s/examples"
+  extensions_uri: "%<htmx_site_uri>s/extensions"
+  references_uri: "%<htmx_site_uri>s/reference"
+  site_uri: "https://htmx.org"
 ruby_gems:
   api_url: "https://rubygems.org/api/v1"
 standard_gems:
@@ -191,6 +195,8 @@ standard_gems:
 
 Feel free to take this default configuration, modify, and save as your own custom
 `configuration.yml`.
+
+For {htmx_link}, the Ruby {ruby_string_format_link} specification is used which means you can define the `site_uri` once and have it automatically resolved in all URIs that reference it. Otherwise, you can use literal URIs if desired.
 
 === Themes
 
@@ -258,7 +264,7 @@ Provides quick access to link:https://dry-rb.org[Dry RB] resources.
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/htmx.png[htmx workflow screenshot.,width=706,height=631,role=focal_point]
 
-Provides quick access to the link:https://htmx.org[htmx] JavaScript library.
+Provides quick access to the {htmx_link} JavaScript library.
 
 1. link:https://alchemists.io/public/alfred/workflows/htmx.alfredworkflow[Download] and
    double click to install.
@@ -648,7 +654,7 @@ bin/console
 
 The following documents the workflow used to process all actions from Alfred.
 
-image::https://alchemists.io/images/projects/pennyworth/doc/architecture.svg[Architecture Diagram]
+image::https://alchemists.io/images/projects/pennyworth/doc/architecture.png[Architecture Diagram,width=1265,height=2377,role=focal_point]
 
 == Tests
 
