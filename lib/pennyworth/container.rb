@@ -16,6 +16,9 @@ module Pennyworth
       Etcher::Registry.new(contract: Configuration::Contract, model: Configuration::Model)
                       .add_loader(:yaml, self[:defaults_path])
                       .add_loader(:yaml, self[:xdg_config].active)
+                      .add_transformer(:format, :htmx_examples_uri)
+                      .add_transformer(:format, :htmx_extensions_uri)
+                      .add_transformer(:format, :htmx_references_uri)
     end
 
     register(:settings) { Etcher.call(self[:registry]).dup }

@@ -11,6 +11,7 @@ module Pennyworth
                        :http_statuses_url,
                        :htmx_examples_uri,
                        :htmx_references_uri,
+                       :htmx_site_uri,
                        :ruby_gems_api_url,
                        :ruby_gems_owner,
                        :standard_gems_api_url
