@@ -14,6 +14,7 @@ module Pennyworth
       optional(:git_hub_user).filled :string
       required(:http_statuses_url).filled :string
       required(:htmx_examples_uri).filled :string
+      required(:htmx_extensions_uri).filled :string
       required(:htmx_references_uri).filled :string
       required(:htmx_site_uri).filled :string
       required(:ruby_gems_api_url).filled :string
