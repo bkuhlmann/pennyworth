@@ -33,6 +33,7 @@ module Pennyworth
 
           on "htmx", "Render htmx script filters" do
             on Actions::HTMX::Example
+            on Actions::HTMX::Extension
             on Actions::HTMX::Reference
           end
 
