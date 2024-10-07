@@ -50,6 +50,11 @@ RSpec.describe Pennyworth::CLI::Shell do
       expect(io.reread).to match(/items.+title.+Click To Edit.+subtitle.+Demonstrates/)
     end
 
+    it "answers htmx extensions" do
+      shell.call %w[htmx --extensions]
+      expect(io.reread).to match(/items.+title.+ajax-header.+subtitle.+Adds/)
+    end
+
     it "answers htmx references" do
       shell.call %w[htmx --references]
       expect(io.reread).to match(/items.+title.+hx-boost.+subtitle.+Add/)
