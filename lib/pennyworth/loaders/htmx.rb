@@ -8,7 +8,7 @@ module Pennyworth
   module Loaders
     # Loads htmx documentation by scraping web page.
     class HTMX
-      include Import[:http]
+      include Import[:http, :settings]
 
       using Refinements::String
 
@@ -54,7 +54,7 @@ module Pennyworth
         model[
           label: (item.locate("*/code").first || item.locate("a").first).text,
           description: "#{self.class.text_for description}.",
-          uri: item.locate("*/@href").first || uri
+          uri: (item.locate("*/@href").first || uri).sub(%r(\A(?=/)), settings.htmx_site_uri)
         ]
       end
     end

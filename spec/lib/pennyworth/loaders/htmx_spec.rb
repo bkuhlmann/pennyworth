@@ -23,6 +23,43 @@ RSpec.describe Pennyworth::Loaders::HTMX do
   end
 
   describe "#call" do
+    let :examples do
+      [
+        Pennyworth::Models::HTMX[
+          label: "Click To Edit",
+          description: "Demonstrates inline editing of a data object.",
+          uri: "https://htmx.org/examples/click-to-edit/"
+        ],
+        Pennyworth::Models::HTMX[
+          label: "Bulk Update",
+          description: "Demonstrates bulk updating of multiple rows of data.",
+          uri: "https://htmx.org/examples/bulk-update/"
+        ],
+        Pennyworth::Models::HTMX[
+          label: "Click To Load",
+          description: "Demonstrates clicking to load more rows in a table.",
+          uri: "https://htmx.org/examples/click-to-load/"
+        ]
+      ]
+    end
+
+    let :extensions do
+      [
+        Pennyworth::Models::HTMX[
+          label: "head-support",
+          description: "Provides support for merging head tag information (styles, etc.) " \
+                       "in htmx requests.",
+          uri: "https://htmx.org/extensions/head-support"
+        ],
+        Pennyworth::Models::HTMX[
+          label: "ajax-header",
+          description: "Adds an `X-Requested-With` header to all requests made by htmx.",
+          uri: "https://github.com/bigskysoftware/htmx-extensions/blob/main/src/ajax-header" \
+               "/README.md"
+        ]
+      ]
+    end
+
     let :references do
       [
         Pennyworth::Models::HTMX[
@@ -70,32 +107,16 @@ RSpec.describe Pennyworth::Loaders::HTMX do
       ]
     end
 
-    let :examples do
-      [
-        Pennyworth::Models::HTMX[
-          label: "Click To Edit",
-          description: "Demonstrates inline editing of a data object.",
-          uri: "https://htmx.org/examples/click-to-edit/"
-        ],
-        Pennyworth::Models::HTMX[
-          label: "Bulk Update",
-          description: "Demonstrates bulk updating of multiple rows of data.",
-          uri: "https://htmx.org/examples/bulk-update/"
-        ],
-        Pennyworth::Models::HTMX[
-          label: "Click To Load",
-          description: "Demonstrates clicking to load more rows in a table.",
-          uri: "https://htmx.org/examples/click-to-load/"
-        ]
-      ]
+    it "answers examples" do
+      expect(scrapper.call(settings.htmx_examples_uri)).to match(array_including(examples))
+    end
+
+    it "answers extensions" do
+      expect(scrapper.call(settings.htmx_extensions_uri)).to match(array_including(extensions))
     end
 
     it "answers references" do
       expect(scrapper.call(settings.htmx_references_uri)).to match(array_including(references))
-    end
-
-    it "answers examples" do
-      expect(scrapper.call(settings.htmx_examples_uri)).to match(array_including(examples))
     end
 
     it "answers empty array with invalid status" do
