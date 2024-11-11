@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the encoding action.
       class Encoding < Sod::Action
-        include Import[:io]
+        include Dependencies[:io]
 
         description "Render Alfred encodings script filter."
 

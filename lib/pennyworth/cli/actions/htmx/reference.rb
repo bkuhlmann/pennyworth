@@ -8,7 +8,7 @@ module Pennyworth
       module HTMX
         # Handles references documentation action.
         class Reference < Sod::Action
-          include Import[:settings, :io]
+          include Dependencies[:settings, :io]
 
           description "Render Alfred references script filter."
 

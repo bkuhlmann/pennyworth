@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the HTTP status action.
       class HTTPStatus < Sod::Action
-        include Import[:io]
+        include Dependencies[:io]
 
         description "Render Alfred HTTP statuses script filter."
 

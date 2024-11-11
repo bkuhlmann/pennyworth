@@ -8,7 +8,7 @@ module Pennyworth
       module GitHub
         # Handles the GitHub user action.
         class User < Sod::Action
-          include Import[:io]
+          include Dependencies[:io]
 
           description "Specify user."
 

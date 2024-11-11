@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the RubyGem action.
       class Gem < Sod::Action
-        include Import[:io]
+        include Dependencies[:io]
 
         description "Render Alfred RubyGems script filter."
 

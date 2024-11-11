@@ -8,7 +8,7 @@ module Pennyworth
       module System
         # Handles the system signal action.
         class Signal < Sod::Action
-          include Import[:io]
+          include Dependencies[:io]
 
           description "Render Alfred system signals script filter."
 

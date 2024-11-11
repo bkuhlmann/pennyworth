@@ -8,7 +8,7 @@ module Pennyworth
   module Loaders
     # Loads htmx documentation by scraping web page.
     class HTMX
-      include Import[:http, :settings]
+      include Dependencies[:http, :settings]
 
       using Refinements::String
 

@@ -8,7 +8,7 @@ module Pennyworth
       module HTMX
         # Handles extension documentation action.
         class Extension < Sod::Action
-          include Import[:settings, :io]
+          include Dependencies[:settings, :io]
 
           description "Render Alfred extensions script filter."
 

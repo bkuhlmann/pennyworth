@@ -6,7 +6,7 @@ module Pennyworth
   module Loaders
     # Loads an array gems from the Standard Gems API.
     class StandardGem
-      include Import[:settings, :http]
+      include Dependencies[:settings, :http]
 
       def call endpoint
         http.get("#{settings.standard_gems_api_url}/#{endpoint}")

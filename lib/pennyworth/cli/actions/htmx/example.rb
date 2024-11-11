@@ -8,7 +8,7 @@ module Pennyworth
       module HTMX
         # Handles examples documentation action.
         class Example < Sod::Action
-          include Import[:settings, :io]
+          include Dependencies[:settings, :io]
 
           description "Render Alfred examples script filter."
 
