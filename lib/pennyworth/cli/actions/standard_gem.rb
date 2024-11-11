@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the Standard Gem action.
       class StandardGem < Sod::Action
-        include Import[:io]
+        include Dependencies[:io]
 
         ENDPOINTS = {
           "all" => "stdgems.json",

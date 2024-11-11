@@ -8,7 +8,7 @@ module Pennyworth
       module System
         # Handles the system error action.
         class Error < Sod::Action
-          include Import[:io]
+          include Dependencies[:io]
 
           description "Render Alfred system errors script filter."
 

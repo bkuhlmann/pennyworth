@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the text action.
       class Text < Sod::Action
-        include Import[:io]
+        include Dependencies[:io]
 
         description "Render Alfred text script filter."
 
