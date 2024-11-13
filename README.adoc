@@ -387,7 +387,7 @@ Provides quick access to link:https://crystal-lang.org[Crystal] resources.
 
 ===== CSS
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/css.png[CSS workflow screenshot.,width=706,height=470,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/css.png[CSS workflow screenshot.,width=706,height=631,role=focal_point]
 
 Provides quick access to link:https://www.w3.org/Style/CSS/specs.en.html[CSS] resources.
 
