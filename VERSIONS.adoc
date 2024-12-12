@@ -1,5 +1,30 @@
 = Versions
 
+== 18.0.0 (2024-12-28)
+
+* ✅ Fixed CSS workflow screenshot height - Brooke Kuhlmann
+* ✅ Fixed htmx loader encoding warnings - Brooke Kuhlmann
+* 🟢 Added container processor registrations - Brooke Kuhlmann
+* 🟢 Added version release notes - Brooke Kuhlmann
+* 🔼 Updated Infusible dependency terminology - Brooke Kuhlmann
+* 🔼 Updated all URL configurations to be URIs - Brooke Kuhlmann
+* 🔼 Updated to Caliber 0.68.0 - Brooke Kuhlmann
+* 🔼 Updated to Cogger 1.0.0 - Brooke Kuhlmann
+* 🔼 Updated to Containable 1.0.0 - Brooke Kuhlmann
+* 🔼 Updated to Core 2.0.0 - Brooke Kuhlmann
+* 🔼 Updated to Etcher 3.0.0 - Brooke Kuhlmann
+* 🔼 Updated to Ghub 0.22.0 - Brooke Kuhlmann
+* 🔼 Updated to Git Lint 9.0.0 - Brooke Kuhlmann
+* 🔼 Updated to HTTP 5.2.0 - Brooke Kuhlmann
+* 🔼 Updated to IRB Kit 1.0.0 - Brooke Kuhlmann
+* 🔼 Updated to Infusible 4.0.0 - Brooke Kuhlmann
+* 🔼 Updated to Rack 3.1.0 - Brooke Kuhlmann
+* 🔼 Updated to Refinements 13.0.0 - Brooke Kuhlmann
+* 🔼 Updated to Ruby 3.4.0 - Brooke Kuhlmann
+* 🔼 Updated to Runcom 12.0.0 - Brooke Kuhlmann
+* 🔼 Updated to Sod 1.0.0 - Brooke Kuhlmann
+* 🔼 Updated to Spek 4.0.0 - Brooke Kuhlmann
+
 == 17.8.0 (2024-11-09)
 
 * 🔼 Updated to Caliber 0.64.0 - Brooke Kuhlmann
