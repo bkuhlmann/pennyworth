@@ -18,7 +18,13 @@ module Pennyworth
 
       def self.text_for element
         parts = element.each.with_object [] do |item, content|
-          content.append item.is_a?(Ox::Element) ? "`#{item.text}`" : item
+          text = if item.is_a? Ox::Element
+                   "`#{item.text}`"
+                 else
+                   item.encode ::Encoding::UTF_8, replace: Core::EMPTY_STRING
+                 end
+
+          content.append text
         end
 
         parts.join.up.delete_suffix "."
