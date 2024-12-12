@@ -19,13 +19,13 @@ module Pennyworth
 
       def subtitle = record.fetch(:description)
 
-      def site_url = record.fetch(:homepage)
+      def site_uri = record.fetch(:homepage)
 
-      def source_url = record.fetch(:html_url)
+      def source_uri = record.fetch(:html_url)
 
-      def issues_url = "#{source_url}/issues"
+      def issues_uri = "#{source_uri}/issues"
 
-      def versions_url = "#{site_url}/versions"
+      def versions_uri = "#{site_uri}/versions"
 
       private
 

@@ -9,7 +9,7 @@ module Pennyworth
       include Dependencies[:settings, :http]
 
       def call endpoint
-        http.get("#{settings.standard_gems_api_url}/#{endpoint}")
+        http.get("#{settings.standard_gems_api_uri}/#{endpoint}")
             .then do |response|
               response.status.success? ? records(response.body.to_s) : Core::EMPTY_HASH
             end

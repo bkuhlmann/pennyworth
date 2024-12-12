@@ -9,7 +9,7 @@ module Pennyworth
       include Dependencies[:settings, :http]
 
       def call endpoint
-        http.get("#{settings.ruby_gems_api_url}/#{endpoint}")
+        http.get("#{settings.ruby_gems_api_uri}/#{endpoint}")
             .then do |response|
               return JSON response.body.to_s, symbolize_names: true if response.status.success?
 

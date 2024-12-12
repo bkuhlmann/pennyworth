@@ -59,27 +59,27 @@ RSpec.describe Pennyworth::Presenters::Gem do
     end
   end
 
-  describe "#site_url" do
-    it "answers site URL" do
-      expect(presenter.site_url).to eq("https://site.example.com")
+  describe "#site_uri" do
+    it "answers site URI" do
+      expect(presenter.site_uri).to eq("https://site.example.com")
     end
   end
 
-  describe "#source_url" do
-    it "answers source URL" do
-      expect(presenter.source_url).to eq("https://source.example.com")
+  describe "#source_uri" do
+    it "answers source URI" do
+      expect(presenter.source_uri).to eq("https://source.example.com")
     end
   end
 
-  describe "#issues_url" do
-    it "answers issues URL" do
-      expect(presenter.issues_url).to eq("https://issues.example.com")
+  describe "#issues_uri" do
+    it "answers issues URI" do
+      expect(presenter.issues_uri).to eq("https://issues.example.com")
     end
   end
 
-  describe "#versions_url" do
-    it "answers versions URL" do
-      expect(presenter.versions_url).to eq("https://changes.example.com")
+  describe "#versions_uri" do
+    it "answers versions URI" do
+      expect(presenter.versions_uri).to eq("https://changes.example.com")
     end
   end
 end

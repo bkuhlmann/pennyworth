@@ -72,16 +72,16 @@ inflections:
   - "Xmlrpc": "XMLRPC"
   - "Yaml": "YAML"
 git_hub:
-  api_url: "https://api.github.com"
+  api_uri: "https://api.github.com"
 http:
   statuses:
-    url: "https://developer.mozilla.org/docs/Web/HTTP/Status"
+    uri: "https://developer.mozilla.org/docs/Web/HTTP/Status"
 htmx:
   examples_uri: "%<htmx_site_uri>s/examples"
   extensions_uri: "%<htmx_site_uri>s/extensions"
   references_uri: "%<htmx_site_uri>s/reference"
   site_uri: "https://htmx.org"
 ruby_gems:
-  api_url: "https://rubygems.org/api/v1"
+  api_uri: "https://rubygems.org/api/v1"
 standard_gems:
-  api_url: "https://stdgems.org"
+  api_uri: "https://stdgems.org"

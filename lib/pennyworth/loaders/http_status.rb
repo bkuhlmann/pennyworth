@@ -22,7 +22,7 @@ module Pennyworth
 
       attr_reader :codes, :model
 
-      def url = settings.http_statuses_url
+      def url = settings.http_statuses_uri
     end
   end
 end

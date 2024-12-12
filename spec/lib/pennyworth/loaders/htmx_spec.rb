@@ -12,9 +12,9 @@ RSpec.describe Pennyworth::Loaders::HTMX do
       element = Ox::Element.new "td"
       element << "issues a "
       element << (Ox::Element.new("code") << "GET")
-      element << " to specified URL"
+      element << " to specified URI"
 
-      expect(described_class.text_for(element)).to eq("Issues a `GET` to specified URL")
+      expect(described_class.text_for(element)).to eq("Issues a `GET` to specified URI")
     end
 
     it "answers empty string when empty" do

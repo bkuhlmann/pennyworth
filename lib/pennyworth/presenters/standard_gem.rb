@@ -28,13 +28,13 @@ module Pennyworth
         (bundled || defaults || versions).values.first
       end
 
-      def site_url = record.fetch(:sourceRepository, Core::EMPTY_STRING)
+      def site_uri = record.fetch(:sourceRepository, Core::EMPTY_STRING)
 
-      def source_url = record.fetch(:sourceRepository, Core::EMPTY_STRING)
+      def source_uri = record.fetch(:sourceRepository, Core::EMPTY_STRING)
 
-      def issues_url = "https://github.com/ruby/#{id}/issues"
+      def issues_uri = "https://github.com/ruby/#{id}/issues"
 
-      def versions_url = "https://github.com/ruby/#{id}/tags"
+      def versions_uri = "https://github.com/ruby/#{id}/tags"
 
       private
 

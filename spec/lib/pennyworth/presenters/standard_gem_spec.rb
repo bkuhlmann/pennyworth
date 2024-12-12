@@ -41,37 +41,37 @@ RSpec.describe Pennyworth::Presenters::StandardGem do
     end
   end
 
-  describe "#site_url" do
-    it "answers site URL" do
-      expect(presenter.site_url).to eq("https://github.com/ruby/test")
+  describe "#site_uri" do
+    it "answers site URI" do
+      expect(presenter.site_uri).to eq("https://github.com/ruby/test")
     end
 
     it "answers empty string when source repository key can't be found" do
       standard_gems_record.delete :sourceRepository
-      expect(presenter.site_url).to eq("")
+      expect(presenter.site_uri).to eq("")
     end
   end
 
-  describe "#source_url" do
-    it "answers source URL" do
-      expect(presenter.source_url).to eq("https://github.com/ruby/test")
+  describe "#source_uri" do
+    it "answers source URI" do
+      expect(presenter.source_uri).to eq("https://github.com/ruby/test")
     end
 
     it "answers empty string when source repository key can't be found" do
       standard_gems_record.delete :sourceRepository
-      expect(presenter.source_url).to eq("")
+      expect(presenter.source_uri).to eq("")
     end
   end
 
-  describe "#issues_url" do
-    it "answers issues URL" do
-      expect(presenter.issues_url).to eq("https://github.com/ruby/test/issues")
+  describe "#issues_uri" do
+    it "answers issues URI" do
+      expect(presenter.issues_uri).to eq("https://github.com/ruby/test/issues")
     end
   end
 
-  describe "#versions_url" do
-    it "answers versions URL" do
-      expect(presenter.versions_url).to eq("https://github.com/ruby/test/tags")
+  describe "#versions_uri" do
+    it "answers versions URI" do
+      expect(presenter.versions_uri).to eq("https://github.com/ruby/test/tags")
     end
   end
 end

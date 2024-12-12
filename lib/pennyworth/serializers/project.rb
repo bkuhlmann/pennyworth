@@ -13,8 +13,8 @@ module Pennyworth
           uid: presenter.id,
           title: presenter.label,
           subtitle: presenter.subtitle,
-          arg: site_url,
-          quicklookurl: site_url,
+          arg: site_uri,
+          quicklookurl: site_uri,
           mods: modifications,
           text:
         }
@@ -26,9 +26,9 @@ module Pennyworth
 
       def modifications
         {
-          alt: modification(presenter.source_url, "View source."),
-          cmd: modification(presenter.issues_url, "View issues."),
-          control: modification(presenter.versions_url, "View versions.")
+          alt: modification(presenter.source_uri, "View source."),
+          cmd: modification(presenter.issues_uri, "View issues."),
+          control: modification(presenter.versions_uri, "View versions.")
         }
       end
 
@@ -41,12 +41,12 @@ module Pennyworth
 
       def text
         {
-          copy: site_url,
-          largetype: site_url
+          copy: site_uri,
+          largetype: site_uri
         }
       end
 
-      def site_url = presenter.site_url
+      def site_uri = presenter.site_uri
     end
   end
 end

@@ -26,13 +26,13 @@ module Pennyworth
 
       def downloads = record.fetch(__method__)
 
-      def site_url = record.fetch(:homepage_uri)
+      def site_uri = record.fetch(:homepage_uri)
 
-      def source_url = record.fetch(:source_code_uri)
+      def source_uri = record.fetch(:source_code_uri)
 
-      def issues_url = record.fetch(:bug_tracker_uri)
+      def issues_uri = record.fetch(:bug_tracker_uri)
 
-      def versions_url = record.fetch(:changelog_uri)
+      def versions_uri = record.fetch(:changelog_uri)
 
       def updated_at = record.fetch(:version_created_at)
 
