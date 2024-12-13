@@ -7,22 +7,13 @@ module Pennyworth
     module Actions
       # Handles the HTTP status action.
       class HTTPStatus < Sod::Action
-        include Dependencies[:io]
+        include Dependencies[:io, processor: "processors.http_status"]
 
         description "Render Alfred HTTP statuses script filter."
 
         on "--http_statuses"
 
-        def initialize(processor: Processor.for_http_statuses, **)
-          super(**)
-          @processor = processor
-        end
-
         def call(*) = io.puts processor.call.to_json
-
-        private
-
-        attr_reader :processor
       end
     end
   end

@@ -8,22 +8,13 @@ module Pennyworth
       module System
         # Handles the system signal action.
         class Signal < Sod::Action
-          include Dependencies[:io]
+          include Dependencies[:io, processor: "processors.system_signal"]
 
           description "Render Alfred system signals script filter."
 
           on "--system_signals"
 
-          def initialize(processor: Processor.for_system_signals, **)
-            super(**)
-            @processor = processor
-          end
-
           def call(*) = io.puts processor.call.to_json
-
-          private
-
-          attr_reader :processor
         end
       end
     end

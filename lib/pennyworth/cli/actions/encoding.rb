@@ -7,22 +7,13 @@ module Pennyworth
     module Actions
       # Handles the encoding action.
       class Encoding < Sod::Action
-        include Dependencies[:io]
+        include Dependencies[:io, processor: "processors.encoding"]
 
         description "Render Alfred encodings script filter."
 
         on "--encodings"
 
-        def initialize(processor: Processor.for_encodings, **)
-          super(**)
-          @processor = processor
-        end
-
         def call(*) = io.puts processor.call.to_json
-
-        private
-
-        attr_reader :processor
       end
     end
   end

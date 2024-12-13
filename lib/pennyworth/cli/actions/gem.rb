@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the RubyGem action.
       class Gem < Sod::Action
-        include Dependencies[:io]
+        include Dependencies[:io, processor: "processors.gem"]
 
         description "Render Alfred RubyGems script filter."
 
@@ -15,16 +15,7 @@ module Pennyworth
 
         default { Container[:settings].ruby_gems_owner }
 
-        def initialize(processor: Processor.for_gems, **)
-          super(**)
-          @processor = processor
-        end
-
         def call(handle = default) = io.puts processor.call("owners/#{handle}/gems.json").to_json
-
-        private
-
-        attr_reader :processor
       end
     end
   end

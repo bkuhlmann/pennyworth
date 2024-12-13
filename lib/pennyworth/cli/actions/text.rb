@@ -7,22 +7,13 @@ module Pennyworth
     module Actions
       # Handles the text action.
       class Text < Sod::Action
-        include Dependencies[:io]
+        include Dependencies[:io, processor: "processors.text"]
 
         description "Render Alfred text script filter."
 
         on "--text", argument: "CONTENT"
 
-        def initialize(processor: Processor.for_text, **)
-          super(**)
-          @processor = processor
-        end
-
         def call(content) = io.puts processor.call(content).to_json
-
-        private
-
-        attr_reader :processor
       end
     end
   end

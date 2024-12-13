@@ -7,7 +7,7 @@ module Pennyworth
     module Actions
       # Handles the Standard Gem action.
       class StandardGem < Sod::Action
-        include Dependencies[:io]
+        include Dependencies[:io, processor: "processors.standard_gem"]
 
         ENDPOINTS = {
           "all" => "stdgems.json",
@@ -19,9 +19,8 @@ module Pennyworth
 
         on "--standard_gems", argument: "[KIND]", allow: %w[all default bundled], default: "all"
 
-        def initialize(processor: Processor.for_standard_gems, endpoints: ENDPOINTS, **)
+        def initialize(endpoints: ENDPOINTS, **)
           super(**)
-          @processor = processor
           @endpoints = endpoints
         end
 
@@ -29,7 +28,7 @@ module Pennyworth
 
         private
 
-        attr_reader :processor, :endpoints
+        attr_reader :endpoints
       end
     end
   end

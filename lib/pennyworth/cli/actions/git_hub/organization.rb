@@ -8,7 +8,7 @@ module Pennyworth
       module GitHub
         # Handles the GitHub user action.
         class Organization < Sod::Action
-          include Dependencies[:io]
+          include Dependencies[:io, processor: "processors.project"]
 
           description "Specify organization."
 
@@ -16,16 +16,7 @@ module Pennyworth
 
           default { Container[:settings].git_hub_organization }
 
-          def initialize(processor: Processor.for_projects, **)
-            super(**)
-            @processor = processor
-          end
-
           def call(handle = default) = io.puts processor.call("orgs/#{handle}").to_json
-
-          private
-
-          attr_reader :processor
         end
       end
     end

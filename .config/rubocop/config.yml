@@ -7,6 +7,9 @@ Naming/VariableNumber:
 Metrics/AbcSize:
   Exclude:
     - "lib/pennyworth/cli/shell.rb"
+Metrics/BlockLength:
+  Exclude:
+    - "lib/pennyworth/container.rb"
 Metrics/MethodLength:
   Exclude:
     - "lib/pennyworth/cli/shell.rb"

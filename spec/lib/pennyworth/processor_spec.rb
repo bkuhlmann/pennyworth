@@ -3,59 +3,11 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::Processor do
-  subject(:processor) { described_class.for_text }
+  subject(:processor) { Pennyworth::Container["processors.text"] }
 
-  describe ".for_encodings" do
-    it "answers new instance" do
-      expect(described_class.for_encodings).to be_a(described_class)
-    end
-  end
-
-  describe ".for_gems" do
-    it "answers new instance" do
-      expect(described_class.for_gems).to be_a(described_class)
-    end
-  end
-
-  describe ".for_http_statuses" do
-    it "answers new instance" do
-      expect(described_class.for_http_statuses).to be_a(described_class)
-    end
-  end
-
-  describe ".for_htmx" do
-    it "answers new instance" do
-      expect(described_class.for_htmx).to be_a(described_class)
-    end
-  end
-
-  describe ".for_projects" do
-    it "answers new instance" do
-      expect(described_class.for_projects).to be_a(described_class)
-    end
-  end
-
-  describe ".for_standard_errors" do
-    it "answers new instance" do
-      expect(described_class.for_standard_errors).to be_a(described_class)
-    end
-  end
-
-  describe ".for_system_errors" do
-    it "answers new instance" do
-      expect(described_class.for_system_errors).to be_a(described_class)
-    end
-  end
-
-  describe ".for_system_signals" do
-    it "answers new instance" do
-      expect(described_class.for_system_signals).to be_a(described_class)
-    end
-  end
-
-  describe ".for_text" do
-    it "answers new instance" do
-      expect(described_class.for_text).to be_a(described_class)
+  describe "#initialize" do
+    it "is frozen" do
+      expect(processor.frozen?).to be(true)
     end
   end
 
