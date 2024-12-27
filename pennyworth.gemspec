@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "cogger", "~> 1.0"
   spec.add_dependency "containable", "~> 1.0"
   spec.add_dependency "core", "~> 2.0"
-  spec.add_dependency "etcher", "~> 2.7"
+  spec.add_dependency "etcher", "~> 3.0"
   spec.add_dependency "ghub", "~> 0.21"
   spec.add_dependency "http", "~> 5.1"
   spec.add_dependency "infusible", "~> 3.12"
