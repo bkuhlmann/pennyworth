@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "infusible", "~> 3.12"
   spec.add_dependency "ox", "~> 2.14"
   spec.add_dependency "rack", "~> 3.0"
-  spec.add_dependency "refinements", "~> 12.10"
+  spec.add_dependency "refinements", "~> 13.0"
   spec.add_dependency "runcom", "~> 11.10"
   spec.add_dependency "sod", "~> 0.20"
   spec.add_dependency "spek", "~> 3.0"
