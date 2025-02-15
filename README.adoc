@@ -485,16 +485,6 @@ Provides quick access to link:https://en.wikipedia.org/wiki/Internet_Protocol[IP
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
-===== Jitsi
-
-image:https://alchemists.io/images/projects/pennyworth/screenshots/jitsi.png[Jitsi workflow screenshot.,width=706,height=254,role=focal_point]
-
-Provides quick access to link:https://jitsi.org[Jitsi] resources.
-
-1. link:https://alchemists.io/public/alfred/workflows/jitsi.alfredworkflow[Download] and
-   double click to install.
-2. Click on _Configure Workflow_ to view documentation.
-
 ===== macOS
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/mac_os.png[macOS workflow screenshot.,width=706,height=200,role=focal_point]
