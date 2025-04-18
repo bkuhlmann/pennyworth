@@ -485,6 +485,16 @@ Provides quick access to link:https://en.wikipedia.org/wiki/Internet_Protocol[IP
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
+===== Kagi
+
+image:https://alchemists.io/images/projects/pennyworth/screenshots/kagi.png[Kagi screenshot.,width=706,height=631,role=focal_point]
+
+Provides quick access to link:https://kagi.com[Kagi] tooling and resources.
+
+1. link:https://alchemists.io/public/alfred/workflows/kagi.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
 ===== macOS
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/mac_os.png[macOS workflow screenshot.,width=706,height=200,role=focal_point]
@@ -610,6 +620,26 @@ image:https://alchemists.io/images/projects/pennyworth/screenshots/text.png[Text
 Provides general text manipulation utilities beyond the Pennyworth powered _text_ macro which is part of the _Ruby_ workflow (mentioned earlier).
 
 1. link:https://alchemists.io/public/alfred/workflows/text.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
+===== TRMNL
+
+image:https://alchemists.io/images/projects/pennyworth/screenshots/trmnl.png[TRMNL workflow screenshot.,width=706,height=631,role=focal_point]
+
+Provides quick access to link:https://usetrmnl.com[TRMNL] resources.
+
+1. link:https://alchemists.io/public/alfred/workflows/trmnl.alfredworkflow[Download] and
+   double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
+===== URL
+
+image:https://alchemists.io/images/projects/pennyworth/screenshots/url.png[URL workflow screenshot.,width=706,height=253,role=focal_point]
+
+Provides quick access to Uniform Resource Locator (URL) resources.
+
+1. link:https://alchemists.io/public/alfred/workflows/url.alfredworkflow[Download] and
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
