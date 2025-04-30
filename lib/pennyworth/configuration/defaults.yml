@@ -69,6 +69,7 @@ inflections:
   - "Tempfile": "Temporary File"
   - "Thwait": "Threads Wait"
   - "Tmpdir": "Temporary Directory"
+  - "Trmnl Api": "TRMNL API"
   - "Trmnl Chrome": "TRMNL Chrome"
   - "Trmnl Component": "TRMNL Component"
   - "Trmnl Display": "TRMNL Display"
