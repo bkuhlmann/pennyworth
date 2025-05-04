@@ -28,6 +28,7 @@ inflections:
   - "Irb": "IRB"
   - "Irb Kit": "IRB Kit"
   - "Json": "JSON"
+  - "Kagi Api": "Kagi API"
   - "Mac Os Config": "macOS Configuration"
   - "Mac Os": "MacOS"
   - "Net Ftp": "Net FTP"
