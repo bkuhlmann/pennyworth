@@ -509,16 +509,6 @@ Provides quick access to link:https://en.wikipedia.org/wiki/Internet_Protocol[IP
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
-===== Kagi
-
-image:https://alchemists.io/images/projects/pennyworth/screenshots/kagi.png[Kagi screenshot.,width=706,height=631,role=focal_point]
-
-Provides quick access to link:https://kagi.com[Kagi] tooling and resources.
-
-1. link:https://alchemists.io/public/alfred/workflows/kagi.alfredworkflow[Download] and
-   double click to install.
-2. Click on _Configure Workflow_ to view documentation.
-
 ===== macOS
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/mac_os.png[macOS workflow screenshot.,width=706,height=200,role=focal_point]
