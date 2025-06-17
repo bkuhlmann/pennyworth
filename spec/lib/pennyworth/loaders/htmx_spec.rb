@@ -3,7 +3,7 @@
 require "spec_helper"
 
 RSpec.describe Pennyworth::Loaders::HTMX do
-  subject(:scrapper) { described_class.new }
+  subject(:loader) { described_class.new }
 
   include_context "with application dependencies"
 
@@ -108,19 +108,19 @@ RSpec.describe Pennyworth::Loaders::HTMX do
     end
 
     it "answers examples" do
-      expect(scrapper.call(settings.htmx_examples_uri)).to match(array_including(examples))
+      expect(loader.call(settings.htmx_examples_uri)).to match(array_including(examples))
     end
 
     it "answers extensions" do
-      expect(scrapper.call(settings.htmx_extensions_uri)).to match(array_including(extensions))
+      expect(loader.call(settings.htmx_extensions_uri)).to match(array_including(extensions))
     end
 
     it "answers references" do
-      expect(scrapper.call(settings.htmx_references_uri)).to match(array_including(references))
+      expect(loader.call(settings.htmx_references_uri)).to match(array_including(references))
     end
 
     it "answers empty array with invalid status" do
-      expect(scrapper.call("https://httpstat.us/500")).to eq([])
+      expect(loader.call("https://httpstat.us/500")).to eq([])
     end
   end
 end

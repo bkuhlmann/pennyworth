@@ -49,7 +49,7 @@ module Pennyworth
       attr_reader :parser, :model
 
       def read uri
-        http.get(uri).then do |response|
+        http.follow.get(uri).then do |response|
           [200, 301].include?(response.status) ? parse_rows(response.body.to_s) : Core::EMPTY_ARRAY
         end
       end
