@@ -120,6 +120,19 @@ RSpec.describe Pennyworth::Loaders::HTMX do
     end
 
     it "answers empty array with invalid status" do
+      http = class_double HTTP,
+                          get: HTTP::Response.new(
+                            uri: "https://htmx",
+                            verb: :get,
+                            body: "Danger!",
+                            status: 500,
+                            version: 1.0
+                          )
+
+      loader = described_class.new(http:)
+
+      allow(http).to receive(:follow).and_return(http)
+
       expect(loader.call("https://httpstat.us/500")).to eq([])
     end
   end

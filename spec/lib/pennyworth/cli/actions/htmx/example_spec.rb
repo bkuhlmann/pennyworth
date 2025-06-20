@@ -16,7 +16,7 @@ RSpec.describe Pennyworth::CLI::Actions::HTMX::Example do
     end
 
     it "answers empty items with invalid response" do
-      settings.htmx_examples_uri = "https://httpstat.us/500"
+      settings.htmx_examples_uri = "https://example.com"
       action.call
 
       expect(io.reread).to eq("#{{items: []}.to_json}\n")
