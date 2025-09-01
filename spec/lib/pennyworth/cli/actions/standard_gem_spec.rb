@@ -41,7 +41,7 @@ RSpec.describe Pennyworth::CLI::Actions::StandardGem do
 
     it "answers JSON" do
       action.call
-      expect(io.reread).to match([standard_gems_record].to_json)
+      expect(io.reread).to eq("#{[standard_gems_record].to_json}\n")
     end
   end
 end

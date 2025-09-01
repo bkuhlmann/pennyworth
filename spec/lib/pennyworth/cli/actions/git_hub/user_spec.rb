@@ -26,7 +26,7 @@ RSpec.describe Pennyworth::CLI::Actions::GitHub::User do
 
     it "answers JSON" do
       action.call "acme"
-      expect(io.reread).to match([git_hub_record].to_json)
+      expect(io.reread).to eq("#{[git_hub_record].to_json}\n")
     end
   end
 end
