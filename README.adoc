@@ -304,16 +304,6 @@ Provides quick access to link:https://www.ruby-lang.org[Ruby] resources.
    double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
-===== TRMNL
-
-image:https://alchemists.io/images/projects/pennyworth/screenshots/trmnl.png[TRMNL workflow screenshot.,width=706,height=631,role=focal_point]
-
-Provides quick access to link:https://usetrmnl.com[TRMNL] resources.
-
-1. link:https://alchemists.io/public/alfred/workflows/trmnl.alfredworkflow[Download] and
-   double click to install.
-2. Click on _Configure Workflow_ to view documentation.
-
 ==== Ruby Optional
 
 The following workflows don't require {ruby_link} -- or this gem -- to use but are provided for convenience in case they can augment your own workflow further.
