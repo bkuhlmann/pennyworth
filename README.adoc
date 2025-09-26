@@ -186,6 +186,9 @@ htmx:
   extensions_uri: "%<htmx_site_uri>s/extensions"
   references_uri: "%<htmx_site_uri>s/reference"
   site_uri: "https://htmx.org"
+rodauth:
+  site_uri: "https://rodauth.jeremyevans.net"
+  documentation_uri: "%<rodauth_site_uri>s/documentation.html"
 ruby_gems:
   api_uri: "https://rubygems.org/api/v1"
 standard_gems:
@@ -267,6 +270,16 @@ Provides quick access to the {htmx_link} JavaScript library.
 
 1. link:https://alchemists.io/public/alfred/workflows/htmx.alfredworkflow[Download] and
    double click to install.
+2. Click on _Configure Workflow_ to view documentation.
+
+===== Rodauth
+
+image:https://alchemists.io/images/projects/pennyworth/screenshots/rodauth.webp[Rodauth workflow screenshot.,width=706,height=631,role=focal_point]
+
+Provides quick access to the link:https://rodauth.jeremyevans.net[Rodauth] web framework.
+
+1. link:https://alchemists.io/public/alfred/workflows/rodauth.alfredworkflow[Download] and double
+   click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== RuboCop
@@ -414,16 +427,6 @@ Provides quick access to link:https://elm-lang.org[Elm] resources.
    click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
-===== Farnam Street
-
-image:https://alchemists.io/images/projects/pennyworth/screenshots/farnam_street.png[Farnam Street workflow screenshot.,width=706,height=631,role=focal_point]
-
-Provides quick access to link:https://fs.blog[Farnam Street] resources.
-
-1. link:https://alchemists.io/public/alfred/workflows/farnam_street.alfredworkflow[Download] and
-   double click to install.
-2. Click on _Configure Workflow_ to view documentation.
-
 ===== Git
 
 image:https://alchemists.io/images/projects/pennyworth/screenshots/git.png[Git workflow screenshot.,width=706,height=523,role=focal_point]
@@ -496,7 +499,7 @@ Provides quick access to macOS resources.
 
 ===== PostgreSQL
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/postgresql.png[PostgreSQL workflow screenshot.,width=706,height=361,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/postgresql.webp[PostgreSQL workflow screenshot.,width=706,height=577,role=focal_point]
 
 Provides quick access to link:https://www.postgresql.org[PostgreSQL] resources.
 
@@ -516,7 +519,7 @@ Provides quick access to link:https://github.com/rack/rack[Rack] resources.
 
 ===== Roda
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/roda.png[Roda workflow screenshot.,width=706,height=469,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/roda.webp[Roda workflow screenshot.,width=706,height=415,role=focal_point]
 
 Provides quick access to the link:http://roda.jeremyevans.net[Roda] web framework.
 
@@ -542,15 +545,6 @@ Provides quick access to link:https://rspec.info[RSpec] resources.
 
 1. link:https://alchemists.io/public/alfred/workflows/rspec.alfredworkflow[Download] and double
    click to install.
-2. Click on _Configure Workflow_ to view documentation.
-
-===== Ruby on Rails
-
-image:https://alchemists.io/images/projects/pennyworth/screenshots/ruby_on_rails.png[Ruby on Rails workflow screenshot.,width=706,height=524,role=focal_point]
-
-Provides access to the link:https://https://rubyonrails.org[Ruby on Rails] web framework.
-
-1. link:https://alchemists.io/public/alfred/workflows/ruby_on_rails.alfredworkflow[Download] and double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Search
@@ -580,16 +574,6 @@ image:https://alchemists.io/images/projects/pennyworth/screenshots/ssl.png[SSL w
 Provides quick access to SSL resources for the security conscious.
 
 1. link:https://alchemists.io/public/alfred/workflows/ssl.alfredworkflow[Download] and double click to install.
-2. Click on _Configure Workflow_ to view documentation.
-
-===== Tana
-
-image:https://alchemists.io/images/projects/pennyworth/screenshots/tana.png[Tana workflow screenshot.,width=706,height=631,role=focal_point]
-
-Provides quick access to link:https://tana.inc[Tana] resources.
-
-1. link:https://alchemists.io/public/alfred/workflows/tana.alfredworkflow[Download] and
-   double click to install.
 2. Click on _Configure Workflow_ to view documentation.
 
 ===== Terraform
