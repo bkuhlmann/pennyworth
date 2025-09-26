@@ -1,20 +1,15 @@
 # frozen_string_literal: true
 
 require "core"
-require "ox"
 require "refinements/string"
 
 module Pennyworth
   module Loaders
     # Loads htmx documentation by scraping web page.
     class HTMX
-      include Dependencies[:http, :settings]
+      include Dependencies[:http, :settings, parser: :ox]
 
       using Refinements::String
-
-      PARSER = Ox.tap do |ox|
-        ox.default_options = {mode: :generic, effort: :tolerant, smart: true}
-      end
 
       def self.text_for element
         parts = element.each.with_object [] do |item, content|
@@ -30,8 +25,7 @@ module Pennyworth
         parts.join.up.delete_suffix "."
       end
 
-      def initialize(parser: PARSER, model: Models::HTMX, **)
-        @parser = parser
+      def initialize(model: Models::HTMX, **)
         @model = model
         super(**)
       end
@@ -46,7 +40,7 @@ module Pennyworth
 
       private
 
-      attr_reader :parser, :model
+      attr_reader :model
 
       def read uri
         http.follow.get(uri).then do |response|
