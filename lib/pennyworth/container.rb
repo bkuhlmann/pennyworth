@@ -20,6 +20,7 @@ module Pennyworth
                       .add_transformer(:format, :htmx_examples_uri)
                       .add_transformer(:format, :htmx_extensions_uri)
                       .add_transformer(:format, :htmx_references_uri)
+                      .add_transformer(:format, :rodauth_documentation_uri)
     end
 
     namespace :processors do
