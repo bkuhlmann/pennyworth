@@ -80,6 +80,9 @@ htmx:
   extensions_uri: "%<htmx_site_uri>s/extensions"
   references_uri: "%<htmx_site_uri>s/reference"
   site_uri: "https://htmx.org"
+rodauth:
+  site_uri: "https://rodauth.jeremyevans.net"
+  documentation_uri: "%<rodauth_site_uri>s/documentation.html"
 ruby_gems:
   api_uri: "https://rubygems.org/api/v1"
 standard_gems:

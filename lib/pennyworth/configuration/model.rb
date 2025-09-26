@@ -13,6 +13,8 @@ module Pennyworth
                        :htmx_extensions_uri,
                        :htmx_references_uri,
                        :htmx_site_uri,
+                       :rodauth_site_uri,
+                       :rodauth_documentation_uri,
                        :ruby_gems_api_uri,
                        :ruby_gems_owner,
                        :standard_gems_api_uri
