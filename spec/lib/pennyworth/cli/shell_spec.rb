@@ -60,6 +60,11 @@ RSpec.describe Pennyworth::CLI::Shell do
       expect(io.reread).to match(/items.+title.+hx-boost.+subtitle.+Add/)
     end
 
+    it "answers Rodauth script filter" do
+      shell.call %w[--rodauth]
+      expect(io.reread).to match(/items.+title.+Account Expiration/)
+    end
+
     it "answers RubyGems owner script filter items with valid owner" do
       shell.call %w[--gems bkuhlmann]
       expect(io.reread).to match(/items.+title.+Auther/)

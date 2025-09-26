@@ -40,6 +40,7 @@ module Pennyworth
           on Actions::Encoding
           on Actions::HTTPStatus
           on Actions::Gem
+          on Actions::Rodauth
           on Actions::StandardGem
           on Actions::StandardError
           on Actions::System::Error
