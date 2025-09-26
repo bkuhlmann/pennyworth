@@ -54,6 +54,12 @@ module Pennyworth
                       serializer: Serializers::Project
       end
 
+      register :rodauth do
+        Processor.new loader: Loaders::Rodauth.new,
+                      presenter: Presenters::Rodauth,
+                      serializer: Serializers::Rodauth
+      end
+
       register :standard_gem do
         Processor.new loader: Loaders::StandardGem.new,
                       presenter: Presenters::StandardGem,
