@@ -16,6 +16,8 @@ RSpec.describe Pennyworth::CLI::Actions::HTMX::Example do
     end
 
     it "answers empty items with invalid response" do
+      pending "Skipped until Alpine Linux CA certificates are patched." if ENV["CI"] == "true"
+
       settings.htmx_examples_uri = "https://example.com"
       action.call
 
