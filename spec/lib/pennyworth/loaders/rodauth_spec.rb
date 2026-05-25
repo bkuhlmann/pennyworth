@@ -33,7 +33,6 @@ RSpec.describe Pennyworth::Loaders::Rodauth do
       http = class_double HTTP,
                           get: HTTP::Response.new(
                             uri: "https://rodauth.jeremyevans.net",
-                            verb: :get,
                             body: "Danger!",
                             status: 500,
                             version: 1.0

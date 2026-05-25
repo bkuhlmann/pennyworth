@@ -123,7 +123,6 @@ RSpec.describe Pennyworth::Loaders::HTMX do
       http = class_double HTTP,
                           get: HTTP::Response.new(
                             uri: "https://htmx",
-                            verb: :get,
                             body: "Danger!",
                             status: 500,
                             version: 1.0
