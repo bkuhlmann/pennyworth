@@ -26,8 +26,6 @@ module Pennyworth
 
       def label = presenter.label
 
-      def description = presenter.description
-
       def modifications
         {
           control: {subtitle: "Copy label.", arg: label},
