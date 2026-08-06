@@ -8,7 +8,7 @@ module Pennyworth
     class Text
       extend Forwardable
 
-      delegate %i[id content] => :record
+      delegate Models::Text.members => :record
 
       def initialize record, inflector: Inflector.new
         @record = record

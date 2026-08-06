@@ -9,13 +9,13 @@ module Pennyworth
       class Error
         extend Forwardable
 
-        delegate %i[id description] => :record
+        delegate Models::System::Error.members => :record
 
         def initialize record
           @record = record
         end
 
-        def label = record.name
+        alias label name
 
         def subtitle = "#{label}: #{description}."
 

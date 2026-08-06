@@ -8,7 +8,7 @@ module Pennyworth
     class Rodauth
       extend Forwardable
 
-      delegate %i[name label description uri] => :record
+      delegate Models::Rodauth.members => :record
 
       def initialize record
         @record = record

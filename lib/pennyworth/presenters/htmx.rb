@@ -8,7 +8,7 @@ module Pennyworth
     class HTMX
       extend Forwardable
 
-      delegate %i[label description uri] => :record
+      delegate Models::HTMX.members => :record
 
       def initialize record
         @record = record
