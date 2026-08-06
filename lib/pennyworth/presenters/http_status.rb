@@ -11,7 +11,7 @@ module Pennyworth
 
       using Refinements::String
 
-      delegate %i[code label url] => :record
+      delegate Models::HTTPStatus.members => :record
 
       def initialize record, inflector: Inflector.new
         @record = record
