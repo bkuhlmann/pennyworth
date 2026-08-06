@@ -3,6 +3,9 @@ exclude_paths:
   - vendor
 
 detectors:
+  FeatureEnvy:
+    exclude:
+      - "Pennyworth::Loaders::RFC#fetch"
   LongParameterList:
     enabled: false
   ModuleInitialize:
