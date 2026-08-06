@@ -17,6 +17,8 @@ module Pennyworth
       required(:htmx_extensions_uri).filled :string
       required(:htmx_references_uri).filled :string
       required(:htmx_site_uri).filled :string
+      required(:rfc_index_uri).filled :string
+      required(:rfc_site_uri).filled :string
       required(:rodauth_site_uri).filled :string
       required(:rodauth_documentation_uri).filled :string
       required(:ruby_gems_api_uri).filled :string
