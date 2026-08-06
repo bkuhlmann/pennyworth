@@ -7,12 +7,18 @@ Bundler.require :tools
 
 require "pennyworth"
 require "refinements"
+require "warning"
+
+POORLY_MAINTAINED_GEMS = /
+  http.cookie
+/x
 
 SPEC_ROOT = Pathname(__dir__).realpath.freeze
 
 using Refinements::Pathname
 
 Pathname.require_tree SPEC_ROOT.join("support/shared_contexts")
+Warning.ignore POORLY_MAINTAINED_GEMS
 
 RSpec.configure do |config|
   config.color = true
