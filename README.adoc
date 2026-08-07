@@ -82,7 +82,7 @@ with others.
 
 From the command line, type `pennyworth` to view usage:
 
-image:https://alchemists.io/images/projects/pennyworth/screenshots/usage.wepb[Usage,width=719,height=516,role=focal_point]
+image:https://alchemists.io/images/projects/pennyworth/screenshots/usage.webp[Usage,width=719,height=516,role=focal_point]
 
 While the command line options are nice, the real power comes from using Pennyworth in conjunction
 with link:https://www.alfredapp.com/help/workflows/inputs/script-filter/json[Alfred Script Filters].
