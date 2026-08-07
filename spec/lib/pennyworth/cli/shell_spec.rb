@@ -60,6 +60,11 @@ RSpec.describe Pennyworth::CLI::Shell do
       expect(io.reread).to match(/items.+title.+hx-boost.+subtitle.+Add/)
     end
 
+    it "answers RFC script filter" do
+      shell.call %w[--rfc]
+      expect(io.reread).to match(/items.+title.+RFC 1.+subtitle.+Host Software/)
+    end
+
     it "answers Rodauth script filter" do
       shell.call %w[--rodauth]
       expect(io.reread).to match(/items.+title.+Account Expiration/)
