@@ -14,9 +14,7 @@ module Pennyworth
         @model = model
       end
 
-      def call(*)
-        codes.map { |(code, label)| model[code:, label:, url: "#{url}/#{code}"] }
-      end
+      def call(*) = codes.map { |(code, label)| model[code:, label:, url: "#{url}/#{code}"] }
 
       private
 
