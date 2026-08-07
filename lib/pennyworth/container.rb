@@ -55,6 +55,12 @@ module Pennyworth
                       serializer: Serializers::Project
       end
 
+      register :rfc do
+        Processor.new loader: Loaders::RFC.new,
+                      presenter: Presenters::RFC,
+                      serializer: Serializers::RFC
+      end
+
       register :rodauth do
         Processor.new loader: Loaders::Rodauth.new,
                       presenter: Presenters::Rodauth,
