@@ -1,51 +1,52 @@
 # frozen_string_literal: true
 
 require "core"
+require "nokogiri"
 require "refinements/pathname"
-require "refinements/string"
 
 module Pennyworth
   module Loaders
     # Loads Rodauth documentation by scraping the web page.
     class Rodauth
-      include Dependencies[:http, :settings, parser: :ox]
+      include Dependencies[:http, :settings]
 
-      using Refinements::String
       using Refinements::Pathname
 
-      def initialize(model: Models::Rodauth, **)
+      def initialize(parser: Nokogiri::HTML5, model: Models::Rodauth, **)
+        @parser = parser
         @model = model
         super(**)
       end
 
       def call uri
-        read(uri).each.with_object([]) { |item, entries| entries.append record_for(item) }
+        fetch(uri).then { parse_items it }
+                  .each
+                  .with_object([]) { |item, entries| entries.append build_record(item) }
       end
 
       private
 
-      attr_reader :model
+      attr_reader :parser, :model
 
-      def read uri
+      def fetch uri
         http.get(uri).then do |response|
-          [200, 301].include?(response.status) ? parse_items(response.body.to_s) : Core::EMPTY_ARRAY
+          [200, 301].include?(response.status) ? response.body.to_s : Core::EMPTY_STRING
         end
       end
 
-      def parse_items document
-        parser.parse(document).root.body.div.ul.nodes
-      rescue NoMethodError
-        Core::EMPTY_ARRAY
+      def parse_items page
+        parser.parse(page).xpath('//*[@id="content"]//ul/li')
       end
 
-      def record_for item
-        link = item.a
-        uri = "#{settings.rodauth_site_uri}/#{link.href}"
+      def build_record item
+        link = item.at_css "a"
+        label = link.text
+        uri = %(#{settings.rodauth_site_uri}/#{link["href"]})
 
         model[
           name: Pathname(uri).name.to_s.delete_suffix("_rdoc"),
-          label: link.text,
-          description: item.text.delete_prefix(": "),
+          label:,
+          description: item.text.delete_prefix("#{label}: "),
           uri:
         ]
       end

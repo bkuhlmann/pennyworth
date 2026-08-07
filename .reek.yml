@@ -7,6 +7,7 @@ detectors:
     exclude:
       - "Pennyworth::Loaders::HTMX#fetch"
       - "Pennyworth::Loaders::RFC#fetch"
+      - "Pennyworth::Loaders::Rodauth#fetch"
   LongParameterList:
     enabled: false
   ModuleInitialize:
