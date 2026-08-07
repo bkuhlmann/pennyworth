@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-RSpec.describe Pennyworth::CLI::Actions::HTMX::Example do
+RSpec.describe Pennyworth::CLI::Actions::HTMX::Pattern do
   using Refinements::StringIO
 
   subject(:action) { described_class.new }
@@ -12,11 +12,11 @@ RSpec.describe Pennyworth::CLI::Actions::HTMX::Example do
   describe "#call" do
     it "answers JSON with valid response" do
       action.call
-      expect(io.reread).to match(/items.+title.+Click To Edit.+subtitle.+Demonstrates/)
+      expect(io.reread).to match(/items.+title.+Click to Load.+subtitle.+Load/)
     end
 
     it "answers empty items with invalid response" do
-      settings.htmx_examples_uri = "https://example.com"
+      settings.htmx_patterns_uri = "https://example.com"
       action.call
 
       expect(io.reread).to eq("#{{items: []}.to_json}\n")

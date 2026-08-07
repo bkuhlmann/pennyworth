@@ -1,61 +1,46 @@
 # frozen_string_literal: true
 
 require "core"
-require "refinements/string"
+require "nokogiri"
 
 module Pennyworth
   module Loaders
-    # Loads htmx documentation by scraping web page.
+    # Loads htmx records by scraping web page.
     class HTMX
-      include Dependencies[:http, :settings, parser: :ox]
+      include Dependencies[:http, :settings]
 
-      using Refinements::String
-
-      def self.text_for element
-        parts = element.each.with_object [] do |item, content|
-          text = if item.is_a? Ox::Element
-                   "`#{item.text}`"
-                 else
-                   item.encode ::Encoding::UTF_8, replace: Core::EMPTY_STRING
-                 end
-
-          content.append text
-        end
-
-        parts.join.up.delete_suffix "."
-      end
-
-      def initialize(model: Models::HTMX, **)
+      def initialize(parser: Nokogiri::HTML5, model: Models::HTMX, **)
+        @parser = parser
         @model = model
         super(**)
       end
 
       def call uri
-        read(uri).each.with_object [] do |row, entries|
-          next unless row.locate("td") in Ox::Element => item, Ox::Element => description
-
-          entries.append record_for(item, description, uri)
+        fetch(uri).then { parse_rows it }
+                  .each
+                  .with_object [] do |row, entries|
+          row.children in Nokogiri::XML::Element => item, Nokogiri::XML::Element => description
+          entries.append build_record(item, description) unless item.text.include? "Soon"
         end
       end
 
       private
 
-      attr_reader :model
+      attr_reader :parser, :model
 
-      def read uri
+      def fetch uri
         http.follow.get(uri).then do |response|
-          [200, 301].include?(response.status) ? parse_rows(response.body.to_s) : Core::EMPTY_ARRAY
+          [200, 301].include?(response.status) ? response.body.to_s : Core::EMPTY_STRING
         end
       end
 
-      def parse_rows(document) = parser.parse(document).locate "*/tr"
+      def parse_rows(page) = parser.parse(page).xpath "//tbody/tr"
 
-      def record_for item, description, uri
-        model[
-          label: (item.locate("*/code").first || item.locate("a").first).text,
-          description: "#{self.class.text_for description}.",
-          uri: (item.locate("*/@href").first || uri).sub(%r(\A(?=/)), settings.htmx_site_uri)
-        ]
+      def build_record item, description
+        link = item.at_css "a"
+        uri = %(#{settings.htmx_site_uri}#{link["href"]})
+
+        model[label: link.text, description: "#{description.text}.", uri:]
       end
     end
   end

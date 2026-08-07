@@ -12,7 +12,7 @@ RSpec.describe Pennyworth::CLI::Actions::HTMX::Extension do
   describe "#call" do
     it "answers JSON with valid response" do
       action.call
-      expect(io.reread).to match(/items.+title.+ajax-header.+subtitle.+Adds/)
+      expect(io.reread).to match(/items.+title.+hx-multipart.+subtitle.+Stream/)
     end
 
     it "answers empty items with invalid response" do

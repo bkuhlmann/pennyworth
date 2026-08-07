@@ -76,10 +76,10 @@ http:
   statuses:
     uri: "https://developer.mozilla.org/docs/Web/HTTP/Status"
 htmx:
-  examples_uri: "%<htmx_site_uri>s/examples"
   extensions_uri: "%<htmx_site_uri>s/extensions"
+  patterns_uri: "%<htmx_site_uri>s/patterns"
   references_uri: "%<htmx_site_uri>s/reference"
-  site_uri: "https://htmx.org"
+  site_uri: "https://four.htmx.org"
 rfc:
   index_uri: "%<rfc_site_uri>s/rfc-index"
   site_uri: "https://www.rfc-editor.org"

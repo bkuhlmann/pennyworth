@@ -12,7 +12,7 @@ RSpec.describe Pennyworth::CLI::Actions::HTMX::Reference do
   describe "#call" do
     it "answers JSON with valid response" do
       action.call
-      expect(io.reread).to match(/items.+title.+hx-boost.+subtitle.+Add/)
+      expect(io.reread).to match(/items.+title.+hx-get.+subtitle.+Issues/)
     end
 
     it "answers empty items with invalid response" do

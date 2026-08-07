@@ -45,19 +45,19 @@ RSpec.describe Pennyworth::CLI::Shell do
       expect(io.reread).to eq("#{{items: []}.to_json}\n")
     end
 
-    it "answers htmx examples" do
-      shell.call %w[htmx --examples]
-      expect(io.reread).to match(/items.+title.+Click To Edit.+subtitle.+Demonstrates/)
-    end
-
     it "answers htmx extensions" do
       shell.call %w[htmx --extensions]
-      expect(io.reread).to match(/items.+title.+ajax-header.+subtitle.+Adds/)
+      expect(io.reread).to match(/items.+title.+hx-multipart.+subtitle.+Stream/)
+    end
+
+    it "answers htmx patterns" do
+      shell.call %w[htmx --patterns]
+      expect(io.reread).to match(/items.+title.+Click to Load.+subtitle.+Load/)
     end
 
     it "answers htmx references" do
       shell.call %w[htmx --references]
-      expect(io.reread).to match(/items.+title.+hx-boost.+subtitle.+Add/)
+      expect(io.reread).to match(/items.+title.+hx-get.+subtitle.+Issues/)
     end
 
     it "answers RFC script filter" do

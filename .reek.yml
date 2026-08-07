@@ -5,6 +5,7 @@ exclude_paths:
 detectors:
   FeatureEnvy:
     exclude:
+      - "Pennyworth::Loaders::HTMX#fetch"
       - "Pennyworth::Loaders::RFC#fetch"
   LongParameterList:
     enabled: false
