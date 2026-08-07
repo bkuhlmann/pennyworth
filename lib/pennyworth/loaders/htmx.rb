@@ -7,7 +7,7 @@ module Pennyworth
   module Loaders
     # Loads htmx documentation by scraping web page.
     class HTMX
-      include Dependencies[:http, :settings, parser: :ox]
+      include Dependencies[:http, :settings]
 
       using Refinements::String
 
@@ -25,7 +25,8 @@ module Pennyworth
         parts.join.up.delete_suffix "."
       end
 
-      def initialize(model: Models::HTMX, **)
+      def initialize(parser: Nokogiri::HTML5, model: Models::HTMX, **)
+        @parser = parser
         @model = model
         super(**)
       end
@@ -40,7 +41,7 @@ module Pennyworth
 
       private
 
-      attr_reader :model
+      attr_reader :parser, :model
 
       def read uri
         http.follow.get(uri).then do |response|
