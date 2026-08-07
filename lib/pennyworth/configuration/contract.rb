@@ -13,8 +13,8 @@ module Pennyworth
       optional(:git_hub_organization).filled :string
       optional(:git_hub_user).filled :string
       required(:http_statuses_uri).filled :string
-      required(:htmx_examples_uri).filled :string
       required(:htmx_extensions_uri).filled :string
+      required(:htmx_patterns_uri).filled :string
       required(:htmx_references_uri).filled :string
       required(:htmx_site_uri).filled :string
       required(:rfc_index_uri).filled :string

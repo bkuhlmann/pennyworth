@@ -48,7 +48,9 @@ module Pennyworth
         end
       end
 
-      def parse_rows(document) = parser.parse(document).locate "*/tr"
+      def parse_rows document
+        parser.parse(document).locate "*/tbody/tr"
+      end
 
       def record_for item, description, uri
         model[
