@@ -4,7 +4,6 @@ require "cogger"
 require "containable"
 require "etcher"
 require "http"
-require "ox"
 require "runcom"
 require "spek"
 
@@ -96,10 +95,6 @@ module Pennyworth
                       presenter: Presenters::Text,
                       serializer: Serializers::Text
       end
-    end
-
-    register :ox do
-      Ox.tap { |ox| ox.default_options = {mode: :generic, effort: :tolerant, smart: true} }
     end
 
     register(:settings) { Etcher.call(self[:registry]).dup }

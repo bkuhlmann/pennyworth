@@ -32,7 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "http", "~> 6.0"
   spec.add_dependency "infusible", "~> 5.0"
   spec.add_dependency "nokogiri", "~> 1.19.4"
-  spec.add_dependency "ox", "~> 2.14"
   spec.add_dependency "rack", "~> 3.1"
   spec.add_dependency "refinements", "~> 14.0"
   spec.add_dependency "runcom", "~> 13.0"
