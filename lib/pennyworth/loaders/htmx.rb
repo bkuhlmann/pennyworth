@@ -18,10 +18,7 @@ module Pennyworth
       def call uri
         fetch(uri).then { parse_rows it }
                   .each
-                  .with_object [] do |row, entries|
-          row.children in Nokogiri::XML::Element => item, Nokogiri::XML::Element => description
-          entries.append build_record(item, description) unless item.text.include? "Soon"
-        end
+                  .with_object([]) { |row, entries| entries.append parse_elements(row.children) }
       end
 
       private
@@ -34,13 +31,37 @@ module Pennyworth
         end
       end
 
-      def parse_rows(page) = parser.parse(page).xpath "//tbody/tr"
+      def parse_rows page
+        document = parser.parse page
+        rows = document.xpath "//tbody/tr"
+
+        return rows if rows.any?
+
+        document.xpath "//section//ul/li"
+      end
+
+      def parse_elements elements
+        case elements
+          in Nokogiri::XML::Element => item, Nokogiri::XML::Element => description
+            build_record item, description
+          else build_reference_record elements
+        end
+      end
 
       def build_record item, description
         link = item.at_css "a"
         uri = %(#{settings.htmx_site_uri}#{link["href"]})
 
-        model[label: link.text, description: "#{description.text}.", uri:]
+        model[label: item.text, description: "#{description.text}.", uri:]
+      end
+
+      def build_reference_record elements
+        item = elements.shift
+        path = item.attribute("href").text
+        uri = %(#{settings.htmx_site_uri}#{path})
+        description = elements.map(&:text).join.strip.delete_prefix("- ").capitalize
+
+        model[label: item.text, description: "#{description}.", uri:]
       end
     end
   end

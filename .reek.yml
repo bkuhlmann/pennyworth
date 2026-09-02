@@ -6,6 +6,7 @@ detectors:
   FeatureEnvy:
     exclude:
       - "Pennyworth::Loaders::HTMX#fetch"
+      - "Pennyworth::Loaders::HTMX#parse_rows"
       - "Pennyworth::Loaders::RFC#fetch"
       - "Pennyworth::Loaders::Rodauth#fetch"
   LongParameterList:

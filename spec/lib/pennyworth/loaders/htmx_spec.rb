@@ -42,7 +42,7 @@ RSpec.describe Pennyworth::Loaders::HTMX do
       [
         Pennyworth::Models::HTMX[
           label: "hx-get",
-          description: "Issues GET request to specified URL.",
+          description: "Issues get request to specified url.",
           uri: "https://four.htmx.org/reference/attributes/hx-get"
         ],
         Pennyworth::Models::HTMX[
