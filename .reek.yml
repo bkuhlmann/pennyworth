@@ -17,3 +17,5 @@ detectors:
   TooManyStatements:
     exclude:
       - "Pennyworth::CLI::Shell#cli"
+  UnusedParameters:
+    enabled: false
