@@ -7,13 +7,13 @@ module Pennyworth
     module Actions
       # Handles the Standard Gem action.
       class StandardGem < Sod::Action
-        include Dependencies[:io, processor: "processors.standard_gem"]
-
         ENDPOINTS = {
           "all" => "stdgems.json",
           "default" => "default_gems.json",
           "bundled" => "bundled_gems.json"
         }.freeze
+
+        include Dependencies[:io, processor: "processors.standard_gem"]
 
         description "Render Alfred Standard Gems script filter."
 
